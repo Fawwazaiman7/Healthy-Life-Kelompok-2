@@ -1,0 +1,85 @@
+/* src/Pages/TutorOlahraga.css */
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7); /* Background transparan untuk fokus pada popup */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Pastikan berada di atas konten lain */
+}
+
+.popup-content {
+    position: relative; /* Untuk menempatkan tombol X */
+    background-color: #333; /* Warna latar popup */
+    padding: 30px 20px;
+    border-radius: 10px;
+    max-width: 450px;
+    width: 90%;
+    text-align: center;
+    color: white;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4); /* Bayangan untuk kesan mengambang */
+    animation: zoomIn 0.5s ease-out; /* Animasi zoom-in */
+}
+
+/* Animasi zoom-in untuk popup */
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Tombol X untuk menutup popup */
+.close-icon {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+.close-icon:hover {
+    color: #ff4d4d; /* Merah saat dihover */
+}
+
+.youtube-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #FF0000;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.youtube-link:hover {
+    background-color: #cc0000; /* Warna lebih gelap saat dihover */
+}
+
+/* Judul dan teks dalam popup */
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}

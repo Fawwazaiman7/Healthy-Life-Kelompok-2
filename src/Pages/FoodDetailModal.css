@@ -1,0 +1,87 @@
+/* Overlay untuk modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.85); /* Overlay gelap untuk fokus */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #3c8f1c !important; /* Background merah solid */
+    color: #b42424;
+    border-radius: 10px;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* Efek bayangan */
+    border: 5px solid #8fc743; /* Frame hijau di sekitar modal */
+}
+
+/* Tombol close di pojok kanan atas */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    color: #f80c0c;
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+/* Judul modal */
+.modal-title {
+    font-size: 2rem;
+    color: #fbf304; /* Warna kuning untuk kontras */
+    margin-bottom: 10px;
+}
+
+/* Informasi durasi dan kalori */
+.modal-info {
+    font-size: 1rem;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+/* Gambar makanan dalam modal */
+.modal-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+/* Seksi untuk bahan-bahan dan tutorial */
+.modal-section {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.modal-section h3 {
+    color: #f10606; /* Warna hijau untuk subjudul */
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.modal-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #ddd;
+}
+
+.modal-section ul li {
+    margin-bottom: 5px;
+}
+
+.modal-section p {
+    color: #ddd;
+    font-size: 1rem;
+    line-height: 1.5;
+}

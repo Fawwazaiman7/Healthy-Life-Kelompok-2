@@ -1,0 +1,98 @@
+/* src/Pages/Article.css */
+
+.article {
+    display: flex;
+    align-items: center;
+    background-color: #222;
+    color: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Menambahkan bayangan untuk kesan mengambang */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.article:hover {
+    transform: translateY(-5px); /* Efek mengambang saat di-hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); 
+    background-color: #444;/* Bayangan lebih tebal saat di-hover */
+}
+
+.article-image {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 5px;
+    flex-shrink: 0; /* Memastikan gambar tidak menyusut di layar kecil */
+}
+
+.article-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.article-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #fbf304; /* Warna judul yang menarik */
+}
+
+.article-content p {
+    font-size: 1rem;
+    color: #ccc; /* Warna teks deskripsi yang lebih lembut */
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.article-content a {
+    color: #28a745;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+    position: relative;
+    font-size: 1.2rem; /* Ukuran teks "See More" */
+}
+
+.article-content a::after {
+    content: "→"; /* Menambahkan panah */
+    font-size: 1.5rem; /* Ukuran awal panah */
+    margin-left: 8px; /* Jarak antara teks dan panah */
+    transition: margin-left 0.3s ease, font-size 0.3s ease; /* Efek transisi */
+}
+
+.article-content a:hover {
+    color: #fbf304;
+    background-color: #2d2b2b; /* Ubah warna link saat di-hover */
+}
+
+.article-content a:hover::after {
+    margin-left: 12px; /* Geser panah ke kanan saat di-hover */
+    font-size: 1.8rem; /* Perbesar ukuran panah saat di-hover */
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .article {
+        flex-direction: column; /* Menyusun gambar dan konten secara vertikal */
+        align-items: flex-start; /* Mulai konten dari sisi kiri */
+    }
+
+    .article-image {
+        margin-right: 0;
+        margin-bottom: 15px; /* Jarak antara gambar dan konten di bawahnya */
+        width: 100%; /* Gambar memenuhi lebar kontainer di layar kecil */
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .article-content a {
+        font-size: 1.1rem;
+    }
+
+    .article-content a::after {
+        font-size: 1.3rem;
+    }
+}

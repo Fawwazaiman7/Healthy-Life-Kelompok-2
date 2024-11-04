@@ -1,0 +1,142 @@
+/* Reset CSS untuk mencegah overflow pada seluruh halaman */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Styling Body */
+body {
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar Container */
+.navbar {
+  display: flex;
+  position: fixed; /* Tetap di atas layar */
+  top: 0;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 2rem;
+  background-color: #fafbfc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  z-index: 1000; /* Pastikan navbar berada di atas elemen lain */
+}
+
+/* Styling Logo */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  padding-left: 5rem;
+}
+
+.navbar-logo img {
+  width: 120px;
+  height: auto;
+}
+
+/* Styling Link Navbar */
+.navbar-links {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+/* Styling Link Individual */
+.navbar-links li a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #333;
+  font-weight: 500;
+  padding: 0.3rem 0.5rem;
+  border-radius: 5px;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+/* Efek frame saat link navbar ditekan */
+.navbar-links li a:active {
+  outline: 3px solid #2b7a2a;
+  outline-offset: 2px;
+  color: #238621;
+}
+
+/* Hover effect */
+.navbar-links li a:hover {
+  color: #2b7a2a;
+}
+
+/* Styling Tombol dalam Navbar */
+.navbar-button {
+  padding: 0.3rem 1rem;
+  background-color: #2b7a2a;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s;
+  font-size: 0.9rem;
+}
+
+/* Styling Khusus untuk Tombol Sign Up dan Login */
+.navbar-signup {
+  background-color: #2b7a2a;
+  color: #fff;
+  margin-right: 1.5rem;
+}
+
+.navbar-login {
+  background-color: #fff;
+  color: #2b7a2a;
+  border: 2px solid #2b7a2a;
+  margin-right: 1.5rem;
+}
+
+.navbar-signup:hover {
+  background-color: #238621;
+}
+
+.navbar-login:hover {
+  background-color: #e0f3e0;
+  color: #238621;
+}
+
+/* Styling untuk Bagian Auth di Navbar */
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+/* Efek Frame Ketika Tombol Ditekan */
+.navbar-button:active,
+.navbar-signup:active,
+.navbar-login:active {
+  outline: 3px solid #2b7a2a; /* Warna frame saat ditekan */
+  outline-offset: 2px; /* Jarak outline dari tombol */
+}
+
+.navbar-button:active {
+  background-color: #238621;
+}
+
+.navbar-signup:active {
+  background-color: #1e6f1f;
+}
+
+.navbar-login:active {
+  background-color: #cfeacb;
+  color: #1e6f1f;
+}
+
+/* Menghindari tumpang tindih dengan konten di bawah navbar */
+main {
+  padding-top: 70px; /* Sesuaikan dengan tinggi navbar */
+}

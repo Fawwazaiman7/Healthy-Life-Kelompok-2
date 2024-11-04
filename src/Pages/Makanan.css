@@ -1,0 +1,237 @@
+/* Reset CSS untuk mencegah overflow pada seluruh halaman */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Gaya untuk halaman Makanan */
+.makanan-page {
+  padding: 40px;
+  background-color: #222;
+  color: #fff;
+  min-height: 100vh;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Gaya untuk highlight rekomendasi makanan (Food Recommendation Of The Day) */
+.makanan-highlight {
+  background-color: #8fc743;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  color: #222;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  animation: pulse 3s infinite;
+  transition: transform 0.15s ease; /* Durasi lebih cepat */
+}
+
+.makanan-highlight:hover {
+  transform: translateY(-5px); /* Efek mengambang saat di-hover */
+}
+
+/* Animasi pulse untuk efek bayangan pada highlight makanan */
+@keyframes pulse {
+  0%, 100% {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  50% {
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  }
+}
+
+.highlight-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 20px;
+  text-align: center;
+  animation: slideIn 1.5s ease-out;
+}
+
+/* Animasi slide-in untuk judul */
+@keyframes slideIn {
+  0% {
+      transform: translateX(-100%);
+      opacity: 0;
+  }
+  100% {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+.highlight-card {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.15s ease; /* Durasi lebih cepat */
+  cursor: pointer;
+}
+
+.highlight-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  background-color: #8d8b8b; /* Efek mengambang dan memperbesar saat di-hover */
+}
+
+.highlight-image {
+  width: 150px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.highlight-info {
+  padding: 15px;
+}
+
+.highlight-info h3 {
+  font-size: 1.5rem;
+  margin: 0;
+  color: #333;
+}
+
+.highlight-info p {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 5px;
+}
+
+/* Grid layout untuk kartu makanan */
+.makanan-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+/* Gaya untuk kartu makanan */
+.food-card {
+  background-color: #fff;
+  color: #333;
+  border-radius: 10px;
+  padding: 15px;
+  width: 250px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.15s ease, box-shadow 0.15s ease; /* Durasi lebih cepat */
+  cursor: pointer;
+}
+
+.food-card:hover {
+  transform: translateY(-10px) scale(1.02) !important; /* Efek mengambang dengan sedikit perbesar */
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.4);
+  background-color: #8d8b8b; /* Bayangan lebih besar saat di-hover */
+}
+
+
+.food-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.food-title {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #222;
+}
+
+.food-info {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Gaya untuk bagian informasi ingredients dan tutorial di modal */
+.ingredients-info,
+.tutor-info {
+  background-color: #333;
+  color: #8fc743;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 2px solid #8fc743;
+  transition: transform 0.15s ease; /* Durasi lebih cepat */
+}
+
+.ingredients-info:hover,
+.tutor-info:hover {
+  transform: translateY(-5px); /* Efek mengambang saat di-hover */
+}
+
+/* Styling judul dalam ingredients dan tutorial */
+.ingredients-info h4,
+.tutor-info h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #8fc743;
+  margin-bottom: 10px;
+}
+
+.ingredients-info ul,
+.tutor-info p {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin: 5px 0;
+}
+
+
+/* Gaya dasar untuk tombol "X" */
+.close-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none; /* Tanpa latar belakang */
+  color: #ffffff !important; /* Warna teks hitam sebelum di-hover */
+  font-size: 50rem; /* Ukuran font lebih besar */
+  border: none; /* Tanpa border */
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.2s ease;
+  outline: none;
+}
+
+/* Gaya untuk tombol "X" saat di-hover */
+.close-button:hover {
+  color: #ff4d4d !important; /* Warna merah saat di-hover */
+  transform: scale(1.5); /* Sedikit memperbesar tombol saat di-hover */
+}
+
+/* Untuk tampilan pada layar kecil */
+@media (max-width: 768px) {
+    .close-button {
+        font-size: 1.2rem; /* Ukuran lebih kecil untuk tampilan mobile */
+        top: 10px;
+        right: 10px;
+        width: 30px;
+        height: 30px;
+    }
+}
+
+
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+  .makanan-page {
+      padding: 20px;
+  }
+
+  .food-card {
+      width: 100%;
+  }
+}
+
+/* Menambahkan gaya tambahan untuk responsivitas pada layout grid */
+@media (max-width: 500px) {
+  .makanan-page {
+      padding: 20px;
+  }
+}
