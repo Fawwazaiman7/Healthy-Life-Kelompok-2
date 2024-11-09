@@ -1,0 +1,76 @@
+.container {
+  padding: 2rem;
+  background-color: #98C93B; /* lime-300 */
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.title {
+  font-size: 3rem; /* text-4xl */
+  font-weight: bold;
+  color: black;
+  line-height: 1.2; /* Mengatur jarak antar baris */
+  text-align: left; /* Menyelaraskan teks ke kiri */
+  white-space: pre-line; /* Memungkinkan teks pecah baris */
+  margin-left: 100px;
+}
+
+.foodContainer {
+  position: relative;
+  border-radius: 0.75rem;
+  box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+  margin-left: 90px;
+  transition: transform 0.3s, box-shadow 0.3s; /* Transisi halus untuk transformasi dan bayangan */
+}
+
+.foodContainer:hover {
+  transform: scale(1.05); /* Meningkatkan ukuran sedikit saat hover */
+  box-shadow: 6px 12px 30px rgba(0, 0, 0, 0.9); /* Bayangan lebih besar saat hover */
+}
+
+.image {
+  border-radius: 0.75rem;
+}
+
+.label {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background-color: #fde68a; /* yellow-200 */
+  color: #1f2937; /* gray-800 */
+  font-size: 0.875rem; /* text-sm */
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px; /* full rounded */
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* black with 50% opacity */
+  color: white;
+  padding: 1.5rem;
+}
+
+.foodTitle {
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 600;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 0.875rem; /* text-sm */
+  margin-top: 0.5rem;
+}
+
+.detailItem {
+  display: flex;
+  align-items: center;
+}
+

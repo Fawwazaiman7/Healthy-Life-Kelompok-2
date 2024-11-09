@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './Navbar.css';
-import logo from '../../assets/Images/Logo.jpg';
+import logo from '../../assets/Images/Logonavbar.png';
 
 const Navbar = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -28,14 +28,13 @@ const Navbar = () => {
         <li><Link to="/makanan">Makanan</Link></li>
         <li><Link to="/olahraga">Olahraga</Link></li>
         <li><Link to="/kalkulator">Kalkulator</Link></li>
-        <li><Link to="/GetStarted" className="navbar-button">Get Started</Link></li>
       </ul>
       <div className="navbar-actions navbar-auth">
         {isLoggedIn ? (
           <button onClick={handleLogOut} className="navbar-button">Log Out</button>
         ) : (
           <>
-            <Link to="/sign-up" className="navbar-button navbar-signup">Sign Up</Link>
+            <Link to="/sign-up" className="navbar-button">Get Started</Link>
             <Link to="/login" className="navbar-button navbar-login">Log In</Link>
           </>
         )}
