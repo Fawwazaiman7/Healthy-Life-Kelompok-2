@@ -1,9 +1,16 @@
 import React from 'react';
-import './FoodCard.css'; // Pastikan jalur ini benar
+import { useNavigate } from 'react-router-dom';
+import './FoodCard.css';
 
-const FoodCard = ({ title, time, calories, image }) => {
+const FoodCard = ({ id, title, time, calories, image }) => {
+  const navigate = useNavigate();
+
+  const handleCardClick = () => {
+    navigate(`/recipe/${id}`); // Menggunakan ID untuk navigasi ke halaman detail
+  };
+
   return (
-    <div className="foodCard">
+    <div className="foodCard" onClick={handleCardClick}>
       <div className="foodDetails">
         <h3 className="foodTitle">{title}</h3>
         <p className="foodInfo">{time} | {calories}</p>
@@ -16,4 +23,6 @@ const FoodCard = ({ title, time, calories, image }) => {
 };
 
 export default FoodCard;
+
+
 
