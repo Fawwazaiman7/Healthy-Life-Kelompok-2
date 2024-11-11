@@ -47,7 +47,7 @@ function LogIn() {
       </div>
       <div className="login-image-container">
         <img
-          src="https://via.placeholder.com/400"
+          src="images/login.png"
           alt="Login Illustration"
         />
       </div>
