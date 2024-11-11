@@ -23,7 +23,9 @@
   box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.7);
   overflow: hidden;
   margin-left: 90px;
-  transition: transform 0.3s, box-shadow 0.3s; /* Transisi halus untuk transformasi dan bayangan */
+  transition: transform 0.3s, box-shadow 0.3s;
+  max-width: 100%; /* Pastikan kontainer memiliki ukuran maksimal yang sesuai */
+  display: block; /* Pastikan elemen blok untuk menampilkan gambar dan konten */
 }
 
 .foodContainer:hover {
@@ -33,6 +35,8 @@
 
 .image {
   border-radius: 0.75rem;
+  width: 100%; /* Pastikan gambar menyesuaikan lebar kontainer */
+  height: auto; /* Membuat gambar menjaga aspek rasio */
 }
 
 .label {
@@ -51,9 +55,10 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* black with 50% opacity */
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
   padding: 1.5rem;
+  box-sizing: border-box; /* Menghindari masalah dengan padding */
 }
 
 .foodTitle {

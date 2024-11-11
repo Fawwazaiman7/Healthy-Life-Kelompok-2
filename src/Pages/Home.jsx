@@ -26,10 +26,12 @@ export default function Home() {
                 style={{ backgroundImage: `url('/images/homebg.png')` }}
             >
                 <div className="hero-content">
-                    <h1 className="typing-effect">
-                        "Berani coba fitur olahraga kami? <br />
-                        Mulai sekarang, jadi yang terkuat!"
-                    </h1>
+                    <h1 className="typing-container">
+                    <span className="typing-effect-line">"Berani coba fitur olahraga kami?"</span>
+                    <br />
+                    <span className="typing-effect-line">"Mulai sekarang, jadi yang terkuat!"</span>
+                </h1>
+
                     <div className="hero-button-container">
                         <button className="hero-button">Get Started</button>
                     </div>

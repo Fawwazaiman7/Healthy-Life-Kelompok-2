@@ -1,6 +1,11 @@
 import './FoodRecommendation.css';
+import { Link } from 'react-router-dom';
+import { foodItems } from '../../data/foodData'; // Pastikan path sesuai dengan struktur direktori Anda
 
 export default function FoodRecommendation() {
+  // Pilih satu makanan tertentu (misalnya, item pertama dalam array)
+  const recommendedFood = foodItems[Math.floor(Math.random() * foodItems.length)];
+
   return (
     <div className="container">
       {/* Title */}
@@ -10,16 +15,14 @@ export default function FoodRecommendation() {
         Recommendation
         <br />
         Of The Day
-        </h2>
+      </h2>
 
-      
       {/* Featured Food Section */}
-      <div className="foodContainer">
-        
+      <Link to={`/recipe/${recommendedFood.id}`} className="foodContainer">
         {/* Image */}
         <img
-          src="/images/juswortel.png"  // Replace with your image path
-          alt="Jus Wortel Susu Mantap"
+          src={recommendedFood.image}
+          alt={recommendedFood.title}
           className="image"
         />
 
@@ -27,24 +30,24 @@ export default function FoodRecommendation() {
         <div className="label">
           Recommendation Of The Day
         </div>
-        
+
         {/* Text Content */}
         <div className="overlay">
-          <h3 className="foodTitle">Jus Wortel Susu Mantap</h3>
+          <h3 className="foodTitle">{recommendedFood.title}</h3>
           <div className="details">
             <span className="detailItem">
-              ⏱ 10 Minutes
+              ⏱ {recommendedFood.time}
             </span>
             <span className="detailItem">
-              🔥 70 Cal
+              🔥 {recommendedFood.calories}
             </span>
           </div>
         </div>
-
-        
-      </div>
+      </Link>
     </div>
   );
 }
+
+
 
   
