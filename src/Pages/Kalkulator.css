@@ -1,55 +1,48 @@
-/* Menentukan latar belakang biru untuk seluruh halaman */
+/* Latar belakang biru lembut */
 .page-background {
-    background-color: #19adc1; /* Warna biru lembut */
+    background-color: #ffffff;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding-top: 20px;
 }
 
-/* Pengaturan untuk kontainer kalkulator */
+/* Kontainer untuk kalkulator */
 .kalkulator-container {
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
     margin-top: 20px;
     padding: 20px;
-    background-color: #f7f7f7; /* Warna latar dalam kontainer */
+    background-color: #ffffff;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
 }
 
-/* Gaya untuk setiap bagian input */
-.input-section {
-    margin-bottom: 20px;
-}
-
-.input-section label {
-    display: block;
-    font-weight: bold;
+.kalkulator-container h2 {
+    font-size: 24px;
+    color: #333;
     margin-bottom: 8px;
 }
 
-.input-section input,
-.input-section select {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
+.kalkulator-container p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
 }
 
-/* Gaya untuk pemilihan gender */
+/* Gender selection */
 .gender-selection {
     display: flex;
     gap: 20px;
     justify-content: center;
+    margin-bottom: 20px;
 }
 
 .gender-option {
-    width: 80px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -58,64 +51,111 @@
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s;
-    padding: 5px;
+    padding: 10px;
     text-align: center;
 }
 
 .gender-option.selected {
-    background-color: #0066cc;
-    border-color: #0066cc;
-    color: white;
+    border-color: #28a745;
+    background-color: #e0f7ef;
 }
 
 .gender-option img {
-    width: 40px;
-    height: 40px;
-    margin-bottom: 5px;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
 }
 
-/* Gaya untuk tingkat aktivitas */
-.activity-levels {
-    display: flex;
-    gap: 10px;
-    justify-content: space-around;
+/* Input section */
+.input-section {
+    margin-bottom: 20px;
+    text-align: left;
 }
 
-.activity-option {
-    width: 70px;
-    height: 90px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    padding: 5px;
-    text-align: center;
-    border: 2px solid #ccc;
-    border-radius: 8px;
+.input-section label {
+    display: block;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
 }
 
-.activity-option.active {
-    background-color: #0066cc;
-    border-color: #0066cc;
-    color: white;
-}
-
-/* Gaya untuk tombol hitung */
-.calculate-button {
+.input-section input {
     width: 100%;
     padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Button */
+.calculate-button {
+    width: 100%;
+    padding: 12px;
     font-size: 16px;
     font-weight: bold;
     color: white;
     background-color: #28a745;
     border: none;
-    border-radius: 4px;
+    border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s;
+    margin-top: 20px;
 }
 
 .calculate-button:hover {
+    background-color: #218838;
+}
+
+.result-section {
+    text-align: center;
+}
+
+.bmi-value {
+    font-size: 32px;
+    color: #28a745;
+}
+
+.bmi-category {
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+}
+
+.bmi-chart {
+    margin: 20px 0;
+}
+
+.ideal-weight-range {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.advice-list {
+    text-align: left;
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.advice-list li {
+    margin-bottom: 8px;
+}
+
+.reset-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #28a745;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.reset-button:hover {
     background-color: #218838;
 }

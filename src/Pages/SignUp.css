@@ -57,8 +57,8 @@
   }
   
   .signup-image-container img {
-    max-width: 80%;
-    height: auto;
+    max-width: 100%;
+    height: max-content;
   }
   
   /* Styling untuk pesan error */

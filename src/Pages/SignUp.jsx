@@ -33,7 +33,7 @@ function SignUp() {
   return (
     <div className="signup-fullscreen">
       <div className="signup-form-container">
-        <h2>Sign Up</h2>
+        <h2>Welcome</h2>
         <input
           type="text"
           placeholder="Nickname"
@@ -67,7 +67,7 @@ function SignUp() {
       </div>
       <div className="signup-image-container">
         <img
-          src="https://via.placeholder.com/400"
+          src="/images/login.png"
           alt="Signup Illustration"
         />
       </div>
