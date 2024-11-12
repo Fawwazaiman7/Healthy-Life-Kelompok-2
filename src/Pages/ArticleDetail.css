@@ -1,0 +1,43 @@
+/* src/Pages/ArticleDetail.css */
+
+.article-detail {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.article-detail h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #222;
+    text-align: center;
+}
+
+.article-detail img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+}
+
+.article-detail p {
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+
+@media (max-width: 768px) {
+    .article-detail {
+        padding: 1rem;
+    }
+
+    .article-detail h1 {
+        font-size: 2rem;
+    }
+
+    .article-detail p {
+        font-size: 0.95rem;
+    }
+}

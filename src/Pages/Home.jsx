@@ -1,10 +1,12 @@
 // Home.jsx
 import React, { useEffect } from 'react';
 import Navbar from '../components/Navbar/Navbar';
-import './Home.css';
 import ArticleCard from '../components/ArticleCard/ArticleCard';
+import FeatureCards from '../components/FeatureCards/FeatureCards'; // Import FeatureCards
+import articles from '../data/articleData';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import './Home.css';
 
 export default function Home() {
     useEffect(() => {
@@ -21,69 +23,35 @@ export default function Home() {
             <Navbar />
 
             {/* Hero Section */}
-            <section
-                className="hero-section"
-                style={{ backgroundImage: `url('/images/homebg.png')` }}
-            >
+            <section className="hero-section" style={{ backgroundImage: `url('/images/homebg.png')` }}>
                 <div className="hero-content">
                     <h1 className="typing-container">
-                    <span className="typing-effect-line">"Berani coba fitur olahraga kami?"</span>
-                    <br />
-                    <span className="typing-effect-line">"Mulai sekarang, jadi yang terkuat!"</span>
-                </h1>
-
+                        <span className="typing-effect-line">"Berani coba fitur olahraga kami?"</span>
+                        <br />
+                        <span className="typing-effect-line">"Mulai sekarang, jadi yang terkuat!"</span>
+                    </h1>
                     <div className="hero-button-container">
                         <button className="hero-button">Get Started</button>
                     </div>
                 </div>
             </section>
 
-            {/* Fitur Cards */}
-            <section className="features-section">
-                <div className="feature-card">
-                    <h3>Kalkulator Berat Ideal</h3>
-                    <p>(Gimmick penjelasan fitur)</p>
-                    <a href="kalkulator">Lihat selengkapnya &rarr;</a>
-                </div>
-                <div className="feature-card">
-                    <h3>Rekomendasi Olahraga</h3>
-                    <p>(Gimmick penjelasan fitur)</p>
-                    <a href="olahraga">Lihat selengkapnya &rarr;</a>
-                </div>
-                <div className="feature-card">
-                    <h3>Resep Makanan Diet</h3>
-                    <p>(Gimmick penjelasan fitur)</p>
-                    <a href="makanan">Lihat selengkapnya &rarr;</a>
-                </div>
-            </section>
+            {/* Feature Cards Section */}
+            <FeatureCards /> {/* Use the FeatureCards component here */}
 
-            {/* Artikel Section */}
+            {/* Articles Section */}
             <section className="articles-section">
-                <ArticleCard
-                    title="(CONTOH ARTIKEL)"
-                    description="Ini adalah deskripsi singkat dari artikel pertama yang menjelaskan konten artikel..."
-                    imageUrl="/images/artikel1.png"
-                    link="#"
-                />
-                <ArticleCard
-                    title="(CONTOH ARTIKEL)"
-                    description="Deskripsi singkat dari artikel kedua yang memberikan gambaran konten artikel..."
-                    imageUrl="/images/artikel2.png"
-                    link="#"
-                />
-                <ArticleCard
-                    title="(CONTOH ARTIKEL)"
-                    description="Ini adalah deskripsi singkat dari artikel pertama yang menjelaskan konten artikel..."
-                    imageUrl="/images/artikel1.png"
-                    link="#"
-                />
-                <ArticleCard
-                    title="(CONTOH ARTIKEL)"
-                    description="Deskripsi singkat dari artikel kedua yang memberikan gambaran konten artikel..."
-                    imageUrl="/images/artikel2.png"
-                    link="#"
-                />
+                {articles.map((article) => (
+                    <ArticleCard
+                        key={article.id}
+                        title={article.title}
+                        description={article.preview} // Use preview text here
+                        imageUrl={article.imageUrl}
+                        link={`/article/${article.id}`} // Link to full article page
+                    />
+                ))}
             </section>
         </main>
     );
 }
+

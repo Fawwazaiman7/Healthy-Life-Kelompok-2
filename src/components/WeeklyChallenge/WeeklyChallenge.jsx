@@ -1,21 +1,29 @@
-import React from 'react';
-import './WeeklyChallenge.css'; // Pastikan Anda mengimpor CSS
+// WeeklyChallenge.jsx
+import React, { useState, useEffect } from 'react';
+import './WeeklyChallenge.css'; // Make sure you have this CSS file
+import exercises from '../../data/exerciseData'; // Import exercise data
 
 export default function WeeklyChallenge() {
-  const challenges = [
-    {
-      title: 'Push Up',
-      time: '15 Minutes',
-      calories: '120 Cal',
-      image: '/images/pushup.png', // Ganti dengan jalur gambar yang sesuai
-    },
-    {
-      title: 'Squad Jump',
-      time: '20 Minutes',
-      calories: '120 Cal',
-      image: '/images/squadjump.png', // Ganti dengan jalur gambar yang sesuai
-    },
-  ];
+  const [challenges, setChallenges] = useState([]);
+
+  // Function to pick two random exercises
+  const getRandomChallenges = () => {
+    const randomChallenges = [];
+    const indices = new Set();
+
+    while (indices.size < 2) {
+      const randomIndex = Math.floor(Math.random() * exercises.length);
+      indices.add(randomIndex);
+    }
+
+    indices.forEach((index) => randomChallenges.push(exercises[index]));
+    return randomChallenges;
+  };
+
+  // Set random challenges on component mount
+  useEffect(() => {
+    setChallenges(getRandomChallenges());
+  }, []);
 
   return (
     <div className="weeklyChallenge">
@@ -32,7 +40,7 @@ export default function WeeklyChallenge() {
               <h3 className="challenge-title">{challenge.title}</h3>
               <div className="challenge-details">
                 <span>{challenge.time}</span>
-                <span>{challenge.calories}</span>
+                <span>🔥 {challenge.calories}</span>
               </div>
               <button className="play-button"></button>
             </div>

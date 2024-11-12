@@ -1,87 +1,13 @@
+// Olahraga.jsx
 import React from 'react';
 import Navbar from '../components/Navbar/Navbar';
 import 'aos/dist/aos.css';
 import './Olahraga.css';
 import WeeklyChallenge from '../components/WeeklyChallenge/WeeklyChallenge';
 import ExerciseCard from '../components/ExerciseCard/ExerciseCard'; 
+import exercises from '../data/exerciseData'; // Import exercise data
 
 const Olahraga = () => {
-    // Inisialisasi daftar latihan
-    const exercises = [
-        {
-            title: 'Plank',
-            time: '10 Minutes',
-            calories: '30 Cal',
-            image: '/images/plank.png',
-        },
-        {
-            title: 'Bicycle Crunch',
-            time: '10 Minutes',
-            calories: '35 Cal',
-            image: '/images/bicycle-crunch.png', 
-        },
-        {
-            title: 'Mountain Climber',
-            time: '10 Minutes',
-            calories: '50 Cal',
-            image: '/images/mountain-climber.png', 
-        },
-        {
-            title: 'Plank',
-            time: '10 Minutes',
-            calories: '30 Cal',
-            image: '/images/plank.png',
-        },
-        {
-            title: 'Bicycle Crunch',
-            time: '10 Minutes',
-            calories: '35 Cal',
-            image: '/images/bicycle-crunch.png', 
-        },
-        {
-            title: 'Mountain Climber',
-            time: '10 Minutes',
-            calories: '50 Cal',
-            image: '/images/mountain-climber.png', 
-        },
-        {
-            title: 'Plank',
-            time: '10 Minutes',
-            calories: '30 Cal',
-            image: '/images/plank.png',
-        },
-        {
-            title: 'Bicycle Crunch',
-            time: '10 Minutes',
-            calories: '35 Cal',
-            image: '/images/bicycle-crunch.png', 
-        },
-        {
-            title: 'Mountain Climber',
-            time: '10 Minutes',
-            calories: '50 Cal',
-            image: '/images/mountain-climber.png', 
-        },
-        {
-            title: 'Plank',
-            time: '10 Minutes',
-            calories: '30 Cal',
-            image: '/images/plank.png',
-        },
-        {
-            title: 'Bicycle Crunch',
-            time: '10 Minutes',
-            calories: '35 Cal',
-            image: '/images/bicycle-crunch.png', 
-        },
-        {
-            title: 'Mountain Climber',
-            time: '10 Minutes',
-            calories: '50 Cal',
-            image: '/images/mountain-climber.png', 
-        },
-    ];
-
     return (
         <main>
             <Navbar />
@@ -91,9 +17,9 @@ const Olahraga = () => {
             <section className="exercise-section">
                 <h2 className="exercise-title">Exercise Recommendation</h2>
                 <div className="exercise-cards">
-                    {exercises.map((exercise, index) => (
+                    {exercises.map((exercise) => (
                         <ExerciseCard
-                            key={index}
+                            key={exercise.id}
                             title={exercise.title}
                             time={exercise.time}
                             calories={exercise.calories}
@@ -107,4 +33,5 @@ const Olahraga = () => {
 };
 
 export default Olahraga;
+
 

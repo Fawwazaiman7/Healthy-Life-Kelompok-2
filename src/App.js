@@ -8,6 +8,7 @@ import GetStarted from './Pages/GetStarted';
 import SignUp from './Pages/SignUp';
 import Login from './Pages/Login';
 import RecipeDetail from './Pages/RecipeDetail';
+import ArticleDetail from './Pages/ArticleDetail'; // Import the ArticleDetail component
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
@@ -22,6 +23,7 @@ const App = () => {
                 <Route path="/sign-up" element={<SignUp />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/recipe/:id" element={<RecipeDetail />} />
+                <Route path="/article/:id" element={<ArticleDetail />} />
             </Routes>
         </Router>
     );
