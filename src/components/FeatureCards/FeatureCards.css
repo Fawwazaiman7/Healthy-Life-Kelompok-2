@@ -11,7 +11,7 @@
 }
 
 .feature-card {
-    background-color: #333;
+    background-color: #000; /* Changed to black */
     color: #fff;
     padding: 30px;
     border-radius: 10px;
@@ -25,9 +25,9 @@
 }
 
 .feature-card:hover {
-    transform: translateY(-10px) scale(1.02) !important; /* Efek mengambang dengan sedikit perbesar */
+    transform: translateY(-10px) scale(1.02) !important; /* Floating effect with slight scale */
     box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.4); 
-    background-color: #444;/* Bayangan lebih besar saat di-hover */
+    background-color: #111; /* Darker shade on hover */
 }
 
 .feature-card h2 {
@@ -50,23 +50,7 @@
     font-size: 1.2rem;
 }
 
-.feature-card a::after {
-    content: "→";
-    font-size: 1.5rem;
-    margin-left: 8px;
-    transition: margin-left 0.3s ease, font-size 0.3s ease;
-}
-
-.feature-card a:hover {
-    color: #fbf304;
-}
-
-.feature-card a:hover::after {
-    margin-left: 12px;
-    font-size: 1.8rem;
-}
-
-/* Responsif untuk layar kecil */
+/* Responsive for smaller screens */
 @media (max-width: 768px) {
     .feature-card {
         width: 100%;

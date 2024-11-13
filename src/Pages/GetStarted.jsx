@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { updateUser } from '../data/userData'; // Impor fungsi updateUser
 import './GetStarted.css';
 
 function GetStarted() {
@@ -11,6 +12,13 @@ function GetStarted() {
 
   const handleGenderClick = (selectedGender) => {
     setGender(selectedGender);
+  };
+
+  const handleGetStarted = () => {
+    const email = JSON.parse(localStorage.getItem('user')).email;
+    updateUser(email, { gender, age, weight, height });
+    alert('Information Saved Successfully!');
+    navigate('/homelogin'); // Redirect ke halaman Home atau halaman lain yang diinginkan
   };
 
   const handleClose = () => {
@@ -71,7 +79,9 @@ function GetStarted() {
           <span>Cm</span>
         </div>
 
-        <button className="get-started-button">Get Started</button>
+        <button className="get-started-button" onClick={handleGetStarted}>
+          Get Started
+        </button>
       </div>
     </div>
   );

@@ -31,7 +31,7 @@ export default function Home() {
                         <span className="typing-effect-line">"Mulai sekarang, jadi yang terkuat!"</span>
                     </h1>
                     <div className="hero-button-container">
-                        <button className="hero-button">Get Started</button>
+                        <button className="hero-button">Mulai Olahraga</button>
                     </div>
                 </div>
             </section>
@@ -54,4 +54,3 @@ export default function Home() {
         </main>
     );
 }
-

@@ -27,7 +27,7 @@ function SignUp() {
     if (!validate()) return;
     localStorage.setItem('user', JSON.stringify({ nickname, email, password }));
     alert('Sign Up Successful!');
-    navigate('/login');
+    navigate('/getstarted'); // Mengarahkan ke halaman GetStarted setelah submit
   };
 
   return (
