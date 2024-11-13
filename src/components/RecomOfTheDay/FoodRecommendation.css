@@ -22,7 +22,7 @@
   border-radius: 0.75rem;
   box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.7);
   overflow: hidden;
-  margin-left: 90px;
+  margin-left: 160px;
   transition: transform 0.3s, box-shadow 0.3s;
   max-width: 100%; /* Pastikan kontainer memiliki ukuran maksimal yang sesuai */
   display: block; /* Pastikan elemen blok untuk menampilkan gambar dan konten */
