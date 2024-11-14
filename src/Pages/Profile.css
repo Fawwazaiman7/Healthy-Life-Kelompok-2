@@ -1,0 +1,64 @@
+/* Container utama */
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #8dc63f; /* Hijau terang */
+    padding: 40px 0;
+    color: #fff;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header profil untuk ikon dan nama */
+  .profile-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Ikon profil */
+  .profile-icon {
+    font-size: 80px;
+    background-color: #000;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    color: #8dc63f;
+  }
+  
+  /* Nama profil */
+  .profile-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  /* Statistik profil */
+  .profile-stats {
+    display: flex;
+    background-color: #4e752c; /* Hijau lebih gelap */
+    padding: 10px 0;
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  /* Setiap item statistik */
+  .stat-item {
+    text-align: center;
+    padding: 10px 20px;
+  }
+  
+  .stat-value {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .stat-label {
+    font-size: 14px;
+    opacity: 0.8;
+  }
+  
