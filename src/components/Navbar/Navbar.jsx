@@ -13,9 +13,13 @@ const Navbar = () => {
   }, []);
 
   const handleLogOut = () => {
-    localStorage.removeItem('isLoggedIn');
-    setIsLoggedIn(false);
-    navigate('/');
+    // Tambahkan konfirmasi sebelum logout
+    const confirmLogout = window.confirm('Apakah Anda yakin ingin logout?');
+    if (confirmLogout) {
+      localStorage.removeItem('isLoggedIn');
+      setIsLoggedIn(false);
+      navigate('/');
+    }
   };
 
   return (
@@ -27,7 +31,7 @@ const Navbar = () => {
         <li><Link to="/">Home</Link></li>
         <li><Link to="/makanan">Makanan</Link></li>
         <li><Link to="/olahraga">Olahraga</Link></li>
-        <li><Link to="/kalkulator">Kalkulator</Link></li>
+        {isLoggedIn && <li><Link to="/kalkulator">Kalkulator</Link></li>}
       </ul>
       <div className="navbar-actions navbar-auth">
         {isLoggedIn ? (
@@ -39,9 +43,8 @@ const Navbar = () => {
           </>
         )}
       </div>
-    </nav>  
+    </nav>
   );
 };
 
 export default Navbar;
-  
