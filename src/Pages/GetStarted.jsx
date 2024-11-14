@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { updateUser } from '../data/userData'; // Impor fungsi updateUser
+import { updateUser } from '../data/userData'; // Import updateUser
 import './GetStarted.css';
 
 function GetStarted() {
@@ -15,10 +15,28 @@ function GetStarted() {
   };
 
   const handleGetStarted = () => {
-    const email = JSON.parse(localStorage.getItem('user')).email;
-    updateUser(email, { gender, age, weight, height });
-    alert('Information Saved Successfully!');
-    navigate('/homelogin'); // Redirect ke halaman Home atau halaman lain yang diinginkan
+    // Ambil data pengguna dari localStorage
+    const user = JSON.parse(localStorage.getItem('user'));
+    if (!user) {
+      alert("User not found. Please sign up or log in.");
+      navigate('/sign-up');
+      return;
+    }
+
+    const email = user.email;
+
+    // Update data user di memory dan localStorage
+    const updatedUser = { ...user, gender, age, weight, height };
+    updateUser(email, updatedUser);
+
+    // Simpan data pengguna yang diperbarui ke localStorage agar persist
+    localStorage.setItem('user', JSON.stringify(updatedUser));
+
+    // Set status login sebagai true di localStorage
+    localStorage.setItem('isLoggedIn', 'true');
+
+    alert('Information Saved Successfully! You are now logged in.');
+    navigate('/homelogin'); // Redirect ke halaman utama atau halaman yang diinginkan
   };
 
   const handleClose = () => {

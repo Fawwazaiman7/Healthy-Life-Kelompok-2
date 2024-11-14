@@ -139,3 +139,67 @@ body {
 main {
   padding-top: 70px; /* Sesuaikan dengan tinggi navbar */
 }
+
+/* Styling Kontainer Profil */
+.navbar-profile {
+  position: relative;
+  margin-right: 50px; /* Sesuaikan jarak dari kanan */
+  cursor: pointer;
+}
+
+/* Profile Icon Styling */
+.profile-icon {
+  width: 50px !important; /* Pastikan ukurannya lebih kecil */
+  height: 50px !important;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #2b7a2a; /* Border sesuai tema */
+}
+
+.profile-icon img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+}
+
+
+/* Styling Dropdown Profil */
+.profile-dropdown {
+  position: absolute;
+  top: 50px; /* Posisi dropdown di bawah gambar profil */
+  right: 0;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  width: 120px;
+}
+
+/* Sembunyikan dropdown secara default */
+.profile-dropdown {
+  display: none;
+}
+
+/* Tampilkan dropdown saat ikon profil dihover */
+.navbar-profile:hover .profile-dropdown {
+  display: flex;
+}
+
+/* Styling Tombol di Dropdown */
+.profile-dropdown button {
+  padding: 10px;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+}
+
+.profile-dropdown button:hover {
+  background-color: #f0f0f0;
+}
+
