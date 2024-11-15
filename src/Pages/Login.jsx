@@ -1,25 +1,37 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios'; // Import Axios untuk komunikasi backend
 import './Login.css';
 
 function LogIn() {
-  const [nickname, setNickname] = useState('');
+  const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
 
-  const handleLogIn = () => {
-    if (!nickname || !password) {
+  const handleLogIn = async () => {
+    if (!email || !password) {
       alert('All fields are required');
       return;
     }
 
-    const user = JSON.parse(localStorage.getItem('user'));
-    if (user && user.nickname === nickname && user.password === password) {
-      localStorage.setItem('isLoggedIn', true);
-      alert('Log In Successful!');
-      navigate('/'); // Redirect ke halaman Home
-    } else {
-      alert('Invalid credentials');
+    try {
+      // Kirim data ke backend
+      const response = await axios.post('http://localhost/healthy_life_api/login.php', {
+        email,
+        password,
+      });
+
+      if (response.data.success) {
+        localStorage.setItem('user', JSON.stringify(response.data.user));
+        localStorage.setItem('isLoggedIn', true);
+        alert('Log In Successful!');
+        navigate('/'); // Redirect ke halaman Home
+      } else {
+        alert(response.data.message);
+      }
+    } catch (error) {
+      console.error('Error logging in:', error);
+      alert('Error during log in. Please try again.');
     }
   };
 
@@ -28,10 +40,10 @@ function LogIn() {
       <div className="login-form-container">
         <h2>Welcome Back</h2>
         <input
-          type="text"
-          placeholder="Nickname"
-          value={nickname}
-          onChange={(e) => setNickname(e.target.value)}
+          type="email"
+          placeholder="Email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
           className="input-field"
         />
         <input

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios'; // Import Axios untuk komunikasi backend
 import './SignUp.css';
 
 function SignUp() {
@@ -23,11 +24,27 @@ function SignUp() {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSignUp = () => {
+  const handleSignUp = async () => {
     if (!validate()) return;
-    localStorage.setItem('user', JSON.stringify({ nickname, email, password }));
-    alert('Sign Up Successful!');
-    navigate('/getstarted'); // Mengarahkan ke halaman GetStarted setelah submit
+
+    try {
+      // Kirim data ke backend
+      const response = await axios.post('http://localhost/healthy_life_api/signup.php', {
+        name: nickname,
+        email,
+        password,
+      });
+
+      if (response.data.success) {
+        alert('Sign Up Successful!');
+        navigate('/getstarted'); // Redirect ke halaman GetStarted
+      } else {
+        alert(response.data.message);
+      }
+    } catch (error) {
+      console.error('Error signing up:', error);
+      alert('Error during sign up. Please try again.');
+    }
   };
 
   return (
