@@ -1,25 +1,36 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import './Login.css';
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import "./Login.css";
 
 function LogIn() {
-  const [nickname, setNickname] = useState('');
-  const [password, setPassword] = useState('');
+  const [nickname, setNickname] = useState("");
+  const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
   const handleLogIn = () => {
     if (!nickname || !password) {
-      alert('All fields are required');
+      alert("All fields are required");
       return;
     }
 
-    const user = JSON.parse(localStorage.getItem('user'));
+    // Periksa apakah username dan password cocok untuk Admin
+    if (nickname === "Admin" && password === "Admin") {
+      localStorage.setItem("isLoggedIn", true);
+      localStorage.setItem("role", "admin"); // Simpan role admin
+      alert("Welcome, Admin!");
+      navigate("/admin-management");
+      return;
+    }
+    
+
+    // Periksa login untuk pengguna biasa
+    const user = JSON.parse(localStorage.getItem("user"));
     if (user && user.nickname === nickname && user.password === password) {
-      localStorage.setItem('isLoggedIn', true);
-      alert('Log In Successful!');
-      navigate('/'); // Redirect ke halaman Home
+      localStorage.setItem("isLoggedIn", true);
+      alert("Log In Successful!");
+      navigate("/"); // Redirect ke halaman Home
     } else {
-      alert('Invalid credentials');
+      alert("Invalid credentials");
     }
   };
 

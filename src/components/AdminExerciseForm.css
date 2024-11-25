@@ -1,0 +1,134 @@
+/* Container utama form */
+.admin-exercise-form {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  /* Judul form */
+  .admin-exercise-form h3 {
+    font-size: 1.8rem;
+    color: #ff5722;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Input fields */
+  .admin-exercise-form .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .admin-exercise-form .form-group label {
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  .admin-exercise-form .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  /* Buttons */
+  .admin-exercise-form button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .admin-exercise-form button.btn-success {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .admin-exercise-form button.btn-success:hover {
+    background-color: #43a047;
+  }
+  
+  .admin-exercise-form button.btn-secondary {
+    background-color: #9e9e9e;
+    color: white;
+  }
+  
+  .admin-exercise-form button.btn-secondary:hover {
+    background-color: #757575;
+  }
+  
+  /* Container utama form */
+.admin-exercise-form {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  /* Judul form */
+  .admin-exercise-form h3 {
+    font-size: 1.8rem;
+    color: #ff5722;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Input fields */
+  .admin-exercise-form .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .admin-exercise-form .form-group label {
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  .admin-exercise-form .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  /* Buttons */
+  .admin-exercise-form button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .admin-exercise-form button.btn-success {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .admin-exercise-form button.btn-success:hover {
+    background-color: #43a047;
+  }
+  
+  .admin-exercise-form button.btn-secondary {
+    background-color: #9e9e9e;
+    color: white;
+  }
+  
+  .admin-exercise-form button.btn-secondary:hover {
+    background-color: #757575;
+  }
+  

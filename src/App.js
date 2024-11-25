@@ -8,10 +8,12 @@ import GetStarted from './Pages/GetStarted';
 import SignUp from './Pages/SignUp';
 import Login from './Pages/Login';
 import RecipeDetail from './Pages/RecipeDetail';
-import ArticleDetail from './Pages/ArticleDetail'; // Import the ArticleDetail component
+import ArticleDetail from './Pages/ArticleDetail';
 import HomeLogin from './Pages/HomeLogin';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Profile from './Pages/Profile';
+import AdminFood from './Pages/AdminFood'; // Import halaman admin makanan
+import AdminManagement from "./Pages/AdminManagement";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
     return (
@@ -28,6 +30,8 @@ const App = () => {
                 <Route path="/article/:id" element={<ArticleDetail />} />
                 <Route path="/homelogin" element={<HomeLogin />} />
                 <Route path="/profile" element={<Profile />} />
+                <Route path="/admin-food" element={<AdminFood />} /> 
+                <Route path="/admin-management" element={<AdminManagement />} />
             </Routes>
         </Router>
     );
