@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# Healthy Life
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+*Healthy Life* adalah aplikasi berbasis web yang membantu pengguna dalam menurunkan berat badan dan menjaga pola hidup sehat. Aplikasi ini menyediakan fitur-fitur seperti tutorial olahraga, estimasi kalori yang terbakar, dan fitur berbagi progres ke media sosial. Healthy Life dirancang untuk memberikan pengalaman yang mudah dan menyenangkan dalam mencapai target kesehatan pengguna.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Fitur Utama
 
-### `npm start`
+### 1. *Beranda*
+   - Menampilkan artikel gratis tentang makanan sehat dan tips hidup sehat.
+   - Terdapat tombol *Login* dan *Sign Up* di pojok kanan atas.
+   - Pengguna yang tidak login tetap dapat melihat informasi form penghitungan kalori.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 2. *Login & Registrasi*
+   - Sistem login custom tanpa menggunakan JWT atau provider eksternal.
+   - Data login dikelola secara penuh dalam database.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 3. *Kalkulator Kalori*
+   - Menghitung total kalori secara implisit di backend berdasarkan form yang diisi pengguna.
+   - Pengguna yang baru login pertama kali diwajibkan mengisi form biodata untuk menghitung target kalori mereka.
 
-### `npm test`
+### 4. *Tracking Olahraga*
+   - Memungkinkan pengguna memilih jenis olahraga, jumlah repetisi, dan target kalori yang ingin dicapai.
+   - Progress disesuaikan dengan latihan yang telah selesai dan berat badan yang diperbarui pengguna.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 5. *Rekomendasi Makanan Sehat*
+   - Fitur rekomendasi makanan sehat berbasis kalori yang dapat membantu pengguna memenuhi kebutuhan gizi.
 
-### `npm run build`
+### 6. *Artikel Edukasi*
+   - Artikel edukasi tentang pola makan sehat, manfaat olahraga, dan tips menjaga kesehatan tubuh.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 7. *Resep Makanan Sehat*
+   - Resep makanan sehat hanya dapat diakses oleh pengguna yang sudah menggunakan kalkulator kalori.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 8. *Notifikasi Firebase*
+   - Memberikan pengingat atau informasi penting kepada pengguna langsung melalui browser mereka.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## Arsitektur Aplikasi
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Healthy Life menggunakan arsitektur *3-Tier Client-Server*:
+1. *Client Layer*:
+   - Frontend dibangun menggunakan React dengan Next.js.
+   - Artikel ditampilkan menggunakan dangerouslySetInnerHTML.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. *Application Server Layer*:
+   - Backend menggunakan PHP Native.
+   - Form untuk artikel menggunakan TinyMCE editor.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. *Database Server Layer*:
+   - Menggunakan *Oracle SQL* untuk menyimpan data pengguna, artikel, riwayat olahraga, dan target kalori.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## Teknologi yang Digunakan
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- *Frontend*: React.js + Next.js
+- *Backend*: PHP Native
+- *Database*: Oracle SQL
+- *Hosting*: Windows Server
+- *Notifikasi*: Firebase Cloud Messaging
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## Instalasi dan Penggunaan
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 1. *Prasyarat*
+   - Install PHP (versi minimal 7.4)
+   - Oracle Database yang sudah dikonfigurasi
+   - Node.js untuk menjalankan frontend Next.js
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### 2. *Clone Repository*
+   ```bash
+   git clone https://github.com/username/healthy-life.git
+   cd healthy-life
