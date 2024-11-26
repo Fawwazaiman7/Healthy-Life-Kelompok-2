@@ -39,10 +39,10 @@ function LogIn() {
       <div className="login-form-container">
         <h2>Welcome Back</h2>
         <input
-          type="text"
-          placeholder="Nickname"
-          value={nickname}
-          onChange={(e) => setNickname(e.target.value)}
+          type="email"
+          placeholder="Email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
           className="input-field"
         />
         <input

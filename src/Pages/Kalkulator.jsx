@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import './Kalkulator.css';
 import Navbar from '../components/Navbar/Navbar';
+import axios from 'axios'; // Import Axios untuk HTTP request
 
 function Kalkulator() {
     const [age, setAge] = useState('');
@@ -13,44 +14,35 @@ function Kalkulator() {
     const [idealWeightRange, setIdealWeightRange] = useState('');
     const [showResult, setShowResult] = useState(false);
 
-    const calculateBMI = () => {
-        if (height && weight) {
-            const heightInMeters = height / 100;
-            const bmiValue = (weight / (heightInMeters * heightInMeters)).toFixed(1);
-            setBmi(bmiValue);
-            determineBMICategory(bmiValue);
-            setShowResult(true);
+    // Fungsi untuk menghitung BMI dengan backend
+    const calculateBMIWithBackend = async () => {
+        try {
+            // Kirim data ke backend
+            const response = await axios.post('http://localhost/healthy_life_api/kalkulator.php', {
+                age,
+                gender,
+                height,
+                weight,
+            });
+
+            // Tangani respons dari backend
+            if (response.data.success) {
+                setBmi(response.data.bmi);
+                setBmiCategory(response.data.bmiCategory);
+                setIdealWeightRange(response.data.idealWeightRange);
+                setShowResult(true);
+            } else {
+                alert(response.data.message);
+            }
+        } catch (error) {
+            console.error('Error calculating BMI:', error);
+            alert('Terjadi kesalahan saat menghitung BMI.');
         }
-    };
-
-    const determineBMICategory = (bmiValue) => {
-        let category = '';
-        let weightRange = '';
-
-        if (bmiValue < 18.5) {
-            category = 'Kurus';
-            weightRange = 'Berat ideal kamu antara 45 - 60 kg';
-        } else if (bmiValue >= 18.5 && bmiValue <= 24.9) {
-            category = 'Normal';
-            weightRange = 'Berat ideal kamu antara 59 - 80 kg';
-        } else if (bmiValue >= 25 && bmiValue <= 29.9) {
-            category = 'Gemuk';
-            weightRange = 'Berat ideal kamu antara 65 - 90 kg';
-        } else if (bmiValue >= 30 && bmiValue <= 34.9) {
-            category = 'Obesitas 1';
-            weightRange = 'Berat ideal kamu antara 70 - 100 kg';
-        } else {
-            category = 'Obesitas 2';
-            weightRange = 'Berat ideal kamu antara 80 - 120 kg';
-        }
-
-        setBmiCategory(category);
-        setIdealWeightRange(weightRange);
     };
 
     const handleCalculate = (e) => {
         e.preventDefault();
-        calculateBMI();
+        calculateBMIWithBackend(); // Gunakan backend untuk kalkulasi
     };
 
     const resetForm = () => {

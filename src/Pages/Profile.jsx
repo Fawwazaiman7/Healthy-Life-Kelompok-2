@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import axios from 'axios'; // Import Axios untuk komunikasi backend
 import './Profile.css';
 import Navbar from '../components/Navbar/Navbar';
 
