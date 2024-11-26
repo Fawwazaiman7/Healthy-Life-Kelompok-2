@@ -29,9 +29,7 @@
     "bootstrap": "^5.3.3",
     "core-js": "^3.39.0",
     "eslint": "^8.57.1",
-    "eslint-webpack-plugin": "^4.2.0",
     "healty_life": "file:",
-    "html-webpack-plugin": "^5.6.3",
     "joi": "^17.13.3",
     "nth-check": "^2.1.1",
     "postcss": "^8.4.49",
@@ -43,8 +41,7 @@
     "resolve-url-loader": "^5.0.0",
     "rimraf": "^6.0.1",
     "uuid": "^11.0.3",
-    "web-vitals": "^4.2.4",
-    "workbox-webpack-plugin": "^7.3.0"
+    "web-vitals": "^4.2.4"
   },
   "scripts": {
     "start": "react-scripts start",
