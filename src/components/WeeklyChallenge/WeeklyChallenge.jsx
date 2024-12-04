@@ -42,7 +42,6 @@ export default function WeeklyChallenge() {
                 <span>{challenge.time}</span>
                 <span>🔥 {challenge.calories}</span>
               </div>
-              <button className="play-button"></button>
             </div>
           </div>
         ))}

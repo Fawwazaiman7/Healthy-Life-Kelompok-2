@@ -1,0 +1,24 @@
+.FoodTracker {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .FoodTracker input {
+    margin: 5px;
+    padding: 8px;
+  }
+  
+  .FoodTracker button {
+    margin-top: 10px;
+    padding: 8px 16px;
+  }
+  
+  .FoodTracker ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .FoodTracker li {
+    padding: 5px;
+  }
+  

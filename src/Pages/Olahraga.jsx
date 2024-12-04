@@ -15,7 +15,7 @@ const Olahraga = () => {
 
             {/* Section for Exercise Cards */}
             <section className="exercise-section">
-                <h2 className="exercise-title">Exercise Recommendation</h2>
+                <h2 className="olahraga-title">Exercise Recommendation</h2>
                 <div className="exercise-cards">
                     {exercises.map((exercise) => (
                         <ExerciseCard

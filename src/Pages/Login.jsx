@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "./Login.css";
 
 function LogIn() {
+  const [email, setEmail] = useState(""); // Tambahkan state untuk email
   const [nickname, setNickname] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
@@ -22,7 +23,6 @@ function LogIn() {
       return;
     }
     
-
     // Periksa login untuk pengguna biasa
     const user = JSON.parse(localStorage.getItem("user"));
     if (user && user.nickname === nickname && user.password === password) {
@@ -41,8 +41,8 @@ function LogIn() {
         <input
           type="email"
           placeholder="Email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
+          value={nickname}
+          onChange={(e) => setNickname(e.target.value)}
           className="input-field"
         />
         <input

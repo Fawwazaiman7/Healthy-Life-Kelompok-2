@@ -14,6 +14,9 @@ import Profile from './Pages/Profile';
 import AdminFood from './Pages/AdminFood'; // Import halaman admin makanan
 import AdminManagement from "./Pages/AdminManagement";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import DoExercise from './Pages/DoExercise';
+import FoodTracker from './Pages/FoodTracker';
+import ExerciseAndFoodTracker from './Pages/ExerciseAndFoodTracker';
 
 const App = () => {
     return (
@@ -32,6 +35,9 @@ const App = () => {
                 <Route path="/profile" element={<Profile />} />
                 <Route path="/admin-food" element={<AdminFood />} /> 
                 <Route path="/admin-management" element={<AdminManagement />} />
+                <Route path="/doexercise" element={<DoExercise />} />
+                <Route path="/foodtracker" element={<FoodTracker />} />
+                <Route path="/exerciseandfoodtracker" element={<ExerciseAndFoodTracker />} />
             </Routes>
         </Router>
     );

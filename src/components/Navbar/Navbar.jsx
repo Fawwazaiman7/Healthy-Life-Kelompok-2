@@ -61,7 +61,7 @@ const Navbar = () => {
           <Link to="/olahraga">Olahraga</Link>
         </li>
         <li>
-          <Link to="/kalkulator">Kalkulator</Link>
+          <Link to="/exerciseandfoodtracker">Tracker</Link>
         </li>
       </ul>
       <div className="navbar-profile">

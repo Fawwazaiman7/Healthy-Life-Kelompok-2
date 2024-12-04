@@ -65,6 +65,7 @@
   font-size: 1.125rem; /* text-lg */
   font-weight: 600;
   color: white;
+  text-align: left;
 }
 
 .challenge-details {
