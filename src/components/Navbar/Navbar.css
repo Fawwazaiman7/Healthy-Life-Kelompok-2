@@ -78,8 +78,8 @@ body {
 /* Styling Tombol dalam Navbar */
 .navbar-button {
   padding: 0.3rem 1rem;
-  background-color: #2b7a2a;
-  color: #fff;
+  background-color: #2b7a2a; /* Warna latar belakang tombol */
+  color: #fff; /* Warna teks */
   border: none;
   border-radius: 5px;
   font-weight: bold;
@@ -91,48 +91,33 @@ body {
   margin-right: 20px;
 }
 
+/* Styling untuk tombol Login */
 .navbar-login {
-  background-color: #fff;
-  color: #2b7a2a;
-  border: 2px solid #2b7a2a;
-  margin-right: 1.5rem;
+  background-color: #2b7a2a; /* Warna latar belakang tombol Login */
+  color: #fff; /* Warna teks untuk tombol Login */
+  border: none; /* Tanpa border */
+  border-radius: 5px; /* Sudut membulat */
+  padding: 0.3rem 1rem; /* Padding untuk tombol */
+  cursor: pointer; /* Menunjukkan bahwa ini dapat diklik */
+  transition: background-color 0.3s; /* Transisi halus untuk perubahan warna */
 }
 
-.navbar-signup:hover {
-  background-color: #238621;
+/* Styling untuk tombol Get Started */
+.navbar-get-started {
+  background-color: #2b7a2a; /* Warna latar belakang tombol Get Started */
+  color: #fff; /* Warna teks untuk tombol Get Started */
+  border: none; /* Tanpa border */
+  border-radius: 5px; /* Sudut membulat */
+  padding: 0.3rem 1rem; /* Padding untuk tombol */
+  cursor: pointer; /* Menunjukkan bahwa ini dapat diklik */
+  transition: background-color 0.3s; /* Transisi halus untuk perubahan warna */
 }
 
-.navbar-login:hover {
-  background-color: #e0f3e0;
-  color: #238621;
-}
-
-/* Styling untuk Bagian Auth di Navbar */
-.navbar-actions {
-  display: flex;
-  align-items: center;
-  gap: 0.3rem;
-}
-
-/* Efek Frame Ketika Tombol Ditekan */
-.navbar-button:active,
-.navbar-signup:active,
-.navbar-login:active {
-  outline: 3px solid #2b7a2a; /* Warna frame saat ditekan */
-  outline-offset: 2px; /* Jarak outline dari tombol */
-}
-
-.navbar-button:active {
-  background-color: #238621;
-}
-
-.navbar-signup:active {
-  background-color: #1e6f1f;
-}
-
-.navbar-login:active {
-  background-color: #cfeacb;
-  color: #1e6f1f;
+/* Hover effect untuk tombol Login dan Get Started */
+.navbar-login:hover,
+.navbar-button:hover {
+  background-color: #94cf92; /* Warna saat hover */
+  color: #fff; /* Warna teks saat hover */
 }
 
 /* Menghindari tumpang tindih dengan konten di bawah navbar */
@@ -161,7 +146,6 @@ main {
   height: 100% !important;
   object-fit: cover;
 }
-
 
 /* Styling Dropdown Profil */
 .profile-dropdown {
@@ -202,4 +186,3 @@ main {
 .profile-dropdown button:hover {
   background-color: #f0f0f0;
 }
-

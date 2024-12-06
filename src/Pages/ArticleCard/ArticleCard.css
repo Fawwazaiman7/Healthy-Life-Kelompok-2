@@ -1,0 +1,57 @@
+/* ArticleCard.css */
+
+.article-card {
+  display: flex;
+  flex-direction: row;
+  background-color: #ABBA7C; /* Warna latar belakang normal */
+  color: rgb(0, 0, 0);
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  text-align: left; /* Pastikan teks rata kiri */
+  width: 90%; /* Ubah lebar untuk membuatnya lebih kecil */
+  margin: 1rem auto; /* Pusatkan kartu artikel dengan margin */
+  border-radius: 12px; /* Tambahkan border-radius untuk sudut yang lebih halus */
+  transition: background-color 0.3s, transform 0.3s; /* Transisi halus untuk perubahan warna dan transformasi */
+}
+
+.article-card:hover {
+  transform: translateY(-10px) scale(1.02) !important; /* Floating effect with slight scale */
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.4); 
+}
+
+.article-content {
+  padding: 1rem; /* Kurangi padding untuk membuatnya lebih kecil */
+  flex: 1; /* Isi ruang yang tersedia */
+}
+
+.article-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.article-description {
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.article-link {
+  color: #28a745;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.09rem;
+}
+
+.article-link:hover {
+  text-decoration: underline;
+  color: rgb(255, 255, 255);
+}
+
+.article-image {
+  max-height: 150px; /* Ubah tinggi maksimum untuk gambar */
+  max-width: 150px; /* Ubah lebar maksimum untuk gambar */
+  height: auto;
+  object-fit: cover;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}

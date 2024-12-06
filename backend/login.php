@@ -9,11 +9,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Ambil data dari request body
     $input = json_decode(file_get_contents('php://input'), true);
 
-    $email = isset($input['email']) ? $input['email'] : null;
+    $username = isset($input['username']) ? $input['username'] : null; // Ganti email dengan username
     $password = isset($input['password']) ? $input['password'] : null;
 
     // Validasi input
-    if (!$email || !$password) {
+    if (!$username || !$password) {
         echo json_encode([
             'success' => false,
             'message' => 'All fields are required!'
@@ -22,9 +22,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     // Cek apakah user ada di database
-    $query = "SELECT * FROM users WHERE email = ?";
+    $query = "SELECT * FROM users WHERE username = ?"; // Ganti email dengan username
     $stmt = $conn->prepare($query);
-    $stmt->bind_param("s", $email);
+    $stmt->bind_param("s", $username);
     $stmt->execute();
     $result = $stmt->get_result();
 
@@ -37,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 'message' => 'Login successful!',
                 'user' => [
                     'id' => $user['id'],
-                    'name' => $user['name'],
+                    'username' => $user['username'], // Ganti name dengan username
                     'email' => $user['email']
                 ]
             ]);

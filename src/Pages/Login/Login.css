@@ -1,0 +1,80 @@
+/* Fullscreen split screen style */
+.login-fullscreen {
+  display: flex;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* Left side (Form login) */
+.login-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: 20px;
+  background-color: #1b1b1b; /* Background gelap untuk form login */
+  color: #ffffff;
+}
+
+/* Title style */
+.login-form-container h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  color: #76ff03; /* Warna hijau untuk judul */
+}
+
+/* Input field style */
+.input-field {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #ffffff; /* Background putih untuk input */
+  color: #333333; /* Teks warna gelap di input */
+}
+
+.input-field::placeholder {
+  color: #888888; /* Placeholder text color */
+}
+
+/* Login button style */
+.login-button {
+  background-color: #76ff03; /* Warna hijau terang */
+  color: #000000; /* Teks hitam */
+  border: none;
+  padding: 10px;
+  width: 100%;
+  max-width: 400px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.login-button:hover {
+  background-color: #ffffff; /* Hijau sedikit lebih gelap saat hover */
+}
+
+/* Right side (Image container) */
+.login-image-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2e2e2e; /* Background abu-abu gelap untuk sisi gambar */
+}
+
+.login-image-container img {
+  max-width: 100%; /* Memastikan gambar tidak lebih lebar dari kontainer */
+  max-height: 100%; /* Membatasi tinggi maksimum gambar */
+  height: auto; /* Memastikan proporsi gambar tetap terjaga */
+  border-radius: 8px;
+  object-fit: cover; /* Memastikan gambar mengisi kontainer tanpa terdistorsi */
+}

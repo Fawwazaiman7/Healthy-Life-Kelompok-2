@@ -6,16 +6,15 @@ import "./Navbar.css";
 
 const Navbar = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [isAdmin, setIsAdmin] = useState(false); // Tambahan untuk memeriksa apakah pengguna Admin
+  const [isAdmin, setIsAdmin] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const navigate = useNavigate();
 
   useEffect(() => {
-    // Periksa status login dan role dari localStorage
     const loggedIn = localStorage.getItem("isLoggedIn") === "true";
-    const role = localStorage.getItem("role"); // Role disimpan di localStorage
+    const role = localStorage.getItem("role");
     setIsLoggedIn(loggedIn);
-    setIsAdmin(role === "admin"); // Periksa apakah role adalah admin
+    setIsAdmin(role === "admin");
   }, []);
 
   const handleProfileClick = () => {
@@ -35,13 +34,12 @@ const Navbar = () => {
   const handleLogout = () => {
     const confirmLogout = window.confirm("Apakah Anda yakin ingin logout?");
     if (confirmLogout) {
-      // Hapus status login dan role dari localStorage
       localStorage.removeItem("isLoggedIn");
       localStorage.removeItem("role");
       setIsLoggedIn(false);
-      setIsAdmin(false); // Setel isAdmin ke false setelah logout
+      setIsAdmin(false);
       setIsDropdownOpen(false);
-      navigate("/"); // Arahkan pengguna ke halaman home
+      navigate("/");
     }
   };
 
@@ -57,11 +55,14 @@ const Navbar = () => {
         <li>
           <Link to="/makanan">Makanan</Link>
         </li>
-        <li>
+        <li>                                                                          
           <Link to="/olahraga">Olahraga</Link>
         </li>
         <li>
           <Link to="/exerciseandfoodtracker">Tracker</Link>
+        </li>
+        <li>
+          <Link to="/history">History</Link> 
         </li>
       </ul>
       <div className="navbar-profile">

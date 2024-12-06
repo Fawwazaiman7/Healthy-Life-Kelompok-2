@@ -9,12 +9,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Ambil data dari request body
     $input = json_decode(file_get_contents('php://input'), true);
 
-    $name = isset($input['name']) ? $input['name'] : null;
+    $username = isset($input['username']) ? $input['username'] : null; // Ganti name dengan username
     $email = isset($input['email']) ? $input['email'] : null;
     $password = isset($input['password']) ? $input['password'] : null;
 
     // Validasi input
-    if (!$name || !$email || !$password) {
+    if (!$username || !$email || !$password) {
         echo json_encode([
             'success' => false,
             'message' => 'All fields are required!'
@@ -39,9 +39,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // Hash password dan simpan ke database
     $hashedPassword = password_hash($password, PASSWORD_BCRYPT);
-    $query = "INSERT INTO users (name, email, password) VALUES (?, ?, ?)";
+    $query = "INSERT INTO users (username, email, password) VALUES (?, ?, ?)"; // Ganti name dengan username
     $stmt = $conn->prepare($query);
-    $stmt->bind_param("sss", $name, $email, $hashedPassword);
+    $stmt->bind_param("sss", $username, $email, $hashedPassword); // Ganti name dengan username
 
     if ($stmt->execute()) {
         echo json_encode([
