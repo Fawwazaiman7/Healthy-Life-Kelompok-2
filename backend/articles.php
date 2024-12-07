@@ -1,5 +1,8 @@
 <?php
 header('Content-Type: application/json');
+header("Access-Control-Allow-Origin: *"); // Mengizinkan akses dari semua origin
+header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE"); // Mengizinkan beberapa metode HTTP
+header("Access-Control-Allow-Headers: Content-Type, Authorization"); // Mengizinkan header tertentu
 
 // Database connection
 include 'connection.php';

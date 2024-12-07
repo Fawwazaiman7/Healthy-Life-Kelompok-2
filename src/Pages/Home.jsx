@@ -20,23 +20,23 @@ export default function Home() {
           once: true,
         });
 
-        // Check login status from localStorage
+        // Periksa status login dari localStorage
         const loggedIn = localStorage.getItem('isLoggedIn');
         setIsLoggedIn(loggedIn === 'true');
     }, []);
 
-    // Function to handle button click
+    // Fungsi untuk menangani klik tombol
     const handleButtonClick = () => {
         if (isLoggedIn) {
-            navigate('/olahraga'); // Navigate to Olahraga page if logged in
+            navigate('/olahraga'); // Arahkan ke halaman Olahraga jika sudah login
         } else {
-            navigate('/sign-up'); // Navigate to Get Started (sign-up) page if not logged in
+            navigate('/sign-up'); // Arahkan ke halaman Get Started (sign-up) jika belum login
         }
     };
 
     return (
         <main>
-            <Navbar />
+            <Navbar /> {/* Menampilkan Navbar */}
 
             {/* Hero Section */}
             <section className="hero-section" style={{ backgroundImage: `url('/images/homebg.png')` }}>
@@ -47,7 +47,7 @@ export default function Home() {
                         <span className="typing-effect-line">"Mulai sekarang, jadi yang terkuat!"</span>
                     </h1>
                     <div className="hero-button-container">
-                        {/* Conditional text and link based on login status */}
+                        {/* Teks dan tombol berubah berdasarkan status login */}
                         <button className="hero-button" onClick={handleButtonClick}>
                             {isLoggedIn ? 'Mulai Olahraga' : 'Get Started'}
                         </button>

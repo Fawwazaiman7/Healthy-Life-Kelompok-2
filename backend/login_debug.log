@@ -1,0 +1,36 @@
+[04-Dec-2024 05:25:13 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+)
+
+[04-Dec-2024 11:54:35 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+)
+
+[04-Dec-2024 11:54:47 Europe/Berlin] Received input: Array
+(
+    [username] => Tama
+    [password] => 123
+)
+
+[04-Dec-2024 11:55:01 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+)
+
+[04-Dec-2024 14:13:59 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+)
+
+[06-Dec-2024 06:55:48 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+)
+

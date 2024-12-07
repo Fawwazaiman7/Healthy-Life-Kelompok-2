@@ -6,16 +6,16 @@ import "./Navbar.css";
 
 const Navbar = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [isAdmin, setIsAdmin] = useState(false); // Tambahan untuk memeriksa apakah pengguna Admin
+  const [isAdmin, setIsAdmin] = useState(false); // Cek jika role admin
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const navigate = useNavigate();
 
   useEffect(() => {
-    // Periksa status login dan role dari localStorage
+    // Memeriksa status login dan role dari localStorage
     const loggedIn = localStorage.getItem("isLoggedIn") === "true";
-    const role = localStorage.getItem("role"); // Role disimpan di localStorage
+    const role = localStorage.getItem("role");
     setIsLoggedIn(loggedIn);
-    setIsAdmin(role === "admin"); // Periksa apakah role adalah admin
+    setIsAdmin(role === "admin");
   }, []);
 
   const handleProfileClick = () => {
@@ -39,7 +39,7 @@ const Navbar = () => {
       localStorage.removeItem("isLoggedIn");
       localStorage.removeItem("role");
       setIsLoggedIn(false);
-      setIsAdmin(false); // Setel isAdmin ke false setelah logout
+      setIsAdmin(false);
       setIsDropdownOpen(false);
       navigate("/"); // Arahkan pengguna ke halaman home
     }

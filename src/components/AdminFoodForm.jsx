@@ -1,140 +1,148 @@
 import React, { useState, useEffect } from "react";
-import "./AdminFoodForm.css"; // Import file CSS khusus untuk AdminFoodForm
+import axios from "axios";
+import "./AdminFoodForm.css";
 
 const AdminFoodForm = ({ currentFood, onSave, onCancel }) => {
-  // State untuk data form
   const [formData, setFormData] = useState({
-    title: "",
-    time: "",
-    calories: "",
-    image: "",
-    ingredients: [],
-    tutorial: "",
+    judul: "",
+    kalori: "",
+    gambar: "",
+    resep: "",
+    cara_pembuatan: "",
   });
 
-  // Mengisi data jika sedang dalam mode edit
   useEffect(() => {
     if (currentFood) {
-      setFormData(currentFood);
+        console.log("currentFood diterima di AdminFoodForm:", currentFood);
+      setFormData({
+      judul: currentFood.title || "", // Ubah sesuai dengan field `title` dari backend
+      kalori: currentFood.calories || "", // Ubah sesuai dengan field `calories` dari backend
+      gambar: currentFood.image || "", // Ubah sesuai dengan field `image` dari backend
+      resep: currentFood.ingredients || "", // Ubah sesuai dengan field `ingredients` dari backend
+      cara_pembuatan: currentFood.tutorial || "", // Jika field ada
+      });
     }
   }, [currentFood]);
 
-  // Mengelola perubahan input
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  // Menyimpan data form
-  const handleSave = () => {
-    // Validasi input
-    if (!formData.title || !formData.time || !formData.calories) {
-      alert("Please fill out all required fields!");
+  const handleSubmit = (e) => {
+    e.preventDefault();
+      console.log("handleSave dipanggil");
+
+
+    if (!formData.judul || !formData.kalori) {
+      alert("Please fill in all required fields");
       return;
     }
-    onSave({
-      ...formData,
-      ingredients: Array.isArray(formData.ingredients)
-        ? formData.ingredients
-        : formData.ingredients.split(",").map((item) => item.trim()), // Memastikan ingredients adalah array
-    });
+
+    const method = currentFood ? "put" : "post";
+    const url = "http://localhost:80/healthy_life_api/backend/adminFood.php";
+
+    axios({
+      method,
+      url,
+      data: {
+        ...formData,
+        id: currentFood?.id,
+      },
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((response) => {
+        if (response.data.success) {
+          alert(currentFood ? "Food updated successfully!" : "Food added successfully!");
+          onSave();
+        } else {
+          alert("Failed to save food: " + response.data.message);
+        }
+      })
+      .catch((error) => {
+        console.error("Error saving food:", error.response?.data || error.message);
+        alert("Failed to save food");
+      });
   };
 
   return (
-    <div className="admin-food-form">
+    <form onSubmit={handleSubmit} className="admin-food-form">
       <h3>{currentFood ? "Edit Food" : "Add Food"}</h3>
-      {/* Title Input */}
+
       <div className="form-group">
-        <label htmlFor="title">Title</label>
+        <label htmlFor="judul">Title*</label>
         <input
           type="text"
-          id="title"
-          name="title"
-          className="form-control"
-          value={formData.title}
+          id="judul"
+          name="judul"
+          value={formData.judul}
           onChange={handleChange}
-          placeholder="Enter food title"
+          placeholder={currentFood?.judul || "Masukkan judul makanan"} // Placeholder diisi dari currentFood
+          maxLength={100}
         />
       </div>
 
-      {/* Time Input */}
       <div className="form-group">
-        <label htmlFor="time">Time</label>
+        <label htmlFor="kalori">Calories*</label>
         <input
-          type="text"
-          id="time"
-          name="time"
-          className="form-control"
-          value={formData.time}
+          type="number"
+          id="kalori"
+          name="kalori"
+          value={formData.kalori}
           onChange={handleChange}
-          placeholder="Enter preparation time (e.g., 30 Minutes)"
+          placeholder={currentFood?.kalori || "Masukkan jumlah kalori"} // Placeholder diisi dari currentFood
+          step="0.01"
         />
       </div>
 
-      {/* Calories Input */}
       <div className="form-group">
-        <label htmlFor="calories">Calories</label>
+        <label htmlFor="gambar">Image URL</label>
         <input
           type="text"
-          id="calories"
-          name="calories"
-          className="form-control"
-          value={formData.calories}
+          id="gambar"
+          name="gambar"
+          value={formData.gambar}
           onChange={handleChange}
-          placeholder="Enter calorie count (e.g., 250 Cal)"
+          placeholder={currentFood?.gambar || "Masukkan URL gambar"} // Placeholder diisi dari currentFood
+          maxLength={255}
         />
       </div>
 
-      {/* Image URL Input */}
       <div className="form-group">
-        <label htmlFor="image">Image URL</label>
-        <input
-          type="text"
-          id="image"
-          name="image"
-          className="form-control"
-          value={formData.image}
-          onChange={handleChange}
-          placeholder="Enter image URL"
-        />
-      </div>
-
-      {/* Ingredients Input */}
-      <div className="form-group">
-        <label htmlFor="ingredients">Ingredients</label>
+        <label htmlFor="resep">Recipe</label>
         <textarea
-          id="ingredients"
-          name="ingredients"
-          className="form-control"
-          value={Array.isArray(formData.ingredients) ? formData.ingredients.join(", ") : formData.ingredients}
+          id="resep"
+          name="resep"
+          value={formData.resep}
           onChange={handleChange}
-          placeholder="Enter ingredients (comma-separated)"
-        ></textarea>
+          placeholder={currentFood?.resep || "Masukkan resep makanan"} // Placeholder diisi dari currentFood
+          maxLength={255}
+        />
       </div>
 
-      {/* Tutorial Input */}
       <div className="form-group">
-        <label htmlFor="tutorial">Tutorial</label>
+        <label htmlFor="cara_pembuatan">Instructions</label>
         <textarea
-          id="tutorial"
-          name="tutorial"
-          className="form-control"
-          value={formData.tutorial}
+          id="cara_pembuatan"
+          name="cara_pembuatan"
+          value={formData.cara_pembuatan}
           onChange={handleChange}
-          placeholder="Enter step-by-step tutorial"
-        ></textarea>
+          placeholder={currentFood?.cara_pembuatan || "Masukkan instruksi pembuatan"} // Placeholder diisi dari currentFood
+          maxLength={255}
+        />
       </div>
 
-      {/* Buttons */}
       <div className="form-actions">
-        <button className="btn btn-success" onClick={handleSave}>
+        <button type="submit" className="btn-success">
           {currentFood ? "Save Changes" : "Add Food"}
         </button>
-        <button className="btn btn-secondary" onClick={onCancel}>
+        <button type="button" className="btn-secondary" onClick={onCancel}>
           Cancel
         </button>
       </div>
-    </div>
+    </form>
   );
 };
 
