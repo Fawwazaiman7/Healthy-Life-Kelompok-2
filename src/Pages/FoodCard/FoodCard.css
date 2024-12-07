@@ -1,0 +1,52 @@
+.foodCard {
+    display: flex;
+    align-items: center;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    color: black;
+    background-color: #FEFF9F;
+    margin: 1rem;
+    transition: transform 0.3s, box-shadow 0.3s; /* Transisi halus untuk transformasi dan bayangan */
+  }
+  
+  .foodCard:hover {
+    transform: scale(1.03); /* Meningkatkan ukuran sedikit saat hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5); /* Meningkatkan bayangan saat hover */
+  }
+  
+  .foodDetails {
+    flex: 1;
+    padding: 1rem;
+  }
+  
+  .imageContainer {
+    width: 150px;
+  }
+  
+  .foodImage {
+    width: 100%;
+    height: auto;
+  }
+  
+  .foodTitle {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+  }
+  
+  .foodInfo {
+    font-size: 0.875rem;
+    color: #666;
+  }
+  
+  /* Media Queries untuk Responsivitas di FoodCard */
+@media (max-width: 768px) {
+    .foodCard {
+      flex-direction: column; /* Susun gambar di atas teks di layar kecil */
+      align-items: flex-start; /* Rata kiri untuk teks */
+    }
+  
+    .imageContainer {
+      width: 100%; /* Gambar memenuhi lebar kartu */
+    }
+  }

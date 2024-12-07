@@ -1,0 +1,75 @@
+/* Styling layar penuh */
+.signup-fullscreen {
+  display: flex;
+  height: 100vh;
+  background-color: #1b1b1b;
+}
+
+.signup-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: 20px;
+  color: #ffffff;
+}
+
+h2 {
+  color: #76ff03;
+}
+
+.input-field {
+  margin: 10px 0 0 0;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 400px;
+  font-size: 16px;
+}
+
+.signup-button {
+  background-color: #76ff03;
+  color: #000000;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  max-width: 400px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.signup-button:hover {
+  background-color: #f1f1f1;
+}
+
+.signup-image-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2e2e2e;
+}
+
+.signup-image-container img {
+  max-width: 100%; /* Memastikan gambar tidak lebih lebar dari kontainer */
+  max-height: 100%; /* Membatasi tinggi maksimum gambar */
+  height: auto; /* Memastikan proporsi gambar tetap terjaga */
+  border-radius: 8px;
+  object-fit: cover; /* Memastikan gambar mengisi kontainer tanpa terdistorsi */
+}
+
+/* Styling untuk pesan error */
+.error-text {
+  color: #ff5722;
+  font-size: 14px;
+  margin-top: 5px;
+  max-width: 400px;
+  width: 100%;
+  text-align: left;
+}

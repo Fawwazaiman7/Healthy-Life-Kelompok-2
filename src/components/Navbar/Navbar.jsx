@@ -35,13 +35,12 @@ const Navbar = () => {
   const handleLogout = () => {
     const confirmLogout = window.confirm("Apakah Anda yakin ingin logout?");
     if (confirmLogout) {
-      // Hapus status login dan role dari localStorage
       localStorage.removeItem("isLoggedIn");
       localStorage.removeItem("role");
       setIsLoggedIn(false);
       setIsAdmin(false);
       setIsDropdownOpen(false);
-      navigate("/"); // Arahkan pengguna ke halaman home
+      navigate("/");
     }
   };
 
@@ -57,11 +56,14 @@ const Navbar = () => {
         <li>
           <Link to="/makanan">Makanan</Link>
         </li>
-        <li>
+        <li>                                                                          
           <Link to="/olahraga">Olahraga</Link>
         </li>
         <li>
-          <Link to="/kalkulator">Kalkulator</Link>
+          <Link to="/exerciseandfoodtracker">Tracker</Link>
+        </li>
+        <li>
+          <Link to="/history">History</Link> 
         </li>
       </ul>
       <div className="navbar-profile">
