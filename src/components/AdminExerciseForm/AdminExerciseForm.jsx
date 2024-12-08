@@ -2,7 +2,12 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./AdminExerciseForm.css";
 
-const AdminExerciseForm = ({ currentExercise, onSave, onCancel }) => {
+const AdminExerciseForm = ({
+  currentExercise,
+  onSave,
+  onCancel,
+  onFetchExercises,
+}) => {
   const [formData, setFormData] = useState({
     judul: "",
     estimasi_waktu: "",
@@ -14,10 +19,7 @@ const AdminExerciseForm = ({ currentExercise, onSave, onCancel }) => {
 
   useEffect(() => {
     if (currentExercise) {
-      console.log(
-        "currentExercise diterima di AdminExerciseForm:",
-        currentExercise
-      );
+      console.log("Current exercise ID:", currentExercise.id); // Tambahkan log ini
       setFormData({
         judul: currentExercise.title || "",
         estimasi_waktu: currentExercise.time || "",
@@ -25,6 +27,7 @@ const AdminExerciseForm = ({ currentExercise, onSave, onCancel }) => {
         gambar: currentExercise.image || "",
         link_video: currentExercise.video || "",
         kategori_per_bmi: currentExercise.kategori || "Ringan",
+        id: currentExercise?.id, // Pastikan ID dikirim jika ada
       });
     }
   }, [currentExercise]);
@@ -43,9 +46,9 @@ const AdminExerciseForm = ({ currentExercise, onSave, onCancel }) => {
 
     // Log data sebelum dikirim
     console.log("Data yang akan dikirim ke backend:", formData);
-    // Validasi kategori BMI
-    if (!["Berat", "Ringan", "Sedang"].includes(formData.kategori_per_bmi)) {
-      alert("Invalid BMI category! Must be one of Berat, Ringan, or Sedang");
+
+    if (!formData.judul || !formData.kalori_per_set) {
+      alert("Please fill in all required fields");
       return;
     }
 
@@ -53,12 +56,8 @@ const AdminExerciseForm = ({ currentExercise, onSave, onCancel }) => {
       method,
       url,
       data: {
-        judul: formData.judul,
-        estimasi_waktu: formData.estimasi_waktu,
-        kalori_per_set: formData.kalori_per_set,
-        gambar: formData.gambar,
-        link_video: formData.link_video,
-        kategori_per_bmi: formData.kategori_per_bmi,
+        ...formData,
+        id: currentExercise?.id,
       },
       headers: {
         "Content-Type": "application/json",
@@ -72,9 +71,11 @@ const AdminExerciseForm = ({ currentExercise, onSave, onCancel }) => {
               : "Exercise added successfully!"
           );
           onSave(); // Memperbarui data di UI
-          window.location.reload(); // Refresh jika pengguna memilih OK
+          onFetchExercises(); // Fetch ulang data olahraga
+          onCancel(); // Menutup form setelah berhasil disimpan
         }
       })
+
       .catch((error) => {
         console.error(
           "Error saving exercise:",
@@ -85,6 +86,8 @@ const AdminExerciseForm = ({ currentExercise, onSave, onCancel }) => {
             (error.response?.data?.message || error.message)
         );
       });
+
+    console.log("Final Data sent to backend:", formData);
   };
 
   return (

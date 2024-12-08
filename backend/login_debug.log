@@ -34,3 +34,100 @@
     [password] => 1234
 )
 
+[07-Dec-2024 10:21:22 Europe/Berlin] Login Error - Message: Invalid request method Details: 
+[07-Dec-2024 10:26:09 Europe/Berlin] Login Error - Message: Invalid request method, Details: 
+[08-Dec-2024 06:54:44 Europe/Berlin] Received input: Array
+(
+    [username] => tama
+    [password] => 123
+)
+
+[08-Dec-2024 06:54:44 Europe/Berlin] Login Error - Message: Username not found, Details: 
+[08-Dec-2024 06:55:02 Europe/Berlin] Received input: Array
+(
+    [username] => Tama
+    [password] => 123
+)
+
+[08-Dec-2024 08:34:54 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 123
+)
+
+[08-Dec-2024 08:34:54 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[08-Dec-2024 08:35:47 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+)
+
+[08-Dec-2024 16:26:28 Europe/Berlin] Login Error - Message: CAPTCHA token is missing, Details: 
+[08-Dec-2024 16:29:33 Europe/Berlin] Login Error - Message: CAPTCHA token is missing, Details: 
+[08-Dec-2024 16:35:45 Europe/Berlin] Login Error - Message: CAPTCHA token is missing, Details: 
+[08-Dec-2024 16:43:19 Europe/Berlin] Login Error - Message: Invalid request method, Details: 
+[08-Dec-2024 16:44:36 Europe/Berlin] Login Error - Message: CAPTCHA token is missing, Details: 
+[08-Dec-2024 16:44:37 Europe/Berlin] Login Error - Message: CAPTCHA token is missing, Details: 
+[08-Dec-2024 16:44:37 Europe/Berlin] Login Error - Message: CAPTCHA token is missing, Details: 
+[08-Dec-2024 16:44:37 Europe/Berlin] Login Error - Message: CAPTCHA token is missing, Details: 
+[08-Dec-2024 16:44:38 Europe/Berlin] Login Error - Message: CAPTCHA token is missing, Details: 
+[08-Dec-2024 16:44:38 Europe/Berlin] Login Error - Message: CAPTCHA token is missing, Details: 
+[08-Dec-2024 16:44:38 Europe/Berlin] Login Error - Message: CAPTCHA token is missing, Details: 
+[08-Dec-2024 16:44:38 Europe/Berlin] Login Error - Message: CAPTCHA token is missing, Details: 
+[08-Dec-2024 16:44:38 Europe/Berlin] Login Error - Message: CAPTCHA token is missing, Details: 
+[08-Dec-2024 16:44:39 Europe/Berlin] Login Error - Message: CAPTCHA token is missing, Details: 
+[08-Dec-2024 16:44:39 Europe/Berlin] Login Error - Message: CAPTCHA token is missing, Details: 
+[08-Dec-2024 16:44:51 Europe/Berlin] Login Error - Message: CAPTCHA token is missing, Details: 
+[08-Dec-2024 16:45:23 Europe/Berlin] Login Error - Message: CAPTCHA token is missing, Details: 
+[08-Dec-2024 16:52:39 Europe/Berlin] Login Error - Message: CAPTCHA token is missing, Details: 
+[08-Dec-2024 17:04:56 Europe/Berlin] Login Error - Message: CAPTCHA token is missing, Details: 
+[08-Dec-2024 17:04:59 Europe/Berlin] Login Error - Message: CAPTCHA token is missing, Details: 
+[08-Dec-2024 17:08:33 Europe/Berlin] Login Error - Message: Username not found, Details: 
+[08-Dec-2024 17:16:14 Europe/Berlin] Login Error - Message: Username not found, Details: 
+[08-Dec-2024 17:16:24 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[08-Dec-2024 17:16:29 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[08-Dec-2024 17:53:14 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[08-Dec-2024 17:53:35 Europe/Berlin] Login Error - Message: CAPTCHA token is missing, Details: 
+[08-Dec-2024 17:53:43 Europe/Berlin] Login Error - Message: CAPTCHA token is missing, Details: 
+[08-Dec-2024 17:54:32 Europe/Berlin] Login Error - Message: CAPTCHA token is missing, Details: 
+[08-Dec-2024 17:57:41 Europe/Berlin] Login Error - Message: CAPTCHA token is missing, Details: 
+[08-Dec-2024 17:58:00 Europe/Berlin] Login Error - Message: CAPTCHA token is missing, Details: 
+[08-Dec-2024 17:58:11 Europe/Berlin] Login Error - Message: CAPTCHA token is missing, Details: 
+[08-Dec-2024 18:02:25 Europe/Berlin] Login Error - Message: CAPTCHA token is missing, Details: 
+[08-Dec-2024 18:02:26 Europe/Berlin] Login Error - Message: CAPTCHA token is missing, Details: 
+[08-Dec-2024 18:04:57 Europe/Berlin] Login Error - Message: CAPTCHA token is missing, Details: 
+[08-Dec-2024 18:05:24 Europe/Berlin] Login Error - Message: CAPTCHA token is missing, Details: 
+[08-Dec-2024 18:17:06 Europe/Berlin] Login Error - Message: CAPTCHA token is missing, Details: 
+[08-Dec-2024 18:24:41 Europe/Berlin] Login Error - Message: CAPTCHA token is missing, Details: 
+[08-Dec-2024 18:24:50 Europe/Berlin] Login Error - Message: CAPTCHA token is missing, Details: 
+[08-Dec-2024 18:24:52 Europe/Berlin] Login Error - Message: CAPTCHA token is missing, Details: 
+[08-Dec-2024 18:25:00 Europe/Berlin] Login Error - Message: CAPTCHA token is missing, Details: 
+[08-Dec-2024 18:25:01 Europe/Berlin] Login Error - Message: CAPTCHA token is missing, Details: 
+[08-Dec-2024 18:25:29 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[08-Dec-2024 18:25:59 Europe/Berlin] Login Error - Message: CAPTCHA token is missing, Details: 
+[08-Dec-2024 18:28:43 Europe/Berlin] Login Error - Message: CAPTCHA token is missing, Details: 
+[08-Dec-2024 18:37:20 Europe/Berlin] Received input: Array
+(
+    [username] => Tama
+    [password] => 123
+    [isCaptchaEnabled] => 
+)
+
+[08-Dec-2024 18:37:20 Europe/Berlin] isCaptchaEnabled: disabled
+[08-Dec-2024 18:37:51 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 1
+    [recaptchaResponse] => 03AFcWeA4yG2wxCiO4d_Ez7dAyQehyJrWJjODUFaze0ux3RrUzt5kiu35sudHOcjFRxVM1NqtaIwaod5Jr3ynUDRt9HFezUggYkchJLx8d-fjbTAFEn_U_CAFV0BADQqUVQMGzapi2nFW16a2VBPOew4Vp4eAZXr07SmxRJorxLBSFerdunk0261N_oXfufEV5ev5T2WKmxSlmKAuCQYRQT1fPto0-724ZvdNd5gmGZUo8-RS-hkrycQ3Uk-mNJoCDNwQF3hi72p93yF1n-v8BMV7kgpt5GtVMYlfE9pjcY5mGirnEP7CIjFT0DOQuEDpUviRVW5bpEZ8NQE4ZGN_mZbye8ihNrvsRR5XQ39GMjnqwVjLjwL7caiJgYwFV14zPtA9NRKAceV3uJvXnhIOqa8rYyDifshMVu0dPhAMxouYS0A2w9oBi0R2iDgZ37mTdcE5Wun6Z6bnz4xNLVt3pmrelNW8phLkO6q1liRcnlZ1yUqNSErOQMjImwwa6SNzOI715EzSkbSG1eDrK0fxZwOV40ys5jsrHm4tQQ_M2yfVDkmIrnAuh1B2UdBrN07stvgWxHMgocZWsabs0ATu2ZRYDfp_Oi4knb5SNPzVGAJ46V0WEIuFxhCo7AzqL9GkOkwU75N_MMtWLnu1aUUqKMG67pvsanES4751Vbh0VYh_rhzI8gY9xcFvkADDaXzgEgQRCyI3rRw3D4FlrPPDRE8XHxvXn9X1sTpG_Ha1kQ-T63v8hM8nkMzDomfM3tabZfSqO0N6e5Z4UAdpW1z87V3sb7EcP966HiFPe_WvQVpRd8kr1y2GnSsTxfxJuo1g0K5PLvDEKAVRMwxMKHhphUZf46lUCVa8GT57Akx2fwIZGnGsuqvcLM-zWm331M_VZC8mx7UVonej9oHDtjdQECVPFllcowzReIO5QBZBuKhsE4hCPMhtjC5fwu0KqaE1YlfpX_mzTEOQlsn8Ul4GE9yyg5WBy4c0EibWbsgnKvsWjcWqd8Fs-WkTONqM_y6yM-XUec5FC3Z2LX5tDdRX5K5ijOo5UH_8gtQplv9UYe-bOcBskUtSYmrqJr3ibIELO7VV4tzmcCIH6iM7xXiEYOKZvwe8FDXqhbB_nlWGBvDwtSAKvYr8jAgNCnxlPYJ4u6RbLnEt-qhywfmHfxEIniIEyPJKI_GK_cmxV6ItFJNYdPMufvHJeMkhOjJ6GUcyIX8Cl1oXVGgDjE4VPe78OFW0KtX6jIPjKAnfbY0kkhx0wVDQb2_cXvbNkVpV2gh9mwOVbVhAYYE8fFJZ7CXaqCmvV-jB5ksrPxvElkAnx-AQqKFAJofR98Qk2sgafLaYFOdA3UHhaYcJdt8MyorZP9laLCCMgksqlZkgtrLJP5sfes9KHjw4eVLXv7MazZDgPxe_3mpjYCctRHnJwlNsJlOydzHQSoq51VuyIYXhPhh0eGN8b2uz3yl6S3kjS5x7SdxTQu-dX3IHo3v75KH0Zep2jfzGjzH7D_i8zHBF0hepKV-aLiLrtN1GNBCv8dqaFe0ADF6FtAamBl-sz99zquA_lz24cWtBRf31GS108hJgpTIRqltn6H2Xwq4WYw0jCMIBPrgtvr15gC1vrlYw1AHqT0O6DYZELiXncfgQdTelI7kEOhuifqxIhrvT53o1-mgH5IKSIPKkOWhOWbgW1JLPPxZqQygD1lNXcvf96ChjZbkM9AA-XoitqY-f7GaPqNWeOEPj-bzqy8PCIpIO8arN3nINogJCObDyeRqnKr72hIH1bXJ0V0_FnJ1lfwue1wg0pLBbcG4PYRnGEmMm2FXuXTL_Jv09Wm1831yM10mFVp8iaoCny_r3C3MDZtQOZ2823rwLMy-1utOQyBUdLSgKXK5TWrG8YKl5TYH767QM58lcR8C1-w90ZU4J72KWLqP3ubwh6gUkJbZX-jI5nk4tjQugmD82N1kjmOkOVL3Qk3Ny25gDRmB4BORwR7mWrEDLTRdMld1_RYz7u0KEp_zxi6f7lxcwFNstmuypyfxIvJxnYcBhzCMiGZIg2F73K32Nr7ohurUdICT8Yz9_KA0Zl-Cx6-FTvQWXqAQlh740jZocDexzAxKbEccZaTvXE_dx4VYQLUugXQrZoANk22JkVBV6kr-rT7eCIUTCpCl078if_I1E3MWYc7mWHWXY_mq9ZUXCU76VxwQFG09j1iLNMHNQtQuBcD7wCSRi-m9U9D0XhsgZVRPw
+)
+
+[08-Dec-2024 18:37:51 Europe/Berlin] isCaptchaEnabled: enabled
+[08-Dec-2024 18:51:01 Europe/Berlin] Received input: Array
+(
+    [username] => Tama
+    [password] => 123
+    [isCaptchaEnabled] => 
+)
+
+[08-Dec-2024 18:51:01 Europe/Berlin] isCaptchaEnabled: disabled

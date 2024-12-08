@@ -1,11 +1,16 @@
 /* Fullscreen split screen style */
 .login-fullscreen {
   display: flex;
+  flex-wrap: wrap;
+  /* Membuat konten responsif */
   height: 100vh;
   margin: 0;
   padding: 0;
 }
 
+html {
+    background-color: #1b1b1b;
+}
 /* Left side (Form login) */
 .login-form-container {
   display: flex;
@@ -14,38 +19,81 @@
   align-items: center;
   flex: 1;
   padding: 20px;
-  background-color: #1b1b1b; /* Background gelap untuk form login */
+  background-color: #121212;
   color: #ffffff;
+  height: 100vh;
+  box-sizing: border-box;
 }
 
 /* Title style */
 .login-form-container h2 {
   margin-bottom: 1.5rem;
   font-size: 1.8rem;
-  color: #76ff03; /* Warna hijau untuk judul */
+  color: #76ff03;
+  text-align: center;
+}
+
+/* Input group style */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Pastikan semua elemen di dalamnya sejajar tengah */
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 15px;
+}
+.captcha-toggle {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+
+.captcha-toggle input {
+  margin-right: 8px;
+}
+
+.recaptcha-container {
+  margin-top: 15px 0;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.recaptcha-container .g-recaptcha {
+  transform: scale(0.8);
+  /* Sesuaikan ukuran */
+}
+
+.error-text {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
 }
 
 /* Input field style */
 .input-field {
   width: 100%;
-  max-width: 400px;
   padding: 10px;
   margin: 10px 0;
   border: none;
   border-radius: 5px;
   font-size: 16px;
-  background-color: #ffffff; /* Background putih untuk input */
-  color: #333333; /* Teks warna gelap di input */
+  background-color: #ffffff;
+  color: #333333;
 }
 
+/* Placeholder color */
 .input-field::placeholder {
-  color: #888888; /* Placeholder text color */
+  color: #888888;
 }
 
 /* Login button style */
 .login-button {
-  background-color: #76ff03; /* Warna hijau terang */
-  color: #000000; /* Teks hitam */
+  background-color: #76ff03;
+  color: #000000;
   border: none;
   padding: 10px;
   width: 100%;
@@ -59,7 +107,7 @@
 }
 
 .login-button:hover {
-  background-color: #ffffff; /* Hijau sedikit lebih gelap saat hover */
+  background-color: #ffffff;
 }
 
 /* Right side (Image container) */
@@ -68,13 +116,57 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #2e2e2e; /* Background abu-abu gelap untuk sisi gambar */
+  background-color: #2e2e2e;
+  position: absolute;
 }
 
 .login-image-container img {
-  max-width: 100%; /* Memastikan gambar tidak lebih lebar dari kontainer */
-  max-height: 100%; /* Membatasi tinggi maksimum gambar */
-  height: auto; /* Memastikan proporsi gambar tetap terjaga */
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
   border-radius: 8px;
-  object-fit: cover; /* Memastikan gambar mengisi kontainer tanpa terdistorsi */
+  object-fit: cover;
+  position: absolute;
+}
+
+/* Media queries for smaller screens */
+@media screen and (max-width: 768px) {
+  .login-fullscreen {
+    flex-direction: column;
+    /* Kolom pada layar kecil */
+  }
+
+  .login-image-container {
+    display: none;
+    /* Sembunyikan gambar pada layar kecil */
+  }
+
+  .login-form-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .input-field {
+    max-width: 90%;
+    font-size: 14px;
+  }
+
+  .login-button {
+    max-width: 90%;
+    font-size: 14px;
+  }
+}
+
+/* Media queries untuk layar lebih kecil dari 480px */
+@media screen and (max-width: 480px) {
+  .login-form-container h2 {
+    font-size: 1.2rem;
+  }
+
+  .input-field {
+    padding: 8px;
+  }
+
+  .login-button {
+    padding: 8px;
+  }
 }

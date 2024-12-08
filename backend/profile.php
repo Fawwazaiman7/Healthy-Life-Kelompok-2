@@ -42,6 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
             jenis_kelamin,
             berat_badan,
             tinggi_badan,
+            target_kalori,
             kalori_tercapai,
             kategori_bmi_pengguna
             FROM pengguna 
@@ -74,6 +75,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
             'jenis_kelamin' => $user['JENIS_KELAMIN'],
             'berat_badan' => $user['BERAT_BADAN'],
             'tinggi_badan' => $user['TINGGI_BADAN'],
+            'target_kalori' => $user['TARGET_KALORI'],
             'kalori_tercapai' => $user['KALORI_TERCAPAI'],
             'kategori_bmi' => $user['KATEGORI_BMI_PENGGUNA'],
             'bmi' => $bmi
@@ -93,12 +95,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         if (isset($stmt)) oci_free_statement($stmt);
         if (isset($conn)) oci_close($conn);
     }
-} 
+}
 
 // Untuk menangani update target kalori
 elseif ($_SERVER['REQUEST_METHOD'] === 'PUT') {
     try {
         $data = json_decode(file_get_contents('php://input'), true);
+
+        error_log("Data yang diterima di backend: " . json_encode($data)); // Debug data
+
         $id = isset($data['id']) ? $data['id'] : null;
         $target_kalori = isset($data['target_kalori']) ? $data['target_kalori'] : null;
 
@@ -110,11 +115,11 @@ elseif ($_SERVER['REQUEST_METHOD'] === 'PUT') {
         $query = "UPDATE pengguna 
                   SET target_kalori = :target_kalori 
                   WHERE id_pengguna = :id";
-        
+
         $stmt = oci_parse($conn, $query);
         oci_bind_by_name($stmt, ":id", $id);
         oci_bind_by_name($stmt, ":target_kalori", $target_kalori);
-        
+
         if (!oci_execute($stmt)) {
             $error = oci_error($stmt);
             throw new Exception('Database error: ' . $error['message']);
@@ -124,7 +129,6 @@ elseif ($_SERVER['REQUEST_METHOD'] === 'PUT') {
             'success' => true,
             'message' => 'Target kalori updated successfully'
         ]);
-
     } catch (Exception $e) {
         echo json_encode([
             'success' => false,
@@ -135,6 +139,7 @@ elseif ($_SERVER['REQUEST_METHOD'] === 'PUT') {
         if (isset($conn)) oci_close($conn);
     }
 }
+
 else {
     echo json_encode([
         'success' => false,

@@ -15,6 +15,14 @@
     border-bottom: 2px solid #98c93b;
     padding-bottom: 10px;
   }
+
+     .admin-article-form h3 {
+       text-align: center;
+       color: goldenrod;
+       margin-bottom: 20px;
+       font-size: 1.8rem;
+       padding-bottom: 10px;
+     }
   
   .admin-article-form label {
     font-size: 1rem;

@@ -10,11 +10,11 @@ export default function FoodRecommendation() {
     <div className="container">
       {/* Title */}
       <h2 className="title">
-        Food
+        Rekomendasi
         <br />
-        Recommendation
+        Makanan
         <br />
-        Of The Day
+        Hari Ini
       </h2>
 
       {/* Featured Food Section */}
@@ -28,7 +28,7 @@ export default function FoodRecommendation() {
 
         {/* Recommendation Label */}
         <div className="label">
-          Recommendation Of The Day
+          Rekomendasi Makanan Hari Ini
         </div>
 
         {/* Text Content */}

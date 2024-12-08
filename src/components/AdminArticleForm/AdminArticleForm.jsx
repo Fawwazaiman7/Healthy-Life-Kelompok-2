@@ -1,88 +1,117 @@
-// src/components/AdminArticleForm.jsx
-import React, { useState, useEffect } from 'react';
-import './AdminArticleForm.css'; // Gaya tambahan untuk form artikel
+import React, { useState, useEffect } from "react";
+import "./AdminArticleForm.css";
 
 const AdminArticleForm = ({ currentArticle, onSave, onCancel }) => {
-  const [formData, setFormData] = useState({
-    title: '',
-    preview: '',
-    content: '',
-    imageUrl: '',
+  const [formdata, setFormData] = useState({
+    judul: "",
+    konten: "",
+    kategori_artikel: "",
+    kategori_bmi_artikel: "",
   });
 
-  // Mengisi data artikel jika sedang dalam mode edit
+  // Mengisi data jika sedang dalam mode edit
   useEffect(() => {
     if (currentArticle) {
-      setFormData(currentArticle);
+      console.log(
+        "currentArticle diterima di AdminArticleForm:",
+        currentArticle
+      );
+      setFormData({
+        judul: currentArticle.title || "",
+        konten: currentArticle.content || "",
+        kategori_artikel: currentArticle.category || "",
+        kategori_bmi_artikel: currentArticle.bmi_category || "",
+      });
     }
   }, [currentArticle]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+    setFormData({ ...formdata, [name]: value });
   };
 
-  const handleSave = () => {
-    if (!formData.title || !formData.preview || !formData.content) {
-      alert('Please fill out all fields!');
-      return;
-    }
-    onSave(formData);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    console.log("Data yang akan dikirim ke backend:", formdata);
+
+    // Gunakan fungsi onSave yang dikirim dari parent
+    onSave({
+      ...formdata,
+      id: currentArticle?.id, // Tambahkan ID jika sedang mengedit
+    });
+    
   };
 
   return (
-    <div className="admin-article-form">
-      <h3>{currentArticle ? 'Edit Article' : 'Add Article'}</h3>
+    <form onSubmit={handleSubmit} className="admin-article-form">
+      <h3>{currentArticle ? "Edit Artikel" : "Tambah Artikel"}</h3>
       <div className="form-group">
-        <label htmlFor="title">Title</label>
+        <label htmlFor="judul">Judul*</label>
         <input
           type="text"
-          id="title"
-          name="title"
-          className="form-control"
-          value={formData.title}
+          id="judul"
+          name="judul"
+          value={formdata.judul}
           onChange={handleChange}
+          placeholder="Masukkan judul artikel"
+          maxLength={100}
         />
       </div>
       <div className="form-group">
-        <label htmlFor="preview">Preview</label>
-        <input
-          type="text"
-          id="preview"
-          name="preview"
-          className="form-control"
-          value={formData.preview}
-          onChange={handleChange}
-        />
-      </div>
-      <div className="form-group">
-        <label htmlFor="content">Content</label>
+        <label htmlFor="konten">Konten*</label>
         <textarea
-          id="content"
-          name="content"
-          className="form-control"
-          value={formData.content}
+          id="konten"
+          name="konten"
+          value={formdata.konten}
           onChange={handleChange}
+          placeholder="Masukkan konten artikel"
+          maxLength={5000}
         />
       </div>
       <div className="form-group">
-        <label htmlFor="imageUrl">Image URL</label>
-        <input
-          type="text"
-          id="imageUrl"
-          name="imageUrl"
-          className="form-control"
-          value={formData.imageUrl}
+        <label htmlFor="kategori_artikel">Kategori Artikel*</label>
+        <select
+          id="kategori_artikel"
+          name="kategori_artikel"
+          value={formdata.kategori_artikel}
           onChange={handleChange}
-        />
+          className="form-control"
+        >
+          <option value="">-- Pilih Kategori Artikel --</option>
+          <option value="Informasi Umum">Informasi Umum</option>
+          <option value="Olahraga">Olahraga</option>
+        </select>
+      </div>
+      <div className="form-group">
+        <label htmlFor="kategori_bmi_artikel">Kategori BMI (Opsional)</label>
+        <select
+          id="kategori_bmi_artikel"
+          name="kategori_bmi_artikel"
+          value={formdata.kategori_bmi_artikel}
+          onChange={handleChange}
+          className="form-control"
+        >
+          <option value="">-- Pilih Kategori BMI --</option>
+          <option value="Gemuk">Gemuk</option>
+          <option value="Ideal">Ideal</option>
+          <option value="Kurus">Kurus</option>
+          <option value="Obesitas Tingkat 1">Obesitas Tingkat 1</option>
+          <option value="Obesitas Tingkat 2">Obesitas Tingkat 2</option>
+        </select>
       </div>
       <div className="form-actions">
-        <button className="btn btn-success" onClick={handleSave}>
-          {currentArticle ? 'Save Changes' : 'Add Article'}
+        <button type="submit" className="btn btn-success">
+          {currentArticle ? "Simpan Perubahan" : "Tambah Artikel"}
         </button>
-        <button className="btn btn-secondary" onClick={onCancel}>Cancel</button>
+        <button type="button" className="btn btn-secondary" onClick={onCancel}>
+          Batal
+        </button>
       </div>
-    </div>
+      <div className="form-note">
+        <small>* Required fields</small>
+      </div>
+    </form>
   );
 };
 

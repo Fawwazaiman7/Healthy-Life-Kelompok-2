@@ -2,6 +2,7 @@
   padding: 2rem;
   background-color: #347e3a; /* lime-300 */
   border-radius: 0.5rem;
+  margin-top: 70px !important;
   display: flex;
   align-items: center;
   gap: 2rem;

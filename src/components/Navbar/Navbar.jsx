@@ -51,19 +51,19 @@ const Navbar = () => {
       </div>
       <ul className="navbar-links">
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/">Beranda</Link>
         </li>
         <li>
-          <Link to="/makanan">Makanan</Link>
+          <Link to="/makanan">Resep Makanan</Link>
         </li>
         <li>                                                                          
-          <Link to="/olahraga">Olahraga</Link>
+          <Link to="/olahraga">Artikel Olahraga</Link>
         </li>
         <li>
-          <Link to="/exerciseandfoodtracker">Tracker</Link>
+          <Link to="/exerciseandfoodtracker">Pelacak AKG</Link>
         </li>
         <li>
-          <Link to="/history">History</Link> 
+          <Link to="/history">Riwayat</Link> 
         </li>
       </ul>
       <div className="navbar-profile">

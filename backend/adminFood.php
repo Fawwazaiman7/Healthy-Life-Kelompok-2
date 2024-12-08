@@ -46,8 +46,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
                 'title' => $food['JUDUL'],
                 'calories' => $food['KALORI'],
                 'image' => $food['GAMBAR'],
-                'ingredients' => $food['RESEP'],
-                'tutorial' => $food['CARA_PEMBUATAN']
+                'ingredients' => json_decode(json_decode($food['RESEP'])), // Double decode
+                'tutorial' => json_decode(json_decode($food['CARA_PEMBUATAN'])), // Double decode untuk cara_pembuatan
             ]);
         } else {
             echo json_encode(['success' => false, 'message' => 'Data tidak ditemukan']);
@@ -72,8 +72,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
                 'title' => $row['JUDUL'],
                 'calories' => $row['KALORI'],
                 'image' => $row['GAMBAR'],
-                'ingredients' => $row['RESEP'],
-                'tutorial' => $row['CARA_PEMBUATAN']
+                'ingredients' => json_decode($row['RESEP']), // Decode JSON ke array
+                'tutorial' => json_decode($row['CARA_PEMBUATAN']), // Decode JSON ke array
             ];
         }
         echo json_encode($foods);
@@ -88,11 +88,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Membaca data JSON dari request body
     $data = json_decode(file_get_contents('php://input'), true);
-
-       // Validasi data
-    if (empty($data['judul']) || empty($data['kalori'])) {
-        echo json_encode(['success' => true]);
-        http_response_code(201);
+    $ingredients = isset($data['resep']) ? json_encode($data['resep']) : null;
+    $instructions = isset($data['cara_pembuatan']) ? json_encode($data['cara_pembuatan']) : null;
+    // Validasi data utama
+    if (empty($data['judul']) || empty($data['kalori']) || empty($data['gambar'])) {
+        echo json_encode(['success' => true, 'message' => 'Data lengkap']);
         exit;
     }
     // Dapatkan ID baru untuk makanan
@@ -128,8 +128,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     oci_bind_by_name($stmt, ":title", $data['judul']);
     oci_bind_by_name($stmt, ":calories", $data['kalori']);
     oci_bind_by_name($stmt, ":image", $data['gambar']);
-    oci_bind_by_name($stmt, ":ingredients", $data['resep']);
-    oci_bind_by_name($stmt, ":tutorial", $data['cara_pembuatan']);
+    oci_bind_by_name($stmt, ":ingredients", $ingredients);
+    oci_bind_by_name($stmt, ":tutorial", $instructions);
     $admin_id = 1; // Contoh, sesuaikan dengan autentikasi admin
     oci_bind_by_name($stmt, ":admin_id", $admin_id);
 
@@ -179,11 +179,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'DELETE') {
 if ($_SERVER['REQUEST_METHOD'] === 'PUT') {
     // Membaca data JSON dari request body
     $data = json_decode(file_get_contents('php://input'), true);
-    if ($data) {
-        error_log('Data received: ' . print_r($data, true));  // Menyimpan data untuk debugging
-    } else {
-        error_log('No data received');
-    }
+
+    // Logging untuk debugging
+    error_log('Data received: ' . print_r($data, true));
 
     $id = $data['id'] ?? null;
 
@@ -193,30 +191,33 @@ if ($_SERVER['REQUEST_METHOD'] === 'PUT') {
         exit;
     }
 
-    if (empty($data['judul']) || empty($data['kalori']) || empty($data['gambar']) || empty($data['resep']) || empty($data['cara_pembuatan'])) {
-        echo json_encode(['success' => true]);
-        http_response_code(200);
+    // Validasi data utama
+    if (empty($data['judul']) || empty($data['kalori']) || empty($data['gambar'])) {
+        echo json_encode(['success' => true, 'message' => 'Data lengkap']);
         exit;
     }
 
+    // Validasi opsional untuk `resep` dan `cara_pembuatan`
+    $ingredients = isset($data['resep']) ? json_encode($data['resep']) : null;
+    $instructions = isset($data['cara_pembuatan']) ? json_encode($data['cara_pembuatan']) : null;
 
     // Query untuk mengupdate makanan
     $sql = "UPDATE makanan
-        SET judul = :judul,
-            kalori = :kalori,
-            gambar = :gambar,
-            resep = :resep,
-            cara_pembuatan = :cara_pembuatan
-        WHERE id = :id";
+            SET judul = :judul,
+                kalori = :kalori,
+                gambar = :gambar,
+                resep = NVL(:resep, resep),
+                cara_pembuatan = NVL(:cara_pembuatan, cara_pembuatan)
+            WHERE id = :id";
 
     $stmt = oci_parse($conn, $sql);
 
-    oci_bind_by_name($stmt, ":id", $data['id']);
+    oci_bind_by_name($stmt, ":id", $id);
     oci_bind_by_name($stmt, ":judul", $data['judul']);
     oci_bind_by_name($stmt, ":kalori", $data['kalori']);
     oci_bind_by_name($stmt, ":gambar", $data['gambar']);
-    oci_bind_by_name($stmt, ":resep", $data['resep']);
-    oci_bind_by_name($stmt, ":cara_pembuatan", $data['cara_pembuatan']);
+    oci_bind_by_name($stmt, ":resep", $ingredients);
+    oci_bind_by_name($stmt, ":cara_pembuatan", $instructions);
 
     if (oci_execute($stmt)) {
         echo json_encode(['success' => true, 'message' => 'Makanan berhasil diperbarui']);
@@ -228,6 +229,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'PUT') {
     }
     exit;
 }
+
 
 
 // Jika metode tidak dikenali

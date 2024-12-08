@@ -7,19 +7,24 @@ const AdminFoodForm = ({ currentFood, onSave, onCancel }) => {
     judul: "",
     kalori: "",
     gambar: "",
-    resep: "",
-    cara_pembuatan: "",
+    resep: [],
+    cara_pembuatan: [],
   });
+  const [currentIngredient, setCurrentIngredient] = useState(""); // Untuk menambah satu bahan ke array
+  const [currentInstruction, setCurrentInstruction] = useState(""); // Untuk menambah satu langkah pembuatan ke array
 
   useEffect(() => {
     if (currentFood) {
-        console.log("currentFood diterima di AdminFoodForm:", currentFood);
       setFormData({
-      judul: currentFood.title || "", // Ubah sesuai dengan field `title` dari backend
-      kalori: currentFood.calories || "", // Ubah sesuai dengan field `calories` dari backend
-      gambar: currentFood.image || "", // Ubah sesuai dengan field `image` dari backend
-      resep: currentFood.ingredients || "", // Ubah sesuai dengan field `ingredients` dari backend
-      cara_pembuatan: currentFood.tutorial || "", // Jika field ada
+        judul: currentFood.title || "",
+        kalori: currentFood.calories || "",
+        gambar: currentFood.image || "",
+        resep: Array.isArray(currentFood.ingredients)
+          ? currentFood.ingredients
+          : [], // Validasi
+        cara_pembuatan: Array.isArray(currentFood.tutorial)
+          ? currentFood.tutorial
+          : [], // Validasi
       });
     }
   }, [currentFood]);
@@ -29,11 +34,40 @@ const AdminFoodForm = ({ currentFood, onSave, onCancel }) => {
     setFormData({ ...formData, [name]: value });
   };
 
+  const handleAddIngredient = () => {
+    if (currentIngredient.trim() !== "") {
+      setFormData({
+        ...formData,
+        resep: [...formData.resep, currentIngredient.trim()],
+      });
+      setCurrentIngredient(""); // Reset input bahan
+    }
+  };
+
+  const handleDeleteIngredient = (index) => {
+    const updatedIngredients = formData.resep.filter((_, i) => i !== index);
+    setFormData({ ...formData, resep: updatedIngredients });
+  };
+
+  const handleAddInstruction = () => {
+    if (currentInstruction.trim() !== "") {
+      setFormData({
+        ...formData,
+        cara_pembuatan: [...formData.cara_pembuatan, currentInstruction.trim()],
+      });
+      setCurrentInstruction(""); // Reset input langkah pembuatan
+    }
+  };
+
+  const handleDeleteInstruction = (index) => {
+    const updatedInstructions = formData.cara_pembuatan.filter(
+      (_, i) => i !== index
+    );
+    setFormData({ ...formData, cara_pembuatan: updatedInstructions });
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-      console.log("handleSave dipanggil");
-
-
     if (!formData.judul || !formData.kalori) {
       alert("Please fill in all required fields");
       return;
@@ -41,12 +75,16 @@ const AdminFoodForm = ({ currentFood, onSave, onCancel }) => {
 
     const method = currentFood ? "put" : "post";
     const url = "http://localhost:80/healthy_life_api/backend/adminFood.php";
+    console.log("Data yang akan dikirim:", formData);
+
 
     axios({
       method,
       url,
       data: {
         ...formData,
+        resep: JSON.stringify(formData.resep), // Kirim sebagai JSON string
+        cara_pembuatan: JSON.stringify(formData.cara_pembuatan), // Kirim sebagai JSON string
         id: currentFood?.id,
       },
       headers: {
@@ -55,14 +93,21 @@ const AdminFoodForm = ({ currentFood, onSave, onCancel }) => {
     })
       .then((response) => {
         if (response.data.success) {
-          alert(currentFood ? "Food updated successfully!" : "Food added successfully!");
+          alert(
+            currentFood
+              ? "Food updated successfully!"
+              : "Food added successfully!"
+          );
           onSave();
         } else {
           alert("Failed to save food: " + response.data.message);
         }
       })
       .catch((error) => {
-        console.error("Error saving food:", error.response?.data || error.message);
+        console.error(
+          "Error saving food:",
+          error.response?.data || error.message
+        );
         alert("Failed to save food");
       });
   };
@@ -79,7 +124,7 @@ const AdminFoodForm = ({ currentFood, onSave, onCancel }) => {
           name="judul"
           value={formData.judul}
           onChange={handleChange}
-          placeholder={currentFood?.judul || "Masukkan judul makanan"} // Placeholder diisi dari currentFood
+          placeholder="Enter food title"
           maxLength={100}
         />
       </div>
@@ -92,7 +137,7 @@ const AdminFoodForm = ({ currentFood, onSave, onCancel }) => {
           name="kalori"
           value={formData.kalori}
           onChange={handleChange}
-          placeholder={currentFood?.kalori || "Masukkan jumlah kalori"} // Placeholder diisi dari currentFood
+          placeholder="Enter calories"
           step="0.01"
         />
       </div>
@@ -105,33 +150,63 @@ const AdminFoodForm = ({ currentFood, onSave, onCancel }) => {
           name="gambar"
           value={formData.gambar}
           onChange={handleChange}
-          placeholder={currentFood?.gambar || "Masukkan URL gambar"} // Placeholder diisi dari currentFood
-          maxLength={255}
+          placeholder="Enter image URL"
+          maxLength={755}
         />
       </div>
 
       <div className="form-group">
-        <label htmlFor="resep">Recipe</label>
-        <textarea
-          id="resep"
-          name="resep"
-          value={formData.resep}
-          onChange={handleChange}
-          placeholder={currentFood?.resep || "Masukkan resep makanan"} // Placeholder diisi dari currentFood
-          maxLength={255}
+        <label>Ingredients</label>
+        <div className="ingredient-list">
+          {formData.resep.map((ingredient, index) => (
+            <div key={index} className="ingredient-item">
+              <span>{ingredient}</span>
+              <button
+                type="button"
+                onClick={() => handleDeleteIngredient(index)}
+              >
+                Delete
+              </button>
+            </div>
+          ))}
+        </div>
+        <input
+          type="text"
+          value={currentIngredient}
+          onChange={(e) => setCurrentIngredient(e.target.value)}
+          placeholder="Add an ingredient"
+          maxLength={4000}
         />
+        <button type="button" onClick={handleAddIngredient}>
+          Add
+        </button>
       </div>
 
       <div className="form-group">
-        <label htmlFor="cara_pembuatan">Instructions</label>
-        <textarea
-          id="cara_pembuatan"
-          name="cara_pembuatan"
-          value={formData.cara_pembuatan}
-          onChange={handleChange}
-          placeholder={currentFood?.cara_pembuatan || "Masukkan instruksi pembuatan"} // Placeholder diisi dari currentFood
-          maxLength={255}
+        <label>Instructions</label>
+        <div className="instruction-list">
+          {formData.cara_pembuatan.map((instruction, index) => (
+            <div key={index} className="instruction-item">
+              <span>{instruction}</span>
+              <button
+                type="button"
+                onClick={() => handleDeleteInstruction(index)}
+              >
+                Delete
+              </button>
+            </div>
+          ))}
+        </div>
+        <input
+          type="text"
+          value={currentInstruction}
+          onChange={(e) => setCurrentInstruction(e.target.value)}
+          placeholder="Add an instruction"
+          maxLength={725}
         />
+        <button type="button" onClick={handleAddInstruction}>
+          Add
+        </button>
       </div>
 
       <div className="form-actions">
