@@ -2,7 +2,7 @@
 
 .recipeDetail {
   padding: 2rem;
-  background-color: #A0D683; /* Warna latar belakang */
+  background-color: #d4cfcf; /* Warna latar belakang */
   color: black;
   border-radius: 0.5rem;
   text-align: center;
@@ -22,7 +22,8 @@
 }
 
 .class-icon:hover {
-  color: red; /* Warna saat hover */
+  background-color: rgb(255, 255, 255);
+  color:black;
 }
 
 .recipeInfo {

@@ -1,6 +1,5 @@
 /* Home.css */
 
-/* Hero Section */
 .hero-section {
   display: flex;
   align-items: center;
@@ -15,7 +14,7 @@
 
 .swiper-container {
   width: 100%;
-  height: 100%;
+  height: 90%;
 }
 
 .swiper-slide {
@@ -41,8 +40,8 @@
 .hero-button {
   margin-top: 1rem;
   padding: 0.75rem 1.5rem;
-  background-color: #98c93b;
-  color: black;
+  background-color: #fd0202;
+  color: rgb(255, 253, 253);
   border: none;
   border-radius: 5px;
   font-weight: bold;
@@ -52,6 +51,7 @@
 
 .hero-button:hover {
   background-color: #ffffff;
+  color: #000000;
 }
 
 /* Features Section */
@@ -99,12 +99,51 @@
 
 /* Articles Section */
 .articles-section {
-  display: flex;
-  flex-direction: column;
-  gap: 4rem; /* Spasi antar artikel */
-  align-items: center; /* Pusatkan artikel di tengah */
+  display: flex; /* Menggunakan flexbox untuk menyusun artikel secara horizontal */
+  flex-wrap: wrap; /* Membungkus artikel jika ruang tidak cukup */
+  gap: 2rem; /* Spasi antar artikel */
+  align-items: flex-start; /* Rata atas untuk artikel */
   padding: 2rem;
-  background-color: #649847; /* Latar belakang untuk kontras */
+  background-color: #939591; /* Latar belakang untuk kontras */
+}
+
+.article-card {
+  background-color: #7f7c7c; /* Warna latar belakang kartu */
+  color: white; /* Warna teks */
+  padding: 20px; /* Padding untuk kartu */
+  border-radius: 10px; /* Sudut yang lebih halus */
+  width: 200px; /* Lebar kartu */
+  height: 310px; /* Tinggi kartu */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+  cursor: pointer; /* Menunjukkan bahwa ini dapat diklik */
+}
+
+.article-card:hover {
+  transform: translateY(-10px) scale(1.02); /* Floating effect with slight scale */
+  box-shadow: 0px 15px 20px rgba(101, 91, 91, 0.4); /* Bayangan lebih besar saat hover */
+}
+
+.article-card h3 {
+  font-size: 1.5rem; /* Ukuran font untuk judul */
+  margin-bottom: 10px; /* Jarak bawah judul */
+}
+
+.article-card p {
+  font-size: 1rem; /* Ukuran font untuk deskripsi */
+  margin-bottom: 15px; /* Jarak bawah deskripsi */
+}
+
+.article-card a {
+  color: #000000; /* Warna link */
+  text-decoration: none; /* Tanpa garis bawah */
+  font-weight: bold; /* Tebal */
+  transition: color 0.3s ease; /* Transisi warna */
+}
+
+/* Efek hover untuk link */
+.article-card a:hover {
+  color: red; /* Mengubah warna teks menjadi merah saat hover */
 }
 
 /* Typing Effect */
@@ -123,8 +162,8 @@
 }
 
 .typing-effect-line:nth-child(2) {
-  animation: typing-line 3.5s steps(30, end) forwards, blink-caret 0.75s step-end infinite;
-  animation-delay: 3.5s; /* Delay yang sama dengan durasi baris pertama */
+  animation: typing-line 3.0s steps(30, end) forwards, blink-caret 0.75s step-end infinite;
+  animation-delay: 3.0s; /* Delay yang sama dengan durasi baris pertama */
   animation-fill-mode: forwards;
   border-right: 2px solid white;
 }

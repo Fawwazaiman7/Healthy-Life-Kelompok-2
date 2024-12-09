@@ -54,7 +54,7 @@ export default function Home() {
             <section className="hero-section">
                 <div className="swiper-container">
                     <div className="swiper-wrapper">
-                        <div className="swiper-slide" style={{ backgroundImage: `url('/images/homebg.png')` }}>
+                        <div className="swiper-slide" style={{ backgroundImage: `url('/images/Images3.jpg')` }}>
                             <div className="hero-content">
                                 <h1 className="typing-container">
                                     <span className="typing-effect-line">"Berani coba fitur olahraga kami?"</span>

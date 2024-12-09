@@ -1,27 +1,30 @@
-import React, { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import React, { useState } from 'react';
 import './FeatureCards.css';
 
 const FeatureCards = () => {
     const features = [
-        { title: "Tracker", description: "Pantau dan kelola asupan gizi harian Anda dengan mudah.", link: "/exerciseandfoodtracker" },
+        { title: "Tracker", description: "Pantau dan kelola asupan gizi harian Anda dengan easily.", link: "/exerciseandfoodtracker" },
         { title: "Rekomendasi Olahraga", description: "Olahraga yang tepat untuk anda", link: "/olahraga" },
         { title: "Resep Makanan Diet", description: "Gizi seimbang untuk diet sehat", link: "/makanan" },
     ];
 
-    useEffect(() => {
-        AOS.init({ duration: 300, once: true }); // Ubah durasi menjadi 200ms
-    }, []);
+    const [activeIndex, setActiveIndex] = useState(null);
+
+    const handleCardClick = (index) => {
+        setActiveIndex(index);
+        // Redirect to the link after a short delay
+        setTimeout(() => {
+            window.location.href = features[index].link;
+        }, 300); // Delay to allow the bubble effect to show
+    };
 
     return (
         <div className="feature-cards">
             {features.map((feature, index) => (
                 <div 
                     key={index} 
-                    className="feature-card" 
-                    data-aos="zoom-in" 
-                    data-aos-delay={index * 50} // Ubah delay menjadi 50ms
+                    className={`feature-card ${activeIndex === index ? 'bubble' : ''}`} 
+                    onClick={() => handleCardClick(index)} // Handle click event
                 >
                     <h2>{feature.title}</h2>
                     <p>{feature.description}</p>

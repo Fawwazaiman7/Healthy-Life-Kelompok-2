@@ -5,7 +5,7 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     color: black;
-    background-color: #FEFF9F;
+    background-color: #d4cfcf;
     margin: 1rem;
     transition: transform 0.3s, box-shadow 0.3s; /* Transisi halus untuk transformasi dan bayangan */
   }
@@ -36,7 +36,7 @@
   
   .foodInfo {
     font-size: 0.875rem;
-    color: #666;
+    color: #080808;
   }
   
   /* Media Queries untuk Responsivitas di FoodCard */

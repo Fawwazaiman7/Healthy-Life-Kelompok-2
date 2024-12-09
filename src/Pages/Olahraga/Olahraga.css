@@ -8,14 +8,17 @@
   .exercise-section {
     padding: 2rem;
     text-align: center;
-    background-color: #A0D683; /* Latar belakang gelap untuk kontras */
-    color: white;
+    background-color: #ebeee9;  /* Latar belakang gelap untuk kontras */
+    color: rgb(0, 0, 0);
   }
   
   .olahraga-title {
     font-size: 2rem;
     margin-bottom: 1.5rem;
-  }
+    color: black;
+    font-weight: bold; /* Menjadikan teks tebal */
+}
+
   
   .exercise-cards {
     margin-top: 40px;

@@ -6,12 +6,13 @@ import "./Navbar.css";
 
 const Navbar = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [isAdmin, setIsAdmin] = useState(false); // Cek jika role admin
+  const [isAdmin, setIsAdmin] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isTrackerDropdownOpen, setIsTrackerDropdownOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // State untuk menu burger
   const navigate = useNavigate();
 
   useEffect(() => {
-    // Memeriksa status login dan role dari localStorage
     const loggedIn = localStorage.getItem("isLoggedIn") === "true";
     const role = localStorage.getItem("role");
     setIsLoggedIn(loggedIn);
@@ -20,6 +21,14 @@ const Navbar = () => {
 
   const handleProfileClick = () => {
     setIsDropdownOpen(!isDropdownOpen);
+  };
+
+  const handleTrackerClick = () => {
+    setIsTrackerDropdownOpen(!isTrackerDropdownOpen);
+  };
+
+  const handleBurgerClick = () => {
+    setIsMenuOpen(!isMenuOpen);
   };
 
   const handleNavigateProfile = () => {
@@ -49,21 +58,33 @@ const Navbar = () => {
       <div className="navbar-logo">
         <img src={logo} alt="Healthy Life Logo" />
       </div>
-      <ul className="navbar-links">
+      <div className="burger" onClick={handleBurgerClick}>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <ul className={`navbar-links ${isMenuOpen ? "active" : ""}`}>
         <li>
           <Link to="/">Beranda</Link>
         </li>
         <li>
           <Link to="/makanan">Resep Makanan</Link>
         </li>
-        <li>                                                                          
-          <Link to="/olahraga">Artikel Olahraga</Link>
-        </li>
         <li>
-          <Link to="/exerciseandfoodtracker">Pelacak AKG</Link>
+          <Link to="/olahraga">Olahraga</Link>
         </li>
-        <li>
-          <Link to="/history">Riwayat</Link> 
+        <li onClick={handleTrackerClick}>
+        <span className="tracker-title">Tracker</span>
+          {isTrackerDropdownOpen && (
+            <ul className="tracker-dropdown">
+              <li>
+                <Link to="/exerciseandfoodtracker">Tracker </Link>
+              </li>
+              <li>
+                <Link to="/history">Riwayat</Link>
+              </li>
+            </ul>
+          )}
         </li>
       </ul>
       <div className="navbar-profile">
