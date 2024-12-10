@@ -58,7 +58,7 @@ export default function WeeklyChallenge() {
   };
 
   return (
-    <div className="container">
+    <div className="container"> {/* Container untuk tantangan */}
       <div className="weeklyChallenge">
         <h2 className="weeklyChallenge-title">Weekly Challenge</h2>
         <div className="challenge-cards">

@@ -1,6 +1,6 @@
-// ArticleCard.jsx
 import React from 'react';
 import './ArticleCard.css';
+
 export default function ArticleCard({ title, description, imageUrl, link }) {
   return (
     <div className="article-card" data-aos="fade-up">
@@ -14,4 +14,19 @@ export default function ArticleCard({ title, description, imageUrl, link }) {
   );
 }
 
-
+// Komponen untuk menampilkan daftar artikel
+export const ArticleList = ({ articles }) => {
+  return (
+    <div className="article-container"> {/* Kontainer untuk menyusun kartu secara horizontal */}
+      {articles.map((article, index) => (
+        <ArticleCard
+          key={index}
+          title={article.title}
+          description={article.description}
+          imageUrl={article.imageUrl}
+          link={article.link}
+        />
+      ))}
+    </div>
+  );
+};

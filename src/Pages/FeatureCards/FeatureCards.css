@@ -1,5 +1,4 @@
 /* src/Pages/FeatureCards.css */
-
 .feature-cards {
     display: flex;
     justify-content: center;
@@ -11,8 +10,8 @@
 }
 
 .feature-card {
-    background-color: #426140 !important;/* Changed to black */
-    color: white !important;
+    background-color: #7f7c7c !important; /* Warna latar belakang kartu */
+    color: #ffffff !important;
     padding: 30px;
     border-radius: 10px;
     text-align: center;
@@ -22,32 +21,44 @@
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
     will-change: transform, box-shadow;
+    cursor: pointer; /* Menunjukkan bahwa ini dapat diklik */
+}
+
+.feature-card.bubble {
+    transform: scale(1.1); /* Efek gelembung saat diklik */
+    box-shadow: 0px 15px 20px rgba(101, 91, 91, 0.4); 
 }
 
 .feature-card:hover {
     transform: translateY(-10px) scale(1.02) !important; /* Floating effect with slight scale */
     box-shadow: 0px 15px 20px rgba(101, 91, 91, 0.4); 
-    background-color: #a49f9f !important; /* Darker shade on hover */
+    background-color: #a49f9f !important; /* Warna lebih gelap saat hover */
 }
 
 .feature-card h2 {
     font-size: 1.75rem;
     margin-bottom: 15px;
+    color : #ffffff!important;
 }
 
 .feature-card p {
     font-size: 1.2rem;
     margin-bottom: 20px;
-    color: whit7;
+    color: #ffffff !important;
 }
 
 .feature-card a {
-    color: #28a745;
+    color: #000000 !important;
     text-decoration: none;
     position: relative;
     font-weight: bold;
     transition: color 0.3s ease;
     font-size: 1.2rem;
+}
+
+/* Efek hover untuk link */
+.feature-card a:hover {
+    color: red !important; /* Mengubah warna teks menjadi merah saat hover */
 }
 
 /* Responsive for smaller screens */

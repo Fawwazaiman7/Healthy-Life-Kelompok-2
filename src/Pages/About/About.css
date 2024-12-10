@@ -1,4 +1,3 @@
-/* src/Pages/About.css */
 body {
     font-family: 'Arial', sans-serif; /* Font umum untuk seluruh halaman */
     margin: 0;
@@ -10,7 +9,7 @@ body {
     align-items: center; /* Menengahkan konten secara vertikal */
     justify-content: space-between; /* Memberikan ruang antara konten dan gambar */
     padding: 40px; /* Jarak dalam kontainer */
-    background-color: #A0D683; /* Warna latar belakang */
+    background-color: #ebeee9; /* Warna latar belakang */
     border-radius: 10px; /* Sudut melengkung untuk kontainer */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek kedalaman */
 }
@@ -40,7 +39,7 @@ body {
 }
 
 .about-image img {
-    margin-top: 3rem;
+    margin-top: 3rem; /* Jarak atas untuk gambar */
     width: 75%; /* Membuat gambar responsif */
     height: auto; /* Menjaga rasio aspek gambar */
     border-radius: 10px; /* Sudut melengkung untuk gambar */
@@ -52,14 +51,47 @@ body {
     transform: scale(1.05); /* Memperbesar gambar saat hover */
 }
 
-@media (max-width: 768px) {
+/* Media Queries untuk Responsif */
+@media (max-width: 800px) {
     .about-container {
         flex-direction: column; /* Mengubah arah flex menjadi kolom pada layar kecil */
         align-items: center; /* Menengahkan konten secara horizontal */
+        padding: 20px; /* Mengurangi padding untuk layar kecil */
     }
 
     .about-content {
         margin-right: 0; /* Menghapus margin pada layar kecil */
         margin-bottom: 20px; /* Jarak bawah untuk konten */
+        text-align: center; /* Menyelaraskan teks ke tengah */
+    }
+
+    .about-content h1 {
+        font-size: 2rem; /* Ukuran font lebih kecil untuk judul */
+        margin-bottom: 10px; /* Mengurangi jarak bawah untuk judul */
+    }
+
+    .about-content p {
+        font-size: 1em; /* Ukuran font lebih kecil untuk paragraf */
+    }
+
+    .about-image img {
+        width: 100%; /* Lebar gambar penuh pada layar kecil */
+        margin-top: 1rem; /* Jarak atas untuk gambar lebih kecil */
+    }
+}
+
+@media (max-width: 480px) {
+    .about-content h1 {
+        font-size: 1.5rem; /* Ukuran font lebih kecil untuk judul */
+        margin-bottom: 5px; /* Mengurangi jarak bawah untuk judul */
+    }
+
+    .about-content p {
+        font-size: 0.9em; /* Ukuran font lebih kecil untuk paragraf */
+    }
+
+    .about-content p,
+    .about-content h1 {
+        color: #514c4c; /* Pastikan warna teks kontras dengan latar belakang */
     }
 }

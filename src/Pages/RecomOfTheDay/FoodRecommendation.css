@@ -1,7 +1,7 @@
 .container {
   padding: 2rem;
-  background-color: #347e3a; /* lime-300 */
-  border-radius: 0.5rem;
+  background-color: #939795; /* Warna latar belakang */
+  border-radius: 1rem;
   margin-top: 70px !important;
   display: flex;
   align-items: center;
@@ -9,13 +9,13 @@
 }
 
 .title {
-  font-size: 3rem; /* text-4xl */
+  font-size: 3rem; /* Ukuran font untuk judul */
   font-weight: bold;
   color: black;
   line-height: 1.2; /* Mengatur jarak antar baris */
   text-align: left; /* Menyelaraskan teks ke kiri */
   white-space: pre-line; /* Memungkinkan teks pecah baris */
-  margin-left: 100px;
+  margin-left: 100px; /* Jarak dari kiri */
 }
 
 .foodContainer {
@@ -44,11 +44,11 @@
   position: absolute;
   top: 0.5rem;
   right: 0.5rem;
-  background-color: #fde68a; /* yellow-200 */
-  color: #1f2937; /* gray-800 */
-  font-size: 0.875rem; /* text-sm */
+  background-color: #fde68a; /* Warna latar belakang label */
+  color: #1f2937; /* Warna teks label */
+  font-size: 0.875rem; /* Ukuran font untuk label */
   padding: 0.25rem 0.75rem;
-  border-radius: 9999px; /* full rounded */
+  border-radius: 9999px; /* Sudut membulat penuh */
 }
 
 .overlay {
@@ -56,22 +56,22 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5); /* Overlay hitam transparan */
   color: white;
   padding: 1.5rem;
   box-sizing: border-box; /* Menghindari masalah dengan padding */
 }
 
 .foodTitle {
-  font-size: 1.125rem; /* text-lg */
+  font-size: 1.125rem; /* Ukuran font untuk judul makanan */
   font-weight: 600;
 }
 
 .details {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
-  font-size: 0.875rem; /* text-sm */
+  gap: 1.5rem; /* Jarak antar detail */
+  font-size: 0.875rem; /* Ukuran font untuk detail */
   margin-top: 0.5rem;
 }
 
@@ -80,3 +80,50 @@
   align-items: center;
 }
 
+/* Media Queries untuk Responsif */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Ubah menjadi kolom pada layar kecil */
+    align-items: flex-start; /* Rata kiri untuk konten */
+    padding: 1rem; /* Padding lebih kecil */
+  }
+
+  .title {
+    font-size: 2.5rem; /* Ukuran font lebih kecil untuk judul */
+    margin-left: 20px; /* Jarak dari kiri lebih kecil */
+  }
+
+  .foodContainer {
+    margin-left: 0; /* Menghapus margin kiri pada layar kecil */
+    margin-bottom: 1rem; /* Jarak bawah antar kontainer makanan */
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 2rem; /* Ukuran font lebih kecil untuk judul */
+    margin-left: 10px; /* Jarak dari kiri lebih kecil */
+  }
+
+  .foodContainer {
+    width: 100%; /* Lebar kontainer penuh */
+    margin-bottom: 1rem; /* Jarak bawah antar kontainer makanan */
+  }
+
+  .label {
+    font-size: 0.75rem; /* Ukuran font lebih kecil untuk label */
+    padding: 0.2rem 0.5rem; /* Padding lebih kecil untuk label */
+  }
+
+  .overlay {
+    padding: 1rem; /* Padding lebih kecil untuk overlay */
+  }
+
+  .foodTitle {
+    font-size: 1rem; /* Ukuran font lebih kecil untuk judul makanan */
+  }
+
+  .details {
+    font-size: 0.75rem; /* Ukuran font lebih kecil untuk detail */
+  }
+}
