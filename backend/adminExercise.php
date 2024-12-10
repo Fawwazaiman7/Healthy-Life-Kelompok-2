@@ -47,7 +47,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
                 'time' => $exercise['ESTIMASI_WAKTU'],
                 'image' => $exercise['GAMBAR'],
                 'video' => $exercise['LINK_VIDEO'],
-                'kategori' => $exercise['KATEGORI_BMI_OLAHRAGA']
             ]);
         } else {
             echo json_encode(['success' => false, 'message' => 'Data tidak ditemukan']);
@@ -74,7 +73,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
                 'time' => $row['ESTIMASI_WAKTU'],
                 'image' => $row['GAMBAR'],
                 'video' => $row['LINK_VIDEO'],
-                'kategori' => $row['KATEGORI_BMI_OLAHRAGA']
             ];
         }
         echo json_encode($exercises);
@@ -103,18 +101,17 @@ if ($row_check['COUNT'] > 0) {
     error_log("Data yang diterima: " . print_r($data, true));
 
 
-        // Validasi input
-    $allowed_categories = ['Berat', 'Ringan', 'Sedang'];
+    // Validasi input
     if (
         empty($data['judul']) ||
         empty($data['kalori_per_set']) ||
-        empty($data['estimasi_waktu']) ||
-        !in_array($data['kategori_per_bmi'], $allowed_categories)
+        empty($data['estimasi_waktu'])
     ) {
-        echo json_encode(['success' => true]);
-        http_response_code(201);
+        echo json_encode(['success' => false, 'message' => 'Data tidak lengkap. Pastikan semua data telah diisi.']);
+        http_response_code(400); // Gunakan kode status 400 untuk kesalahan permintaan
         exit;
     }
+
 
 
     // Salin nilai dari $data ke variabel
@@ -123,7 +120,6 @@ if ($row_check['COUNT'] > 0) {
     $estimasi_waktu = $data['estimasi_waktu'];
     $gambar = $data['gambar'] ?? '';
     $link_video = $data['link_video'] ?? '';
-    $kategori_per_bmi = $data['kategori_per_bmi'];
     $admin_id = 1; // Contoh, sesuaikan dengan autentikasi admin
 
     // Dapatkan ID baru
@@ -141,7 +137,6 @@ if ($row_check['COUNT'] > 0) {
                 ESTIMASI_WAKTU, 
                 GAMBAR, 
                 LINK_VIDEO, 
-                KATEGORI_BMI_OLAHRAGA, 
                 ADMIN_ID_ADMIN
             ) VALUES (
                 :id, 
@@ -150,7 +145,6 @@ if ($row_check['COUNT'] > 0) {
                 :estimasi_waktu, 
                 :gambar, 
                 :link_video, 
-                :kategori_per_bmi, 
                 :admin_id
             )";
 
@@ -164,7 +158,6 @@ if ($row_check['COUNT'] > 0) {
     oci_bind_by_name($stmt, ":estimasi_waktu", $estimasi_waktu);
     oci_bind_by_name($stmt, ":gambar", $gambar);
     oci_bind_by_name($stmt, ":link_video", $link_video);
-    oci_bind_by_name($stmt, ":kategori_per_bmi", $kategori_per_bmi);
     oci_bind_by_name($stmt, ":admin_id", $admin_id);
 
     if (oci_execute($stmt)) {
@@ -189,7 +182,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'DELETE') {
     error_log('Estimasi waktu: ' . $data['estimasi_waktu']);
     error_log('Gambar: ' . ($data['gambar'] ?? 'null'));
     error_log('Link video: ' . ($data['link_video'] ?? 'null'));
-    error_log('Kategori BMI: ' . ($data['kategori_per_bmi'] ?? 'null'));
 
     if (!$id) {
         echo json_encode(['success' => false, 'message' => 'ID olahraga tidak diberikan']);
@@ -214,20 +206,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'DELETE') {
 }
 
 // Mengedit olahraga (PUT request)
+// Mengedit olahraga (PUT request)
 if ($_SERVER['REQUEST_METHOD'] === 'PUT') {
     // Menerima dan mendecode data JSON
     $data = json_decode(file_get_contents('php://input'), true);
     error_log(print_r($data, true));
 
-
     // Validasi data yang diterima
     $id = isset($data['id']) ? $data['id'] : null;
     if ($id === null) {
-        error_log('ID is missing!');  // Log jika ID tidak ada
-        echo json_encode(['success' => true,
-            'message' => 'ID  ditemukan'
-        ]);
-        http_response_code(201);
+        error_log('ID is missing!');
+        echo json_encode(['success' => false, 'message' => 'ID tidak ditemukan']);
+        http_response_code(400);
         exit;
     }
 
@@ -242,9 +232,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'PUT') {
     }
 
     // Nilai default jika tidak diberikan
-    $gambar = $data['gambar'] ?? ''; // Default ke string kosong jika null
-    $link_video = $data['link_video'] ?? ''; // Default ke string kosong jika null
-    $kategori_per_bmi = $data['kategori_per_bmi'] ?? 'Umum'; // Default ke 'Umum'
+    $gambar = $data['gambar'] ?? '';
+    $link_video = $data['link_video'] ?? '';
 
     // Log data yang diterima
     error_log("Data yang diterima untuk update olahraga: " . print_r($data, true));
@@ -255,8 +244,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'PUT') {
                 KALORI_PER_SET = :kalori_per_set,
                 ESTIMASI_WAKTU = :estimasi_waktu,
                 GAMBAR = :gambar,
-                LINK_VIDEO = :link_video,
-                KATEGORI_BMI_OLAHRAGA = :kategori_per_bmi
+                LINK_VIDEO = :link_video
             WHERE ID_OLAHRAGA = :id";
 
     // Persiapkan statement
@@ -268,27 +256,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'PUT') {
     oci_bind_by_name($stmt, ":estimasi_waktu", $estimasi_waktu);
     oci_bind_by_name($stmt, ":gambar", $gambar);
     oci_bind_by_name($stmt, ":link_video", $link_video);
-    oci_bind_by_name($stmt, ":kategori_per_bmi", $kategori_per_bmi);
     oci_bind_by_name($stmt, ":id", $id);
 
     // Eksekusi query dan cek hasilnya
     if (oci_execute($stmt)) {
-        // Log jika query berhasil
         error_log("Query berhasil dieksekusi untuk ID: $id");
-
         echo json_encode(['success' => true, 'message' => 'Olahraga berhasil diperbarui']);
         http_response_code(200);
     } else {
-        // Log error jika query gagal
         $error = oci_error($stmt);
         error_log("Gagal mengeksekusi query: " . $error['message']);
-
         echo json_encode(['success' => false, 'message' => 'Gagal memperbarui olahraga', 'error' => $error['message']]);
         http_response_code(500);
     }
 
     exit;
 }
+
 
 
 

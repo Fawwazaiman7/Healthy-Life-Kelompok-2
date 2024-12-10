@@ -55,8 +55,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
                     'id' => $article['ID_ARTIKEL'],
                     'title' => $article['JUDUL'],
                     'content' => $article['KONTEN'] ?? "",
-                    'category' => $article['KATEGORI_ARTIKEL'] ?? "",
-                    'bmi_category' => $article['KATEGORI_BMI_ARTIKEL'] ?? "",
+                    'image' => $article['GAMBAR'] ?? ""
+
                 ],
             ];
             echo json_encode($response);
@@ -92,6 +92,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
                 'content' => $row['KONTEN'] ?? "",
                 'category' => $row['KATEGORI_ARTIKEL'] ?? "",
                 'bmi_category' => $row['KATEGORI_BMI_ARTIKEL'] ?? "",
+                'image' => $row['GAMBAR'] ?? ""
+
             ];
         }
 
@@ -138,8 +140,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $next_id = (int) $row['NEXT_ID'];
 
     // Insert Artikel dengan CLOB kosong
-    $sql = "INSERT INTO artikel (ID_ARTIKEL, JUDUL, KONTEN, KATEGORI_ARTIKEL, KATEGORI_BMI_ARTIKEL, ADMIN_ID_ADMIN) 
-            VALUES (:id_artikel, :judul, EMPTY_CLOB(), :kategori_artikel, :kategori_bmi_artikel, :admin_id)
+    $sql = "INSERT INTO artikel (ID_ARTIKEL, JUDUL, KONTEN, ADMIN_ID_ADMIN, GAMBAR) 
+            VALUES (:id_artikel, :judul, EMPTY_CLOB(), :admin_id, :gambar)
             RETURNING KONTEN INTO :clob";
     $stmt = oci_parse($conn, $sql);
 
@@ -147,8 +149,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $clob = oci_new_descriptor($conn, OCI_D_LOB); // Membuat descriptor untuk CLOB
     oci_bind_by_name($stmt, ":id_artikel", $next_id);
     oci_bind_by_name($stmt, ":judul", $data['judul']);
-    oci_bind_by_name($stmt, ":kategori_artikel", $data['kategori_artikel']);
-    oci_bind_by_name($stmt, ":kategori_bmi_artikel", $data['kategori_bmi_artikel']);
+    oci_bind_by_name($stmt, ":gambar", $data['gambar']);
     oci_bind_by_name($stmt, ":admin_id", $admin_id);
     oci_bind_by_name($stmt, ":clob", $clob, -1, OCI_B_CLOB);
 
@@ -190,31 +191,28 @@ if ($_SERVER['REQUEST_METHOD'] === 'PUT') {
     // Salin data dari array $data ke variabel
     $judul = $data['judul'] ?? '';
     $konten = $data['konten'] ?? '';
-    $kategori_artikel = $data['kategori_artikel'] ?? '';
-    $kategori_bmi_artikel = $data['kategori_bmi_artikel'] ?? '';
+    $gambar = $data['gambar'] ?? '';
 
     // Validasi input
-    if (empty($judul) || empty($konten)) {
-        echo json_encode(['success' => false, 'message' => 'Judul dan Konten wajib diisi']);
+    if (empty($judul) || empty($konten) || empty($gambar)) {
+        echo json_encode(['success' => false, 'message' => 'Judul, Konten, dan Gambar wajib diisi']);
         http_response_code(400);
         exit;
     }
 
     // Query untuk memperbarui data artikel
     $sql = "UPDATE artikel
-        SET JUDUL = :judul,
-            KONTEN = EMPTY_CLOB(),
-            KATEGORI_ARTIKEL = :kategori_artikel,
-            KATEGORI_BMI_ARTIKEL = :kategori_bmi_artikel
-        WHERE ID_ARTIKEL = :id_artikel
-        RETURNING KONTEN INTO :konten_clob";
+            SET JUDUL = :judul,
+                KONTEN = EMPTY_CLOB(),
+                GAMBAR = :gambar
+            WHERE ID_ARTIKEL = :id_artikel
+            RETURNING KONTEN INTO :konten_clob";
 
     $stmt = oci_parse($conn, $sql);
 
     // Binding variabel ke query
     oci_bind_by_name($stmt, ":judul", $judul);
-    oci_bind_by_name($stmt, ":kategori_artikel", $kategori_artikel);
-    oci_bind_by_name($stmt, ":kategori_bmi_artikel", $kategori_bmi_artikel);
+    oci_bind_by_name($stmt, ":gambar", $gambar);
     oci_bind_by_name($stmt, ":id_artikel", $id);
 
     // Placeholder untuk CLOB
@@ -278,8 +276,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'DELETE') {
 
     exit;
 }
-
-
 
     // Jika metode tidak dikenali
     http_response_code(405);

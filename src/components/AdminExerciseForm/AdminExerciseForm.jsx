@@ -14,7 +14,6 @@ const AdminExerciseForm = ({
     kalori_per_set: "",
     gambar: "",
     link_video: "",
-    kategori_per_bmi: "Ringan",
   });
 
   useEffect(() => {
@@ -26,7 +25,6 @@ const AdminExerciseForm = ({
         kalori_per_set: currentExercise.calories || "",
         gambar: currentExercise.image || "",
         link_video: currentExercise.video || "",
-        kategori_per_bmi: currentExercise.kategori || "Ringan",
         id: currentExercise?.id, // Pastikan ID dikirim jika ada
       });
     }
@@ -168,20 +166,6 @@ const AdminExerciseForm = ({
         />
       </div>
 
-      <div className="form-group">
-        <label htmlFor="kategori">BMI Category*</label>
-        <select
-          id="kategori"
-          name="kategori_per_bmi"
-          value={formData.kategori_per_bmi}
-          onChange={handleChange}
-          required
-        >
-          <option value="Ringan">Ringan</option>
-          <option value="Sedang">Sedang</option>
-          <option value="Berat">Berat</option>
-        </select>
-      </div>
 
       <div className="form-actions">
         <button type="submit" className="btn btn-success">

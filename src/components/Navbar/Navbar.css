@@ -186,3 +186,10 @@ main {
 .profile-dropdown button:hover {
   background-color: #f0f0f0;
 }
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .feature-card {
+    width: 100%;
+  }
+}

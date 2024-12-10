@@ -25,7 +25,7 @@
   overflow: hidden;
   margin-left: 160px;
   transition: transform 0.3s, box-shadow 0.3s;
-  max-width: 100%; /* Pastikan kontainer memiliki ukuran maksimal yang sesuai */
+  max-width: 50%; /* Pastikan kontainer memiliki ukuran maksimal yang sesuai */
   display: block; /* Pastikan elemen blok untuk menampilkan gambar dan konten */
 }
 
@@ -36,8 +36,8 @@
 
 .image {
   border-radius: 0.75rem;
-  width: 100%; /* Pastikan gambar menyesuaikan lebar kontainer */
-  height: auto; /* Membuat gambar menjaga aspek rasio */
+  width: 30%; /* Pastikan gambar menyesuaikan lebar kontainer */
+  height: 50%; /* Membuat gambar menjaga aspek rasio */
 }
 
 .label {

@@ -1,26 +1,21 @@
 import React, { useState, useEffect } from "react";
+import { Editor } from "@tinymce/tinymce-react"; // Import TinyMCE editor
 import "./AdminArticleForm.css";
 
 const AdminArticleForm = ({ currentArticle, onSave, onCancel }) => {
   const [formdata, setFormData] = useState({
     judul: "",
     konten: "",
-    kategori_artikel: "",
-    kategori_bmi_artikel: "",
+    gambar: "",
   });
 
   // Mengisi data jika sedang dalam mode edit
   useEffect(() => {
     if (currentArticle) {
-      console.log(
-        "currentArticle diterima di AdminArticleForm:",
-        currentArticle
-      );
       setFormData({
         judul: currentArticle.title || "",
         konten: currentArticle.content || "",
-        kategori_artikel: currentArticle.category || "",
-        kategori_bmi_artikel: currentArticle.bmi_category || "",
+        gambar: currentArticle.image || "",
       });
     }
   }, [currentArticle]);
@@ -28,6 +23,10 @@ const AdminArticleForm = ({ currentArticle, onSave, onCancel }) => {
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formdata, [name]: value });
+  };
+
+  const handleEditorChange = (content) => {
+    setFormData({ ...formdata, konten: content });
   };
 
   const handleSubmit = (e) => {
@@ -40,7 +39,6 @@ const AdminArticleForm = ({ currentArticle, onSave, onCancel }) => {
       ...formdata,
       id: currentArticle?.id, // Tambahkan ID jika sedang mengedit
     });
-    
   };
 
   return (
@@ -60,45 +58,36 @@ const AdminArticleForm = ({ currentArticle, onSave, onCancel }) => {
       </div>
       <div className="form-group">
         <label htmlFor="konten">Konten*</label>
-        <textarea
-          id="konten"
-          name="konten"
-          value={formdata.konten}
-          onChange={handleChange}
-          placeholder="Masukkan konten artikel"
-          maxLength={5000}
+        <Editor
+          apiKey="t823htr1whgddn0v9ily7k5ntj0b1au0f7w7rx0kzvl7mnfk" // Ganti dengan API Key TinyMCE Anda
+          initialValue={formdata.konten}
+          init={{
+            height: 400,
+            menubar: false,
+            plugins: [
+              "advlist autolink lists link image charmap print preview anchor",
+              "searchreplace visualblocks code fullscreen",
+              "insertdatetime media table paste code help wordcount",
+            ],
+            toolbar: [
+              "undo redo | formatselect | bold italic backcolor",
+              "alignleft aligncenter alignright alignjustify",
+              "bullist numlist outdent indent | removeformat | help",
+            ].join(" | "),
+          }}
+          onEditorChange={handleEditorChange}
         />
       </div>
       <div className="form-group">
-        <label htmlFor="kategori_artikel">Kategori Artikel*</label>
-        <select
-          id="kategori_artikel"
-          name="kategori_artikel"
-          value={formdata.kategori_artikel}
+        <label htmlFor="gambar">Gambar*</label>
+        <textarea
+          id="gambar"
+          name="gambar"
+          value={formdata.gambar}
           onChange={handleChange}
-          className="form-control"
-        >
-          <option value="">-- Pilih Kategori Artikel --</option>
-          <option value="Informasi Umum">Informasi Umum</option>
-          <option value="Olahraga">Olahraga</option>
-        </select>
-      </div>
-      <div className="form-group">
-        <label htmlFor="kategori_bmi_artikel">Kategori BMI (Opsional)</label>
-        <select
-          id="kategori_bmi_artikel"
-          name="kategori_bmi_artikel"
-          value={formdata.kategori_bmi_artikel}
-          onChange={handleChange}
-          className="form-control"
-        >
-          <option value="">-- Pilih Kategori BMI --</option>
-          <option value="Gemuk">Gemuk</option>
-          <option value="Ideal">Ideal</option>
-          <option value="Kurus">Kurus</option>
-          <option value="Obesitas Tingkat 1">Obesitas Tingkat 1</option>
-          <option value="Obesitas Tingkat 2">Obesitas Tingkat 2</option>
-        </select>
+          placeholder="Masukkan link gambar"
+          maxLength={5000}
+        />
       </div>
       <div className="form-actions">
         <button type="submit" className="btn btn-success">

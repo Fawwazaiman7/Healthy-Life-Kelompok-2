@@ -1,18 +1,25 @@
-// ExerciseCard.jsx
-import React from 'react';
-import './ExerciseCard.css'; // Pastikan Anda membuat file CSS terpisah untuk gaya
+import React from "react";
+import "./ExerciseCard.css";
 
-export default function ExerciseCard({ title, time, calories, image }) {
+const ExerciseCard = ({ title, time, calories, image, video, onClick }) => {
+  const handleClick = () => {
+    if (onClick) {
+      onClick({ title, video }); // Mengirim data title dan video ke parent
+    }
+  };
+
   return (
-    <div className="exercise-card">
-      <img src={image} alt={title} className="exercise-image" />
-      <div className="exercise-info">
-        <h3 className="exercise-title">{title}</h3>
-        <div className="exercise-details">
-          <span className="exercise-time">⏱ {time}</span>
-          <span className="exercise-calories">🔥 {calories}</span>
+    <div className="exercise-card" onClick={handleClick}>
+      <img src={image} alt={title} className="exercise-card-image" />
+      <div className="exercise-card-content">
+        <h3 className="exercise-card-title">{title}</h3>
+        <div className="exercise-card-details">
+          <span>{time} </span>
+          <span>🔥 {calories} kal</span>
         </div>
       </div>
     </div>
   );
-}
+};
+
+export default ExerciseCard;

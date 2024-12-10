@@ -7,6 +7,7 @@ import Home from './Pages/Home/Home';
 import Makanan from './Pages/Makanan/Makanan';
 import Olahraga from './Pages/Olahraga/Olahraga';
 import SignUp from './Pages/Sign Up/SignUp';
+import GetStarted from './Pages/GetStarted/GetStarted';
 import Login from './Pages/Login/Login';
 import RecipeDetail from './Pages/RecipeDetail/RecipeDetail';
 import ArticleDetail from './Pages/ArticleDetail/ArticleDetail';
@@ -26,6 +27,7 @@ const App = () => {
                 <Route path="/makanan" element={<Makanan />} />
                 <Route path="/olahraga" element={<Olahraga />} />
                 <Route path="/sign-up" element={<SignUp />} />
+                <Route path="/getstarted" element={<GetStarted />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/recipe/:id" element={<RecipeDetail />} />
                 <Route path="/article/:id" element={<ArticleDetail />} />

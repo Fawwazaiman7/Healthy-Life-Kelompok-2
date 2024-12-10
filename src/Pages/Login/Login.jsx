@@ -150,7 +150,7 @@ function LogIn() {
             {console.log("ReCAPTCHA Rendered")} {/* Tambahkan log ini */}
             <ReCAPTCHA
               ref={recaptchaRef}
-              sitekey="6Lde4ZUqAAAAAHRmk0U0ftnPWVbMZRB3x7IbOH2e" // Ganti dengan site key Anda
+              sitekey="6LfPN5YqAAAAACyWbNjprc9QhL3onnpmlbXujsxG" // Ganti dengan site key Anda
             />
           </div>
         )}

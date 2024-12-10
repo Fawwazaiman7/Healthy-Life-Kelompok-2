@@ -56,7 +56,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 handleError('CAPTCHA token is missing');
             }
 
-            $recaptchaSecret = "6Lde4ZUqAAAAAMmSjK_Po9G_sqm6Cn0yyHeImbd1"; // Secret Key Google
+            $recaptchaSecret = "6LfPN5YqAAAAAC1uC5tBMUYGpT7Z7p0pice6zH1F"; // Secret Key Google
             $recaptchaResponse = $input['recaptchaResponse'];
 
             // Kirim permintaan ke Google untuk memvalidasi token

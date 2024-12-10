@@ -45,49 +45,54 @@ function Profile() {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSave = async () => {
-    try {
-      const updatedData = {
-        id: userData.id, // Pastikan id dikirim
-        target_kalori: formData.target_kalori || userData.target_kalori, // Tambahkan jika diperlukan
-        berat_badan: formData.weight,
-        usia: formData.age,
-        tinggi_badan: formData.height,
-      };
+ const handleSave = async () => {
+   try {
+     // Pastikan formData memiliki nilai yang valid
+     if (!formData.weight || !formData.age || !formData.height) {
+       alert("Semua field harus diisi!");
+       return;
+     }
 
-      console.log("Data yang dikirim ke backend:", updatedData); // Debug data yang dikirim
+     const updatedData = {
+       id: userData.id, // Pastikan id dikirim
+       berat_badan: formData.weight,
+       usia: formData.age,
+       tinggi_badan: formData.height,
+     };
 
-      if (!updatedData.id || !updatedData.target_kalori) {
-        alert("ID dan Target Kalori harus diisi!");
-        return;
-      }
+     console.log("Data yang dikirim ke backend:", updatedData); // Debug data yang dikirim
 
-      const response = await axios.put(
-        `http://localhost:80/healthy_life_api/backend/profile.php`,
-        updatedData,
-        { headers: { "Content-Type": "application/json" } }
-      );
+     // Mengirim request PUT ke backend
+     const response = await axios.put(
+       `http://localhost:80/healthy_life_api/backend/profile.php`,
+       updatedData,
+       { headers: { "Content-Type": "application/json" } }
+     );
 
-      if (response.data.success) {
-        setUserData((prevData) => ({
-          ...prevData,
-          berat_badan: formData.weight,
-          usia: formData.age,
-          tinggi_badan: formData.height,
-        }));
-        setIsEditing(false);
-        alert("Profil berhasil diperbarui!");
-      } else {
-        alert("Gagal memperbarui profil: " + response.data.message);
-      }
-    } catch (error) {
-      console.error(
-        "Gagal memperbarui data pengguna:",
-        error.response?.data || error.message
-      );
-      alert("Terjadi kesalahan saat memperbarui profil.");
-    }
-  };
+     // Mengecek jika response berhasil
+     if (response.data.success) {
+       // Update state dengan data baru
+       setUserData((prevData) => ({
+         ...prevData,
+         berat_badan: formData.weight,
+         usia: formData.age,
+         tinggi_badan: formData.height,
+       }));
+       setIsEditing(false);
+       alert("Profil berhasil diperbarui!");
+     } else {
+       // Jika gagal memperbarui profil
+       alert("Gagal memperbarui profil: " + response.data.message);
+     }
+   } catch (error) {
+     console.error(
+       "Gagal memperbarui data pengguna:",
+       error.response?.data || error.message
+     );
+     alert("Terjadi kesalahan saat memperbarui profil.");
+   }
+ };
+
 
 
   if (!userData) {

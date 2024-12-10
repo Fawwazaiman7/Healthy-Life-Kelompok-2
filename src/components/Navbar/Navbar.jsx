@@ -60,7 +60,7 @@ const Navbar = () => {
           <Link to="/olahraga">Artikel Olahraga</Link>
         </li>
         <li>
-          <Link to="/exerciseandfoodtracker">Pelacak AKG</Link>
+          <Link to="/exerciseandfoodtracker">Tracker</Link>
         </li>
         <li>
           <Link to="/history">Riwayat</Link> 

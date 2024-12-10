@@ -53,3 +53,26 @@
 .recipeContent p {
   margin-top: 1rem; /* Jarak atas untuk paragraf */
 }
+
+.recipeDetail {
+  padding: 2rem;
+}
+
+.recipeImage img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.recipeContent ul {
+  list-style: disc;
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.recipeContent h3 {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  color: #333;
+}

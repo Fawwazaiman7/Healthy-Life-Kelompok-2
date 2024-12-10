@@ -417,7 +417,6 @@ const AdminManagement = () => {
                   <li key={article.id} className="list-group-item">
                     <div>
                       <h5>{article.title}</h5>
-                      <p>Kategori: {article.category}</p>
                     </div>
                     <div className="action-buttons">
                       <button

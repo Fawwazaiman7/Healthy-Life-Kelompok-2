@@ -131,3 +131,128 @@
 )
 
 [08-Dec-2024 18:51:01 Europe/Berlin] isCaptchaEnabled: disabled
+[09-Dec-2024 02:28:18 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[09-Dec-2024 02:28:18 Europe/Berlin] isCaptchaEnabled: disabled
+[09-Dec-2024 02:33:42 Europe/Berlin] Received input: Array
+(
+    [username] => Tama
+    [password] => 123
+    [isCaptchaEnabled] => 
+)
+
+[09-Dec-2024 02:33:42 Europe/Berlin] isCaptchaEnabled: disabled
+[09-Dec-2024 02:50:45 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[09-Dec-2024 02:50:45 Europe/Berlin] isCaptchaEnabled: disabled
+[09-Dec-2024 03:06:52 Europe/Berlin] Received input: Array
+(
+    [username] => Tama
+    [password] => 123
+    [isCaptchaEnabled] => 1
+    [recaptchaResponse] => 03AFcWeA4brpfD_RJXlSZ_7Cfm7e3CvbyXK0jc-9nM8ePoRwItkz_IR_NTtF3XzcHZ0ChWC3EJCI5dGa4HDCnZsMXUDi_NgC1AppWo4e5n664V6fPkc887fhNYsFfIWSt1n8Cw1wt3-5-bUscjqP6tZmqq0XOA6Xjxr9ZhTNoBmt0m3Xts1oVca4nOjis60YcCggRvbIIKBmIbLX4SwuOBHTTG4ps9xrGt8H-bbxZdeSSsD7WCpMDOovhzerkA2lmnBbgPb4zPPf0F8qZwUdRu4_A9RedWtAzEwwjL8qigxq3j8aPj4J-yX30GJ--pVx7lCnHGtvjzUxYBNI8kB5HtnsCM8JFUODQNSzfavPA5rBT5w5Ak9M1HKrCCxTrln4Iw4xk57gU4z1yJcstDCjrkRbj-m41uxH-GToaSV1K3tL2oia_rmX6D2kuPDK_bLoJlFjtZdVBjxH_BXZ1_4TculTHR9iPmU53POShfdVCnK_jpJWmufa4XtKoQcmNcQ3iIJC8HhjGe_Gpbez6HP4bc96FOD1AMIa_IW3dt3bZQvOWzodP0lwMoSRCKoLSmGVVbxhZ9zlMTPwVWLVg159XM5nNeO-6pF3Ne0tURf8GW4VfBff9O_PQ1mvowS-UFCJ4bpjp_nHYZ5YU_mKO-ZZ_5pynK0sIb0zBVQHCjQp05Z3WBhj4w0Ry0sJSloUoN000gBGTVwRM1tbJ5LnkOqUeRjh6fIyJIxMm0LSf-AoEAbQ2j1YADSSlGeC7fw_NwoDmHFOSDFVMp6GDZ-c0qZLENouQfqDWx6TePd6RATCn5xeFU6I6rEw7U6ugHGKtqVruW0mbNi2WmUI39lAnH10QuCeo25Mv64KiqUhlT2Nz8VYS_nZZRVMSvcDAmL9_rlpPNZCdZlEoMs6rrU-n02gG3WBR-t_JkAlkdOXdMer3VOXfixTohrbTtUVFjGutmF-dY_D9OeQXsOLu1zHh9KKxhLPid5RxiZTX7SfBmBJumzUlKZfrJnppy1Dc8l5Z2CRBcrguUVFDU9yfIT2ULNu-dGQ5kDnwQDs-IqYm57eSTGm9r8E22MHr4ws7BnH8P6Xu11nEFue4UvtOEs53SnjoYQY1oVpAV1gF9VZ-NMm_vE-Aek-TI3g9v5njRnSaGuTr9u7To0eOcaSQtJdsAvhTMVpLhQZRw3699ETcCg12TxmOFjC28T12ut9EeA6gXUoTogJUCVBkB8_KfTLypH1zjVo4FN0aswcGxg_SIy2jkRaMdRfDYAsWsQnntfY3x97BrAE7u1oRJI7sK1reJEMJdk_-sT46_FrsRDxb7Ghw0_WIKXG6hBmHM6c5THYcTv061QGnyM2amLMDksjhFS7JwwE_h9Pn7yTmXtNi367oTjnj4qv04iWzfesgWuK7EwXbc2K0Gx2fx24hMRQTrRM_zXNRKICRhTYSdTITSS4Q5tKwFWD6ZtzL2ZyaPyQHeTQ_BtzkmaovbSRLxtQ153FyF55zPXr6_eGIXvSXOr_zdCd2INIfZGFd_0Ojui_bDZlrseUoKyjmamNHLRfHliYcPcq4H_FZCB848tptmw-EmtzBR4soaEnziwv6OtkaxOEKk-0Dc1qWVUN_3eHjALzWh5kow9dBKreCoiZ5bxgs1GSnalJG8JpiUy5NQgAbYREqbpGwDUUVOr2CcfcoU9P2ke_NlasJmzfW-alAtBQ_vAqCIG4OalptB64N6nN3L_wHWWBs1ib_MnGAe1bYT21sUY6Ktk2u9EW6HLHUkWygVOF8gBOxa9F1vZ4VjfqqeVfB3i0pOdFvcAHhJ0r0M0LgRk1KQcQJI4xWSOEk1yRJQicOqPufKapdWW1YGBaFDN10y-XwXO3IIN7pAWK0AHoGJ0qbqZSuldKiSR000pwDTCHJOPR4V_1tpUhh-lwNBwAjXdeK-EmH_APhjIo70rFeU5nWPe6--oy7sgCezv0GIx6W5TnH4_NcDlCajZpJ6kVyG8iZRd_gycxivSWKntKclpiFmKqMTF3rXMMudRuESdHq8yEPW0lbR_oat-VbztMuUpV5tD41ieryJ97oHiEqV_TzoR0l-FeefUVHK5suWly10n3ouHH53ILoqJ0b1qOZvv85KzH54UfKQRzJ_1jwuwcVsDuEyY1yBcGEtF8kN3i5Z8aGWvSohYF7KQWiFYypRm_B2CoA_tTS-S_R8PMeY7tgekXJHlnLAPqv-qKifJAl99p-L36z6QUuPisSOAFiK80bxeCmtKw8M
+)
+
+[09-Dec-2024 03:06:52 Europe/Berlin] isCaptchaEnabled: enabled
+[09-Dec-2024 03:41:38 Europe/Berlin] Received input: Array
+(
+    [username] => Tama
+    [password] => 123
+    [isCaptchaEnabled] => 
+)
+
+[09-Dec-2024 03:41:38 Europe/Berlin] isCaptchaEnabled: disabled
+[09-Dec-2024 04:05:12 Europe/Berlin] Received input: Array
+(
+    [username] => Tama
+    [password] => 1234
+    [isCaptchaEnabled] => 1
+    [recaptchaResponse] => 03AFcWeA7rpvt7avOqLJm-nkl8AHWTy4sfdaPiDAWyF6_4XTqzapLW0zka-GBzvWguTNUoTmc7HDOV9TzYZxwPrnSjysvt_RUtGiEuP5Ck6W3FTzOIHQUdHOfYNJZ3DCroFqV1oFKGdnx9mBnBRFvOdU0bU6Fjjyu9uESJsMxC4EHkC8YW-ErCni4o618BGLOZJeudyVo7ekC1pAkzU7ZnfSJA1ZbP_iDf0YnDXWJSQUExXsTA5yEFpRWJUHTxnzOriSQ2auuk0A1viDMtgtww6Py4rIWYmMU-C2KnhpEI4TPU-TNC639ADSFimCJH2e183ptCbG08rGVVlA8P6orFx-V0LyVfwLUebJk93Id6WZ8xu8LnBuCXwgvsl0Ac-_lXe278wGw17smAncaHiASokZnaLazJy1lFi4i3V0e4VYtzDUkLp51OdxOqH1Er0deYz1Bi-qJU5xo4w32JAvCI618wsUWbG7u_WuoVgEi8f6GIjyyVRQzHMc2-cE_lc9lRuiq-aT2ns0oPhIUbeI-u3sqBj71o2eVNo7ryaTGmyiKr95hxOdygikf5zAvg-PPv5CHYvOOHnHLO0zc2QyFOkUd3Ln9HQzkkAMDfuDRXLjFHnUb97Of0XvPNfojuJCPkTuwGY3zq3dqKKR5wgiZ7acC85ItPRJFfTWdxWRm7RhFjhLGgsBOoZiXKXqu7BEf7F0i80KrJqivsTCVyL9tapgsPqqKrTVCRrFJq-EGky1e20GNjCAjZOUcRFdGod_f8-1PEwvXYSQYg__cIw1CR9HDHDVs1tPgaGvU6ChPKD1eh1A2i6cv81PBNWM1urFk7Xfxryig0rFapiofcs3ljf2DfWftnvatsTvLdSLmvOt5CATOlP97lqc-H9i_SldRZSlJI4XlJpBmRiqrWFTSJrqqj3cMe3MxAiTwFaWYxP5CHpoKOyHL_UtPjnlb5dOSXUbief6pyKKDUAYYa5ID6IMXnyoTNAJOXC7wU6dgyUwCYTz2oUkjMsL_khRitObgJ3va7lV0kwl86QFwDs3dQiqbuN6M9qbNiwSmYSI7ykOAjgbN50za5t4bNAmzeu8SZH4uGKw9OUwfuw8yr8M7txVzYmDGExagPIwi2NyLGxkwxcr7R-w4XfzIZ79WQQ4s1Bcc7rJkJDoDvK3oKms5Y2OK7psCv5UlitovFM5YeHMLa_iiVcbNgbKb0UreuNcwVWgafwz3p3vQpd5zEX0vmfrCgdmfiaS9Q4dzKmvtnPKDUjnla-wUY-MN88a9203Cv-YkU9YvCqZeX4xLStHnI8hr1Z8AWOOkgvuh9E2OmhqN_4q0KqlhO0uq58EpJB3upDKMpZ-U649qac2Zwq1VJE__i3ekNLuVkozWRycmwyY16Xggt_m2C-9Mb_G381UaC-VOFu0mNJwwAxcaIYIH0sDlrkYrud1iRJMb6TSBLlXnFFpWmCWDJeMZdbntZEY7XSzxiA08VYjec9a4crKD7iFIoqj5KIo6o-JKtkRwFe6HvnLZAXNGGitzadks--d4SRUcbQ10ZMjK8BrxIIJi4uNG7UOSzsM-g8cegz3m6vlq07qSatCR4p-_tO0V4d4gu1Mu0oPYPKTGjU0TQmLazX-xKgWUcFmEU1QgeX-FhWrm-oU_DJ5tvlpVekgdYdArOJzlRPweFSK9IM-HSzJWS0vEZdc3tyncvfz9Q0jZl7cEj7pzKD3SyJRq3ug2qYrMifAdUO89KcRK2sgJE11VCtfLlHy4wk-xF3YrYoJF8G_XLiD0dm62cL-lVvUqUXJTfE863EI_-bht83PxVu3fOyV204O_ujtOW61BUUcP5MlS1J1DnHy3otRPJOni0S3lvJZRQ6PpN6RFmVE_2ZYXNxa_YzKa8h7kONlxSqL2zVFE3FABbze-cZhuK3AzkSq89lDGKH0w2FB-WZaeXIgsZJmMcoWFA5LWypCkB_8_Dq1uxXXK52Ylz82dAD0GCrmqUbLdXdVN_7N7utCwW58tMJZrDyPyh2Juf5MribVCHpXw-w_6NLHoi1NDlDPzi1Wfjgpk59ZFZmFSSZPRX7rDeYiybVKYYKwzgltmUnpxFfVdQWiQCuVJnRpYVNW_D8KgnHDMGOowS_Zpmcy6D8XSuFoOzRMcW_O4syDlD9sWCW0Q-8YP3ucnrjJYzlXQhk3slRjq9zfy3XOpKxTah6VWSbvUyjeyAp9JDC97XDuwxOuLpfzunfXU2zwA
+)
+
+[09-Dec-2024 04:05:12 Europe/Berlin] isCaptchaEnabled: enabled
+[09-Dec-2024 04:05:14 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[09-Dec-2024 04:05:23 Europe/Berlin] Received input: Array
+(
+    [username] => Tama
+    [password] => 123
+    [isCaptchaEnabled] => 1
+    [recaptchaResponse] => 03AFcWeA5GpsuoKwlgVTG7-VWLXYUosItspt_AwU-uLuRNQAuDDCO61SB7eYmfMp_9U4LmNaMsNrJ6RYHRCPL_ybDbKn3IiDIl44Imj2we73enpXylOKsJDXeLSpFwenPAULAaM_g-ArQ4AfJqNMT3QuHI9qeYjeyBT4YZ4pnV9wPQY3A4cGrfDScz_K4r7w9FKls3rKTYcyK6TYp3X7_oxJ76XCTpdYHHPXr-8aArJ9Whv-iALEbVFgLQwEgdvxjhNjhbMR91lheUTDNhqIC40wy9JQU1BKPJhVZf25clcRP-9jbg1oURu0iW_953hFozFmZQ73NEw3vmF8d0BBW0imCiphwk6polfFdemVd-7c0JX4TsL7by9YKC_uAepnr_8bZguheJfMAs7IiTo8wF1qbAnKN_Ve04L6Qct_L4_GlYd3R5HFYuPedlh8F78AnwQa-owjMDWQHgNcaNOy7Qp_k_71gcYnRVirpMe3kCx3qe-mIHiLyMuFk64YAhoqPRKN8RNkBJSuj19sJOc4EYIxyBKSefMWNvVmcU4KuqTb7Wy8fwbhlNJFurm8GZI9uIFqmBtiPcf4EExeI-l0E-C-7tgZaD2yRSMvo3-3_KI1I-24Mz2ZvV7h1Op2FGaaKzRuNCzgSQW1rJ_yvjWblIooLEYhEUqONaPh13NWydo2Lb8tRXlkO4Gpx4ax0D-hb6qyraXpZreQUT8zENXEQyQTbZpj6Vh4IunO0-JhqLRFQLbVfHTI8FXrhMxv0XNb8K5HvDqC9Pns_Ows4r6ALFkldDMDYgO8_C6XAtZDoxQgb9Xo1FiwkZztYS7Uy800_C16YW_Ccqv-ZJCulYXpu1C6twhOc2C7APA-dmVMlMpQte05HhYWXhXhhnAyOfHlERbOH0Ig-6sdZbShQqedGwMZzlqa7pbBVFn4Ktl1_FSfhqR7eRb4hCHN-6MsAyZDaZsCprCiiR8uf7-90h64vyu32Eq-7ecnYmezoGiTZSOCiONllh92bvhXQAV_sdLFuVX1fFfxtG9TXI_SrANRYSixrBHoGiNU2d6Sp1QuOMRYDFZ-sQjmdIQe1HpeCoodsdHvkm_ZOw4yF1lrSqVYeD2cXFwEJwUFqxwZV65I7aquUh9tS7q0kU8i1LBYc3mG-ldKgw4kykY_oCssmUC2HS9N0VIuSAEe5jY8tvjLM1Jm-_5LQiVj9YGhIl1b0LjPl-Cr3McNeD7IU01kGD7Hiay0LB6LEMCMmgm0LtwchBLQocvnCZyCzy2DCHo0p34KACT4cGbT_3V2QYKFtEfOfP9kyi9Rejo4LhJN_ZQ8ef02UsHNBTSd7C_UEz8nHERjLq0lxqUtoTGoRlPbIeBDn3aRwcG9LqUXO1K1Wp3i4A2vf-XI2hpdQMM_oFZqE-e6pIWkolDFmRVJcj_iCxJg6Wgt_df2LZQEN6qAwVEVioT6V-k-9Rghx3iEmZEo9R5x6WcbfmJAmJqBNTyA4vpRNzipqI_NsN5U5jX5b-R2HBG_LuS6RSK-tOKB3-B9mBBUHRlzqH3C2XNSmoLIElCNxN_Bxu9FwUoo0ItmYY-qzUmSL9IebqVXoAvp1iTVP6Lw00pLc9PIup8Zkha41twKzrn3yfzqX_kM8hbCCOBLuPQnjn-DhJAQLLQ--Ki8ieLem64YVkcAAq8xcC8_IR6JhwsQlOZNSOUw_a-caScdyZLVlhN5m_OlPNYsW2AhDEOsYRixNd1kTyNQLYocN8EWK6psJZV1klesAgUSvIlIfEOSNzJ0Mx9mhUpqdZqXsHV1KfD4kSfywhy1UvX_4aN-rgWcFkQeZHryFIyhzEieloTJC5Ku3uIZvocB1oK24G241A9S1Qzo2jX4ETQ_sKNDm1JibdrFS4TcpOCqwAo36o8uLFGgCyo5OfR9fK3zNnjFxXHiQ4W5KX79NrGtKfYF9VjbC43ZnLXJNfjvfFzTxWY-q5ZE-chusFk4Yb6p7QZRTIg26GuOIDFmvP1Qlf8a271NzpQt9-jM6hZgkwQMHbAKRNYQ0OmZZPRR_E0XaseRwgcojkGj95QLv8waN4i5wQdSpcDbx42zcftQBFi6Hw8_MCj0g8L17wTSzaM8Do1k6_mNKyqU_WYx_496ISJb0deDPRwvlf7XlcSsAxcfZECEYUFeq_9tfPrrSO8NzWmV2cgKFVOGUJYnI0dj7AVzFOku82dE-Zpt0IU_1ifO7dfdYpFczh_2JYpC1hrYG2WnsEOvNj69J6uQtU
+)
+
+[09-Dec-2024 04:05:23 Europe/Berlin] isCaptchaEnabled: enabled
+[09-Dec-2024 07:16:42 Europe/Berlin] Received input: Array
+(
+    [username] => Tama
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[09-Dec-2024 07:16:42 Europe/Berlin] isCaptchaEnabled: disabled
+[09-Dec-2024 07:16:42 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[09-Dec-2024 07:16:45 Europe/Berlin] Received input: Array
+(
+    [username] => Tama
+    [password] => 123
+    [isCaptchaEnabled] => 
+)
+
+[09-Dec-2024 07:16:45 Europe/Berlin] isCaptchaEnabled: disabled
+[09-Dec-2024 07:26:48 Europe/Berlin] Received input: Array
+(
+    [username] => Tama
+    [password] => 123
+    [isCaptchaEnabled] => 
+)
+
+[09-Dec-2024 07:26:48 Europe/Berlin] isCaptchaEnabled: disabled
+[09-Dec-2024 18:45:08 Europe/Berlin] Received input: Array
+(
+    [username] => Tama
+    [password] => 123
+    [isCaptchaEnabled] => 
+)
+
+[09-Dec-2024 18:45:08 Europe/Berlin] isCaptchaEnabled: disabled
+[09-Dec-2024 18:45:51 Europe/Berlin] Received input: Array
+(
+    [username] => tes
+    [password] => tes
+    [isCaptchaEnabled] => 
+)
+
+[09-Dec-2024 18:45:51 Europe/Berlin] isCaptchaEnabled: disabled
+[09-Dec-2024 19:27:27 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[09-Dec-2024 19:27:27 Europe/Berlin] isCaptchaEnabled: disabled
+[09-Dec-2024 23:58:06 Europe/Berlin] Received input: Array
+(
+    [username] => Tama
+    [password] => 123
+    [isCaptchaEnabled] => 
+)
+
+[09-Dec-2024 23:58:06 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 00:33:23 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 00:33:23 Europe/Berlin] isCaptchaEnabled: disabled

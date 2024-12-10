@@ -12,7 +12,7 @@
 
 .feature-card {
     background-color: #426140 !important;/* Changed to black */
-    color: #010000 !important;
+    color: white !important;
     padding: 30px;
     border-radius: 10px;
     text-align: center;
@@ -38,7 +38,7 @@
 .feature-card p {
     font-size: 1.2rem;
     margin-bottom: 20px;
-    color: #000000;
+    color: whit7;
 }
 
 .feature-card a {

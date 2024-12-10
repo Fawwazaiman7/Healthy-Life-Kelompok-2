@@ -8,45 +8,63 @@
     background-color: #FEFF9F;
     margin: 1rem;
     transition: transform 0.3s, box-shadow 0.3s; /* Transisi halus untuk transformasi dan bayangan */
-  }
-  
-  .foodCard:hover {
+}
+
+.foodCard:hover {
     transform: scale(1.03); /* Meningkatkan ukuran sedikit saat hover */
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5); /* Meningkatkan bayangan saat hover */
-  }
-  
-  .foodDetails {
+}
+
+.foodDetails {
     flex: 1;
     padding: 1rem;
-  }
-  
-  .imageContainer {
-    width: 150px;
-  }
-  
-  .foodImage {
-    width: 100%;
-    height: auto;
-  }
-  
-  .foodTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Teks berada di tengah secara vertikal */
+}
+
+.imageContainer {
+    width: 120px;
+    height: 120px; /* Ukuran tetap untuk kontainer gambar */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Potong gambar yang terlalu besar */
+}
+
+.foodImage {
+    max-width: 156x; /* Lebar maksimum gambar */
+    max-height: 170px; /* Tinggi maksimum gambar */
+    width: auto; /* Menjaga rasio aspek gambar */
+    height: auto; /* Menjaga rasio aspek gambar */
+    object-fit: cover; /* Potong jika perlu untuk menjaga proporsi */
+    border-radius: 0.5rem; /* Opsional: tambahkan border radius agar lebih menarik */
+}
+
+.foodTitle {
     font-size: 1.5rem;
     margin: 0.5rem 0;
-  }
-  
-  .foodInfo {
+}
+
+.foodInfo {
     font-size: 0.875rem;
     color: #666;
-  }
-  
-  /* Media Queries untuk Responsivitas di FoodCard */
+}
+
+/* Media Queries untuk Responsivitas di FoodCard */
 @media (max-width: 768px) {
     .foodCard {
-      flex-direction: column; /* Susun gambar di atas teks di layar kecil */
-      align-items: flex-start; /* Rata kiri untuk teks */
+        flex-direction: column; /* Susun gambar di atas teks di layar kecil */
+        align-items: flex-start; /* Rata kiri untuk teks */
     }
-  
+
     .imageContainer {
-      width: 100%; /* Gambar memenuhi lebar kartu */
+        width: 100%; /* Gambar memenuhi lebar kartu */
+        height: auto; /* Tinggi fleksibel di layar kecil */
     }
-  }
+
+    .foodImage {
+        max-width: 100%; /* Sesuaikan lebar di layar kecil */
+        height: auto; /* Pertahankan rasio gambar */
+    }
+}

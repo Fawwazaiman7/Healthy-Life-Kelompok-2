@@ -25,10 +25,12 @@ if (!$conn) {
     exit;
 }
 
-function logError($message, $details = null) {
-    error_log(date('[Y-m-d H:i:s] ') . "Error: " . $message . 
-        ($details ? " Details: " . print_r($details, true) : "") . "\n", 
-        3, 
+function logError($message, $details = null)
+{
+    error_log(
+        date('[Y-m-d H:i:s] ') . "Error: " . $message .
+            ($details ? " Details: " . print_r($details, true) : "") . "\n",
+        3,
         "signup_errors.log"
     );
 }
@@ -57,13 +59,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 WHERE email = :email";
 
             $update_stmt = oci_parse($conn, $update_query);
-            
+
             if (!$update_stmt) {
                 $error = oci_error($conn);
                 logError("Failed to parse update query", $error);
                 throw new Exception('Database error: Failed to prepare update statement');
             }
-            
+
             oci_bind_by_name($update_stmt, ":email", $input['email']);
             oci_bind_by_name($update_stmt, ":usia", $input['usia']);
             oci_bind_by_name($update_stmt, ":jenis_kelamin", $input['jenis_kelamin']);
@@ -82,7 +84,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 'success' => true,
                 'message' => 'User information updated successfully'
             ]);
-
         } else {
             // Initial registration
             if (empty($input['name']) || empty($input['email']) || empty($input['password'])) {
@@ -96,7 +97,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             // Check if email exists (including deleted records)
             $check_query = "SELECT COUNT(*) as count FROM pengguna WHERE email = :email";
             $check_stmt = oci_parse($conn, $check_query);
-            
+
             if (!$check_stmt) {
                 $error = oci_error($conn);
                 logError("Failed to parse check email query", $error);
@@ -104,7 +105,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             }
 
             oci_bind_by_name($check_stmt, ":email", $email);
-            
+
             if (!oci_execute($check_stmt)) {
                 $error = oci_error($check_stmt);
                 logError("Failed to execute check email query", $error);
@@ -120,7 +121,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             // Verify admin exists
             $check_admin_query = "SELECT COUNT(*) as count FROM admin WHERE id_admin = 1";
             $check_admin_stmt = oci_parse($conn, $check_admin_query);
-            
+
             if (!$check_admin_stmt) {
                 $error = oci_error($conn);
                 logError("Failed to parse admin check query", $error);
@@ -170,7 +171,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             )";
 
             $insert_stmt = oci_parse($conn, $insert_query);
-            
+
             if (!$insert_stmt) {
                 $error = oci_error($conn);
                 logError("Failed to parse insert query", $error);
@@ -194,14 +195,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 'message' => 'User registration successful'
             ]);
         }
-
     } catch (Exception $e) {
         if (isset($conn)) {
             oci_rollback($conn);
         }
-        
+
         logError($e->getMessage());
-        
+
         echo json_encode([
             'success' => false,
             'message' => $e->getMessage()
@@ -219,4 +219,3 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         'message' => 'Invalid request method'
     ]);
 }
-?>

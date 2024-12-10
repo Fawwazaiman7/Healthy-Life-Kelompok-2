@@ -50,7 +50,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
         $stmt = oci_parse($conn, $query);
         oci_bind_by_name($stmt, ":email", $email);
-        
+
         if (!oci_execute($stmt)) {
             $error = oci_error($stmt);
             throw new Exception('Database error: ' . $error['message']);
@@ -85,7 +85,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
             'success' => true,
             'user' => $userData
         ]);
-
     } catch (Exception $e) {
         echo json_encode([
             'success' => false,
@@ -105,20 +104,27 @@ elseif ($_SERVER['REQUEST_METHOD'] === 'PUT') {
         error_log("Data yang diterima di backend: " . json_encode($data)); // Debug data
 
         $id = isset($data['id']) ? $data['id'] : null;
-        $target_kalori = isset($data['target_kalori']) ? $data['target_kalori'] : null;
+        $tinggi_badan = isset($data['tinggi_badan']) ? $data['tinggi_badan'] : null;
+        $berat_badan = isset($data['berat_badan']) ? $data['berat_badan'] : null;
+        $usia = isset($data['usia']) ? $data['usia'] : null;
 
-        if (!$id || !$target_kalori) {
-            throw new Exception('ID and target_kalori are required');
+        // Pastikan id, tinggi_badan, berat_badan, dan usia diisi
+        if (!$id || !$tinggi_badan || !$berat_badan || !$usia) {
+            throw new Exception('ID, tinggi_badan, berat_badan, and usia are required');
         }
 
-        // Query untuk update target kalori
+        // Query untuk update data pengguna
         $query = "UPDATE pengguna 
-                  SET target_kalori = :target_kalori 
+                  SET tinggi_badan = :tinggi_badan,
+                      berat_badan = :berat_badan,
+                      usia = :usia
                   WHERE id_pengguna = :id";
 
         $stmt = oci_parse($conn, $query);
         oci_bind_by_name($stmt, ":id", $id);
-        oci_bind_by_name($stmt, ":target_kalori", $target_kalori);
+        oci_bind_by_name($stmt, ":tinggi_badan", $tinggi_badan);
+        oci_bind_by_name($stmt, ":berat_badan", $berat_badan);
+        oci_bind_by_name($stmt, ":usia", $usia);
 
         if (!oci_execute($stmt)) {
             $error = oci_error($stmt);
@@ -127,7 +133,7 @@ elseif ($_SERVER['REQUEST_METHOD'] === 'PUT') {
 
         echo json_encode([
             'success' => true,
-            'message' => 'Target kalori updated successfully'
+            'message' => 'Profil updated successfully'
         ]);
     } catch (Exception $e) {
         echo json_encode([
@@ -139,11 +145,3 @@ elseif ($_SERVER['REQUEST_METHOD'] === 'PUT') {
         if (isset($conn)) oci_close($conn);
     }
 }
-
-else {
-    echo json_encode([
-        'success' => false,
-        'message' => 'Invalid request method'
-    ]);
-}
-?>

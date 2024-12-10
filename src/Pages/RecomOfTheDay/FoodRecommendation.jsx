@@ -1,10 +1,36 @@
-import './FoodRecommendation.css';
-import { Link } from 'react-router-dom';
-import { foodItems } from '../../data/foodData'; // Pastikan path sesuai dengan struktur direktori Anda
+import React, { useEffect, useState } from "react";
+import "./FoodRecommendation.css";
+import { Link } from "react-router-dom";
+import axios from "axios";
 
 export default function FoodRecommendation() {
-  // Pilih satu makanan tertentu (misalnya, item pertama dalam array)
-  const recommendedFood = foodItems[Math.floor(Math.random() * foodItems.length)];
+  const [recommendedFood, setRecommendedFood] = useState(null);
+
+  // Fetch food data from the backend
+  useEffect(() => {
+    const fetchFoodData = async () => {
+      try {
+        const response = await axios.get(
+          "http://localhost:80/healthy_life_api/backend/adminfood.php"
+        );
+        const foods = response.data;
+
+        if (foods && foods.length > 0) {
+          // Randomly select one food item
+          const randomFood = foods[Math.floor(Math.random() * foods.length)];
+          setRecommendedFood(randomFood);
+        }
+      } catch (error) {
+        console.error("Error fetching food data:", error);
+      }
+    };
+
+    fetchFoodData();
+  }, []);
+
+  if (!recommendedFood) {
+    return <p>Loading recommendation...</p>; // Show a loading message while fetching data
+  }
 
   return (
     <div className="container">
@@ -27,19 +53,14 @@ export default function FoodRecommendation() {
         />
 
         {/* Recommendation Label */}
-        <div className="label">
-          Rekomendasi Makanan Hari Ini
-        </div>
+        <div className="label">Rekomendasi Makanan Hari Ini</div>
 
         {/* Text Content */}
         <div className="overlay">
           <h3 className="foodTitle">{recommendedFood.title}</h3>
           <div className="details">
             <span className="detailItem">
-              ⏱ {recommendedFood.time}
-            </span>
-            <span className="detailItem">
-              🔥 {recommendedFood.calories}
+              🔥 {recommendedFood.calories} kalori
             </span>
           </div>
         </div>
@@ -47,7 +68,3 @@ export default function FoodRecommendation() {
     </div>
   );
 }
-
-
-
-  

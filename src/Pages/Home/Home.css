@@ -1,5 +1,4 @@
-/* Home.css */
-
+/* Home.css */    
 /* Hero Section */
 .hero-section {
   display: flex;
@@ -145,5 +144,12 @@
   }
   50% {
       border-color: white;
+  }
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .feature-card {
+    width: 100%;
   }
 }

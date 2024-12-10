@@ -7,7 +7,7 @@ export default function ArticleCard({ title, description, imageUrl, link }) {
       <div className="article-content">
         <h3 className="article-title">{title}</h3>
         <p className="article-description">{description}</p>
-        <a href={link} className="article-link">See more &rarr;</a> {/* Link to the full article */}
+        <a href={link} className="article-link">Baca Artikel &rarr;</a> {/* Link to the full article */}
       </div>
       <img src={imageUrl} alt={title} className="article-image" />
     </div>
