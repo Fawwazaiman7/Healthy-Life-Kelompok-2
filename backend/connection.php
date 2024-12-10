@@ -1,15 +1,29 @@
 <?php
-// Konfigurasi database
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "healthy_life";
+// Konfigurasi koneksi database Oracle
+$host = 'localhost';
+$port = '1521';
+$service_name = 'XE';
+$username = 'c##cuklis';
+$password = 'mukhlish546';
 
-// Membuat koneksi
-$conn = new mysqli($servername, $username, $password, $dbname);
+// Membuat string koneksi
+$dsn = "(DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = $host)(PORT = $port))
+    (CONNECT_DATA =
+        (SERVER = DEDICATED)
+        (SERVICE_NAME = $service_name)
+    )
+)";
 
-// Cek koneksi
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+$conn = oci_connect($username, $password, $dsn);
+
+if (!$conn) {
+    $e = oci_error();
+    trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
 }
+
+// Header CORS
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE");
+header("Access-Control-Allow-Headers: Content-Type");
 ?>

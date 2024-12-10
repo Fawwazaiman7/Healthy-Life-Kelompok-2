@@ -1,0 +1,148 @@
+/* Container utama form */
+.admin-food-form {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* Judul form */
+.admin-food-form h3 {
+  font-size: 1.8rem;
+  color: #4caf50;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Input fields */
+.admin-food-form .form-group {
+  margin-bottom: 15px;
+}
+
+.admin-food-form .form-group label {
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.admin-food-form .form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* Buttons */
+.admin-food-form button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.admin-food-form button.btn-success {
+  background-color: #28a745;
+  color: white;
+}
+
+.admin-food-form button.btn-success:hover {
+  background-color: #218838;
+}
+
+.admin-food-form button.btn-secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.admin-food-form button.btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+/* Ingredients list styling */
+.ingredient-list,
+.instruction-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ingredient-item,
+.instruction-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  background-color: #ffffff;
+  /* Warna latar belakang */
+  color: #333;
+  /* Warna teks */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ingredient-item span,
+.instruction-item span {
+  flex-grow: 1;
+  text-align: left;
+  margin-right: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Tombol delete pada ingredient dan instruction */
+.ingredient-item button,
+.instruction-item button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.ingredient-item button:hover,
+.instruction-item button:hover {
+  background-color: #218838;
+}
+
+/* Input untuk menambahkan ingredient dan instruction */
+.add-ingredient-input,
+.add-instruction-input {
+  width: calc(100% - 20px);
+  /* Sesuaikan lebar input */
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.add-ingredient-button,
+.add-instruction-button {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.add-ingredient-button:hover,
+.add-instruction-button:hover {
+  background-color: #218838;
+}

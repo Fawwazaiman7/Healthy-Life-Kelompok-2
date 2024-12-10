@@ -1,0 +1,79 @@
+/* RecipeDetail.css */
+
+.recipeDetail {
+  padding: 2rem;
+  background-color: #d4cfcf; /* Warna latar belakang */
+  color: black;
+  border-radius: 0.5rem;
+  text-align: center;
+  position: relative; /* Memungkinkan penempatan absolut untuk ikon silang */
+}
+
+.class-icon {
+  position: absolute; /* Posisi tombol di sudut */
+  top: 5rem; /* Jarak dari atas */
+  right: 1rem; /* Jarak dari kanan */
+  background-color: transparent; /* Latar belakang transparan */
+  border: none; /* Tanpa border */
+  color: white; /* Warna teks putih */
+  font-size: 1.5rem; /* Ukuran font */
+  cursor: pointer; /* Menunjukkan bahwa ini dapat diklik */
+  transition: color 0.3s; /* Transisi halus untuk perubahan warna */
+}
+
+.class-icon:hover {
+  background-color: rgb(255, 255, 255);
+  color:black;
+}
+
+.recipeInfo {
+  margin: 1rem 0;
+}
+
+.recipeImage img {
+  width: 100%;
+  border-radius: 0.75rem;
+  max-width: 400px; /* Membatasi lebar maksimum gambar */
+}
+
+.recipeContent {
+  margin-top: 2rem;
+  text-align: left; /* Menyelaraskan teks ke kiri */
+}
+
+.recipeContent h3 {
+  font-size: 1.5rem; /* Ukuran font untuk subjudul */
+  margin-bottom: 0.5rem; /* Jarak bawah untuk subjudul */
+}
+
+.recipeContent ul {
+  list-style-type: disc; /* Tipe daftar */
+  margin-left: 1.5rem; /* Jarak kiri untuk daftar */
+}
+
+.recipeContent p {
+  margin-top: 1rem; /* Jarak atas untuk paragraf */
+}
+
+.recipeDetail {
+  padding: 2rem;
+}
+
+.recipeImage img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.recipeContent ul {
+  list-style: disc;
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.recipeContent h3 {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  color: #333;
+}

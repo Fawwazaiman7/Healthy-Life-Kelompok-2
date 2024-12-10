@@ -1,0 +1,142 @@
+/* Container utama */
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(135deg, #8dc63f, #4e752c);
+  padding: 40px 0;
+  margin-top: 70px;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Header profil untuk ikon dan nama */
+.profile-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Ikon profil */
+.profile-icon {
+  font-size: 80px;
+  background: radial-gradient(circle, #000, #4e752c);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  color: #8dc63f;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.profile-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Nama profil */
+.profile-name {
+  font-size: 26px;
+  font-weight: bold;
+  margin-top: 10px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Statistik profil */
+.profile-stats {
+  display: flex;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 15px 0;
+  width: 90%;
+  justify-content: center;
+  gap: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Setiap item statistik */
+.stat-item {
+  text-align: center;
+  padding: 15px 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.stat-value {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.stat-label {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* Form Edit */
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+  width: 90%;
+}
+
+/* Input Field */
+.edit-form .form-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.edit-form label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #fff;
+  opacity: 0.9;
+}
+
+.edit-form input {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.edit-form input:focus {
+  outline: none;
+  border-color: #8dc63f;
+  box-shadow: 0 0 8px rgba(141, 198, 63, 0.8);
+}
+
+/* Tombol */
+button {
+  background-color: #000;
+  color: #8dc63f;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+  margin-top: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+  background-color: #4e752c;
+  color: #8dc63f;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}

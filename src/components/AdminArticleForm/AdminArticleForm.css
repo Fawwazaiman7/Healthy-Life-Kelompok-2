@@ -1,0 +1,86 @@
+/* src/components/AdminArticleForm.css */
+.admin-article-form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+  .admin-article-form h2 {
+    text-align: center;
+    color: #98c93b;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    border-bottom: 2px solid #98c93b;
+    padding-bottom: 10px;
+  }
+
+     .admin-article-form h3 {
+       text-align: center;
+       color: goldenrod;
+       margin-bottom: 20px;
+       font-size: 1.8rem;
+       padding-bottom: 10px;
+     }
+  
+  .admin-article-form label {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  .admin-article-form input,
+  .admin-article-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .admin-article-form input:focus,
+  .admin-article-form textarea:focus {
+    border-color: #98c93b;
+    outline: none;
+  }
+  
+  .admin-article-form .form-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .admin-article-form .form-buttons button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .admin-article-form .form-buttons button[type="submit"] {
+    background-color: #98c93b;
+    color: white;
+  }
+  
+  .admin-article-form .form-buttons button[type="button"] {
+    background-color: #f1f1f1;
+    color: #333;
+  }
+  
+  .admin-article-form .form-buttons button[type="submit"]:hover {
+    background-color: #7ba52f;
+  }
+  
+  .admin-article-form .form-buttons button[type="button"]:hover {
+    background-color: #ddd;
+  }
+  
+  .admin-article-form .error-message {
+    color: #dc3545;
+    font-size: 0.875rem;
+    margin-top: 5px;
+  }
+  

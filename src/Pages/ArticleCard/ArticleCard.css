@@ -1,0 +1,82 @@
+.article-container {
+  display: flex; /* Menggunakan flexbox untuk menyusun kartu secara horizontal */
+  justify-content: center; /* Pusatkan kartu */
+  align-items: flex-start; /* Rata atas untuk kartu */
+  gap: 20px; /* Jarak antar kartu */
+  margin: 40px 0; /* Margin untuk kontainer */
+  padding: 0 20px; /* Padding untuk kontainer */
+  flex-wrap: wrap; /* Membungkus kartu jika ruang tidak cukup */
+}
+
+.article-card {
+  display: flex;
+  flex-direction: column; /* Menyusun konten dalam kolom */
+  background-color: #7f7c7c !important; /* Warna latar belakang kartu */
+  color: #ffffff !important;
+  padding: 20px; /* Padding untuk kartu */
+  border-radius: 10px; /* Sudut yang lebih halus */
+  text-align: center; /* Teks rata tengah */
+  width: 200px; /* Lebar kartu */
+  height: 310px; /* Tinggi kartu */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.1s ease-out, box-shadow 0.2s ease-out;
+  will-change: transform, box-shadow;
+  cursor: pointer; /* Menunjukkan bahwa ini dapat diklik */
+}
+
+.article-card:hover {
+  transform: translateY(-10px) scale(1.02) !important; /* Floating effect with slight scale */
+  box-shadow: 0px 15px 20px rgba(101, 91, 91, 0.4); 
+  background-color: #a49f9f !important; /* Warna lebih gelap saat hover */
+}
+
+.article-card h3 {
+  font-size: 1.5rem; /* Ukuran font untuk judul */
+  margin-bottom: 10px; /* Jarak bawah judul */
+  color: #ffffff !important; /* Warna judul */
+}
+
+.article-card p {
+  font-size: 1rem; /* Ukuran font untuk deskripsi */
+  margin-bottom: 15px; /* Jarak bawah deskripsi */
+  color: #ffffff !important; /* Warna deskripsi */
+}
+
+.article-link {
+  color: #000000;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.09rem;
+}
+
+.article-link:hover {
+  text-decoration: underline;
+  color: rgb(255, 255, 255);
+}
+
+.article-image {
+  max-height: 150px; /* Ubah tinggi maksimum untuk gambar */
+  max-width: 150px; /* Ubah lebar maksimum untuk gambar */
+  height: auto;
+  object-fit: cover;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px; 
+}
+.article-card a {
+  color: #000000 !important; /* Warna link */
+  text-decoration: none; /* Tanpa garis bawah */
+  font-weight: bold; /* Tebal */
+  transition: color 0.3s ease; /* Transisi warna */
+}
+
+/* Efek hover untuk link */
+.article-card a:hover {
+  color: red !important; /* Mengubah warna teks menjadi merah saat hover */
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .article-card {
+      width: 100%; /* Lebar penuh pada layar kecil */
+  }
+}

@@ -1,0 +1,97 @@
+.article-detail {
+  max-width: 800px;
+  background-color: #ffffff;
+  margin: 2rem auto;
+  padding: 1rem;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  position: relative; /* Tambahkan ini untuk posisi tombol */
+}
+
+.close-button {
+  position: absolute; /* Posisi tombol di sudut */
+  top: 3rem; /* Jarak dari atas */
+  right: 1rem; /* Jarak dari kanan */
+  background-color: transparent; /* Latar belakang transparan */
+  border: none; /* Tanpa border */
+  color: rgb(0, 0, 0); /* Warna teks */
+  font-size: 1.5rem; /* Ukuran font */
+  cursor: pointer; /* Menunjukkan bahwa ini dapat diklik */
+  transition: color 0.3s; /* Transisi halus untuk perubahan warna */
+}
+
+.close-button:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+.article-detail h1 {
+  font-size: 2.5rem;
+  margin: 3rem 0; /* Jarak atas dan bawah */
+  color: #222;
+  text-align: center;
+}
+
+.article-detail img {
+  width: 80%; /* Ukuran gambar lebih kecil */
+  height: auto;
+  border-radius: 15px;
+  display: block; /* Memastikan gambar berada di tengah */
+  margin: 0 auto; /* Pusatkan gambar */
+  transition: transform 0.3s ease; /* Transisi untuk efek hover */
+}
+
+.article-detail img:hover {
+    transform: scale(1.05); /* Efek gelembung saat hover */
+}
+
+
+.article-detail p {
+    font-size: 1rem;
+    margin-top: 1.5rem; /* Jarak atas untuk paragraf */
+    margin-bottom: 1.5rem; /* Jarak bawah untuk paragraf */
+}
+
+/* Media Queries untuk Responsif */
+@media (max-width: 768px) {
+    .article-detail {
+        padding: 1rem;
+    }
+
+    .close-button {
+        top: 1rem; /* Jarak dari atas */
+        right: 1rem; /* Jarak dari kanan */
+        font-size: 1.2rem; /* Ukuran font lebih kecil */
+    }
+
+    .article-detail h1 {
+        font-size: 2rem; /* Ukuran font judul lebih kecil */
+    }
+
+    .article-detail p {
+        font-size: 0.95rem; /* Ukuran font deskripsi lebih kecil */
+        margin-top: 1rem; /* Jarak atas untuk paragraf lebih kecil */
+        margin-bottom: 1rem; /* Jarak bawah untuk paragraf lebih kecil */
+    }
+}
+
+@media (max-width: 480px) {
+    .article-detail {
+        padding: 0.5rem; /* Padding lebih kecil untuk layar kecil */
+    }
+
+    .close-button {
+        font-size: 1rem; /* Ukuran font lebih kecil */
+    }
+
+    .article-detail h1 {
+        font-size: 1.5rem; /* Ukuran font judul lebih kecil */
+    }
+
+    .article-detail p {
+        font-size: 0.85rem; /* Ukuran font deskripsi lebih kecil */
+        margin-top: 0.5rem; /* Jarak atas untuk paragraf lebih kecil */
+        margin-bottom: 0.5rem; /* Jarak bawah untuk paragraf lebih kecil */
+    }
+}

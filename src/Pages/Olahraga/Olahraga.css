@@ -1,0 +1,71 @@
+/* Reset CSS untuk mencegah overflow pada seluruh halaman */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* Olahraga.css */
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background: rgb(0, 0, 0);
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+  max-width: 80%;
+}
+
+.popup-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.popup-content iframe {
+  margin-top: 1rem;
+  width: 100%;
+  height: 315px;
+  max-width: 560px;
+}
+
+  .exercise-section {
+    padding: 2rem;
+    text-align: center;
+    background-color: #ebeee9;  /* Latar belakang gelap untuk kontras */
+    color: rgb(0, 0, 0);
+  }
+  
+  .olahraga-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: black;
+    font-weight: bold; /* Menjadikan teks tebal */
+}
+
+  
+  .exercise-cards {
+    margin-top: 40px;
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  

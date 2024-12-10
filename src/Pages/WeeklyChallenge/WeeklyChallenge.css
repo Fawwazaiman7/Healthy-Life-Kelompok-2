@@ -1,0 +1,162 @@
+.container {
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: #939795; /* Warna latar belakang */
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  width: 100%; /* Menambahkan jarak antara navbar dan container */
+}
+
+.weeklyChallenge {
+  padding: 2rem;
+  background-color: transparent; /* Mengubah latar belakang menjadi transparan */
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.challenge-video {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.challenge-video iframe {
+  width: 100%;
+  height: 200px;
+  max-width: 560px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.weeklyChallenge-title {
+  font-size: 3rem; /* Ukuran font untuk judul */
+  font-weight: bold;
+  color: black;
+  line-height: 1.2; /* Mengatur jarak antar baris */
+  text-align: left; /* Menyelaraskan teks ke kiri */
+  white-space: pre-line; /* Memungkinkan teks pecah baris */
+  margin-left: 100px; /* Jarak dari kiri */
+}
+
+.challenge-cards {
+  display: flex;
+  gap: 4rem; /* Jarak antar kartu */
+  justify-content: center;
+  width: 100%;
+}
+
+.challenge-card {
+  position: relative;
+  border-radius: 0.75rem;
+  box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s; /* Animasi halus */
+  width: 400px; /* Lebar kartu */
+  height: 250px; /* Tinggi kartu */
+}
+
+.challenge-card:hover {
+  transform: scale(1.05); /* Sedikit memperbesar saat hover */
+  box-shadow: 6px 12px 30px rgba(0, 0, 0, 0.9); /* Bayangan lebih besar saat hover */
+}
+
+.challenge-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Memastikan gambar memenuhi area */
+  z-index: 1; /* Di bawah informasi */
+}
+
+.challenge-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Overlay hitam transparan */
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  height: 110px; /* Tinggi area informasi */
+  z-index: 2; /* Di atas gambar */
+}
+
+.challenge-title {
+  font-size: 1.125rem; /* Ukuran font untuk judul tantangan */
+  font-weight: 600;
+  color: white;
+  text-align: left;
+}
+
+.challenge-details {
+  display: flex;
+  justify-content: space-between; /* Menyebar detail di antara dua sisi */
+  font-size: 0.875rem; /* Ukuran font untuk detail */
+  margin-top: 0.5rem;
+  gap: 1rem; /* Jarak antar detail */
+}
+
+.play-button {
+  position: absolute;
+  bottom: 85px; /* Posisi tombol */
+  right: 10px;
+  width: 45px; /* Ukuran tombol */
+  height: 45px;
+  background-color: #896CFE; /* Warna tombol */
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer; /* Menunjukkan bahwa ini adalah tombol yang dapat diklik */
+}
+
+/* Media Queries untuk Responsif */
+@media (max-width: 768px) {
+  .weeklyChallenge-title {
+    font-size: 2rem; /* Ukuran font lebih kecil untuk judul */
+    margin-left: 20px; /* Jarak dari kiri lebih kecil */
+  }
+
+  .challenge-cards {
+    flex-direction: column; /* Ubah menjadi kolom pada layar kecil */
+    align-items: center; /* Pusatkan kartu */
+    gap: 2rem; /* Jarak antar kartu lebih kecil */
+  }
+
+  .challenge-card {
+    width: 90%; /* Lebar kartu lebih kecil */
+    height: auto; /* Tinggi otomatis untuk responsif */
+  }
+
+  .play-button {
+    bottom: 10px; /* Posisi tombol lebih tinggi */
+    right: 10px; /* Posisi tombol tetap di kanan */
+  }
+}
+
+@media (max-width: 480px) {
+  .weeklyChallenge-title {
+    font-size: 1.5rem; /* Ukuran font lebih kecil untuk judul */
+    margin-left: 10px; /* Jarak dari kiri lebih kecil */
+  }
+
+  .challenge-card {
+    width: 100%; /* Lebar kartu penuh */
+    height: auto; /* Tinggi otomatis untuk responsif */
+  }
+
+  .play-button {
+    width: 40px; /* Ukuran tombol lebih kecil */
+    height: 40px; /* Ukuran tombol lebih kecil */
+  }
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .feature-card {
+    width: 100%;
+  }
+}

@@ -1,0 +1,65 @@
+/* components/Footer/Footer.css */
+.footer {
+    background-color: #fdfefe; /* Warna latar belakang */
+    color: #333; /* Warna teks */
+    padding: 30px; /* Padding yang lebih besar untuk ruang */
+    text-align: center; /* Menengahkan teks */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between; /* Meratakan ruang antar section */
+    flex-wrap: wrap; /* Membuat section responsif */
+    margin-bottom: 20px; /* Jarak dengan footer-bottom */
+}
+
+.footer-section {
+    flex: 1; /* Membuat section fleksibel */
+    margin: 10px; /* Jarak antar section */
+    min-width: 200px; /* Lebar minimum untuk setiap section */
+    max-width: 300px; /* Lebar maksimum untuk setiap section */
+}
+
+.footer-section h3 {
+    margin-bottom: 10px; /* Jarak bawah judul */
+    font-weight: bold; /* Menebalkan judul */
+    font-size: 1.2rem; /* Ukuran font judul */
+}
+
+.footer-section a {
+    color: #333; /* Mengubah warna link menjadi hitam */
+    text-decoration: none; /* Menghapus garis bawah pada link */
+}
+
+.footer-section a:hover {
+    text-decoration: underline; /* Menambahkan garis bawah saat hover */
+}
+
+.footer-bottom {
+    text-align: center; /* Menengahkan teks */
+    margin-top: 20px; /* Jarak atas */
+    border-top: 1px solid #0a0a0a; /* Garis pemisah */
+    padding-top: 10px; /* Padding atas */
+    font-size: 0.9em; /* Ukuran font untuk footer-bottom */
+    color: #555; /* Warna teks footer-bottom */
+}
+
+.social-icons {
+    display: flex; /* Menampilkan ikon secara horizontal */
+    justify-content: center; /* Menengahkan ikon */
+    margin-top: 10px; /* Jarak atas untuk ikon */
+}
+
+.social-icons a {
+    margin: 0 15px; /* Jarak antar ikon */
+}
+
+.social-icons img {
+    width: 40px; /* Ukuran ikon yang lebih besar */
+    height: 40px; /* Ukuran ikon yang lebih besar */
+    transition: transform 0.3s; /* Animasi saat hover */
+}
+
+.social-icons img:hover {
+    transform: scale(1.1); /* Efek zoom saat hover */
+}

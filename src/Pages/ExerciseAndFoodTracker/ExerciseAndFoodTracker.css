@@ -1,0 +1,62 @@
+/* Reset untuk elemen global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%; /* Memastikan body dan html mengisi seluruh tinggi layar */
+  font-family: 'Arial', sans-serif; /* Gunakan font yang mudah dibaca */
+  background-color: #ebeee9; /* Latar belakang gelap */
+  color: #ffffff; /* Teks berwarna putih untuk kontras */
+}
+
+/* Mengatur tampilan utama */
+.ExerciseAndFoodTracker {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #181818;
+  border-radius: 8px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Judul Halaman */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: white; /* Warna putih untuk judul */
+  text-align: center;
+}
+
+/* Subjudul */
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #ecf0f1;
+}
+
+/* Input Fields untuk Olahraga dan Makanan */
+input {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1.5rem; /* Jarak bawah ditingkatkan */
+  border: 1px solid #8b8b8b;
+  border-radius: 4px;
+  background-color: #cacdd1;
+  color: #000000;
+  font-size: 1rem;
+}
+
+/* Tombol Tambah Olahraga dan Makanan */
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #7f7c7c; /* Warna tombol */
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  /* Menghapus efek hover */
+}

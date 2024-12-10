@@ -1,0 +1,14 @@
+[08-Dec-2024 07:46:39 Europe/Berlin] Data yang diterima di backend: {"id":"184","target_kalori":"2000","berat_badan":"87","usia":"55","tinggi_badan":"178"}
+[08-Dec-2024 07:56:06 Europe/Berlin] Data yang diterima di backend: {"id":"184","target_kalori":"2000","berat_badan":"87","usia":"19","tinggi_badan":"178"}
+[08-Dec-2024 17:15:31 Europe/Berlin] Data yang diterima di backend: {"id":"184","target_kalori":"2000","berat_badan":"87","usia":"55","tinggi_badan":"160"}
+[08-Dec-2024 17:15:42 Europe/Berlin] Data yang diterima di backend: {"id":"184","target_kalori":"2000","berat_badan":"87","usia":"23","tinggi_badan":"160"}
+[09-Dec-2024 02:33:55 Europe/Berlin] Data yang diterima di backend: {"id":"184","target_kalori":"2000","berat_badan":"70","usia":"55","tinggi_badan":"167"}
+[09-Dec-2024 02:35:59 Europe/Berlin] Data yang diterima di backend: {"id":"184","target_kalori":"2000","berat_badan":"80","usia":"55","tinggi_badan":"167"}
+[09-Dec-2024 03:21:58 Europe/Berlin] Data yang diterima di backend: {"id":"184","target_kalori":"2000","berat_badan":"809","usia":"55","tinggi_badan":"167"}
+[09-Dec-2024 03:21:58 Europe/Berlin] PHP Warning:  Undefined variable $target_kalori in C:\xampp\htdocs\healthy_life_api\backend\profile.php on line 111
+[09-Dec-2024 03:25:56 Europe/Berlin] Data yang diterima di backend: {"id":"184","target_kalori":"2000","berat_badan":"53","usia":"55","tinggi_badan":"167"}
+[09-Dec-2024 03:25:56 Europe/Berlin] PHP Warning:  Undefined variable $target_kalori in C:\xampp\htdocs\healthy_life_api\backend\profile.php on line 111
+[09-Dec-2024 03:43:35 Europe/Berlin] Data yang diterima di backend: {"id":"184","berat_badan":"875","usia":"55","tinggi_badan":"167"}
+[09-Dec-2024 03:43:35 Europe/Berlin] PHP Warning:  Undefined variable $target_kalori in C:\xampp\htdocs\healthy_life_api\backend\profile.php on line 111
+[09-Dec-2024 03:47:24 Europe/Berlin] Data yang diterima di backend: {"id":"184","berat_badan":"875","usia":"55","tinggi_badan":"167"}
+[09-Dec-2024 03:49:51 Europe/Berlin] Data yang diterima di backend: {"id":"184","berat_badan":"875","usia":"22","tinggi_badan":"178"}
