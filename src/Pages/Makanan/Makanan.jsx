@@ -5,12 +5,20 @@ import "./Makanan.css";
 import FoodRecommendation from "../RecomOfTheDay/FoodRecommendation";
 import FoodCard from "../FoodCard/FoodCard";
 import Footer from "../../components/Footer/Footer"; // Impor Footer
+import Pagination from "../../components/Pagination/Pagination"; // Impor Pagination Component
 import axios from "axios"; // Untuk mengambil data dari API
 
 const Makanan = () => {
   const [foodItems, setFoodItems] = useState([]); // State untuk data makanan
   const [loading, setLoading] = useState(true); // State untuk indikator loading
   const [error, setError] = useState(null); // State untuk error handling
+  const [currentPage, setCurrentPage] = useState(1); // State untuk halaman saat ini
+  const itemsPerPage = 4; // Jumlah item per halaman
+
+  // Menghitung indeks awal dan akhir item pada halaman saat ini
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentItems = foodItems.slice(indexOfFirstItem, indexOfLastItem);
 
   useEffect(() => {
     // Fungsi untuk mengambil data makanan dari API
@@ -31,6 +39,10 @@ const Makanan = () => {
     fetchFoodItems(); // Panggil fungsi untuk fetch data
   }, []); // Hanya dijalankan sekali saat komponen dimuat
 
+  const handlePageChange = (pageNumber) => {
+    setCurrentPage(pageNumber);
+  };
+
   if (loading) {
     return <p>Loading food items...</p>; // Tampilkan loading saat data belum diambil
   }
@@ -46,7 +58,7 @@ const Makanan = () => {
       <FoodRecommendation />
       {/* Daftar Makanan */}
       <div className="makanan-grid">
-        {foodItems.map((food) => (
+        {currentItems.map((food) => (
           <FoodCard
             key={food.id}
             id={food.id}
@@ -56,6 +68,13 @@ const Makanan = () => {
           />
         ))}
       </div>
+      {/* Pagination */}
+      <Pagination
+        currentPage={currentPage}
+        totalItems={foodItems.length}
+        itemsPerPage={itemsPerPage}
+        onPageChange={handlePageChange}
+      />
       {/* Tambahkan Footer di sini */}
       <Footer />
     </main>

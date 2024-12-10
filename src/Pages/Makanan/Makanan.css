@@ -26,6 +26,41 @@ main {
   gap: 1rem; /* Jarak antara kartu */
 }
 
+/* Pagination Styling */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 10px 15px;
+  border: none;
+  background-color: #f0f0f0;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.pagination button.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.pagination button:hover:not(:disabled) {
+  background-color: #ddd;
+}
+
+
 /* Media Queries untuk Responsivitas */
 @media (max-width: 768px) {
   .makanan-grid {

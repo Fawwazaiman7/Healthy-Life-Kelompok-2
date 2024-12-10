@@ -62,11 +62,11 @@ const RecipeDetail = () => {
             ))}
           </ul>
           <h3>Cara Pembuatan</h3>
-          <ul>
+          <ol>
             {recipe.tutorial.map((step, index) => (
               <li key={index}>{step}</li>
             ))}
-          </ul>
+          </ol>
         </div>
       </div>
     </main>
