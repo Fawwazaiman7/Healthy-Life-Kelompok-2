@@ -1,10 +1,7 @@
-import React, { useState } from "react";
 import "./ExerciseAndFoodTracker.css";
-import Navbar from "../../components/Navbar/Navbar";
 import axios from "axios"; // Gunakan axios untuk koneksi ke backend
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './ExerciseAndFoodTracker.css'; // Mengimpor CSS
 import Navbar from '../../components/Navbar/Navbar';
 
 function ExerciseAndFoodTracker() {
@@ -14,6 +11,8 @@ function ExerciseAndFoodTracker() {
   const [exerciseName, setExerciseName] = useState('');
   const [exerciseCalories, setExerciseCalories] = useState('');
   const [exerciseList, setExerciseList] = useState([]);
+  
+  // State untuk input makanan
   const [foodName, setFoodName] = useState("");
   const [foodCalories, setFoodCalories] = useState("");
   const [foodList, setFoodList] = useState([]);
@@ -50,6 +49,17 @@ function ExerciseAndFoodTracker() {
       setTotalConsumedCalories((prev) => prev + parseInt(foodCalories));
       setFoodName("");
       setFoodCalories("");
+    }
+  };
+
+  // Fungsi untuk menambahkan kalori harian
+  const addDailyCalorie = () => {
+    if (dailyCalorieTarget && !isNaN(dailyCalorieTarget) && parseInt(dailyCalorieTarget) > 0) {
+      setDailyCalorieList([...dailyCalorieList, parseInt(dailyCalorieTarget)]);
+      setTotalConsumedCalories(prev => prev + parseInt(dailyCalorieTarget));
+      setDailyCalorieTarget('');
+    } else {
+      alert("Target kalori harian harus angka positif.");
     }
   };
 
@@ -101,52 +111,6 @@ function ExerciseAndFoodTracker() {
     } catch (error) {
       console.error("Error saat menyimpan data:", error);
       alert("Terjadi kesalahan saat menyimpan data. Cek log untuk detail.");
-    }
-  };
-
-
-
-
-  // Tombol submit untuk menghitung dan menyimpan
-      setStatus('Seimbang'); // Kalori terbakar sama dengan yang dikonsumsi
-    }
-  };
-
-  // Fungsi untuk menambahkan olahraga
-  const addExercise = () => {
-    if (exerciseName && exerciseCalories && !isNaN(exerciseCalories) && parseInt(exerciseCalories) > 0) {
-      setExerciseList([...exerciseList, { name: exerciseName, calories: parseInt(exerciseCalories) }]);
-      setTotalBurnedCalories(prev => prev + parseInt(exerciseCalories));
-      calculateStatus(); // Hitung status setelah menambahkan olahraga
-      setExerciseName('');
-      setExerciseCalories('');
-    } else {
-      alert("Nama olahraga tidak boleh kosong dan kalori harus angka positif.");
-    }
-  };
-
-  // Fungsi untuk menambahkan makanan
-  const addFood = () => {
-    if (foodName && foodCalories && !isNaN(foodCalories) && parseInt(foodCalories) > 0) {
-      setFoodList([...foodList, { name: foodName, calories: parseInt(foodCalories) }]);
-      setTotalConsumedCalories(prev => prev + parseInt(foodCalories));
-      calculateStatus(); // Hitung status setelah menambahkan makanan
-      setFoodName('');
-      setFoodCalories('');
-    } else {
-      alert("Nama makanan tidak boleh kosong dan kalori harus angka positif.");
-    }
-  };
-
-  // Fungsi untuk menambahkan kalori harian
-  const addDailyCalorie = () => {
-    if (dailyCalorieTarget && !isNaN(dailyCalorieTarget) && parseInt(dailyCalorieTarget) > 0) {
-      setDailyCalorieList([...dailyCalorieList, parseInt(dailyCalorieTarget)]);
-      setTotalConsumedCalories(prev => prev + parseInt(dailyCalorieTarget));
-      calculateStatus(); // Hitung status setelah menambahkan kalori harian
-      setDailyCalorieTarget('');
-    } else {
-      alert("Target kalori harian harus angka positif.");
     }
   };
 

@@ -118,7 +118,7 @@ export default function Home() {
               style={{ backgroundImage: `url('/images/Images3.jpg')` }}
             >
               <div className="hero-content">
-                <h1 className="typing-container">
+                <h1 className="typinggit puh -container">
                   <span className="typing-effect-line">
                     "Berani coba fitur olahraga kami?"
                   </span>
