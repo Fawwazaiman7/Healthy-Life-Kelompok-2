@@ -886,3 +886,11 @@
 )
 
 [10-Dec-2024 17:41:02 Europe/Berlin] isCaptchaEnabled: disabled
+[11-Dec-2024 06:23:36 Europe/Berlin] Received input: Array
+(
+    [username] => Tama
+    [password] => 123
+    [isCaptchaEnabled] => 
+)
+
+[11-Dec-2024 06:23:36 Europe/Berlin] isCaptchaEnabled: disabled
