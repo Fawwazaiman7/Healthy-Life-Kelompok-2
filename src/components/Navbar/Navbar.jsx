@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import logo from "../../assets/Images/Logonavbar.png";
 import profileImage from "../../assets/Images/profile.png";
+import SearchBar from "../SearchBar/SearchBar"; // Impor SearchBar
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -92,6 +93,9 @@ const Navbar = () => {
           )}
         </li>
       </ul>
+      <div className="navbar-search">
+        <SearchBar /> {/* Tambahkan SearchBar di sini */}
+      </div>
       <div className="navbar-profile">
         {isLoggedIn ? (
           <>

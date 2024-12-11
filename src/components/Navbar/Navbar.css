@@ -42,6 +42,35 @@ body {
   height: auto;
 }
 
+.navbar-search {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.search-bar {
+  width: 100%;
+  max-width: 400px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+
 /* Styling Link Navbar */
 .navbar-links {
   display: flex;
@@ -262,6 +291,7 @@ main {
 .profile-dropdown button:hover {
   background-color: #f0f0f0; /* Warna saat hover */
 }
+
 
 /* Responsive for smaller screens */
 @media (max-width: 768px) {

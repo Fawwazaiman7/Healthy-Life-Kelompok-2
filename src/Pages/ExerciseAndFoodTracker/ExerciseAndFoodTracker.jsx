@@ -1,3 +1,8 @@
+import React, { useState } from "react";
+import "./ExerciseAndFoodTracker.css";
+import Navbar from "../../components/Navbar/Navbar";
+import Footer from "../../components/Footer/Footer";
+import axios from "axios"; // Gunakan axios untuk koneksi ke backend
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './ExerciseAndFoodTracker.css'; // Mengimpor CSS
@@ -10,10 +15,8 @@ function ExerciseAndFoodTracker() {
   const [exerciseName, setExerciseName] = useState('');
   const [exerciseCalories, setExerciseCalories] = useState('');
   const [exerciseList, setExerciseList] = useState([]);
-
-  // State untuk input makanan
-  const [foodName, setFoodName] = useState('');
-  const [foodCalories, setFoodCalories] = useState('');
+  const [foodName, setFoodName] = useState("");
+  const [foodCalories, setFoodCalories] = useState("");
   const [foodList, setFoodList] = useState([]);
 
   // State untuk input kalori harian
@@ -23,15 +26,89 @@ function ExerciseAndFoodTracker() {
   // State untuk total kalori
   const [totalBurnedCalories, setTotalBurnedCalories] = useState(0);
   const [totalConsumedCalories, setTotalConsumedCalories] = useState(0);
-  const [status, setStatus] = useState('');
+  const [status, setStatus] = useState("");
 
-  // Fungsi untuk menghitung defisit atau surplus kalori
+  // Fungsi untuk menambahkan olahraga
+  const addExercise = () => {
+    if (exerciseName && exerciseCalories) {
+      setExerciseList([
+        ...exerciseList,
+        { name: exerciseName, calories: parseInt(exerciseCalories) },
+      ]);
+      setTotalBurnedCalories((prev) => prev + parseInt(exerciseCalories));
+      setExerciseName("");
+      setExerciseCalories("");
+    }
+  };
+
+  // Fungsi untuk menambahkan makanan
+  const addFood = () => {
+    if (foodName && foodCalories) {
+      setFoodList([
+        ...foodList,
+        { name: foodName, calories: parseInt(foodCalories) },
+      ]);
+      setTotalConsumedCalories((prev) => prev + parseInt(foodCalories));
+      setFoodName("");
+      setFoodCalories("");
+    }
+  };
+
+  // Fungsi untuk menghitung status
   const calculateStatus = () => {
     if (totalBurnedCalories > totalConsumedCalories) {
-      setStatus('Defisit Kalori'); // Total kalori yang dibakar lebih besar
+      setStatus("Defisit Kalori");
     } else if (totalBurnedCalories < totalConsumedCalories) {
-      setStatus('Surplus Kalori'); // Total kalori yang dikonsumsi lebih besar
+      setStatus("Surplus Kalori");
     } else {
+      setStatus("Seimbang");
+    }
+  };
+
+  // Fungsi untuk mengirim data ke backend
+  const saveToDatabase = async () => {
+    try {
+      const now = new Date(); // Ambil tanggal saat ini
+      const formattedDate =
+        now.toISOString().split("T")[0] +
+        " " +
+        now.toTimeString().split(" ")[0]; // Format YYYY-MM-DD HH:MM:SS
+
+      const dataToSend = {
+        id_tracker: "TRK" + Date.now(), // ID tracker unik
+        kalori_masuk: totalConsumedCalories,
+        kalori_keluar: totalBurnedCalories,
+        tanggal: formattedDate, // Kirim tanggal dalam format yang benar
+      };
+
+      console.log("Data yang akan dikirim:", dataToSend);
+
+      const response = await axios.post(
+        "http://localhost:80/healthy_life_api/backend/tracker.php",
+        dataToSend
+      );
+
+      console.log("Respons backend:", response.data);
+
+      if (response.data.success) {
+        alert("Data berhasil disimpan ke database!");
+      } else {
+        alert(
+          `Gagal menyimpan data: ${
+            response.data.message || "Kesalahan tidak diketahui"
+          }`
+        );
+      }
+    } catch (error) {
+      console.error("Error saat menyimpan data:", error);
+      alert("Terjadi kesalahan saat menyimpan data. Cek log untuk detail.");
+    }
+  };
+
+
+
+
+  // Tombol submit untuk menghitung dan menyimpan
       setStatus('Seimbang'); // Kalori terbakar sama dengan yang dikonsumsi
     }
   };
@@ -76,7 +153,8 @@ function ExerciseAndFoodTracker() {
 
   // Tombol untuk submit dan menghitung status kalori
   const handleSubmit = () => {
-    calculateStatus(); // Hitung status sebelum navigasi
+    calculateStatus();
+    saveToDatabase();
     navigate('/riwayat', { state: { exerciseList, foodList, dailyCalorieList } }); // Navigasi ke halaman riwayat dengan data
     setStatus(''); // Hapus status setelah submit
   };
@@ -161,8 +239,6 @@ function ExerciseAndFoodTracker() {
           />
           <button onClick={addExercise}>Tambah Olahraga</button>
         </div>
-
-        {/* Daftar Olahraga */}
         <div className="makanan-grid">
           {exerciseList.map((exercise, index) => (
             <div className="makanan-card" key={index}>
@@ -171,8 +247,6 @@ function ExerciseAndFoodTracker() {
             </div>
           ))}
         </div>
-
-        {/* Input Makanan */}
         <div>
           <h2>Input Makanan</h2>
           <input
@@ -189,8 +263,6 @@ function ExerciseAndFoodTracker() {
           />
           <button onClick={addFood}>Tambah Makanan</button>
         </div>
-
-        {/* Daftar Makanan */}
         <div className="makanan-grid">
           {foodList.map((food, index) => (
             <div className="makanan-card" key={index}>
@@ -199,11 +271,7 @@ function ExerciseAndFoodTracker() {
             </div>
           ))}
         </div>
-
-        {/* Tombol Submit untuk menghitung Defisit atau Surplus Kalori */}
         <button onClick={handleSubmit}>Submit</button>
-
-        {/* Status Kalori */}
         <div className="total-calories">
           <h2>Status Kalori:</h2>
           <p style={{ color: 'black' }}>{status}</p>
@@ -213,6 +281,7 @@ function ExerciseAndFoodTracker() {
       </div>
 
       {/* Tambahkan Footer di sini */}
+      <Footer />
     </>
   );
 }
