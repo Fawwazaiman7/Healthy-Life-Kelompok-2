@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./ExerciseAndFoodTracker.css";
 import Navbar from "../../components/Navbar/Navbar";
-import Footer from "../../components/Footer/Footer";
 import axios from "axios"; // Gunakan axios untuk koneksi ke backend
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
@@ -281,7 +280,6 @@ function ExerciseAndFoodTracker() {
       </div>
 
       {/* Tambahkan Footer di sini */}
-      <Footer />
     </>
   );
 }
