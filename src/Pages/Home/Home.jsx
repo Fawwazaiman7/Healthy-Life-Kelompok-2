@@ -8,10 +8,13 @@ import AOS from "aos";
 import { useNavigate } from "react-router-dom"; // Import useNavigate for navigation
 import "aos/dist/aos.css";
 import "./Home.css";
+import Pagination from "../../components/Pagination/Pagination"; // Import Pagination
 
 export default function Home() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [articles, setArticles] = useState([]); // State untuk artikel
+  const [currentPage, setCurrentPage] = useState(1); // State untuk halaman aktif
+  const articlesPerPage = 5; // Jumlah artikel per halaman
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -44,6 +47,19 @@ export default function Home() {
 
     fetchArticles();
   }, []);
+
+  // Function to handle page change
+  const handlePageChange = (pageNumber) => {
+    setCurrentPage(pageNumber);
+  };
+
+  // Filter articles based on current page
+  const indexOfLastArticle = currentPage * articlesPerPage;
+  const indexOfFirstArticle = indexOfLastArticle - articlesPerPage;
+  const currentArticles = articles.slice(
+    indexOfFirstArticle,
+    indexOfLastArticle
+  );
 
   // Function to handle button click
   const handleButtonClick = () => {
@@ -93,8 +109,8 @@ export default function Home() {
       <FeatureCards />
       {/* Articles Section */}
       <section className="articles-section">
-        {articles.length > 0 ? (
-          articles.map((article) => (
+        {currentArticles.length > 0 ? (
+          currentArticles.map((article) => (
             <ArticleCard
               key={article.id}
               title={article.title}
@@ -105,6 +121,13 @@ export default function Home() {
         ) : (
           <p>Tidak ada artikel yang tersedia.</p>
         )}
+        {/* Pagination */}
+        <Pagination
+          currentPage={currentPage}
+          totalItems={articles.length}
+          itemsPerPage={articlesPerPage}
+          onPageChange={handlePageChange}
+        />
       </section>
       <Footer /> {/* Menambahkan Footer di sini */}
     </main>

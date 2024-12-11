@@ -256,3 +256,36 @@
 )
 
 [10-Dec-2024 00:33:23 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:35:42 Europe/Berlin] Received input: Array
+(
+    [username] => Tama
+    [password] => 123
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:35:42 Europe/Berlin] isCaptchaEnabled: disabled
+[11-Dec-2024 02:05:53 Europe/Berlin] Received input: Array
+(
+    [username] => Tama
+    [password] => 123
+    [isCaptchaEnabled] => 
+)
+
+[11-Dec-2024 02:05:53 Europe/Berlin] isCaptchaEnabled: disabled
+[11-Dec-2024 06:50:06 Europe/Berlin] Received input: Array
+(
+    [username] => Tama
+    [password] => 123]
+    [isCaptchaEnabled] => 
+)
+
+[11-Dec-2024 06:50:06 Europe/Berlin] isCaptchaEnabled: disabled
+[11-Dec-2024 06:50:06 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[11-Dec-2024 06:50:15 Europe/Berlin] Received input: Array
+(
+    [username] => Tama
+    [password] => 123
+    [isCaptchaEnabled] => 
+)
+
+[11-Dec-2024 06:50:15 Europe/Berlin] isCaptchaEnabled: disabled
