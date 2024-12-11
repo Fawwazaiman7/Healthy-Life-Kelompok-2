@@ -25,11 +25,23 @@ function ExerciseAndFoodTracker() {
   const [totalConsumedCalories, setTotalConsumedCalories] = useState(0);
   const [status, setStatus] = useState('');
 
+  // Fungsi untuk menghitung defisit atau surplus kalori
+  const calculateStatus = () => {
+    if (totalBurnedCalories > totalConsumedCalories) {
+      setStatus('Defisit Kalori'); // Total kalori yang dibakar lebih besar
+    } else if (totalBurnedCalories < totalConsumedCalories) {
+      setStatus('Surplus Kalori'); // Total kalori yang dikonsumsi lebih besar
+    } else {
+      setStatus('Seimbang'); // Kalori terbakar sama dengan yang dikonsumsi
+    }
+  };
+
   // Fungsi untuk menambahkan olahraga
   const addExercise = () => {
     if (exerciseName && exerciseCalories && !isNaN(exerciseCalories) && parseInt(exerciseCalories) > 0) {
       setExerciseList([...exerciseList, { name: exerciseName, calories: parseInt(exerciseCalories) }]);
       setTotalBurnedCalories(prev => prev + parseInt(exerciseCalories));
+      calculateStatus(); // Hitung status setelah menambahkan olahraga
       setExerciseName('');
       setExerciseCalories('');
     } else {
@@ -42,6 +54,7 @@ function ExerciseAndFoodTracker() {
     if (foodName && foodCalories && !isNaN(foodCalories) && parseInt(foodCalories) > 0) {
       setFoodList([...foodList, { name: foodName, calories: parseInt(foodCalories) }]);
       setTotalConsumedCalories(prev => prev + parseInt(foodCalories));
+      calculateStatus(); // Hitung status setelah menambahkan makanan
       setFoodName('');
       setFoodCalories('');
     } else {
@@ -54,27 +67,18 @@ function ExerciseAndFoodTracker() {
     if (dailyCalorieTarget && !isNaN(dailyCalorieTarget) && parseInt(dailyCalorieTarget) > 0) {
       setDailyCalorieList([...dailyCalorieList, parseInt(dailyCalorieTarget)]);
       setTotalConsumedCalories(prev => prev + parseInt(dailyCalorieTarget));
+      calculateStatus(); // Hitung status setelah menambahkan kalori harian
       setDailyCalorieTarget('');
     } else {
       alert("Target kalori harian harus angka positif.");
     }
   };
 
-  // Fungsi untuk menghitung defisit atau surplus kalori
-  const calculateStatus = () => {
-    if (totalBurnedCalories > totalConsumedCalories) {
-      setStatus('Defisit Kalori');
-    } else if (totalBurnedCalories < totalConsumedCalories) {
-      setStatus('Surplus Kalori');
-    } else {
-      setStatus('Seimbang');
-    }
-  };
-
   // Tombol untuk submit dan menghitung status kalori
   const handleSubmit = () => {
-    calculateStatus();
+    calculateStatus(); // Hitung status sebelum navigasi
     navigate('/riwayat', { state: { exerciseList, foodList, dailyCalorieList } }); // Navigasi ke halaman riwayat dengan data
+    setStatus(''); // Hapus status setelah submit
   };
 
   // Fungsi untuk menangani perubahan input
