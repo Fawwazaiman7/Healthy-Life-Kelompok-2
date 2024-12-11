@@ -31,9 +31,11 @@ export default function WeeklyChallenge() {
         const updatedChallenges = data.map((exercise) => ({
           ...exercise,
           video: exercise.video.replace("watch?v=", "embed/")
-          .split("&")[0], // Remove parameters like `&t=14s`
+            .split("&")[0], // Remove parameters like `&t=14s`
         }));
         setChallenges(getRandomChallenges(updatedChallenges));
+        localStorage.setItem("challenges", JSON.stringify(updatedChallenges)); // Simpan tantangan ke localStorage
+        localStorage.setItem("lastFetchDate", new Date().toISOString()); // Simpan tanggal terakhir diambil
       } else {
         console.error("Failed to fetch exercises:", data);
       }
@@ -42,10 +44,37 @@ export default function WeeklyChallenge() {
     }
   }, []);
 
+  // Check if 7 days have passed since last fetch
+  const checkChallengeReset = useCallback(() => {
+    const lastFetchDate = localStorage.getItem("lastFetchDate");
+    const currentDate = new Date();
+
+    if (!lastFetchDate) {
+      // Jika tidak ada tanggal yang disimpan, ambil tantangan
+      fetchExercises();
+    } else {
+      const lastDate = new Date(lastFetchDate);
+      const daysPassed = Math.floor((currentDate - lastDate) / (1000 * 60 * 60 * 24));
+
+      if (daysPassed >= 7) {
+        // Jika sudah 7 hari, ambil tantangan baru
+        fetchExercises();
+      } else {
+        // Jika kurang dari 7 hari, ambil tantangan dari localStorage
+        const existingChallenges = JSON.parse(localStorage.getItem("challenges"));
+        if (existingChallenges) {
+          setChallenges(getRandomChallenges(existingChallenges)); // Ambil tantangan acak dari yang ada
+        } else {
+          fetchExercises(); // Fallback jika tidak ada tantangan yang ditemukan
+        }
+      }
+    }
+  }, [fetchExercises]);
+
   // Fetch data when component mounts
   useEffect(() => {
-    fetchExercises();
-  }, [fetchExercises]);
+    checkChallengeReset();
+  }, [checkChallengeReset]);
 
   // Function to handle card click
   const handleCardClick = (challenge) => {

@@ -3,8 +3,8 @@
 $host = 'localhost';
 $port = '1521';
 $service_name = 'XE';
-$username = 'c##cuklis';
-$password = 'mukhlish546';
+$username = 'c##iqy';
+$password = '1234';
 
 // Membuat string koneksi
 $dsn = "(DESCRIPTION =

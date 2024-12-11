@@ -43,6 +43,37 @@ export default function Home() {
     };
 
     fetchArticles();
+
+    // Initialize Swiper after the component mounts
+    const swiperContainer = document.querySelector('.swiper-container');
+    const swiperWrapper = document.querySelector('.swiper-wrapper');
+    const slides = document.querySelectorAll('.swiper-slide');
+    let currentIndex = 0;
+
+    // Function to show the current slide
+    const showSlide = (index) => {
+      slides.forEach((slide, i) => {
+        slide.style.display = i === index ? 'flex' : 'none';
+      });
+    };
+
+    // Show the first slide
+    showSlide(currentIndex);
+
+    // Next and Previous buttons
+    const nextButton = document.querySelector('.swiper-button-next');
+    const prevButton = document.querySelector('.swiper-button-prev');
+
+    nextButton.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % slides.length;
+      showSlide(currentIndex);
+    });
+
+    prevButton.addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+      showSlide(currentIndex);
+    });
+
   }, []);
 
   // Function to handle button click
@@ -54,6 +85,11 @@ export default function Home() {
     }
   };
 
+  // Function to handle "Buat Makanan" click
+  const handleBuatMakananClick = () => {
+    navigate("/makanan"); // Navigate to the /makanan page
+  };
+
   return (
     <main>
       <Navbar />
@@ -63,7 +99,7 @@ export default function Home() {
           <div className="swiper-wrapper">
             <div
               className="swiper-slide"
-              style={{ backgroundImage: `url('/images/homebg.png')` }}
+              style={{ backgroundImage: `url('/images/Images3.jpg')` }}
             >
               <div className="hero-content">
                 <h1 className="typing-container">
@@ -82,7 +118,51 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            {/* Slide lainnya */}
+            <div
+              className="swiper-slide"
+              style={{ backgroundImage: `url('/images/Images1.jpg')` }}
+            >
+              <div className="hero-content">
+                <h1 className="typing-container">
+                  <span className="typing-effect-line">
+                    "Nikmati makanan sehat setiap hari!"
+                  </span>
+                  <br />
+                  <span className="typing-effect-line">
+                    "Mulai perjalanan sehatmu bersama kami!"
+                  </span>
+                </h1>
+                <div className="hero-button-container">
+                  <button
+                    className="hero-button"
+                    onClick={handleBuatMakananClick} // Navigasi ke halaman makanan
+                  >
+                    {isLoggedIn ? "Buat Makanan" : "Get Started"}
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              className="swiper-slide"
+              style={{ backgroundImage: `url('/images/Images2.jpg')` }}
+            >
+              <div className="hero-content">
+                <h1 className="typing-container">
+                  <span className="typing-effect-line">
+                    "Ayo, mulai pola hidup sehat sekarang!"
+                  </span>
+                  <br />
+                  <span className="typing-effect-line">
+                    "Jadilah versi terbaik dari dirimu!"
+                  </span>
+                </h1>
+                <div className="hero-button-container">
+                  <button className="hero-button" onClick={handleButtonClick}>
+                    {isLoggedIn ? "Get Started" : "Get Started"}
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
           {/* Navigasi Swiper */}
           <div className="swiper-button-next"></div>
