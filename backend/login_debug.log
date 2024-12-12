@@ -966,3 +966,11 @@
 )
 
 [11-Dec-2024 09:38:42 Europe/Berlin] isCaptchaEnabled: enabled
+[12-Dec-2024 09:51:40 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[12-Dec-2024 09:51:40 Europe/Berlin] isCaptchaEnabled: disabled
