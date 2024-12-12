@@ -5,7 +5,6 @@ export default function WeeklyChallenge() {
   const [challenges, setChallenges] = useState([]);
   const [selectedVideo, setSelectedVideo] = useState(null);
 
-  // Function to pick two random exercises from fetched data
   const getRandomChallenges = (exercises) => {
     const randomChallenges = [];
     const indices = new Set();
@@ -19,7 +18,6 @@ export default function WeeklyChallenge() {
     return randomChallenges;
   };
 
-  // Fetch exercises data from the backend
   const fetchExercises = useCallback(async () => {
     try {
       const response = await fetch(
@@ -27,13 +25,24 @@ export default function WeeklyChallenge() {
       );
       const data = await response.json();
       if (response.ok && Array.isArray(data)) {
-        // Convert YouTube URLs to embed links
         const updatedChallenges = data.map((exercise) => ({
           ...exercise,
-          video: exercise.video.replace("watch?v=", "embed/")
-          .split("&")[0], // Remove parameters like `&t=14s`
+          video: exercise.video.replace("watch?v=", "embed/").split("&")[0],
         }));
-        setChallenges(getRandomChallenges(updatedChallenges));
+
+        const randomChallenges = getRandomChallenges(updatedChallenges);
+        setChallenges(randomChallenges);
+
+        // Simpan tantangan dan tanggal dalam format ISO di localStorage
+        const currentDate = new Date().toISOString().split("T")[0]; // Format: YYYY-MM-DD
+        localStorage.setItem(
+          "weeklyChallenges",
+          JSON.stringify(randomChallenges)
+        );
+        localStorage.setItem("lastGeneratedDate", currentDate);
+        console.log(`Data tantangan baru disimpan ke localStorage:`);
+        console.log(`Tanggal sekarang: ${currentDate}`);
+        console.log("Tantangan baru:", randomChallenges);
       } else {
         console.error("Failed to fetch exercises:", data);
       }
@@ -42,23 +51,56 @@ export default function WeeklyChallenge() {
     }
   }, []);
 
-  // Fetch data when component mounts
   useEffect(() => {
+    const lastGeneratedDate = localStorage.getItem("lastGeneratedDate");
+    const savedChallenges = localStorage.getItem("weeklyChallenges");
+    const currentDate = new Date().toISOString().split("T")[0]; // Format: YYYY-MM-DD
+
+    console.log(`Tanggal sekarang: ${currentDate}`);
+    console.log(
+      `Tanggal terakhir disimpan di localStorage: ${lastGeneratedDate}`
+    );
+
+    if (lastGeneratedDate && savedChallenges) {
+      const lastDate = new Date(lastGeneratedDate);
+      const now = new Date(currentDate);
+
+      // Hitung perbedaan hari
+      let daysDiff = Math.floor((now - lastDate) / (1000 * 60 * 60 * 24));
+      console.log(`Perbedaan hari sejak tantangan terakhir: ${daysDiff} hari`);
+
+      // Jika daysDiff negatif, reset data di localStorage ke tanggal sekarang
+      if (daysDiff < 0) {
+        localStorage.setItem("lastGeneratedDate", currentDate);
+        daysDiff = 0; // Reset selisih hari ke 0
+        console.log(
+          "Tanggal sistem komputer diubah ke masa lalu. Mereset data di localStorage ke tanggal sekarang."
+        );
+      }
+
+      if (daysDiff < 7) {
+        console.log("Menggunakan tantangan yang ada dari localStorage.");
+        setChallenges(JSON.parse(savedChallenges));
+        return;
+      }
+    }
+
+    console.log(
+      "Mengambil tantangan baru karena lebih dari 7 hari atau tidak ada data."
+    );
     fetchExercises();
   }, [fetchExercises]);
 
-  // Function to handle card click
   const handleCardClick = (challenge) => {
     setSelectedVideo(challenge);
   };
 
-  // Function to close popup
   const closePopup = () => {
     setSelectedVideo(null);
   };
 
   return (
-    <div className="container"> {/* Container untuk tantangan */}
+    <div className="container">
       <div className="weeklyChallenge">
         <h2 className="weeklyChallenge-title">Weekly Challenge</h2>
         <div className="challenge-cards">
@@ -85,13 +127,9 @@ export default function WeeklyChallenge() {
         </div>
       </div>
 
-      {/* Popup Window */}
       {selectedVideo && (
         <div className="popup-overlay" onClick={closePopup}>
-          <div
-            className="popup-content"
-            onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside the popup
-          >
+          <div className="popup-content" onClick={(e) => e.stopPropagation()}>
             <button className="popup-close" onClick={closePopup}>
               &times;
             </button>
