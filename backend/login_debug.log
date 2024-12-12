@@ -256,21 +256,582 @@
 )
 
 [10-Dec-2024 00:33:23 Europe/Berlin] isCaptchaEnabled: disabled
+<<<<<<< HEAD
+[10-Dec-2024 09:05:01 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:05:01 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:05:01 Europe/Berlin] Login Error - Message: Username not found, Details: 
+[10-Dec-2024 09:29:45 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:29:45 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:29:45 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:29:54 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:29:54 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:29:54 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:31:57 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:31:57 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:31:57 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:32:31 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:32:31 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:32:31 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:32:32 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:32:32 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:32:32 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:32:32 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:32:32 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:32:32 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:32:32 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:32:32 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:32:32 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:32:33 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:32:33 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:32:33 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:32:33 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:32:33 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:32:33 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:32:33 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:32:33 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:32:33 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:32:34 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:32:34 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:32:34 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:32:34 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:32:34 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:32:34 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:32:34 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:32:34 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:32:34 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:32:34 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:32:34 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:32:34 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:32:34 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:32:34 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:32:34 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:32:34 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:32:34 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:32:34 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:32:35 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:32:35 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:32:35 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:47:18 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:47:18 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:47:18 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:54:14 Europe/Berlin] Received input: Array
+=======
 [10-Dec-2024 09:35:42 Europe/Berlin] Received input: Array
+>>>>>>> 8576841b61d372e53b108878c08df6d99ac483b0
 (
     [username] => Tama
     [password] => 123
     [isCaptchaEnabled] => 
 )
 
+<<<<<<< HEAD
+[10-Dec-2024 09:54:14 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:54:33 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:54:33 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:54:33 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:55:52 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:55:52 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:55:52 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:55:53 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:55:53 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:55:53 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:56:12 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 123
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:56:12 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:56:12 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:56:13 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 123
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:56:13 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:56:13 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:56:13 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 123
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:56:13 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:56:13 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:56:13 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 123
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:56:13 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:56:13 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:56:13 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 123
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:56:13 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:56:13 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:56:13 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 123
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:56:13 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:56:13 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:56:14 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 123
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:56:14 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:56:14 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:56:50 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:56:50 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:56:50 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:56:50 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:56:50 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:56:50 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:56:50 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:56:50 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:56:50 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:56:51 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:56:51 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:56:51 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:56:51 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:56:51 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:56:51 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:56:51 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:56:51 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:56:51 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:56:51 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:56:51 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:56:51 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:58:12 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:58:12 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:58:12 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 10:17:11 Europe/Berlin] Received input: Array
+(
+    [username] => tama
+    [password] => `12
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 10:17:11 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 10:17:11 Europe/Berlin] Login Error - Message: Username not found, Details: 
+[10-Dec-2024 10:17:12 Europe/Berlin] Received input: Array
+(
+    [username] => tama
+    [password] => `12
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 10:17:12 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 10:17:12 Europe/Berlin] Login Error - Message: Username not found, Details: 
+[10-Dec-2024 10:17:12 Europe/Berlin] Received input: Array
+(
+    [username] => tama
+    [password] => `12
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 10:17:12 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 10:17:12 Europe/Berlin] Login Error - Message: Username not found, Details: 
+[10-Dec-2024 10:17:12 Europe/Berlin] Received input: Array
+(
+    [username] => tama
+    [password] => `12
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 10:17:12 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 10:17:12 Europe/Berlin] Login Error - Message: Username not found, Details: 
+[10-Dec-2024 10:17:12 Europe/Berlin] Received input: Array
+(
+    [username] => tama
+    [password] => `12
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 10:17:12 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 10:17:12 Europe/Berlin] Login Error - Message: Username not found, Details: 
+[10-Dec-2024 10:17:13 Europe/Berlin] Received input: Array
+(
+    [username] => tama
+    [password] => `12
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 10:17:13 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 10:17:13 Europe/Berlin] Login Error - Message: Username not found, Details: 
+[10-Dec-2024 10:17:13 Europe/Berlin] Received input: Array
+(
+    [username] => tama
+    [password] => `12
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 10:17:13 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 10:17:13 Europe/Berlin] Login Error - Message: Username not found, Details: 
+[10-Dec-2024 10:17:13 Europe/Berlin] Received input: Array
+(
+    [username] => tama
+    [password] => `12
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 10:17:13 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 10:17:13 Europe/Berlin] Login Error - Message: Username not found, Details: 
+[10-Dec-2024 10:17:13 Europe/Berlin] Received input: Array
+(
+    [username] => tama
+    [password] => `12
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 10:17:13 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 10:17:13 Europe/Berlin] Login Error - Message: Username not found, Details: 
+[10-Dec-2024 10:17:14 Europe/Berlin] Received input: Array
+(
+    [username] => tama
+    [password] => `12
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 10:17:14 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 10:17:14 Europe/Berlin] Login Error - Message: Username not found, Details: 
+[10-Dec-2024 10:17:19 Europe/Berlin] Received input: Array
+(
+    [username] => Tama
+    [password] => `12
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 10:17:19 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 10:17:19 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 10:17:20 Europe/Berlin] Received input: Array
+(
+    [username] => Tama
+    [password] => `12
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 10:17:20 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 10:17:20 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 10:17:20 Europe/Berlin] Received input: Array
+(
+    [username] => Tama
+    [password] => `12
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 10:17:20 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 10:17:20 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 10:17:20 Europe/Berlin] Received input: Array
+(
+    [username] => Tama
+    [password] => `12
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 10:17:20 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 10:17:20 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 10:17:20 Europe/Berlin] Received input: Array
+(
+    [username] => Tama
+    [password] => `12
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 10:17:20 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 10:17:20 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 10:17:20 Europe/Berlin] Received input: Array
+(
+    [username] => Tama
+    [password] => `12
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 10:17:20 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 10:17:20 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 10:17:21 Europe/Berlin] Received input: Array
+(
+    [username] => Tama
+    [password] => `12
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 10:17:21 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 10:17:21 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 10:17:21 Europe/Berlin] Received input: Array
+(
+    [username] => Tama
+    [password] => `12
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 10:17:21 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 10:17:21 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 10:17:21 Europe/Berlin] Received input: Array
+(
+    [username] => Tama
+    [password] => `12
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 10:17:21 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 10:17:21 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 10:17:34 Europe/Berlin] Received input: Array
+=======
 [10-Dec-2024 09:35:42 Europe/Berlin] isCaptchaEnabled: disabled
 [11-Dec-2024 02:05:53 Europe/Berlin] Received input: Array
+>>>>>>> 8576841b61d372e53b108878c08df6d99ac483b0
 (
     [username] => Tama
     [password] => 123
     [isCaptchaEnabled] => 
 )
 
+<<<<<<< HEAD
+[10-Dec-2024 10:17:34 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 10:17:49 Europe/Berlin] Received input: Array
+(
+    [username] => Admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 10:17:49 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 10:17:49 Europe/Berlin] Login Error - Message: Username not found, Details: 
+[10-Dec-2024 10:17:50 Europe/Berlin] Received input: Array
+(
+    [username] => Admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 10:17:50 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 10:17:50 Europe/Berlin] Login Error - Message: Username not found, Details: 
+[10-Dec-2024 10:17:59 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 10:17:59 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 10:17:59 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 10:18:00 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 10:18:00 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 10:18:00 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 10:18:33 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 10:18:33 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 11:23:05 Europe/Berlin] Received input: Array
+=======
 [11-Dec-2024 02:05:53 Europe/Berlin] isCaptchaEnabled: disabled
 [11-Dec-2024 06:50:06 Europe/Berlin] Received input: Array
 (
@@ -282,12 +843,82 @@
 [11-Dec-2024 06:50:06 Europe/Berlin] isCaptchaEnabled: disabled
 [11-Dec-2024 06:50:06 Europe/Berlin] Login Error - Message: Invalid password, Details: 
 [11-Dec-2024 06:50:15 Europe/Berlin] Received input: Array
+>>>>>>> 8576841b61d372e53b108878c08df6d99ac483b0
 (
     [username] => Tama
     [password] => 123
     [isCaptchaEnabled] => 
 )
 
+<<<<<<< HEAD
+[10-Dec-2024 11:23:05 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 11:23:20 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 11:23:20 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 11:41:40 Europe/Berlin] Received input: Array
+(
+    [username] => Tama
+    [password] => 123
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 11:41:40 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 15:41:32 Europe/Berlin] Received input: Array
+(
+    [username] => Tama
+    [password] => 123
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 15:41:32 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 16:09:42 Europe/Berlin] Received input: Array
+(
+    [username] => tama
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 16:09:42 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 16:09:42 Europe/Berlin] Login Error - Message: Username not found, Details: 
+[10-Dec-2024 16:09:50 Europe/Berlin] Received input: Array
+(
+    [username] => Tama
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 16:09:50 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 16:09:50 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 16:09:53 Europe/Berlin] Received input: Array
+(
+    [username] => Tama
+    [password] => 123
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 16:09:53 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 17:41:02 Europe/Berlin] Received input: Array
+(
+    [username] => Tama
+    [password] => 123
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 17:41:02 Europe/Berlin] isCaptchaEnabled: disabled
+[11-Dec-2024 06:23:36 Europe/Berlin] Received input: Array
+(
+    [username] => Tama
+    [password] => 123
+    [isCaptchaEnabled] => 
+)
+
+[11-Dec-2024 06:23:36 Europe/Berlin] isCaptchaEnabled: disabled
+=======
 [11-Dec-2024 06:50:15 Europe/Berlin] isCaptchaEnabled: disabled
 [11-Dec-2024 08:40:09 Europe/Berlin] Login Error - Message: Invalid request method, Details: 
 [11-Dec-2024 08:41:51 Europe/Berlin] Received input: Array

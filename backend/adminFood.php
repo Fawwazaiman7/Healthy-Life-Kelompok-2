@@ -4,7 +4,6 @@ header("Access-Control-Allow-Origin: *"); // Mengizinkan akses dari semua origin
 header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS"); // Mengizinkan beberapa metode HTTP
 header("Access-Control-Allow-Headers: Content-Type, Authorization"); // Mengizinkan header tertentu
 
-
 if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     http_response_code(204); // No Content
     exit;
@@ -46,8 +45,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
                 'title' => $food['JUDUL'],
                 'calories' => $food['KALORI'],
                 'image' => $food['GAMBAR'],
-                'ingredients' => json_decode(json_decode($food['RESEP'])), // Double decode
-                'tutorial' => json_decode(json_decode($food['CARA_PEMBUATAN'])), // Double decode untuk cara_pembuatan
+                'ingredients' => json_decode($food['RESEP']), // Decode JSON ke array
+                'tutorial' => json_decode($food['CARA_PEMBUATAN']), // Decode JSON ke array
             ]);
         } else {
             echo json_encode(['success' => false, 'message' => 'Data tidak ditemukan']);
@@ -83,18 +82,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     exit;
 }
 
-
 // Menambahkan makanan baru (POST request)
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Membaca data JSON dari request body
     $data = json_decode(file_get_contents('php://input'), true);
     $ingredients = isset($data['resep']) ? json_encode($data['resep']) : null;
     $instructions = isset($data['cara_pembuatan']) ? json_encode($data['cara_pembuatan']) : null;
+
     // Validasi data utama
     if (empty($data['judul']) || empty($data['kalori']) || empty($data['gambar'])) {
-        echo json_encode(['success' => true, 'message' => 'Data lengkap']);
+        echo json_encode(['success' => false, 'message' => 'Data tidak lengkap']);
+        http_response_code(400);
         exit;
     }
+
     // Dapatkan ID baru untuk makanan
     $sql = "SELECT NVL(MAX(id), 0) + 1 AS next_id FROM makanan";
     $stmt = oci_parse($conn, $sql);
@@ -193,7 +194,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'PUT') {
 
     // Validasi data utama
     if (empty($data['judul']) || empty($data['kalori']) || empty($data['gambar'])) {
-        echo json_encode(['success' => true, 'message' => 'Data lengkap']);
+        echo json_encode(['success' => false, 'message' => 'Data tidak lengkap']);
+        http_response_code(400);
         exit;
     }
 
@@ -229,8 +231,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'PUT') {
     }
     exit;
 }
-
-
 
 // Jika metode tidak dikenali
 http_response_code(405); // Metode Tidak Diizinkan

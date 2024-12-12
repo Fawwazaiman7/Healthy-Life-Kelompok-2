@@ -103,6 +103,11 @@ export default function Home() {
     navigate("/makanan"); // Navigate to the /makanan page
   };
 
+  // Function to handle "Buat Makanan" click
+  const handleBuatMakananClick = () => {
+    navigate("/makanan"); // Navigate to the /makanan page
+  };
+
   return (
     <main>
       <Navbar />
@@ -113,9 +118,10 @@ export default function Home() {
             <div
               className="swiper-slide"
               style={{ backgroundImage: `url('/images/Images3.jpg')` }}
+              style={{ backgroundImage: `url('/images/Images3.jpg')` }}
             >
               <div className="hero-content">
-                <h1 className="typing-container">
+                <h1 className="typinggit puh -container">
                   <span className="typing-effect-line">
                     "Berani coba fitur olahraga kami?"
                   </span>

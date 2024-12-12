@@ -37,6 +37,11 @@ const Navbar = () => {
     navigate("/profile");
   };
 
+  const handleNavigateHistory = () => {
+    setIsDropdownOpen(false);
+    navigate("/riwayat"); // Navigasi ke halaman riwayat
+  };
+
   const handleNavigateAdmin = () => {
     setIsDropdownOpen(false);
     navigate("/admin-management");
@@ -79,10 +84,10 @@ const Navbar = () => {
           {isTrackerDropdownOpen && (
             <ul className="tracker-dropdown">
               <li>
-                <Link to="/exerciseandfoodtracker">Tracker </Link>
+                <Link to="/exerciseandfoodtracker">Tracker</Link>
               </li>
               <li>
-                <Link to="/history">Riwayat</Link>
+                <Link to="/kalkulator">Kalkulator</Link> 
               </li>
             </ul>
           )}
@@ -103,6 +108,7 @@ const Navbar = () => {
                   <button onClick={handleNavigateAdmin}>Admin Panel</button>
                 )}
                 <button onClick={handleNavigateProfile}>Profile</button>
+                <button onClick={handleNavigateHistory}>Riwayat</button> {/* Tambahkan opsi Riwayat */}
                 <button onClick={handleLogout}>Log Out</button>
               </div>
             )}

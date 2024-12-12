@@ -1,16 +1,27 @@
-import React, { useState } from "react";
 import "./ExerciseAndFoodTracker.css";
-import Navbar from "../../components/Navbar/Navbar";
-import Footer from "../../components/Footer/Footer";
 import axios from "axios"; // Gunakan axios untuk koneksi ke backend
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import Navbar from '../../components/Navbar/Navbar';
 
 function ExerciseAndFoodTracker() {
-  const [exerciseName, setExerciseName] = useState("");
-  const [exerciseCalories, setExerciseCalories] = useState("");
+  const navigate = useNavigate();
+  
+  // State untuk input olahraga
+  const [exerciseName, setExerciseName] = useState('');
+  const [exerciseCalories, setExerciseCalories] = useState('');
   const [exerciseList, setExerciseList] = useState([]);
+  
+  // State untuk input makanan
   const [foodName, setFoodName] = useState("");
   const [foodCalories, setFoodCalories] = useState("");
   const [foodList, setFoodList] = useState([]);
+
+  // State untuk input kalori harian
+  const [dailyCalorieTarget, setDailyCalorieTarget] = useState('');
+  const [dailyCalorieList, setDailyCalorieList] = useState([]); // Daftar kalori harian
+
+  // State untuk total kalori
   const [totalBurnedCalories, setTotalBurnedCalories] = useState(0);
   const [totalConsumedCalories, setTotalConsumedCalories] = useState(0);
   const [status, setStatus] = useState("");
@@ -38,6 +49,17 @@ function ExerciseAndFoodTracker() {
       setTotalConsumedCalories((prev) => prev + parseInt(foodCalories));
       setFoodName("");
       setFoodCalories("");
+    }
+  };
+
+  // Fungsi untuk menambahkan kalori harian
+  const addDailyCalorie = () => {
+    if (dailyCalorieTarget && !isNaN(dailyCalorieTarget) && parseInt(dailyCalorieTarget) > 0) {
+      setDailyCalorieList([...dailyCalorieList, parseInt(dailyCalorieTarget)]);
+      setTotalConsumedCalories(prev => prev + parseInt(dailyCalorieTarget));
+      setDailyCalorieTarget('');
+    } else {
+      alert("Target kalori harian harus angka positif.");
     }
   };
 
@@ -92,13 +114,48 @@ function ExerciseAndFoodTracker() {
     }
   };
 
-
-
-
-  // Tombol submit untuk menghitung dan menyimpan
+  // Tombol untuk submit dan menghitung status kalori
   const handleSubmit = () => {
     calculateStatus();
     saveToDatabase();
+    navigate('/riwayat', { state: { exerciseList, foodList, dailyCalorieList } }); // Navigasi ke halaman riwayat dengan data
+    setStatus(''); // Hapus status setelah submit
+  };
+
+  // Fungsi untuk menangani perubahan input
+  const handleExerciseNameChange = (e) => {
+    const value = e.target.value;
+    if (/^[a-zA-Z\s]*$/.test(value) || value === '') {
+      setExerciseName(value);
+    }
+  };
+
+  const handleExerciseCaloriesChange = (e) => {
+    const value = e.target.value;
+    if (/^\d*$/.test(value)) {
+      setExerciseCalories(value);
+    }
+  };
+
+  const handleFoodNameChange = (e) => {
+    const value = e.target.value;
+    if (/^[a-zA-Z\s]*$/.test(value) || value === '') {
+      setFoodName(value);
+    }
+  };
+
+  const handleFoodCaloriesChange = (e) => {
+    const value = e.target.value;
+    if (/^\d*$/.test(value)) {
+      setFoodCalories(value);
+    }
+  };
+
+  const handleDailyCalorieTargetChange = (e) => {
+    const value = e.target.value;
+    if (/^\d*$/.test(value)) {
+      setDailyCalorieTarget(value);
+    }
   };
 
   return (
@@ -106,27 +163,50 @@ function ExerciseAndFoodTracker() {
       <Navbar />
       <div className="ExerciseAndFoodTracker">
         <h1>Tracker Olahraga dan Makanan</h1>
+        
+        {/* Input Target Kalori Harian */}
+        <div>
+          <h2>Target Kalori Harian Anda</h2>
+          <input
+            type="number"
+            placeholder="Target Kalori Harian Anda"
+            value={dailyCalorieTarget}
+            onChange={handleDailyCalorieTargetChange}
+          />
+          <button onClick={addDailyCalorie}>Tambah Kalori Harian</button>
+        </div>
+
+        {/* Daftar Kalori Harian */}
+        <div className="makanan-grid">
+          {dailyCalorieList.map((calorie, index) => (
+            <div className="makanan-card" key={index}>
+              <h3 style={{ color: 'black' }}>Kalori Harian: {calorie} Kcal</h3>
+            </div>
+          ))}
+        </div>
+
+        {/* Input Olahraga */}
         <div>
           <h2>Input Olahraga</h2>
           <input
             type="text"
             placeholder="Nama Olahraga"
             value={exerciseName}
-            onChange={(e) => setExerciseName(e.target.value)}
+            onChange={handleExerciseNameChange}
           />
           <input
             type="number"
             placeholder="Kalori Terbakar"
             value={exerciseCalories}
-            onChange={(e) => setExerciseCalories(e.target.value)}
+            onChange={handleExerciseCaloriesChange}
           />
           <button onClick={addExercise}>Tambah Olahraga</button>
         </div>
         <div className="makanan-grid">
           {exerciseList.map((exercise, index) => (
             <div className="makanan-card" key={index}>
-              <h3>{exercise.name}</h3>
-              <p>{exercise.calories} Kalori</p>
+              <h3 style={{ color: 'black' }}>{exercise.name}</h3>
+              <p style={{ color: 'black' }}>{exercise.calories} Kalori</p>
             </div>
           ))}
         </div>
@@ -136,33 +216,34 @@ function ExerciseAndFoodTracker() {
             type="text"
             placeholder="Nama Makanan"
             value={foodName}
-            onChange={(e) => setFoodName(e.target.value)}
+            onChange={handleFoodNameChange}
           />
           <input
             type="number"
             placeholder="Kalori Makanan"
             value={foodCalories}
-            onChange={(e) => setFoodCalories(e.target.value)}
+            onChange={handleFoodCaloriesChange}
           />
           <button onClick={addFood}>Tambah Makanan</button>
         </div>
         <div className="makanan-grid">
           {foodList.map((food, index) => (
             <div className="makanan-card" key={index}>
-              <h3>{food.name}</h3>
-              <p>{food.calories} Kalori</p>
+              <h3 style={{ color: 'black' }}>{food.name}</h3>
+              <p style={{ color: 'black' }}>{food.calories} Kalori</p>
             </div>
           ))}
         </div>
         <button onClick={handleSubmit}>Submit</button>
         <div className="total-calories">
           <h2>Status Kalori:</h2>
-          <p>{status}</p>
-          <p>Total Kalori Terbakar: {totalBurnedCalories} Kcal</p>
-          <p>Total Kalori Dikonsumsi: {totalConsumedCalories} Kcal</p>
+          <p style={{ color: 'black' }}>{status}</p>
+          <p style={{ color: 'black' }}>Total Kalori Terbakar: {totalBurnedCalories} Kcal</p>
+          <p style={{ color: 'black' }}>Total Kalori Dikonsumsi: {totalConsumedCalories} Kcal</p>
         </div>
       </div>
-      <Footer />
+
+      {/* Tambahkan Footer di sini */}
     </>
   );
 }

@@ -1,3 +1,4 @@
+// File: src/App.js
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -17,7 +18,8 @@ import AdminFood from './components/AdminFood'; // Halaman admin makanan
 import AdminManagement from './components/AdminManagement/AdminManagement';
 import About from './Pages/About/About'; // Jika file bernama About.jsx
 import ExerciseAndFoodTracker from './Pages/ExerciseAndFoodTracker/ExerciseAndFoodTracker';
-import History from './Pages/History/History'; // Import halaman Histori
+import Riwayat from './Pages/Riwayat'; // Impor Riwayat dari file Riwayat.jsx
+import KalkulatorAKG from './Pages/Kalkulator/KalkulatorAKG'; // Import Kalkulator AKG
 
 const App = () => {
     return (
@@ -36,8 +38,9 @@ const App = () => {
                 <Route path="/admin-food" element={<AdminFood />} />
                 <Route path="/admin-management" element={<AdminManagement />} />
                 <Route path="/exerciseandfoodtracker" element={<ExerciseAndFoodTracker />} />
+                <Route path="/riwayat" element={<Riwayat />} /> {/* Rute untuk Riwayat */}
                 <Route path="/about" element={<About />} /> {/* Rute untuk About */}
-                <Route path="/histori" element={<History />} /> {/* Rute untuk Histori */}
+                <Route path="/kalkulator" element={<KalkulatorAKG />} /> {/* Rute untuk Kalkulator AKG */}
             </Routes>
         </Router>
     );

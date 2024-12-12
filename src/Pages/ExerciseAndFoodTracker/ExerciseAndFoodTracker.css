@@ -17,7 +17,7 @@ html, body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
-  background-color: #181818;
+  background-color: #ffffff;
   border-radius: 8px;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
 }
@@ -58,5 +58,29 @@ button {
   font-size: 1rem;
   cursor: pointer;
   border-radius: 5px;
-  /* Menghapus efek hover */
+}
+
+/* Mengatur warna teks untuk status kalori */
+.total-calories h2,
+.total-calories p {
+  color: black; /* Mengubah warna teks menjadi hitam */
+}
+
+/* Mengatur tampilan daftar makanan, olahraga, dan kalori harian */
+.makanan-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Menjaga semua item sejajar ke kiri */
+  margin-bottom: 1.5rem; /* Jarak bawah untuk daftar */
+}
+
+.makanan-card {
+  width: 80%; /* Mengatur lebar kartu menjadi 80% dari kontainer */
+  padding: 0.3rem; /* Mengurangi padding untuk membuat bingkai lebih kecil */
+  border: 1px solid #8b8b8b;
+  border-radius: 4px;
+  background-color: #f0f0f0; /* Warna latar belakang untuk kartu */
+  margin-bottom: 0.3rem; /* Jarak antar kartu */
+  color: black; /* Warna teks hitam untuk semua output */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan halus untuk efek kedalaman */
 }
