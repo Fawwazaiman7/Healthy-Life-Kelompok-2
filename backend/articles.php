@@ -122,7 +122,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $data = json_decode(file_get_contents('php://input'), true);
 
     // Validasi data input
-    if (empty($data['judul']) || empty($data['konten']) || empty($data['kategori_artikel'])) {
+    if (empty($data['judul']) || empty($data['konten'])) {
         echo json_encode(['success' => false, 'message' => 'Judul, Konten dan kategori artikel wajib diisi']);
         http_response_code(400);
         exit;

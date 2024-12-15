@@ -12,3 +12,7 @@
 [09-Dec-2024 03:43:35 Europe/Berlin] PHP Warning:  Undefined variable $target_kalori in C:\xampp\htdocs\healthy_life_api\backend\profile.php on line 111
 [09-Dec-2024 03:47:24 Europe/Berlin] Data yang diterima di backend: {"id":"184","berat_badan":"875","usia":"55","tinggi_badan":"167"}
 [09-Dec-2024 03:49:51 Europe/Berlin] Data yang diterima di backend: {"id":"184","berat_badan":"875","usia":"22","tinggi_badan":"178"}
+[10-Dec-2024 15:51:37 Europe/Berlin] Data yang diterima di backend: {"id":"3","berat_badan":"89","usia":"78","tinggi_badan":"89"}
+[10-Dec-2024 15:51:59 Europe/Berlin] Data yang diterima di backend: {"id":"3","berat_badan":"89","usia":"78","tinggi_badan":"89"}
+[10-Dec-2024 15:58:49 Europe/Berlin] Data yang diterima di backend: {"id":"3","berat_badan":"89","usia":"78","tinggi_badan":"89"}
+[10-Dec-2024 16:00:30 Europe/Berlin] Data yang diterima di backend: {"id":"3","berat_badan":"89","usia":"78","tinggi_badan":"89"}

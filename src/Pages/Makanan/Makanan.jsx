@@ -26,6 +26,7 @@ const Makanan = () => {
         );
         setFoodItems(response.data); // Set data awal untuk semua item
         setFilteredFoodItems(response.data); // Default, tampilkan semua item
+        console.log("All food items:", response.data); // Debug: Log data setelah fetch
         setLoading(false);
       } catch (err) {
         console.error("Error fetching food items:", err);
@@ -46,6 +47,7 @@ const Makanan = () => {
       );
       setFilteredFoodItems(filtered);
       setCurrentPage(1); // Reset ke halaman pertama
+      console.log("Filtered items for query:", query, filtered); // Debug: Log hasil filter
     } else {
       // Jika tidak ada query, tampilkan semua item
       setFilteredFoodItems(foodItems);
@@ -55,11 +57,18 @@ const Makanan = () => {
   // Logika pagination
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  const currentItems = filteredFoodItems.slice(indexOfFirstItem, indexOfLastItem);
+  const currentItems = filteredFoodItems.slice(
+    indexOfFirstItem,
+    indexOfLastItem
+  );
 
   const handlePageChange = (pageNumber) => {
     setCurrentPage(pageNumber);
   };
+
+  useEffect(() => {
+    console.log("Current items on this page:", currentItems); // Debug: Log current items
+  }, [currentItems]);
 
   if (loading) return <p>Loading food items...</p>;
   if (error) return <p>{error}</p>;

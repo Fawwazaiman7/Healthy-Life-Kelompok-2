@@ -256,3 +256,721 @@
 )
 
 [10-Dec-2024 00:33:23 Europe/Berlin] isCaptchaEnabled: disabled
+<<<<<<< HEAD
+[10-Dec-2024 09:05:01 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:05:01 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:05:01 Europe/Berlin] Login Error - Message: Username not found, Details: 
+[10-Dec-2024 09:29:45 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:29:45 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:29:45 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:29:54 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:29:54 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:29:54 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:31:57 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:31:57 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:31:57 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:32:31 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:32:31 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:32:31 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:32:32 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:32:32 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:32:32 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:32:32 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:32:32 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:32:32 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:32:32 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:32:32 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:32:32 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:32:33 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:32:33 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:32:33 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:32:33 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:32:33 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:32:33 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:32:33 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:32:33 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:32:33 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:32:34 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:32:34 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:32:34 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:32:34 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:32:34 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:32:34 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:32:34 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:32:34 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:32:34 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:32:34 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:32:34 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:32:34 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:32:34 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:32:34 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:32:34 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:32:34 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:32:34 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:32:34 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:32:35 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:32:35 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:32:35 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:47:18 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:47:18 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:47:18 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:54:14 Europe/Berlin] Received input: Array
+=======
+[10-Dec-2024 09:35:42 Europe/Berlin] Received input: Array
+>>>>>>> 8576841b61d372e53b108878c08df6d99ac483b0
+(
+    [username] => Tama
+    [password] => 123
+    [isCaptchaEnabled] => 
+)
+
+<<<<<<< HEAD
+[10-Dec-2024 09:54:14 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:54:33 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:54:33 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:54:33 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:55:52 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:55:52 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:55:52 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:55:53 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:55:53 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:55:53 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:56:12 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 123
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:56:12 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:56:12 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:56:13 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 123
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:56:13 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:56:13 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:56:13 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 123
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:56:13 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:56:13 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:56:13 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 123
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:56:13 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:56:13 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:56:13 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 123
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:56:13 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:56:13 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:56:13 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 123
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:56:13 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:56:13 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:56:14 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 123
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:56:14 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:56:14 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:56:50 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:56:50 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:56:50 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:56:50 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:56:50 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:56:50 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:56:50 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:56:50 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:56:50 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:56:51 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:56:51 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:56:51 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:56:51 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:56:51 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:56:51 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:56:51 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:56:51 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:56:51 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:56:51 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:56:51 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:56:51 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 09:58:12 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 09:58:12 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 09:58:12 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 10:17:11 Europe/Berlin] Received input: Array
+(
+    [username] => tama
+    [password] => `12
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 10:17:11 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 10:17:11 Europe/Berlin] Login Error - Message: Username not found, Details: 
+[10-Dec-2024 10:17:12 Europe/Berlin] Received input: Array
+(
+    [username] => tama
+    [password] => `12
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 10:17:12 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 10:17:12 Europe/Berlin] Login Error - Message: Username not found, Details: 
+[10-Dec-2024 10:17:12 Europe/Berlin] Received input: Array
+(
+    [username] => tama
+    [password] => `12
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 10:17:12 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 10:17:12 Europe/Berlin] Login Error - Message: Username not found, Details: 
+[10-Dec-2024 10:17:12 Europe/Berlin] Received input: Array
+(
+    [username] => tama
+    [password] => `12
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 10:17:12 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 10:17:12 Europe/Berlin] Login Error - Message: Username not found, Details: 
+[10-Dec-2024 10:17:12 Europe/Berlin] Received input: Array
+(
+    [username] => tama
+    [password] => `12
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 10:17:12 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 10:17:12 Europe/Berlin] Login Error - Message: Username not found, Details: 
+[10-Dec-2024 10:17:13 Europe/Berlin] Received input: Array
+(
+    [username] => tama
+    [password] => `12
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 10:17:13 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 10:17:13 Europe/Berlin] Login Error - Message: Username not found, Details: 
+[10-Dec-2024 10:17:13 Europe/Berlin] Received input: Array
+(
+    [username] => tama
+    [password] => `12
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 10:17:13 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 10:17:13 Europe/Berlin] Login Error - Message: Username not found, Details: 
+[10-Dec-2024 10:17:13 Europe/Berlin] Received input: Array
+(
+    [username] => tama
+    [password] => `12
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 10:17:13 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 10:17:13 Europe/Berlin] Login Error - Message: Username not found, Details: 
+[10-Dec-2024 10:17:13 Europe/Berlin] Received input: Array
+(
+    [username] => tama
+    [password] => `12
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 10:17:13 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 10:17:13 Europe/Berlin] Login Error - Message: Username not found, Details: 
+[10-Dec-2024 10:17:14 Europe/Berlin] Received input: Array
+(
+    [username] => tama
+    [password] => `12
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 10:17:14 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 10:17:14 Europe/Berlin] Login Error - Message: Username not found, Details: 
+[10-Dec-2024 10:17:19 Europe/Berlin] Received input: Array
+(
+    [username] => Tama
+    [password] => `12
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 10:17:19 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 10:17:19 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 10:17:20 Europe/Berlin] Received input: Array
+(
+    [username] => Tama
+    [password] => `12
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 10:17:20 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 10:17:20 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 10:17:20 Europe/Berlin] Received input: Array
+(
+    [username] => Tama
+    [password] => `12
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 10:17:20 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 10:17:20 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 10:17:20 Europe/Berlin] Received input: Array
+(
+    [username] => Tama
+    [password] => `12
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 10:17:20 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 10:17:20 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 10:17:20 Europe/Berlin] Received input: Array
+(
+    [username] => Tama
+    [password] => `12
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 10:17:20 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 10:17:20 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 10:17:20 Europe/Berlin] Received input: Array
+(
+    [username] => Tama
+    [password] => `12
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 10:17:20 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 10:17:20 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 10:17:21 Europe/Berlin] Received input: Array
+(
+    [username] => Tama
+    [password] => `12
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 10:17:21 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 10:17:21 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 10:17:21 Europe/Berlin] Received input: Array
+(
+    [username] => Tama
+    [password] => `12
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 10:17:21 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 10:17:21 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 10:17:21 Europe/Berlin] Received input: Array
+(
+    [username] => Tama
+    [password] => `12
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 10:17:21 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 10:17:21 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 10:17:34 Europe/Berlin] Received input: Array
+=======
+[10-Dec-2024 09:35:42 Europe/Berlin] isCaptchaEnabled: disabled
+[11-Dec-2024 02:05:53 Europe/Berlin] Received input: Array
+>>>>>>> 8576841b61d372e53b108878c08df6d99ac483b0
+(
+    [username] => Tama
+    [password] => 123
+    [isCaptchaEnabled] => 
+)
+
+<<<<<<< HEAD
+[10-Dec-2024 10:17:34 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 10:17:49 Europe/Berlin] Received input: Array
+(
+    [username] => Admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 10:17:49 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 10:17:49 Europe/Berlin] Login Error - Message: Username not found, Details: 
+[10-Dec-2024 10:17:50 Europe/Berlin] Received input: Array
+(
+    [username] => Admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 10:17:50 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 10:17:50 Europe/Berlin] Login Error - Message: Username not found, Details: 
+[10-Dec-2024 10:17:59 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 10:17:59 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 10:17:59 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 10:18:00 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 10:18:00 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 10:18:00 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 10:18:33 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 10:18:33 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 11:23:05 Europe/Berlin] Received input: Array
+=======
+[11-Dec-2024 02:05:53 Europe/Berlin] isCaptchaEnabled: disabled
+[11-Dec-2024 06:50:06 Europe/Berlin] Received input: Array
+(
+    [username] => Tama
+    [password] => 123]
+    [isCaptchaEnabled] => 
+)
+
+[11-Dec-2024 06:50:06 Europe/Berlin] isCaptchaEnabled: disabled
+[11-Dec-2024 06:50:06 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[11-Dec-2024 06:50:15 Europe/Berlin] Received input: Array
+>>>>>>> 8576841b61d372e53b108878c08df6d99ac483b0
+(
+    [username] => Tama
+    [password] => 123
+    [isCaptchaEnabled] => 
+)
+
+<<<<<<< HEAD
+[10-Dec-2024 11:23:05 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 11:23:20 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 11:23:20 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 11:41:40 Europe/Berlin] Received input: Array
+(
+    [username] => Tama
+    [password] => 123
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 11:41:40 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 15:41:32 Europe/Berlin] Received input: Array
+(
+    [username] => Tama
+    [password] => 123
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 15:41:32 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 16:09:42 Europe/Berlin] Received input: Array
+(
+    [username] => tama
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 16:09:42 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 16:09:42 Europe/Berlin] Login Error - Message: Username not found, Details: 
+[10-Dec-2024 16:09:50 Europe/Berlin] Received input: Array
+(
+    [username] => Tama
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 16:09:50 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 16:09:50 Europe/Berlin] Login Error - Message: Invalid password, Details: 
+[10-Dec-2024 16:09:53 Europe/Berlin] Received input: Array
+(
+    [username] => Tama
+    [password] => 123
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 16:09:53 Europe/Berlin] isCaptchaEnabled: disabled
+[10-Dec-2024 17:41:02 Europe/Berlin] Received input: Array
+(
+    [username] => Tama
+    [password] => 123
+    [isCaptchaEnabled] => 
+)
+
+[10-Dec-2024 17:41:02 Europe/Berlin] isCaptchaEnabled: disabled
+[11-Dec-2024 06:23:36 Europe/Berlin] Received input: Array
+(
+    [username] => Tama
+    [password] => 123
+    [isCaptchaEnabled] => 
+)
+
+[11-Dec-2024 06:23:36 Europe/Berlin] isCaptchaEnabled: disabled
+=======
+[11-Dec-2024 06:50:15 Europe/Berlin] isCaptchaEnabled: disabled
+[11-Dec-2024 08:40:09 Europe/Berlin] Login Error - Message: Invalid request method, Details: 
+[11-Dec-2024 08:41:51 Europe/Berlin] Received input: Array
+(
+    [username] => Tama
+    [password] => 123
+    [isCaptchaEnabled] => 1
+    [recaptchaResponse] => 03AFcWeA6aFUPoiB34GcYQZ2hDdEFDyEAWafe3RdEUKXhsevjPhEmrvJp19RnMyN3Pb0HFS7hal1sYh3wR1UbWrr-CcBGkuQ_S_cNIGevf8YXAwuDe42nB-mfzXCkp0Yym2x5XrgMCd9hxgbJv7JSJPI1dMi42VR2kpT0kNzl0wdqEOpc20zA49SX87svf2giZ-ABSnG_DpMnHUk7aecOJl2wE3_ENol0JzBwyHytaZ1VOiMbPd0ZPYPw8tyhyuuQz9d6xBYek3IIxwO4Ny0UyHZfR1i1mvSvu75Pbw5dKe6Ls8LxwU-ttT1Mu_dlgUvFfm2qFxCxYS3HE7ciUz9gv7e07IxqTdMaQtW3rtWlFspoW9w29qDtUI-oQ0TojcRRqyV6c3DQHqlXK6cSUtSKJrxAvldfzAYntVbDqDNwYzAwogQ52ZwVFZf7jxNJ7vW6PqRlGBaLfsbxPqADMIM2npRS6m2q3SO665mMwAAk7yeO5HdAtXDVI-u5e4CdGcd_KnCDYlqo0Lvwfvk6nw1vWgZaHEcDX1zPd9YyVqWT8K0wGyu7NwvNIA-0C1-G1FRWIvkhjevtSQBATZ30857ejtln4NHpZ3Qs7d1gDScrowWwH5hXQDcPsi05feit_-wFxzIxV7WlT5qsRxb2XAgFPFlBakbYW1vqWAnneKszR0sf4DdRqUMUSL7nytWuW7dOnyJMc4DkiAH2UkGU7ItE41ZvqJ55xecdCOVkdEUWgy-_bI4IrRmmt4SzcnyBGdjdKlXfszpLq3ZAFg92d2lWukcf492rss7hmgP6pyKC4V_tSyCUTm3dvMtT9pzIz__-rb_GCzQun_RP9Nc6XJzXSnzoXD3vHV801SSfa-ovETakBTYT_O5MH_gQVpNqN-3Wt0HUuNZ_hn2NT2wxr3da0lYQcmgXQ2BGUnoY74TyUskWmarKzXIxqV41kP9TY3342jEsGIrkVNr_gao_DSrAs2HmXj1-BEs07UzfIvzutAsCRYirSpxDrazW6jIkQwMlngKMtwEHKoomFqgBwn4Zekcsm6NNWS8Mjgs42BDrUud1MRQJ4MQizUGUCfFucsTWFn0QA7hnN8ED3UpKV0sFabhMN2X6YhzVarwHqidKDMPqKFgDRHeJ7TONNB_8mj2KN1u5vRDwqIEgzvfprPeloNr8OBFp5q4I_4Kn4YUQ1dr1b4l6TOQsYga67wE-WwD-_PZixO-j3zAT6ovohXLkRhreplheHRIOoqfbenPwPneelfmTzBzsIy6PIGyrwuQ76PTZxQgEr_O0Rm-npeRRUVutoZEKjeucXS86cLT5GoLMmHMdPPkj-CcfZEVxGvJEEp6jOLVnDViV0HemTklHEL-742MDQBomgpxntyIxKAWgwGzfrTP_wVYbUnHAHT2S_sAD17Jb9pLVP4NCSjA3HejFF9QPcvjlc_HXyclpBgD0MGjwwGHEmhfzmG1hZAUJC1eL2eWSRG_WHPP_UFQvjefkj0vylaPedKm7q6MEQG7CnvPfoiCQSAmVYGs_ff1zhNa5lQPF9M09Ak6jAE15Gdf6x_RhqEJfSYXsYLHC8y4AbfQ65bYl7OM7R7Udqaho9QXRrZVIRRWyfn716JBDpUmh2QWDfBFEDak34vWfXQN8otIdcldBhAKK4BhbFz6ACwiwfGcFKPu3eHkTsGKHZJ77YN4X9FK8SU8ALYs6ZnkCbY2i3Hky--GCgpGuhY4VKkgYHXkoT2JcXbyfRscMfvDQLV-vBBTXGK4ZU8xSziZrHxjmlKe9QELanMVBST8APiJO7EVphau2G-CobXb5ybQI-frODs9_cXtRYSQGQAQR_6NvvC0VAtJ2GzspcPsq3Ja7lhmCpXEp5Z0qrr6W4Dg9HtqnZotcT0MQIJxX-nK_J1N-mE5n-_N6bYH1SsH5obcHShwv6uZzy7_oqUKmX-7q2JUSWGrz4yi9TKIrY6Hb-iYR1oJ0e5Wrl1n1jf9__exYw0HpyCcH3NcoiMw7sS2rQ_AvO0En1wEWjTmGlE-G8v01UDTpXfTu-IA79chLfhuYnySG8Cb79Oex_66WUneJ9WUDlO900W9IehOzEsKMq9scBcG21d0Xb6b5gHM9WFQ7tM0CMbE29aIAqOHYuaY-HgAo_QmpKmPjpRMhZ-zBAm5igi73KPY8RmWp7BPZKAFpS1gV67-RqOeryxFAPIFiM5j_GrGIFAUj-6C3ePGFsTSsMMDfCfc5s8Hffl0ET8KAYhpuVP6ZX
+)
+
+[11-Dec-2024 08:41:51 Europe/Berlin] isCaptchaEnabled: enabled
+[11-Dec-2024 08:54:52 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 1
+    [recaptchaResponse] => 03AFcWeA7I2JXc4HbXR4IM8RpckeNzoOeWBH8UF72--E-1TZMWe0vHNMC8ryFvjrWo57HP4E_I7PUOKt-DhW5walwu48AogCCPiWA4zSc-PkypWT45186b_za76HbmcE3ACAqXSEr5QpKB1g0WYYgcHyaU7FZPZSVzZjs_ShIkdWvM96Tk5POxklPdmClLoLU767tlzU2f1HDClcD0zyxxkKROCg2qzY371opMZjW5o4lT3WIk4cIeUt8a4dx_deB8yma3Y10Nknzg1wQhrnxdpvCdhDJXWrZRom523Jv84GCMUnjRFTkiplJXKZ7IXddeZqjHZ5T2YUH72SWFMLU7UVJZRPYi8i669H0L2B-dUWUOEwuPR6um2NgPa_srJ6qGQiZH8hyupio3JpIVu648qBgMIEzZ1xThR7ljuPC0hqcEpKNAfjovtuQlwAQ9YrG1LkXIrYJU-ENQ5_kSQOQN_2G18PvF2mjgyMVkaAGrGBp5qyu63XGnh07edNzX-OwRuP0l_L1-zBT4dUWnx_7SPptEwPR3EXka8wuLoy5Hq4Po6ytLIIc2bkgHRdBm8dK30lXThq62vQkhzGQdQWsDgZfZuIScPQCPyIsG0lSs--_tiFslnRoQCUpa4HLBmGfN-d781pEjQ-mMIjCA2x82ZG_hMm-4zPkBTWpuwctuP3qYMN7xc1IsPpnOOxipra9XtW7aXJjiXcpC1TSpmta-L_Lnw1gI0RnJIkD-Pf7G36qPMxamzoq0CMFi50ADG-DP-HYj1l2oqjL44mR8BNRttm3nfHjO6f6Vcp9OgxSBCXgVja7b_yJ1K8aiHStoKjIsK9l1vcJjJOXYvLxlIDuzleoHpEkwEp-Tek5VtPwPn4m-gdK3ZIh4e37Byb9hft3qI88OqplSArdWspEdg_YEZ_Mfyk810_Y3AW8SCqxD7nSheOk69H9pvYih50TIExs_B2ZN3SAennn-OsJt20xlr5JzD3coYc-YJXxgkWqzUfwnLUKjo-77geBwPokeZoMeMD_2uXtixllxpIziNhe_KM7fIdmdqmONTdIjgh3MhAt3Ieswgtmfwr4zwaz_mirRfCERwyrkjBxQDCMFOZMzK9oOapCF1j9A5Wuh3uZTnDoVtjYQzgNqWqXc1VtShPH1b5D-_on8SkgviYVkkzOhTHxEq6RrWlEXpDY8c8HsFvigriW0jhxlhIsPtXq3Rngmw8fT6Sy7NuZqsl2Ejr7I318phngutae9hfcPv6itG7VEs1-mLIt74QRsl9VBGeyW2Ku3jzJf3TOn0_wxaln_FkV6q_GUOIAfZYmbUsaD31JR7nkk2-x3L_jz_tHHqg6UjGVGPcacNTlBH6NS-mbZGvIbYlNSyotO0xxW-HjrVAPFhY5OhiqZgA35pNq8tNmeROGWwN3vHGJHIDM8g2K4EiPpYX1qOeXYcQH79XLiQ0Lvqy2i3L9nwDLCrTpgPU1S5Hu2h1FLdcxvxVQavRpJmTzkLsXghqcUVyT9q_HSyru3jJ40hDS1eSRcIADTU1ISWq8-yVjtwAKmg4O4Awnho8vIbmzQyYja2I1zb_S1sN4jqpfd5a8xMcErCQ7WVteC7zF6WNq3n0cKKfan4s9dUzQ9PfFk1v3QU4x77tGOcfdUo0dc0ihk1PL3z-qfH5VEIZD7vQ5yP463aqjBfBLinAxsYci9-d4gEnQT72iBszuWPWUG-dJP4ajjynAT-J4DsPv2QVZynINmdYPpy-xiuSE2tLRhd-PfdyoryxqUkZdhKNLtsQW3LUTDhQXkjtGZvdAqCR8VZ-zB6NaPi4iTm9WCLNup5BC0OgHJbFOMU10ypYelk22NrILxt2yhJM1MucQ2S0akVK9VEJ65lL-7J7Ec9Jjsc10vP_Qf3EFU2rpZNbmF2GeyErq5EuOF4MtCKHJbH-CzMVX1oJN7Jn2W3DyPBEjux7VCmMFWwMBsxjA8EyHAB5ftYQ6Qk0D0pRfWpjL_ObJZieylV4VF_Enx4yy-Hy9WPH_cA83ilZDnrggbJPIF9pWoTn577fuCNS3Q_2-1ub38lXmC36azX6aQBCed5h2R80YvoW96vlLsfw44siQ7ftYaDFEzkpwc0f2yC0fVH_7UOgeVUYWVQoLioqMPeqegdLn8akpEN7rCW7xD7xNkCUmF_7SAHZVcGjGgnjSGAfGCOFSC0zljbdm7EE9OqMY09QZfJqo4bSuKtFzWkKqkXeB9XzTxo1scd3HnNmlrBNOdobMq
+)
+
+[11-Dec-2024 08:54:52 Europe/Berlin] isCaptchaEnabled: enabled
+[11-Dec-2024 09:11:04 Europe/Berlin] Received input: Array
+(
+    [username] => Tama
+    [password] => 123
+    [isCaptchaEnabled] => 1
+    [recaptchaResponse] => 03AFcWeA465-DC5OtgqHe1PQCD1LauuWGjGH3HyGGL_CHCVxxqlIZ_c7IGDZnbMv0dtH0uTkPENExLIY78667VTjOF66lnvpYwlFAIgncFvNJCHmUwqwljJlryt0GYHfc_jW0pWS69U9FUNzd0abofhkgGnme74MDJGCPU45rQs26UP4lls0bTeoTs5VDddgwkMbyWgeWDOvk2BB2O3WMNr-CEi3wjw_vxxKRGaZpBr164jJaIAk_tRhLmOS0ApRz6GG2KYz0JWNO29AO2cJ9LZTlEjafq4OLdHiX76zoGO-LRfGSJdc4BFqkioxWd4TpOXHi_zjlZmiKU7X75Qc0YFWhjlF5O1A2ZLxpF7CrD-axkPj-qSYiI12_CgofZibJvXU7yWFqTESpbjYec-V2a5CCIIZdiqa1W_nU7eVo9mGENCUXIBW7kGiJcAa9NL3j0uWE0gyCaYnz2GTUCcYS-SBTSNcIeYHH1Ben5QxMGmVYPbU249Ja8AqlMTsE4s6_JISPWFvJEG-zbdccWiiXC70fAKkWfiGKPp3z1tvakd3VqXF05TTFB9RvNX0WgMqvSO5rTsJX-XVtXFMzXHJabjEnxrn_BKNysaWfB5hBXR3cTchAQm_w390eKe8dXKDKwKBWuhNrf9weizpHGBewR8yGE2xcbanWgRxB2lyDDh5UXoCaar9kGyPATJ18qLfkOTDS2jgP--LFhMLbA2N41U8b6yL30qeqAQCEnZp8BJN4RNRmvSYylZ1lXAXxfeM0t2x627FsL8czlfB7bazk0WuelzFxsOqxLjI0_S7KD8EIEVo8b_PxiTqnIEPuJfm5Hp_6R_2zvU7McPysiagj-FbwfQAlM_MKKymqnYDEDZwbvFWiVwE0i2IeAMDkAerHZEfWjdQ3h63_U5p5kEpmwrv4KYwpBPFrt8oOsIevVsIHDFlVYsiaY_0oZEvgCnbo9uz3xKNpz_aDLJZ-utUJHKt3YDip5Y8IDWCJi1FDwNJPZ5tGzrgvfGR2LSX-r6vkY8MNNl75Oyq_DoEaaZgJkTGI1g9QF4gmL42IoxhDE4VZR4776fady7m1eCeuyPnMNoqiBVm9l1Op5F-E5x5vmI9a2H1SWY5prHJuJHQiS7mE3m5Fm4VHiDeWwiKPlGe7UsK7jxvgaZmSzGESSpyZfx-vZrLLC2gRBkt3Z_G_G8F2_uk_ZhjpG2I0IjHDASBksvyABR1i-IHfweEECXEa_wB9ZuvmHBTxQ9MlXYRsPsgQTO2SCU8G85KbiTXnup4csAj9m76XBUm5QlBybQ8zE6fln8cascvDwUz5OZQP-OzX0TWp-tIeXj5fte3TFUoAedmeMM0gRxxmZ2Qf8u6FBD_m5b9s-OT63fWuD0Yi6_2mU21sbR4N_GslNWR0_n5yoidpsM3FJ-jGcFpsu159Rp51tluc7IkzdETLRgNLMXupqdcHS9eFlTsNWguJnKxoT2vlO4_ZHx_o95MtaYm1xUESWcUWjkCrNah9wv76t0DTb2iueDgI6epbfToNb_bXHIE_PdQrNfxpwX0_pwj20ZCIAqNxgBKUUEr-wQquANeDZPlr4CBf2VNhiSTsZ8E3lMvbPWLNu3dIAmuFBCIUod0yTSEL2q_vgNMWyd6uaiNi8n_I_UimW63rcb75SQF0ljDGGBaJxmso3Q3MDsa9d8kSX3KEvFecvwPe4U8_vZB2I2MLsyzQDDOJjqp6ZyBupcUJ3L1HGi9qryw8iAQvq4BpwoUAV5TBKBVEBV-64Sa0G96_5-coH-TIqEwXA0st5aU2ktDEstQc9qVKaxt_ALrRg1Iuxi2QMVqBHqWfc4yDGtdRu6V-NSU0FaDDfPc_UXaAb9rw-qBw9rqs_FZfN11pc1HDMxacROQN3d0ulUZbtEBUoYjduxQK9FhsKIx8cSI-4LXnaF2KjVOMAHaEFVydPkklhikRjOALKyiOcBwM05HOMjkAf4JBrXUOT8DyfuoDq4Wy3BBWtf6DJuifF1z-LnxmTx9kI0lPK0EylJ8-FT3dggooxfUeF3ijCoIzrL6xMpABLeUMaWIAGKDxRodNazDt8BldaH2tgYPcGMH-V9ua5p6RjsaPfyoUx8tdiPcH422NKbcSX_n89AU7pRKS1J_NNxORrSN1G9eQG8TrfIyprj7mcD8oC_ZgrQPC2zD-CiB5Y6TCgXalBCh6bz7qFKY4oOMVGVIeqjb7p0CvP5qtHOzkzH6zVZgwcLX-9w7xOnytWMYHDwOjEyPPhWPXk0FXtIDYUVA
+)
+
+[11-Dec-2024 09:11:04 Europe/Berlin] isCaptchaEnabled: enabled
+[11-Dec-2024 09:24:24 Europe/Berlin] Received input: Array
+(
+    [username] => Tama
+    [password] => 123
+    [isCaptchaEnabled] => 1
+    [recaptchaResponse] => 03AFcWeA4c6alS_msjlY0UM-Gb67zYD8N0PMeEOiIeYm0plPYaYicW_szcqSu1KROs_F-eDvncjb-HhonPf1nOjLoHFVzd0o-Hbuu_F-hYxNnUY_0XKaNiI9xyaIxVVv5ive66aJ4jzUaj6McJuDr2tEZNqBsc5j5WeYe3wS0butD0MWioH2Zt7hwFMvdwthZQZsb7SGGBjo8dcoSI6kUHwzjm8iXxO1aOUBTfn5pm-bZGmBAtEsXPgSBlsDn7ie0VKYFQ9Wv4DaaHt5Vmn94qj8AdSYTH5oAdkSn8Gr3t3ikfDO9eMjl2ekImo49Z1mkDWphXeTWAiBwd6k0IiwaDoRsndQj62s5saIcV4-krwQJ6cZeJKmbN0gZKtfYMnUDOpHedjYpfyOdv7XEaSHM11GxM4B6kWVZbI4ovRwYjzGHHCzF_hTBYHXT987uFvBSoBxx_vaD3kTLHvjm_eRIl3jmKlTNgwfWLGQsK5J1nnm1yTyBUPcgGBq96JS9KlfPDaFkDhN7kbfI_SqtOlrkEZxCsCoRmd-FtcLEEJ9jnpbx2BdRomfbV69id2CXSoWfHtm3RAERwNztsOB1JKU9GHNlj9gVcfWribGeJLTql4zFaL7JfYFj0BuCo74lCt5Hi4L8w3biyK4SXIKoukoO8DiCMRpKaUmaWGWM07FWLNLaYBLCx_CJ9E8ecc5JfmMXmNvU0EyWzE2LQtArML0YXgdgc5cqQ0zJNl_h0Iwem1nvFENDSPr-6CuTuldlVYIEzmt9qqavcxLVZRQfuHDR5hQlycts5Wxuw8vwHiXNskVXsvPNsAMinUdfuLBCnHN4yN_A1XcNSPlK_1BL0HXISxMZkCq7-8sScjxCCPBnNqwFYfgbEf0y_vZfZ3TDqdi0l6mTS39OIs7UYjaEXB5jpTi-1BeAlwetsvqeEwba3ENDEA654FssxbtziBG2QzETy00WtmkStW-4-SQl69UjOYYjCpiRKdycHZxAWRYiMoR0tNpoNTepTnU3X1V31QzQWIp4MnnUxUSHcom6AsaLzdK-IeSkt-RXzebz7jkEgmEAjoM3P1S9oMiCixK5crT_AbwYRbp8Fs7P1zCBKctMH9Jk5CIkOk-8NJr-GvVosB0kQ7orDTzAnMwekkBkZPISBg_B0SBHxVK_l5KU-kqKe4GIEjxhvzw1Ym_IBbppquOIwlQrpH5iC2XsosNyKh7uEaK0Qimc-xSz-h04yedGr6jBfySyKYB_qg5nywgFJ4nLBvws3lzayN9INaNsGAGkwMIJJ75NTpe2yihF0ifGEJfv94uZfFP2a8GK2Acnc7dO2u4vxjV-XuceOjsnvoGt_bpvhFcOKa2YkrrmXKBbbs7oaANcT_gAIJ4GQdFR65mQjynDtQ59I5CoXJC3F_E3CcIE-SMGxGtvKgbxpRXHdlr5R9orWBLuz8Cjsi5hRR3RhfxlWDAWB2Tyz8-Ll1uSmV-9KOTg1gEVFYsZ2smHSJBAM6Su1B88vzZPwKFC-5ofT-18_PN8uyWrhrK_kdtl3rrYnyJpuLKqbIiphX1j1lmrkoXj-YMy1IFz0WhLeoMRB-5rviZPMVmedF3TSoF4ijaV8n8xpFzqS4D0EBtu2MxeaSjcarOU9XOCOznRAy6WOug2FDaZEOKvvW9dGp1TXsnCud44wWMn17Fllo0jvasNXmxFsgJoSMWIajOUG7gb6qV27KjKo_fjygQRbpEtcetNFhHZbmCwF-z-8QgdB1FcR1UusaViBMvdqp-aqTQiBzweO8boJR7r4Uef5mECr5_gckk5lXP-dkMC_qR6TD6R13_VF5ldxxKa0Uzp6XIT9pRmjQLFzPR129YXrbCRzt9T7vV-PsxbVyXQY6JvD4JF5H_ak4P6oL6wHhXCCLUdnqFK1AOTLdqHrW7wXt8HYzdUqg2HWf0HHGS0pFEGoNh93XFZOSnZ-nxsfy4NR4zJC3aGBPB0aUOP1SwKpU7S_9ObXky9OGvbkF-atNihWKhjxYIStRl30KcALa6btvCIuguSnDFK2mGJkG6wwnxCaRrf0KCyuu7oW1rekXMB0mIoD2DJ62mOs-srq5wFuhUuuOpbzcMe_QoWjEiGHOUwPbPRStVzJGJDhDsIpw0oNpU25N-5cQjsPa_HyuGsINu6BDcExGSyNhX-0NRYk6C-8knr1wTbF7gpwAc08F_3atPF3PR-bGfFwniO1fw9GKZaqxUo4YA4aWfLAY5SuHwTP1ZMo2zA3zG54
+)
+
+[11-Dec-2024 09:24:24 Europe/Berlin] isCaptchaEnabled: enabled
+[11-Dec-2024 09:38:42 Europe/Berlin] Received input: Array
+(
+    [username] => Tama
+    [password] => 123
+    [isCaptchaEnabled] => 1
+    [recaptchaResponse] => 03AFcWeA4TWfuM3v-wwuutfo0Wd5JlyzRYFyv731j8UYhj2uQFAovmJaV4_lGn_zlTIn1fyg9G5pRl81g-WgkNBq7S3bHKeD9STNXXLyzRRMpE24VursjCinR_aU-_9I1DuBiucc8Has2cn3BNgj_M0TVV0ENwiVOgqBoLZz6uZY4lP_rFjdrgxdChzJdrgeu65xG3RzqJzuVoyCabkMDDsVGFPCK9VYHi-YPYssUUIOP5Ux5CtnDEKAW5p4_iKbhGrbDQp_41x0Yir8Ykk2p12ca5pYWpq3iN6sLJ92qCJXTZAUz4cOi0LFHtRo2Mb_gA_9BKfza8PLdK5eqFDekDkonUJt-xkH80IPgqWsJH-aMfU719_GaM9vTBInkzRhD6o9CyFMMnCE_DKfb3krWDRdvWP4INsSXQxpwmMcJ8Pk_vW2KriQpbuRErVTRyiJAxeeFWOjM72EsTUV1Ux1Mx38XEY08sP7ZnJYWp62KS3rjvUPqGGSE3UQDU97b-j1bWr7mCZY6rTRWlFIohpQxhQmf0O068uPP-lXVs8xJbAjBLZw1tqNFfYdJLxHBldkMLQfKcLfGSrhzYi4yYYkL9GMVmV_ijrvbr4ReXdvwMDq9BMvQbHsZZiZLzw5RxyNSo8upngXBO_TMDkxgG9f-EIwgcaqO-rabsepjMl5ZS1-mCPgXyXegyVdqzw6SnDjX4yeLEkV6A_K30V5pqMHOErOYLgP4B4_ydGDxYzTrxgr3zQdB26cxGABGC65mgCa80kZul2F6zsmb0BKrpWKzc--ojw5BzlwrxSem4NMZ6b2_iWL9uQxiTeuDvuP0BsDKa-l8wDxsf5p8AzDMiPRxe6jRn_WcAJZeks1JAqq2k9hUFn8tWjmKCujWv1IzkwpGQNRm4RfgvrWw9mYgaZ26Qddc3AYx1o0Lu1WDS-oad-bG_wgASI53Ol86QQyMipea-DZbg-XEJyJXjs1Q8Jo4NURA-APi8V956OgHQeORW_Y1Bs7lQDDPp6bkdzIXTqdCE6g-kkFYlk9dJeJn4fsPmxelwkdG3f2PpJY-7hkKIlPCT651bDO2pWoDaDxC8Ek5P4_likHQckCC_LIYVuiZ3cMiZyqzQxDQPu9Y2sC0tjs2S0ESQgi7azI_ruuX15_QurPHZZZdBkvBdLGjwk_8-xTBsbQoLHxvfI8ubJkwV6U2Y1vuaZDUY_H6Fv6tsg7a-tuzt6lz6Jx0NLzLl7iGYhrRZF7YbsQkdRkhrmQWL2r0_8zIo1lL4E8yB0ItF56avMLGfA5TzjPL3y28DvqdSlTsa8tXNEDv_tFLWon6WKkeBMXolnRdmIrmjy4VdIyuXD8iKhj5qtYE3bKCbb2wh3cmY4m67ZDbNbScWlraARZ9mm_U129JVn3SjIZiqAY2I_dV6ldELpYOjy0dAZxbRI85kCqI87lrFktYaD7FdeDkGQ-dEFMOVc979G4pzPhHl1b_4ZhLW3m84WeSDWIiofHHq-_IfBioEYo-iE_7jejQfRqy8baU0iXMumx47GiBUUYnZFrawdV_V3Y7dPUAGwlUixmYnMHZ8DYV6qeMt7LgjWu69eKiBZwIKbgLUIhK1IfXku2QxM6adMCIgrYyrLfcWssI_YRA53foDz3TWH2B_fleyUbLuJs3y_2DpBraYuHjOtHo30eHlHLhBASdcYn1AtiDcEF9DTSG3dcUZjywh28qlyljlsvSNcvsmKHttBoVHs4opL835JCyJVsv9GfLzMV9vRfVbOulLPM5ziKkZ1bFXfdiUWQmQBcLpw_ZpuHltwKZSt2s33abuA-vFpeU9t3t9_0xKgaMErRihfkFtan1kzU4EORlmVrVbS3rVEzROyxMwXeINJasOZ25ExV0gla9akeo2CvxHZGnwSmi_8e4_kaabjmT6hx3xoNWD6HoDshD46Sv2LyL8rqjxcySuMDmH3vCwNBdNDUqFj85Qx8V8ax6RU4ZWrIwT348JFUyrVSIRZ2HURGoU9NcpPrnt0Zb9llVFxlSJqQDit-m2m9NphqLHZ4wQP-ZMSguoOJ8emkZNVID3vOM2URqmeL2VInLhvPMxuGGWeIv1puROVa6Nx4QwSCHmQRhTS_NMkRX9i4T5Jqbqu12F03uY_t1k7X-IzLesXNg_iI03MldHW7ORpIWGjLPcXP1FtwCdhai0wRUNYX_jLhL7Enw-9UV0sLqLCSgSLP3gvmhJkaLjRkIjz-mRDW-o2-9wkRg3bVKFAajZVnHluUdWEvmPpc3CJJxT3eis-Q
+)
+
+[11-Dec-2024 09:38:42 Europe/Berlin] isCaptchaEnabled: enabled
+[12-Dec-2024 09:51:40 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[12-Dec-2024 09:51:40 Europe/Berlin] isCaptchaEnabled: disabled

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import logo from "../../assets/Images/Logonavbar.png";
 import profileImage from "../../assets/Images/profile.png";
-
+import SearchBar from "../SearchBar/SearchBar"; // Impor SearchBar
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -35,6 +35,11 @@ const Navbar = () => {
   const handleNavigateProfile = () => {
     setIsDropdownOpen(false);
     navigate("/profile");
+  };
+
+  const handleNavigateHistory = () => {
+    setIsDropdownOpen(false);
+    navigate("/riwayat"); // Navigasi ke halaman riwayat
   };
 
   const handleNavigateAdmin = () => {
@@ -75,19 +80,22 @@ const Navbar = () => {
           <Link to="/olahraga">Olahraga</Link>
         </li>
         <li onClick={handleTrackerClick}>
-        <span className="tracker-title">Tracker</span>
+          <span className="tracker-title">Tracker</span>
           {isTrackerDropdownOpen && (
             <ul className="tracker-dropdown">
               <li>
-                <Link to="/exerciseandfoodtracker">Tracker </Link>
+                <Link to="/exerciseandfoodtracker">Tracker</Link>
               </li>
               <li>
-                <Link to="/history">Riwayat</Link>
+                <Link to="/kalkulator">Kalkulator</Link> 
               </li>
             </ul>
           )}
         </li>
       </ul>
+      <div className="navbar-search">
+        <SearchBar /> {/* Tambahkan SearchBar di sini */}
+      </div>
       <div className="navbar-profile">
         {isLoggedIn ? (
           <>
@@ -100,6 +108,7 @@ const Navbar = () => {
                   <button onClick={handleNavigateAdmin}>Admin Panel</button>
                 )}
                 <button onClick={handleNavigateProfile}>Profile</button>
+                <button onClick={handleNavigateHistory}>Riwayat</button> {/* Tambahkan opsi Riwayat */}
                 <button onClick={handleLogout}>Log Out</button>
               </div>
             )}
