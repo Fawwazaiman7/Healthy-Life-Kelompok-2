@@ -66,11 +66,11 @@ function ExerciseAndFoodTracker() {
   // Fungsi untuk menghitung status
   const calculateStatus = () => {
     if (totalBurnedCalories > totalConsumedCalories) {
-      setStatus("Defisit Kalori");
+      return "Defisit Kalori";
     } else if (totalBurnedCalories < totalConsumedCalories) {
-      setStatus("Surplus Kalori");
+      return "Surplus Kalori";
     } else {
-      setStatus("Seimbang");
+      return "Seimbang";
     }
   };
 
@@ -116,10 +116,10 @@ function ExerciseAndFoodTracker() {
 
   // Tombol untuk submit dan menghitung status kalori
   const handleSubmit = () => {
-    calculateStatus();
+    const currentStatus = calculateStatus();
+    setStatus(currentStatus); // Set status kalori
     saveToDatabase();
-    navigate('/riwayat', { state: { exerciseList, foodList, dailyCalorieList } }); // Navigasi ke halaman riwayat dengan data
-    setStatus(''); // Hapus status setelah submit
+    navigate('/riwayat', { state: { exerciseList, foodList, dailyCalorieList, currentStatus } }); // Navigasi ke halaman riwayat dengan data
   };
 
   // Fungsi untuk menangani perubahan input
@@ -180,7 +180,7 @@ function ExerciseAndFoodTracker() {
         <div className="makanan-grid">
           {dailyCalorieList.map((calorie, index) => (
             <div className="makanan-card" key={index}>
-              <h3 style={{ color: 'black' }}>Kalori Harian: {calorie} Kcal</h3>
+              <h3 style={{ color: 'black', fontSize: '0.9rem' }}>Kalori Harian: {calorie} Kcal</h3>
             </div>
           ))}
         </div>
@@ -205,8 +205,8 @@ function ExerciseAndFoodTracker() {
         <div className="makanan-grid">
           {exerciseList.map((exercise, index) => (
             <div className="makanan-card" key={index}>
-              <h3 style={{ color: 'black' }}>{exercise.name}</h3>
-              <p style={{ color: 'black' }}>{exercise.calories} Kalori</p>
+              <h3 style={{ color: 'black', fontSize: '0.9rem' }}>{exercise.name}</h3>
+              <p style={{ color: 'black', fontSize: '0.9rem' }}>{exercise.calories} Kalori</p>
             </div>
           ))}
         </div>
@@ -229,21 +229,17 @@ function ExerciseAndFoodTracker() {
         <div className="makanan-grid">
           {foodList.map((food, index) => (
             <div className="makanan-card" key={index}>
-              <h3 style={{ color: 'black' }}>{food.name}</h3>
-              <p style={{ color: 'black' }}>{food.calories} Kalori</p>
+              <h3 style={{ color: 'black', fontSize: '0.9rem' }}>{food.name}</h3>
+              <p style={{ color: 'black', fontSize: '0.9rem' }}>{food.calories} Kalori</p>
             </div>
           ))}
         </div>
         <button onClick={handleSubmit}>Submit</button>
         <div className="total-calories">
-          <h2>Status Kalori:</h2>
-          <p style={{ color: 'black' }}>{status}</p>
-          <p style={{ color: 'black' }}>Total Kalori Terbakar: {totalBurnedCalories} Kcal</p>
-          <p style={{ color: 'black' }}>Total Kalori Dikonsumsi: {totalConsumedCalories} Kcal</p>
+          <h2 style={{ color: 'white' }}>Status Kalori:</h2>
+          <p style={{ color: 'white' }}>{status}</p>
         </div>
       </div>
-
-      {/* Tambahkan Footer di sini */}
     </>
   );
 }

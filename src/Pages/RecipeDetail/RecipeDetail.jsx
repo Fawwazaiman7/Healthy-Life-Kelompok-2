@@ -47,25 +47,23 @@ const RecipeDetail = () => {
     return (
         <main>
             <Navbar />
-            <div className="recipeDetail">
-                <button className="class-icon" onClick={() => window.history.back()}>
+            <div className="article-detail">
+                <button className="close-button" onClick={() => window.history.back()}>
                     X
                 </button>
-                <h2>{recipe.title}</h2>
-                <div className="recipeInfo">
-                    <p>{recipe.calories} kalori</p>
-                </div>
+                <h1>{recipe.title}</h1>
                 <div className="recipeImage">
                     <img src={recipe.image} alt={recipe.title} />
                 </div>
                 <div className="recipeContent">
+                    <h3>Kalori: {recipe.calories}</h3>
                     <h3>Resep</h3>
                     <ul>
                         {recipe.ingredients.map((ingredient, index) => (
                             <li key={index}>{ingredient}</li>
                         ))}
                     </ul>
-                    <h3>Cara Pembuatan</h3>
+                    <h3 className="recipeTitle">Cara Pembuatan Resep</h3>
                     <ol>
                         {recipe.tutorial.map((step, index) => (
                             <li key={index}>{step}</li>

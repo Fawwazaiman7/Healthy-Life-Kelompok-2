@@ -7,25 +7,69 @@ export default function FoodRecommendation() {
   const [recommendedFood, setRecommendedFood] = useState(null);
 
   // Fetch food data from the backend
-  useEffect(() => {
-    const fetchFoodData = async () => {
-      try {
-        const response = await axios.get(
-          "http://localhost:80/healthy_life_api/backend/adminfood.php"
-        );
-        const foods = response.data;
+  const fetchFoodData = async () => {
+    try {
+      const response = await axios.get(
+        "http://localhost:80/healthy_life_api/backend/adminfood.php"
+      );
+      const foods = response.data;
 
-        if (foods && foods.length > 0) {
-          // Randomly select one food item
-          const randomFood = foods[Math.floor(Math.random() * foods.length)];
-          setRecommendedFood(randomFood);
-        }
-      } catch (error) {
-        console.error("Error fetching food data:", error);
+      if (foods && foods.length > 0) {
+        // Randomly select one food item
+        const randomFood = foods[Math.floor(Math.random() * foods.length)];
+        setRecommendedFood(randomFood);
+
+        // Simpan data dan tanggal ke localStorage (gunakan format ISO)
+        const currentDate = new Date().toISOString().split("T")[0]; // Format: YYYY-MM-DD
+        localStorage.setItem("lastRecommendedFood", JSON.stringify(randomFood));
+        localStorage.setItem("lastGeneratedDateFood", currentDate);
+        console.log(`Data makanan baru disimpan ke localStorage:`);
+        console.log(`Tanggal sekarang: ${currentDate}`);
+        console.log("Makanan baru:", randomFood);
       }
-    };
+    } catch (error) {
+      console.error("Error fetching food data:", error);
+    }
+  };
+
+  useEffect(() => {
+    const lastGeneratedDateFood = localStorage.getItem("lastGeneratedDateFood");
+    const lastRecommendedFood = localStorage.getItem("lastRecommendedFood");
+    const currentDate = new Date().toISOString().split("T")[0]; // Format: YYYY-MM-DD
+
+    console.log(`Tanggal sekarang: ${currentDate}`);
+    console.log(
+      `Tanggal terakhir disimpan di localStorage: ${lastGeneratedDateFood}`
+    );
+
+    if (lastGeneratedDateFood && lastRecommendedFood) {
+      const lastDate = new Date(lastGeneratedDateFood);
+      const now = new Date(currentDate);
+
+      // Hitung perbedaan hari
+      let daysDiff = Math.floor((now - lastDate) / (1000 * 60 * 60 * 24));
+      console.log(`Perbedaan hari sejak makanan terakhir: ${daysDiff} hari`);
+
+      // Jika daysDiff negatif, reset data di localStorage ke tanggal sekarang
+      if (daysDiff < 0) {
+        localStorage.setItem("lastGeneratedDateFood", currentDate);
+        daysDiff = 0; // Reset selisih hari ke 0
+        console.log(
+          "Tanggal sistem komputer diubah ke masa lalu. Mereset data di localStorage ke tanggal sekarang."
+        );
+      }
+
+      if (daysDiff < 1) {
+        setRecommendedFood(JSON.parse(lastRecommendedFood));
+        console.log("Menggunakan makanan yang ada dari localStorage.");
+        return;
+      }
+    }
 
     fetchFoodData();
+    console.log(
+      "Mengambil makanan baru karena lebih dari 1 hari atau tidak ada data."
+    );
   }, []);
 
   if (!recommendedFood) {

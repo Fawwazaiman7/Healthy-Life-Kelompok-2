@@ -1011,3 +1011,36 @@
 )
 
 [11-Dec-2024 09:00:58 Europe/Berlin] isCaptchaEnabled: disabled
+[15-Dec-2024 04:34:51 Europe/Berlin] Received input: Array
+(
+    [username] => Tama
+    [password] => 123
+    [isCaptchaEnabled] => 
+)
+
+[15-Dec-2024 04:34:51 Europe/Berlin] isCaptchaEnabled: disabled
+[15-Dec-2024 14:14:57 Europe/Berlin] Received input: Array
+(
+    [username] => fgfd
+    [password] => fdgdgf
+    [isCaptchaEnabled] => 
+)
+
+[15-Dec-2024 14:14:57 Europe/Berlin] isCaptchaEnabled: disabled
+[15-Dec-2024 14:14:57 Europe/Berlin] Login Error - Message: Username not found, Details: 
+[15-Dec-2024 14:15:06 Europe/Berlin] Received input: Array
+(
+    [username] => Tama
+    [password] => 123
+    [isCaptchaEnabled] => 
+)
+
+[15-Dec-2024 14:15:06 Europe/Berlin] isCaptchaEnabled: disabled
+[16-Dec-2024 16:42:17 Europe/Berlin] Received input: Array
+(
+    [username] => Tama
+    [password] => 123
+    [isCaptchaEnabled] => 
+)
+
+[16-Dec-2024 16:42:17 Europe/Berlin] isCaptchaEnabled: disabled

@@ -12,10 +12,9 @@ function GetStarted() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // Periksa apakah data user ada di localStorage
     const userData = localStorage.getItem("user");
     if (!userData) {
-      navigate("/signup"); // Arahkan ke signup jika data tidak ditemukan
+      navigate("/signup");
     }
   }, [navigate]);
 
@@ -36,17 +35,10 @@ function GetStarted() {
     return Object.keys(newErrors).length === 0;
   };
 
-  // const calculateBMI = (weight, height) => {
-  //   const heightInMeters = height / 100;
-  //   return (weight / (heightInMeters * heightInMeters)).toFixed(2);
-  // };
-
-  // const getBMICategory = (bmi) => {
-  //   if (bmi < 18.5) return "Underweight";
-  //   if (bmi < 25) return "Ideal";
-  //   if (bmi < 30) return "Overweight";
-  //   return "Obese";
-  // };
+  const calculateBMI = (weight, height) => {
+    const heightInMeters = height / 100; // Convert height to meters
+    return (weight / (heightInMeters * heightInMeters)).toFixed(2);
+  };
 
   const handleGetStarted = async () => {
     if (!validate()) return;
@@ -58,8 +50,7 @@ function GetStarted() {
         return;
       }
 
-      // const bmi = calculateBMI(parseFloat(weight), parseFloat(height));
-      // const bmiCategory = getBMICategory(bmi);
+      const bmi = calculateBMI(parseFloat(weight), parseFloat(height));
 
       const data = {
         update: true,
@@ -68,7 +59,7 @@ function GetStarted() {
         usia: parseInt(age),
         berat_badan: parseFloat(weight),
         tinggi_badan: parseFloat(height),
-        // kategori_bmi_pengguna: bmiCategory,
+        bmi: bmi, // Tambahkan BMI ke data yang dikirim
       };
 
       const response = await axios.post(
@@ -89,8 +80,7 @@ function GetStarted() {
           usia: age,
           berat_badan: weight,
           tinggi_badan: height,
-          // bmi,
-          // kategori_bmi_pengguna: bmiCategory,
+          bmi: bmi, // Simpan BMI di localStorage
         };
 
         localStorage.setItem("user", JSON.stringify(updatedUserData));

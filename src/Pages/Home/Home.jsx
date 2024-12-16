@@ -115,16 +115,16 @@ export default function Home() {
           <div className="swiper-wrapper">
             <div
               className="swiper-slide"
-              style={{ backgroundImage: `url('/images/Images3.jpg')` }}
+              style={{ backgroundImage: `url('/images/Homebg.png')` }}
             >
               <div className="hero-content">
-                <h1 className="typinggit puh -container">
+                <h1 className="typing-container">
                   <span className="typing-effect-line">
-                    "Berani coba fitur olahraga kami?"
+                    Berani coba fitur olahraga kami?
                   </span>
                   <br />
                   <span className="typing-effect-line">
-                    "Mulai sekarang, jadi yang terkuat!"
+                    Mulai sekarang, jadi yang terkuat!
                   </span>
                 </h1>
                 <div className="hero-button-container">
@@ -141,11 +141,11 @@ export default function Home() {
               <div className="hero-content">
                 <h1 className="typing-container">
                   <span className="typing-effect-line">
-                    "Nikmati makanan sehat setiap hari!"
+                    Nikmati makanan sehat setiap hari!
                   </span>
                   <br />
                   <span className="typing-effect-line">
-                    "Mulai perjalanan sehatmu bersama kami!"
+                    Mulai perjalanan sehatmu bersama kami!
                   </span>
                 </h1>
                 <div className="hero-button-container">
@@ -165,16 +165,16 @@ export default function Home() {
               <div className="hero-content">
                 <h1 className="typing-container">
                   <span className="typing-effect-line">
-                    "Ayo, mulai pola hidup sehat sekarang!"
+                    Ayo, mulai pola hidup sehat sekarang!
                   </span>
                   <br />
                   <span className="typing-effect-line">
-                    "Jadilah versi terbaik dari dirimu!"
+                    Jadilah versi terbaik dari dirimu!
                   </span>
                 </h1>
                 <div className="hero-button-container">
                   <button className="hero-button" onClick={handleButtonClick}>
-                    {isLoggedIn ? "Get Started" : "Get Started"}
+                    {isLoggedIn ? "Anda sudah login" : "Anda sudah login"}
                   </button>
                 </div>
               </div>

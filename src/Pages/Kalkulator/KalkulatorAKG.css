@@ -1,7 +1,7 @@
 /* File: src/Pages/KalkulatorAKG/KalkulatorAKG.css */
 
 .page-background {
-    background-color: #f0f4f8; /* Warna latar belakang yang lembut */
+    background-color: #000000; /* Warna latar belakang yang lembut */
     padding: 20px;
     min-height: 100vh; /* Memastikan halaman memenuhi tinggi viewport */
 }
@@ -9,14 +9,14 @@
 .kalkulator-container {
     max-width: 600px;
     margin: auto;
-    background: white;
+    background: #1a1a1a;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
-    color: #333; /* Warna teks untuk judul */
+    color: #ffffff; /* Warna teks untuk judul */
     text-align: center;
     margin: 30px 0; /* Margin atas dan bawah untuk memberikan ruang */
     font-size: 24px; /* Ukuran font yang lebih besar untuk menonjolkan judul */
@@ -24,7 +24,7 @@ h2 {
 }
 
 h3 {
-    color: #555; /* Warna teks untuk sub-judul */
+    color: #ffffff; /* Warna teks untuk sub-judul */
     margin-top: 20px;
 }
 
@@ -36,7 +36,7 @@ h3 {
     display: block;
     margin-bottom: 5px;
     font-weight: bold; /* Menebalkan label */
-    color: #333; /* Warna label */
+    color: #ffffff; /* Warna label */
 }
 
 .input-section input,
@@ -92,12 +92,12 @@ h3 {
 
 .gender-selection label {
     margin-right: 10px; /* Jarak antar label */
-    color: #333; /* Warna label */
+    color: #ffffff; /* Warna label */
 }
 
 /* Tambahkan gaya untuk output kebutuhan gizi */
 .nutrition-output {
-    color: #000; /* Warna hitam untuk output */
+    color: #ffffff; /* Warna hitam untuk output */
     font-size: 18px; /* Ukuran font untuk output */
     margin: 5px 0; /* Jarak atas dan bawah untuk output */
 }

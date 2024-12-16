@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import logo from "../../assets/Images/Logonavbar.png";
 import profileImage from "../../assets/Images/profile.png";
 import SearchBar from "../SearchBar/SearchBar"; // Impor SearchBar
@@ -11,14 +11,23 @@ const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isTrackerDropdownOpen, setIsTrackerDropdownOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false); // State untuk menu burger
+  const [trackerText, setTrackerText] = useState("Tracker"); // State untuk teks Tracker
   const navigate = useNavigate();
+  const location = useLocation(); // Menggunakan useLocation untuk mendapatkan lokasi saat ini
 
   useEffect(() => {
     const loggedIn = localStorage.getItem("isLoggedIn") === "true";
     const role = localStorage.getItem("role");
     setIsLoggedIn(loggedIn);
     setIsAdmin(role === "admin");
-  }, []);
+
+    // Memperbarui teks tracker berdasarkan lokasi saat ini
+    if (location.pathname === "/kalkulator") {
+      setTrackerText("Kalkulator");
+    } else if (location.pathname === "/exerciseandfoodtracker") {
+      setTrackerText("Tracker");
+    }
+  }, [location]); // Menambahkan location sebagai dependensi
 
   const handleProfileClick = () => {
     setIsDropdownOpen(!isDropdownOpen);
@@ -30,21 +39,6 @@ const Navbar = () => {
 
   const handleBurgerClick = () => {
     setIsMenuOpen(!isMenuOpen);
-  };
-
-  const handleNavigateProfile = () => {
-    setIsDropdownOpen(false);
-    navigate("/profile");
-  };
-
-  const handleNavigateHistory = () => {
-    setIsDropdownOpen(false);
-    navigate("/riwayat"); // Navigasi ke halaman riwayat
-  };
-
-  const handleNavigateAdmin = () => {
-    setIsDropdownOpen(false);
-    navigate("/admin-management");
   };
 
   const handleLogout = () => {
@@ -80,14 +74,14 @@ const Navbar = () => {
           <Link to="/olahraga">Olahraga</Link>
         </li>
         <li onClick={handleTrackerClick}>
-          <span className="tracker-title">Tracker</span>
+          <span className="tracker-title">{trackerText}</span>
           {isTrackerDropdownOpen && (
             <ul className="tracker-dropdown">
               <li>
-                <Link to="/exerciseandfoodtracker">Tracker</Link>
+                <Link to="/exerciseandfoodtracker" onClick={() => setIsTrackerDropdownOpen(false)}>Tracker</Link>
               </li>
               <li>
-                <Link to="/kalkulator">Kalkulator</Link> 
+                <Link to="/kalkulator" onClick={() => setIsTrackerDropdownOpen(false)}>Kalkulator</Link> 
               </li>
             </ul>
           )}
@@ -105,10 +99,10 @@ const Navbar = () => {
             {isDropdownOpen && (
               <div className="profile-dropdown">
                 {isAdmin && (
-                  <button onClick={handleNavigateAdmin}>Admin Panel</button>
+                  <button onClick={() => navigate("/admin-management")}>Admin Panel</button>
                 )}
-                <button onClick={handleNavigateProfile}>Profile</button>
-                <button onClick={handleNavigateHistory}>Riwayat</button> {/* Tambahkan opsi Riwayat */}
+                <button onClick={() => navigate("/profile")}>Profile</button>
+                <button onClick={() => navigate("/riwayat")}>Riwayat</button>
                 <button onClick={handleLogout}>Log Out</button>
               </div>
             )}
@@ -116,7 +110,7 @@ const Navbar = () => {
         ) : (
           <div className="navbar-actions">
             <Link to="/sign-up" className="navbar-button">
-              Get Started
+              Sign in
             </Link>
             <Link to="/login" className="navbar-button navbar-login">
               Log In
