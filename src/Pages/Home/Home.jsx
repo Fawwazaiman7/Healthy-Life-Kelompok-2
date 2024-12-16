@@ -48,15 +48,13 @@ export default function Home() {
     fetchArticles();
 
     // Initialize Swiper after the component mounts
-    const swiperContainer = document.querySelector('.swiper-container');
-    const swiperWrapper = document.querySelector('.swiper-wrapper');
-    const slides = document.querySelectorAll('.swiper-slide');
+    const slides = document.querySelectorAll(".swiper-slide");
     let currentIndex = 0;
 
     // Function to show the current slide
     const showSlide = (index) => {
       slides.forEach((slide, i) => {
-        slide.style.display = i === index ? 'flex' : 'none';
+        slide.style.display = i === index ? "flex" : "none";
       });
     };
 
@@ -64,19 +62,18 @@ export default function Home() {
     showSlide(currentIndex);
 
     // Next and Previous buttons
-    const nextButton = document.querySelector('.swiper-button-next');
-    const prevButton = document.querySelector('.swiper-button-prev');
+    const nextButton = document.querySelector(".swiper-button-next");
+    const prevButton = document.querySelector(".swiper-button-prev");
 
-    nextButton.addEventListener('click', () => {
+    nextButton.addEventListener("click", () => {
       currentIndex = (currentIndex + 1) % slides.length;
       showSlide(currentIndex);
     });
 
-    prevButton.addEventListener('click', () => {
+    prevButton.addEventListener("click", () => {
       currentIndex = (currentIndex - 1 + slides.length) % slides.length;
       showSlide(currentIndex);
     });
-
   }, []);
 
   // Function to handle page change
@@ -151,7 +148,7 @@ export default function Home() {
                 <div className="hero-button-container">
                   <button
                     className="hero-button"
-                    onClick={handleBuatMakananClick} // Navigasi ke halaman makanan
+                    onClick={handleBuatMakananClick}
                   >
                     {isLoggedIn ? "Buat Makanan" : "Get Started"}
                   </button>
@@ -209,7 +206,7 @@ export default function Home() {
           onPageChange={handlePageChange}
         />
       </section>
-      <Footer /> {/* Menambahkan Footer di sini */}
+      <Footer />
     </main>
   );
 }

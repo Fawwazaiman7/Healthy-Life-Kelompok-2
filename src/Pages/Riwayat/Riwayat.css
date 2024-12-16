@@ -1,6 +1,7 @@
 /* Riwayat.css */
 
 .riwayat-container {
+<<<<<<< HEAD:src/Pages/Riwayat.css
   padding: 2rem;
   background-color: #000; /* Warna latar belakang */
   color: #fff; /* Warna teks */
@@ -30,3 +31,29 @@
 .table tr:hover {
   background-color: #444; /* Warna latar belakang saat hover */
 }
+=======
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .riwayat-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+  }
+  
+  .riwayat-card {
+    width: 90%;
+    padding: 0.5rem;
+    border: 1px solid #8b8b8b;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+    margin-bottom: 0.5rem;
+    color: black;
+  }
+>>>>>>> 9c50bc5baebdf0e7cff29129099f0909fa077e4a:src/Pages/Riwayat/Riwayat.css

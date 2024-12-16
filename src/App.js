@@ -18,7 +18,7 @@ import AdminFood from './components/AdminFood'; // Halaman admin makanan
 import AdminManagement from './components/AdminManagement/AdminManagement';
 import About from './Pages/About/About'; // Jika file bernama About.jsx
 import ExerciseAndFoodTracker from './Pages/ExerciseAndFoodTracker/ExerciseAndFoodTracker';
-import Riwayat from './Pages/Riwayat'; // Impor Riwayat dari file Riwayat.jsx
+import Riwayat from './Pages/Riwayat/Riwayat'; // Impor Riwayat dari file Riwayat.jsx
 import KalkulatorAKG from './Pages/Kalkulator/KalkulatorAKG'; // Import Kalkulator AKG
 
 const App = () => {
