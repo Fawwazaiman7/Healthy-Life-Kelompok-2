@@ -8,7 +8,6 @@ import AOS from "aos";
 import { useNavigate } from "react-router-dom"; // Import useNavigate for navigation
 import "aos/dist/aos.css";
 import "./Home.css";
-import Pagination from "../../components/Pagination/Pagination"; // Import Pagination
 
 export default function Home() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -76,10 +75,6 @@ export default function Home() {
     });
   }, []);
 
-  // Function to handle page change
-  const handlePageChange = (pageNumber) => {
-    setCurrentPage(pageNumber);
-  };
 
   // Filter articles based on current page
   const indexOfLastArticle = currentPage * articlesPerPage;
@@ -92,9 +87,9 @@ export default function Home() {
   // Function to handle button click
   const handleButtonClick = () => {
     if (isLoggedIn) {
-      navigate("/olahraga"); // Navigate to Olahraga page if logged in
+      navigate("/exerciseandfoodtracker");
     } else {
-      navigate("/sign-up"); // Navigate to Get Started (sign-up) page if not logged in
+      navigate("/login"); // Navigate to Get Started (sign-up) page if not logged in
     }
   };
 
@@ -102,6 +97,10 @@ export default function Home() {
   const handleBuatMakananClick = () => {
     navigate("/makanan"); // Navigate to the /makanan page
   };
+
+   const handleMulaiOlahraga = () => {
+     navigate("/olahraga"); // Navigate to the /makanan page
+   };
 
   return (
     <main>
@@ -125,7 +124,7 @@ export default function Home() {
                   </span>
                 </h1>
                 <div className="hero-button-container">
-                  <button className="hero-button" onClick={handleButtonClick}>
+                  <button className="hero-button" onClick={handleMulaiOlahraga}>
                     {isLoggedIn ? "Mulai Olahraga" : "Get Started"}
                   </button>
                 </div>
@@ -171,7 +170,7 @@ export default function Home() {
                 </h1>
                 <div className="hero-button-container">
                   <button className="hero-button" onClick={handleButtonClick}>
-                    {isLoggedIn ? "Anda sudah login" : "Anda sudah login"}
+                    {isLoggedIn ? "Tracker" : "Login"}
                   </button>
                 </div>
               </div>
@@ -199,7 +198,6 @@ export default function Home() {
           <p>Tidak ada artikel yang tersedia.</p>
         )}
         {/* Pagination */}
-
       </section>
       <Footer />
     </main>

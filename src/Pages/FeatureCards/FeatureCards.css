@@ -11,6 +11,7 @@
 
 .feature-card {
     background-color: #ffffff !important; /* Warna latar belakang kartu */
+    height: 250px;
     color: #000000 !important;
     padding: 30px;
     border-radius: 10px;

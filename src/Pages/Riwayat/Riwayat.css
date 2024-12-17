@@ -1,20 +1,24 @@
+/* Riwayat.css */
+
 /* Container Utama */
 .riwayat-container {
   max-width: 100%;
   margin: 0 auto;
   padding: 2rem;
-  background-color: #ffffff;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  background-color: rgb(22, 22, 22); /* Putih */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Efek bayangan halus */
   font-family: 'Roboto', sans-serif;
-  margin-top: 70px;
 }
 
 /* Header */
 h1 {
   font-size: 2.5rem;
-  color: #333;
+  color: white; /* Hitam */
   text-align: center;
   margin-bottom: 2rem;
+  margin-top: 80px;
+  font-weight: bold;
 }
 
 /* Filter Bulan */
@@ -26,24 +30,28 @@ h1 {
 .filter-bulan select {
   padding: 0.5rem;
   font-size: 1rem;
-  border: 1px solid #ddd;
+  border: 1px solid #4CAF50; /* Hijau */
   border-radius: 5px;
-  background-color: #f4f4f4;
+  background-color: #f4f4f4; /* Putih Kotor */
+  color: black; /* Teks hitam */
   transition: all 0.3s ease;
 }
 
 .filter-bulan select:hover {
-  border-color: #42a5f5;
+  border-color: #4CAF50; /* Hijau tetap */
+  background-color: black; /* Putih kehijauan */
+  color: white;
 }
 
 /* Card untuk Riwayat */
 .riwayat-card {
-  background-color: #f9f9f9;
+  background-color: black; /* Putih */
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Efek bayangan */
   padding: 1.5rem;
   margin: 1.5rem 0;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 5px solid #4CAF50; /* Border Hijau untuk aksen */
 }
 
 .riwayat-card:hover {
@@ -53,38 +61,35 @@ h1 {
 
 h2 {
   font-size: 2rem;
-  color: #333;
+  color: white; /* Hitam */
   margin-bottom: 1rem;
+  font-weight: bold;
 }
 
 h3 {
   font-size: 1.4rem;
-  color: #444;
+  color: #4CAF50; /* Hijau sebagai aksen */
   margin-bottom: 1rem;
 }
 
 h4 {
   font-size: 1.2rem;
-  color: #666;
+  color: white; /* Hitam */
   margin-top: 1rem;
 }
 
-ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
+/* Menambahkan efek hover pada setiap list item */
 li {
   font-size: 1rem;
-  color: #555;
+  color: white; /* Abu-abu gelap */
   padding: 0.5rem 0;
 }
 
-/* Menambahkan efek hover pada setiap list item */
 li:hover {
-  background-color: #e6f7ff;
+  background-color: #e8f5e9; /* Putih kehijauan */
   border-radius: 5px;
   cursor: pointer;
+  color: black; /* Hitam */
 }
 
 /* Grid untuk Menampilkan Data */
@@ -114,11 +119,27 @@ li:hover {
   }
 }
 
-/* Footer */
-footer {
-  text-align: center;
-  padding: 1rem 0;
-  background-color: #f4f4f4;
-  margin-top: 3rem;
-  border-radius: 8px;
+/* Menambahkan Aksen Hijau pada Header dan Border */
+h1, h2, h3, h4 {
+  color: white; /* Hitam */
+}
+
+h3 {
+  color: #4CAF50; /* Hijau sebagai aksen pada subjudul */
+}
+
+/* Highlightkan tombol atau elemen interaktif */
+button, select {
+  background-color: #4CAF50; /* Hijau */
+  color: black;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover, select:hover {
+  background-color: #388e3c; /* Hijau lebih gelap */
 }

@@ -3,7 +3,7 @@ import './FeatureCards.css';
 
 const FeatureCards = () => {
     const features = [
-        { title: "Tracker", description: "Pantau dan kelola asupan gizi harian Anda dengan easily.", link: "/exerciseandfoodtracker" },
+        { title: "Tracker", description: "Pantau dan kelola asupan gizi harian Anda dengan mudah.", link: "/exerciseandfoodtracker" },
         { title: "Rekomendasi Olahraga", description: "Olahraga yang tepat untuk anda", link: "/olahraga" },
         { title: "Resep Makanan Diet", description: "Gizi seimbang untuk diet sehat", link: "/makanan" },
     ];
