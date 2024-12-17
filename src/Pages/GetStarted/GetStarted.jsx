@@ -15,7 +15,7 @@ function GetStarted() {
     // Check if user data exists in localStorage
     const userData = localStorage.getItem("user");
     if (!userData) {
-      navigate("/homelogin");
+      navigate("/signup");
     }
   }, [navigate]);
 

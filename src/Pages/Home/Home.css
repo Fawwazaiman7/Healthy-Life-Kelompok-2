@@ -104,7 +104,7 @@
   gap: 2rem; /* Spasi antar artikel */
   align-items: flex-start; /* Rata atas untuk artikel */
   padding: 2rem;
-  background-color: #939591; /* Latar belakang untuk kontras */
+  background-color: #000000; /* Latar belakang untuk kontras */
 }
 
 .article-card {

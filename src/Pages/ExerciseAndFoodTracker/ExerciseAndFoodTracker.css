@@ -8,16 +8,16 @@
 html, body {
   height: 100%; /* Memastikan body dan html mengisi seluruh tinggi layar */
   font-family: 'Arial', sans-serif; /* Gunakan font yang mudah dibaca */
-  background-color: #ebeee9; /* Latar belakang gelap */
+  background-color: #000000; /* Latar belakang gelap */
   color: #ffffff; /* Teks berwarna putih untuk kontras */
 }
 
 /* Mengatur tampilan utama */
 .ExerciseAndFoodTracker {
-  max-width: 1200px;
+  max-width: 800px; /* Mengurangi lebar untuk tampilan yang lebih kompak */
   margin: 0 auto;
   padding: 2rem;
-  background-color: #ffffff;
+  background-color: #1a1a1a; /* Warna latar belakang yang lebih gelap */
   border-radius: 8px;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
 }
@@ -26,7 +26,7 @@ html, body {
 h1 {
   font-size: 2rem;
   margin-bottom: 1.5rem;
-  color: white; /* Warna putih untuk judul */
+  color: #ffffff; /* Warna putih untuk judul */
   text-align: center;
 }
 
@@ -34,36 +34,37 @@ h1 {
 h2 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  color: #ecf0f1;
+  color: white; /* Mengubah warna teks menjadi putih */
 }
 
 /* Input Fields untuk Olahraga dan Makanan */
 input {
-  width: 100%;
-  padding: 0.8rem;
-  margin-bottom: 1.5rem; /* Jarak bawah ditingkatkan */
+  width: calc(100% - 20px); /* Mengurangi lebar untuk padding */
+  padding: 0.5rem; /* Mengurangi padding untuk border yang lebih kecil */
+  margin-bottom: 1rem; /* Jarak bawah ditingkatkan */
   border: 1px solid #8b8b8b;
   border-radius: 4px;
   background-color: #cacdd1;
-  color: #000000;
+  color: #000000; /* Warna teks input */
   font-size: 1rem;
 }
 
 /* Tombol Tambah Olahraga dan Makanan */
 button {
-  padding: 10px 20px;
-  border: none;
-  background-color: #7f7c7c; /* Warna tombol */
-  color: white;
+  padding: 8px 16px; /* Mengurangi padding untuk border yang lebih kecil */
+  border: 1px solid #4CAF50; /* Border hijau */
+  background-color: #4CAF50; /* Warna tombol hijau */
+  color: white; /* Warna teks tombol */
   font-size: 1rem;
   cursor: pointer;
   border-radius: 5px;
+  margin-bottom: 1rem; /* Jarak bawah untuk tombol */
 }
 
 /* Mengatur warna teks untuk status kalori */
 .total-calories h2,
 .total-calories p {
-  color: black; /* Mengubah warna teks menjadi hitam */
+  color: white; /* Mengubah warna teks menjadi putih */
 }
 
 /* Mengatur tampilan daftar makanan, olahraga, dan kalori harian */
@@ -75,12 +76,12 @@ button {
 }
 
 .makanan-card {
-  width: 80%; /* Mengatur lebar kartu menjadi 80% dari kontainer */
+  width: 100%; /* Mengatur lebar kartu menjadi 100% dari kontainer */
   padding: 0.3rem; /* Mengurangi padding untuk membuat bingkai lebih kecil */
-  border: 1px solid #8b8b8b;
+  border: 1px solid #8b8b8b; /* Border yang konsisten */
   border-radius: 4px;
   background-color: #f0f0f0; /* Warna latar belakang untuk kartu */
-  margin-bottom: 0.3rem; /* Jarak antar kartu */
+  margin-bottom: 0.5rem; /* Jarak antar kartu */
   color: black; /* Warna teks hitam untuk semua output */
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan halus untuk efek kedalaman */
 }

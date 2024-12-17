@@ -115,14 +115,13 @@
 
 .edit-form input:focus {
   outline: none;
-  border-color: #8dc63f;
-  box-shadow: 0 0 8px rgba(141, 198, 63, 0.8);
+  border-color: #fefefe;
 }
 
-/* Tombol */
-button {
-  background-color: #000;
-  color: #ff0000;
+/* Tombol Simpan */
+.save-button {
+  background: linear-gradient(135deg, #818281, #131313);
+  color: #ffffff;
   font-size: 16px;
   font-weight: bold;
   padding: 10px 20px;
@@ -134,9 +133,37 @@ button {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-button:hover {
+.save-button:hover {
   background-color: #fffffe;
   color: red;
   transform: translateY(-3px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Tombol Batal */
+.cancel-button {
+  background: linear-gradient(135deg, #818281, #131313);
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+  margin-top: 1px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.cancel-button:hover {
+  background-color: #fffefe;
+  color: rgb(255, 0, 0);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Grup tombol */
+.button-group {
+  display: flex;
+  gap: 10px; /* Jarak antara tombol */
 }

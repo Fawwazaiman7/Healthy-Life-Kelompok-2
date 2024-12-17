@@ -42,6 +42,7 @@ body {
   height: auto;
 }
 
+/* Navbar Search */
 .navbar-search {
   flex: 1;
   display: flex;
@@ -59,7 +60,7 @@ body {
   width: 100%;
   padding: 10px 15px;
   border: 1px solid #ccc;
-  border-radius: 20px;
+  border-radius: 15px;
   font-size: 16px;
   outline: none;
   transition: border-color 0.3s ease;
@@ -70,18 +71,22 @@ body {
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
-
 /* Styling Link Navbar */
 .navbar-links {
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem; /* Jarak antar item navbar */
   list-style: none;
   margin: 0;
   padding: 0;
   align-items: center;
+  margin-left: auto; /* Memindahkan navbar links ke kanan */
 }
 
 /* Styling Link Individual */
+.navbar-links li {
+  margin-left: 50px; /* Menambahkan jarak antara logo dan tulisan navbar */
+}
+
 .navbar-links li a {
   text-decoration: none;
   font-size: 1rem;
@@ -94,7 +99,7 @@ body {
 
 /* Efek frame saat link navbar ditekan */
 .navbar-links li a:active {
-  outline: 3px solid #0b0b0b;
+  outline: 3px solid #136d35;
   outline-offset: 2px;
 }
 
@@ -112,7 +117,7 @@ body {
   font-weight: 500;
   padding: 0.3rem 0.5rem;
   border-radius: 5px;
-  transition: color 0.3s, background-color 0.3s;   /* Warna saat hover, jika diinginkan */
+  transition: color 0.3s, background-color 0.3s; /* Warna saat hover, jika diinginkan */
 }
 
 /* Styling untuk dropdown Tracker */
@@ -204,7 +209,7 @@ body {
   display: inline-block;
   transition: background-color 0.3s;
   font-size: 0.9rem;
-  margin-right: 20px;
+  margin-right: 20px; /* Jarak antar tombol */
 }
 
 /* Styling untuk tombol Login */
@@ -235,6 +240,7 @@ main {
   position: relative;
   margin-right: 50px; /* Sesuaikan jarak dari kanan */
   cursor: pointer;
+  margin-top: -15px; /* Mengangkat ikon profil sedikit lebih tinggi */
 }
 
 /* Profile Icon Styling */
@@ -243,7 +249,8 @@ main {
   height: 50px !important;
   border-radius: 50%;
   overflow: hidden;
-  border: 2px solid #2b7a2a; /* Border sesuai tema */
+  border: 1px solid #fefefe; /* Border sesuai tema */
+  margin-top: 5px; /* Menambahkan margin untuk mengatur posisi vertikal */
 }
 
 .profile-icon img {
@@ -289,9 +296,9 @@ main {
 }
 
 .profile-dropdown button:hover {
-  background-color: #f0f0f0; /* Warna saat hover */
+  background-color: #e10d0d; /* Warna saat hover */
+  color: white;
 }
-
 
 /* Responsive for smaller screens */
 @media (max-width: 768px) {
@@ -299,3 +306,4 @@ main {
     width: 100%;
   }
 }
+    

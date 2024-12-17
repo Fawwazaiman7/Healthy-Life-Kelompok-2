@@ -199,6 +199,7 @@ function Riwayat() {
 
 
     </div>
+>>>>>>> 9c50bc5baebdf0e7cff29129099f0909fa077e4a:src/Pages/Riwayat/Riwayat.jsx
   );
 }
 

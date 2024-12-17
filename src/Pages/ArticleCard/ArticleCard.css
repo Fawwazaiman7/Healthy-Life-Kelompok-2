@@ -11,8 +11,8 @@
 .article-card {
   display: flex;
   flex-direction: column; /* Menyusun konten dalam kolom */
-  background-color: #7f7c7c !important; /* Warna latar belakang kartu */
-  color: #ffffff !important;
+  background-color: #ffffff !important; /* Warna latar belakang kartu */
+  color: #000000 !important;
   padding: 20px; /* Padding untuk kartu */
   border-radius: 10px; /* Sudut yang lebih halus */
   text-align: center; /* Teks rata tengah */
@@ -27,13 +27,13 @@
 .article-card:hover {
   transform: translateY(-10px) scale(1.02) !important; /* Floating effect with slight scale */
   box-shadow: 0px 15px 20px rgba(101, 91, 91, 0.4); 
-  background-color: #a49f9f !important; /* Warna lebih gelap saat hover */
+  background-color: #115823 !important; /* Warna lebih gelap saat hover */
 }
 
 .article-card h3 {
   font-size: 1.5rem; /* Ukuran font untuk judul */
   margin-bottom: 10px; /* Jarak bawah judul */
-  color: #ffffff !important; /* Warna judul */
+  color: #000000 !important; /* Warna judul */
 }
 
 .article-card p {

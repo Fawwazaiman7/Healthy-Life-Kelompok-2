@@ -2,110 +2,42 @@
 
 /* Container Utama */
 .riwayat-container {
-  max-width: 1200px;
-  margin: 0 auto;
   padding: 2rem;
-  background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
-  font-family: 'Roboto', sans-serif;
+  background-color: #000; /* Warna latar belakang */
+  color: #fff; /* Warna teks */
 }
 
-/* Header */
-h1 {
-  font-size: 2.5rem;
-  color: #333;
-  text-align: center;
-  margin-bottom: 2rem;
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
 }
 
-/* Filter Bulan */
-.filter-bulan {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.filter-bulan select {
+.table th, .table td {
+  border: 1px solid #fff; /* Border untuk tabel */
   padding: 0.5rem;
-  font-size: 1rem;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #f4f4f4;
-  transition: all 0.3s ease;
+  text-align: left;
 }
 
-.filter-bulan select:hover {
-  border-color: #42a5f5;
+.table th {
+  background-color: green; /* Warna latar belakang header tabel */
+  color: white; /* Warna teks header tabel */
 }
 
-/* Card untuk Riwayat */
-.riwayat-card {
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 1.5rem;
-  margin: 1.5rem 0;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.table tr:nth-child(even) {
+  background-color: #333; /* Warna latar belakang baris genap */
 }
 
-.riwayat-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+/* .table tr:hover {
+  background-color: #444; /* Warna latar belakang saat hover */
 }
-
-h2 {
-  font-size: 2rem;
-  color: #333;
-  margin-bottom: 1rem;
-}
-
-h3 {
-  font-size: 1.4rem;
-  color: #444;
-  margin-bottom: 1rem;
-}
-
-h4 {
-  font-size: 1.2rem;
-  color: #666;
-  margin-top: 1rem;
-}
-
-ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-li {
-  font-size: 1rem;
-  color: #555;
-  padding: 0.5rem 0;
-}
-
-/* Menambahkan efek hover pada setiap list item */
-li:hover {
-  background-color: #e6f7ff;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-/* Grid untuk Menampilkan Data */
-.riwayat-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1.5rem;
-  margin-top: 1rem;
-}
-
-/* Responsif - Membuat tampilan lebih rapi pada perangkat mobile */
-@media (max-width: 768px) {
-  .riwayat-container {
-    padding: 1.5rem;
-  }
-  
-  .filter-bulan select {
-    width: 100%;
-  }
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+  } */
 
   .riwayat-grid {
     grid-template-columns: 1fr;
@@ -114,13 +46,13 @@ li:hover {
   h1 {
     font-size: 2rem;
   }
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 1rem 0;
-  background-color: #f4f4f4;
-  margin-top: 3rem;
-  border-radius: 8px;
-}
+  
+  .riwayat-card {
+    width: 90%;
+    padding: 0.5rem;
+    border: 1px solid #8b8b8b;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+    margin-bottom: 0.5rem;
+    color: black;
+  }
