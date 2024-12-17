@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         // Query untuk mendapatkan data makanan berdasarkan ID
         $sql = "SELECT * FROM makanan WHERE ID = :id";
         $stmt = oci_parse($conn, $sql);
-        
+
         // Binding parameter ID untuk query
         oci_bind_by_name($stmt, ":id", $id);
 
@@ -51,7 +51,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         } else {
             echo json_encode(['success' => false, 'message' => 'Data tidak ditemukan']);
         }
-
     } else {
         // Jika tidak ada id, tampilkan semua data makanan (untuk tampilan daftar)
         $sql = "SELECT * FROM makanan";
@@ -192,12 +191,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'PUT') {
         exit;
     }
 
-    // Validasi data utama
-    if (empty($data['judul']) || empty($data['kalori']) || empty($data['gambar'])) {
-        echo json_encode(['success' => false, 'message' => 'Data tidak lengkap']);
-        http_response_code(400);
-        exit;
-    }
+
+
 
     // Validasi opsional untuk `resep` dan `cara_pembuatan`
     $ingredients = isset($data['resep']) ? json_encode($data['resep']) : null;
@@ -235,4 +230,3 @@ if ($_SERVER['REQUEST_METHOD'] === 'PUT') {
 // Jika metode tidak dikenali
 http_response_code(405); // Metode Tidak Diizinkan
 echo json_encode(['success' => false, 'message' => 'Metode HTTP tidak didukung']);
-?>

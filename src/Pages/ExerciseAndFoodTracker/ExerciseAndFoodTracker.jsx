@@ -88,6 +88,7 @@ function ExerciseAndFoodTracker() {
         kalori_masuk: totalConsumedCalories,
         kalori_keluar: totalBurnedCalories,
         tanggal: formattedDate, // Kirim tanggal dalam format yang benar
+        
       };
 
       console.log("Data yang akan dikirim:", dataToSend);

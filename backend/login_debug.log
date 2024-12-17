@@ -974,3 +974,59 @@
 )
 
 [12-Dec-2024 09:51:40 Europe/Berlin] isCaptchaEnabled: disabled
+[15-Dec-2024 06:41:21 Europe/Berlin] Received input: Array
+(
+    [username] => Tama
+    [password] => 123
+    [isCaptchaEnabled] => 
+)
+
+[15-Dec-2024 06:41:21 Europe/Berlin] isCaptchaEnabled: disabled
+[15-Dec-2024 07:57:53 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[15-Dec-2024 07:57:53 Europe/Berlin] isCaptchaEnabled: disabled
+[15-Dec-2024 07:58:13 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[15-Dec-2024 07:58:13 Europe/Berlin] isCaptchaEnabled: disabled
+[15-Dec-2024 08:37:53 Europe/Berlin] Received input: Array
+(
+    [username] => tes2
+    [password] => 123
+    [isCaptchaEnabled] => 
+)
+
+[15-Dec-2024 08:37:53 Europe/Berlin] isCaptchaEnabled: disabled
+[15-Dec-2024 13:49:06 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[15-Dec-2024 13:49:06 Europe/Berlin] isCaptchaEnabled: disabled
+[15-Dec-2024 13:49:25 Europe/Berlin] Received input: Array
+(
+    [username] => admin
+    [password] => 1234
+    [isCaptchaEnabled] => 
+)
+
+[15-Dec-2024 13:49:25 Europe/Berlin] isCaptchaEnabled: disabled
+[15-Dec-2024 13:50:52 Europe/Berlin] Received input: Array
+(
+    [username] => coba
+    [password] => 123
+    [isCaptchaEnabled] => 
+)
+
+[15-Dec-2024 13:50:52 Europe/Berlin] isCaptchaEnabled: disabled
