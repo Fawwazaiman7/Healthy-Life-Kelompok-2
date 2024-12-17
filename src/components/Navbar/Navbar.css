@@ -128,6 +128,7 @@ body {
   border-radius: 8px;
   margin-top: 5px; /* Jarak antara Tracker dan dropdown */
   z-index: 10;
+  margin-left: 0;
   display: flex;
   flex-direction: column;
   padding: 10px 0;
@@ -135,6 +136,7 @@ body {
 
 .tracker-dropdown li {
   padding: 10px 20px; /* Padding untuk item dropdown */
+  margin-left: 0; 
 }
 
 .tracker-dropdown li a {

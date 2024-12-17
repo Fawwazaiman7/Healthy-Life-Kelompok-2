@@ -101,7 +101,7 @@ export default function FoodRecommendation() {
 
         {/* Text Content */}
         <div className="overlay">
-          <h3 className="foodTitle">{recommendedFood.title}</h3>
+          <h3 className="foodTitleRecom">{recommendedFood.title}</h3>
           <div className="details">
             <span className="detailItem">
               🔥 {recommendedFood.calories} kalori

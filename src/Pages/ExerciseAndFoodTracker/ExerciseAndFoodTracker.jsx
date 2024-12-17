@@ -1,24 +1,24 @@
 import "./ExerciseAndFoodTracker.css";
 import axios from "axios"; // Gunakan axios untuk koneksi ke backend
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import Navbar from '../../components/Navbar/Navbar';
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import Navbar from "../../components/Navbar/Navbar";
 
 function ExerciseAndFoodTracker() {
   const navigate = useNavigate();
-  
+
   // State untuk input olahraga
-  const [exerciseName, setExerciseName] = useState('');
-  const [exerciseCalories, setExerciseCalories] = useState('');
+  const [exerciseName, setExerciseName] = useState("");
+  const [exerciseCalories, setExerciseCalories] = useState("");
   const [exerciseList, setExerciseList] = useState([]);
-  
+
   // State untuk input makanan
   const [foodName, setFoodName] = useState("");
   const [foodCalories, setFoodCalories] = useState("");
   const [foodList, setFoodList] = useState([]);
 
   // State untuk input kalori harian
-  const [dailyCalorieTarget, setDailyCalorieTarget] = useState('');
+  const [dailyCalorieTarget, setDailyCalorieTarget] = useState("");
   const [dailyCalorieList, setDailyCalorieList] = useState([]); // Daftar kalori harian
 
   // State untuk total kalori
@@ -54,10 +54,14 @@ function ExerciseAndFoodTracker() {
 
   // Fungsi untuk menambahkan kalori harian
   const addDailyCalorie = () => {
-    if (dailyCalorieTarget && !isNaN(dailyCalorieTarget) && parseInt(dailyCalorieTarget) > 0) {
+    if (
+      dailyCalorieTarget &&
+      !isNaN(dailyCalorieTarget) &&
+      parseInt(dailyCalorieTarget) > 0
+    ) {
       setDailyCalorieList([...dailyCalorieList, parseInt(dailyCalorieTarget)]);
-      setTotalConsumedCalories(prev => prev + parseInt(dailyCalorieTarget));
-      setDailyCalorieTarget('');
+      setTotalConsumedCalories((prev) => prev + parseInt(dailyCalorieTarget));
+      setDailyCalorieTarget("");
     } else {
       alert("Target kalori harian harus angka positif.");
     }
@@ -75,58 +79,88 @@ function ExerciseAndFoodTracker() {
   };
 
   // Fungsi untuk mengirim data ke backend
-  const saveToDatabase = async () => {
-    try {
-      const now = new Date(); // Ambil tanggal saat ini
-      const formattedDate =
-        now.toISOString().split("T")[0] +
-        " " +
-        now.toTimeString().split(" ")[0]; // Format YYYY-MM-DD HH:MM:SS
+const saveToDatabase = async () => {
+  try {
+    const now = new Date(); // Ambil tanggal saat ini
+    const formattedDate =
+      now.toISOString().split("T")[0] + " " + now.toTimeString().split(" ")[0]; // Format YYYY-MM-DD HH:MM:SS
 
-      const dataToSend = {
-        id_tracker: "TRK" + Date.now(), // ID tracker unik
-        kalori_masuk: totalConsumedCalories,
-        kalori_keluar: totalBurnedCalories,
-        tanggal: formattedDate, // Kirim tanggal dalam format yang benar
-        
-      };
+    // Ambil id_pengguna dari localStorage
+    const user = JSON.parse(localStorage.getItem("user"));
+    console.log("User data dari LocalStorage:", user);
+    const idPengguna = user ? user.id : null; // Ambil 'id' sesuai respons backend
 
-      console.log("Data yang akan dikirim:", dataToSend);
-
-      const response = await axios.post(
-        "http://localhost:80/healthy_life_api/backend/tracker.php",
-        dataToSend
-      );
-
-      console.log("Respons backend:", response.data);
-
-      if (response.data.success) {
-        alert("Data berhasil disimpan ke database!");
-      } else {
-        alert(
-          `Gagal menyimpan data: ${
-            response.data.message || "Kesalahan tidak diketahui"
-          }`
-        );
-      }
-    } catch (error) {
-      console.error("Error saat menyimpan data:", error);
-      alert("Terjadi kesalahan saat menyimpan data. Cek log untuk detail.");
+    if (!idPengguna) {
+      alert("ID pengguna tidak ditemukan. Silakan login ulang.");
+      return;
     }
-  };
+
+
+    const dataToSend = {
+      id_tracker: "TRK" + Date.now(), // ID tracker unik
+      kalori_masuk: totalConsumedCalories,
+      kalori_keluar: totalBurnedCalories,
+      tanggal: formattedDate, // Kirim tanggal dalam format yang benar
+      id_pengguna: idPengguna, // Kirim ID pengguna
+    };
+
+    console.log("Data yang akan dikirim:", dataToSend);
+
+    const response = await axios.post(
+      "http://localhost:80/healthy_life_api/backend/tracker.php",
+      dataToSend
+    );
+
+    console.log("Respons backend:", response.data);
+
+    if (response.data.success) {
+      alert("Data berhasil disimpan ke database!");
+    } else {
+      alert(
+        `Gagal menyimpan data: ${
+          response.data.message || "Kesalahan tidak diketahui"
+        }`
+      );
+    }
+  } catch (error) {
+    console.error("Error saat menyimpan data:", error);
+    alert("Terjadi kesalahan saat menyimpan data. Cek log untuk detail.");
+  }
+};
+
 
   // Tombol untuk submit dan menghitung status kalori
   const handleSubmit = () => {
     const currentStatus = calculateStatus();
     setStatus(currentStatus); // Set status kalori
     saveToDatabase();
-    navigate('/riwayat', { state: { exerciseList, foodList, dailyCalorieList, currentStatus } }); // Navigasi ke halaman riwayat dengan data
+    navigate("/riwayat", {
+      state: {
+        riwayatPerBulan: [
+          {
+            month:
+              new Date().toISOString().split("-")[0] +
+              "-" +
+              new Date().toISOString().split("-")[1], // Format bulan saat ini
+            days: [
+              {
+                date: new Date().toISOString().split("T")[0], // Tanggal saat ini
+                exerciseList: exerciseList,
+                foodList: foodList,
+                dailyCaloriesIn: totalConsumedCalories,
+                dailyCaloriesOut: totalBurnedCalories,
+              },
+            ],
+          },
+        ],
+      },
+    });
   };
 
   // Fungsi untuk menangani perubahan input
   const handleExerciseNameChange = (e) => {
     const value = e.target.value;
-    if (/^[a-zA-Z\s]*$/.test(value) || value === '') {
+    if (/^[a-zA-Z\s]*$/.test(value) || value === "") {
       setExerciseName(value);
     }
   };
@@ -140,7 +174,7 @@ function ExerciseAndFoodTracker() {
 
   const handleFoodNameChange = (e) => {
     const value = e.target.value;
-    if (/^[a-zA-Z\s]*$/.test(value) || value === '') {
+    if (/^[a-zA-Z\s]*$/.test(value) || value === "") {
       setFoodName(value);
     }
   };
@@ -164,7 +198,7 @@ function ExerciseAndFoodTracker() {
       <Navbar />
       <div className="ExerciseAndFoodTracker">
         <h1>Tracker Olahraga dan Makanan</h1>
-        
+
         {/* Input Target Kalori Harian */}
         <div>
           <h2>Target Kalori Harian Anda</h2>
@@ -178,10 +212,12 @@ function ExerciseAndFoodTracker() {
         </div>
 
         {/* Daftar Kalori Harian */}
-        <div className="makanan-grid">
+        <div className="tracker-grid">
           {dailyCalorieList.map((calorie, index) => (
             <div className="makanan-card" key={index}>
-              <h3 style={{ color: 'black', fontSize: '0.9rem' }}>Kalori Harian: {calorie} Kcal</h3>
+              <h3 style={{ color: "black", fontSize: "0.9rem" }}>
+                Kalori Harian: {calorie} Kcal
+              </h3>
             </div>
           ))}
         </div>
@@ -197,17 +233,21 @@ function ExerciseAndFoodTracker() {
           />
           <input
             type="number"
-            placeholder="Kalori Terbakar"
+            placeholder="Kalori Terbakar (kal)"
             value={exerciseCalories}
             onChange={handleExerciseCaloriesChange}
           />
           <button onClick={addExercise}>Tambah Olahraga</button>
         </div>
-        <div className="makanan-grid">
+        <div className="tracker-grid">
           {exerciseList.map((exercise, index) => (
             <div className="makanan-card" key={index}>
-              <h3 style={{ color: 'black', fontSize: '0.9rem' }}>{exercise.name}</h3>
-              <p style={{ color: 'black', fontSize: '0.9rem' }}>{exercise.calories} Kalori</p>
+              <h3 style={{ color: "black", fontSize: "0.9rem" }}>
+                {exercise.name}
+              </h3>
+              <p style={{ color: "black", fontSize: "0.9rem" }}>
+                {exercise.calories} Kalori
+              </p>
             </div>
           ))}
         </div>
@@ -227,18 +267,22 @@ function ExerciseAndFoodTracker() {
           />
           <button onClick={addFood}>Tambah Makanan</button>
         </div>
-        <div className="makanan-grid">
+        <div className="tracker-grid">
           {foodList.map((food, index) => (
             <div className="makanan-card" key={index}>
-              <h3 style={{ color: 'black', fontSize: '0.9rem' }}>{food.name}</h3>
-              <p style={{ color: 'black', fontSize: '0.9rem' }}>{food.calories} Kalori</p>
+              <h3 style={{ color: "black", fontSize: "0.9rem" }}>
+                {food.name}
+              </h3>
+              <p style={{ color: "black", fontSize: "0.9rem" }}>
+                {food.calories} Kalori
+              </p>
             </div>
           ))}
         </div>
         <button onClick={handleSubmit}>Submit</button>
         <div className="total-calories">
-          <h2 style={{ color: 'white' }}>Status Kalori:</h2>
-          <p style={{ color: 'white' }}>{status}</p>
+          <h2 style={{ color: "white" }}>Status Kalori:</h2>
+          <p style={{ color: "white" }}>{status}</p>
         </div>
       </div>
     </>

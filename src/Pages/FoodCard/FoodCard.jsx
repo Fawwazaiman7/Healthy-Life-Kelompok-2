@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './FoodCard.css';
 
-const FoodCard = ({ id, title, time, calories, image }) => {
+const FoodCard = ({ id, title, calories, image }) => {
   const navigate = useNavigate();
 
   const handleCardClick = () => {
@@ -18,7 +18,6 @@ const FoodCard = ({ id, title, time, calories, image }) => {
       <div className="foodDetails">
         <h3 className="foodTitle">{title}</h3>
         <p className="foodInfo">{calories} kalori</p>
-        <p className="foodTime">{time} menit</p> {/* Menambahkan waktu memasak */}
       </div>
     </div>
   );

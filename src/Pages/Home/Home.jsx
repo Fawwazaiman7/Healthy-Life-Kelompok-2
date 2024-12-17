@@ -199,12 +199,7 @@ export default function Home() {
           <p>Tidak ada artikel yang tersedia.</p>
         )}
         {/* Pagination */}
-        <Pagination
-          currentPage={currentPage}
-          totalItems={articles.length}
-          itemsPerPage={articlesPerPage}
-          onPageChange={handlePageChange}
-        />
+
       </section>
       <Footer />
     </main>

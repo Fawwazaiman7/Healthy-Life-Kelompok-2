@@ -18,13 +18,29 @@ main {
 }
 
 .makanan-grid {
-  margin-top: 1.5rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
-  display: grid; /* Menggunakan grid untuk susunan kartu */
-  grid-template-columns: repeat(2, 1fr); /* Dua kolom per baris */
-  gap: 1rem; /* Jarak antara kartu */
+  margin-top: 40px;
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important; /* 4 kolom */
+  gap: 1.5rem;
+  justify-items: center;
+  width: 100%;
+  max-width: 1200px; /* Lebar maksimal grid */
+  margin-left: auto;
+  margin-right: auto;
 }
+
+.food-card {
+  width: auto; /* Sesuaikan dengan kolom grid */
+  max-width: 100%;
+  box-sizing: border-box;
+  background-color: white;
+  color: black;
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
 
 /* Pagination Styling */
 .pagination {

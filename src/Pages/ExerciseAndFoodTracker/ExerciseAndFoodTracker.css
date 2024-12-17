@@ -68,7 +68,7 @@ button {
 }
 
 /* Mengatur tampilan daftar makanan, olahraga, dan kalori harian */
-.makanan-grid {
+.tracker-grid {
   display: flex;
   flex-direction: column;
   align-items: flex-start; /* Menjaga semua item sejajar ke kiri */

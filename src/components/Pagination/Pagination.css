@@ -17,14 +17,7 @@ main {
   background-color: #ebeee9; 
 }
 
-.makanan-grid {
-  margin-top: 1.5rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
-  display: grid; /* Menggunakan grid untuk susunan kartu */
-  grid-template-columns: repeat(2, 1fr); /* Dua kolom per baris */
-  gap: 1rem; /* Jarak antara kartu */
-}
+
 
 /* Pagination Styling */
 .pagination {
