@@ -11,13 +11,31 @@ function GetStarted() {
   const [errors, setErrors] = useState({});
   const navigate = useNavigate();
 
-  useEffect(() => {
-    // Check if user data exists in localStorage
-    const userData = localStorage.getItem("user");
-    if (!userData) {
-      navigate("/signup");
-    }
-  }, [navigate]);
+ useEffect(() => {
+   const user = localStorage.getItem("user");
+   console.log("User data in localStorage at GetStarted:", user);
+
+   if (!user) {
+     console.error(
+       "No user data found in localStorage. Redirecting to /signup..."
+     );
+     navigate("/sign-up");
+     return;
+   }
+
+   try {
+     const userData = JSON.parse(user);
+     if (!userData || !userData.email) {
+       throw new Error("Invalid user data. Missing email.");
+     }
+     console.log("Parsed user data in GetStarted:", userData);
+   } catch (error) {
+     console.error("Error parsing user data:", error);
+     navigate("/sign-up");
+   }
+ }, [navigate]);
+
+
 
   const handleGenderClick = (selectedGender) => {
     setGender(selectedGender);
@@ -53,10 +71,12 @@ function GetStarted() {
     if (!validate()) return;
 
     try {
-      const userData = JSON.parse(localStorage.getItem("user"));
+      const user = localStorage.getItem("user");
+      const userData = user ? JSON.parse(user) : null;
 
       if (!userData || !userData.email) {
-        navigate("/signup");
+        console.error("Invalid user data. Redirecting to signup.");
+        navigate("/sign-up");
         return;
       }
 
@@ -67,7 +87,6 @@ function GetStarted() {
         },
       };
 
-      // Calculate BMI and category
       const bmi = calculateBMI(parseFloat(weight), parseFloat(height));
       const bmiCategory = getBMICategory(bmi);
 
@@ -81,7 +100,7 @@ function GetStarted() {
         kategori_bmi_pengguna: bmiCategory,
       };
 
-      console.log("Sending data:", data);
+      console.log("Sending data to backend for update:", data);
 
       const response = await axios.post(
         "http://localhost:80/healthy_life_api/backend/signup.php",
@@ -89,10 +108,9 @@ function GetStarted() {
         config
       );
 
-      console.log("Response:", response.data);
+      console.log("Update response:", response.data);
 
       if (response.data.success) {
-        // Update localStorage dengan data terbaru
         const updatedUserData = {
           ...userData,
           jenis_kelamin: gender === "male" ? "L" : "P",
@@ -112,7 +130,7 @@ function GetStarted() {
         );
       }
     } catch (error) {
-      console.error("Error details:", error);
+      console.error("Error updating user information:", error);
       setErrors((prev) => ({
         ...prev,
         submit:
@@ -130,10 +148,6 @@ function GetStarted() {
   return (
     <div className="get-started-container">
       <div className="form-box">
-        <button className="close-button" onClick={handleClose}>
-          ✖
-        </button>
-
         <h2>What's Your Gender?</h2>
         <div className="gender-selection">
           <button

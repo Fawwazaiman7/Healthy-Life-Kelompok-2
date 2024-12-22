@@ -58,9 +58,7 @@ h2 {
 
 .signup-image-container img {
   max-width: 100%; /* Memastikan gambar tidak lebih lebar dari kontainer */
-  max-height: 100%; /* Membatasi tinggi maksimum gambar */
-  height: auto; /* Memastikan proporsi gambar tetap terjaga */
-  border-radius: 8px;
+  height: 743px; /* Memastikan proporsi gambar tetap terjaga */
   object-fit: cover; /* Memastikan gambar mengisi kontainer tanpa terdistorsi */
 }
 

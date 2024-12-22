@@ -13,7 +13,7 @@ export default function Home() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [articles, setArticles] = useState([]); // State untuk artikel
   const [currentPage, setCurrentPage] = useState(1); // State untuk halaman aktif
-  const articlesPerPage = 5; // Jumlah artikel per halaman
+  const articlesPerPage = 10; // Jumlah artikel per halaman
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -25,8 +25,8 @@ export default function Home() {
     });
 
     // Check login status from localStorage
-    const loggedIn = localStorage.getItem("isLoggedIn");
-    setIsLoggedIn(loggedIn === "true");
+    const isloggedIn = localStorage.getItem("isLoggedIn");
+    setIsLoggedIn(isloggedIn === "true");
 
     // Fetch articles from backend
     const fetchArticles = async () => {

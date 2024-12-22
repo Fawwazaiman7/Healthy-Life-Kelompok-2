@@ -196,6 +196,9 @@ body {
     display: block; /* Tampilkan tombol saat burger menu dibuka */
     margin: 10px 0; /* Jarak antar tombol */
   }
+  .navbar-logo {
+    margin-right: 20px;
+  }
 }
 
 /* Styling Tombol dalam Navbar */

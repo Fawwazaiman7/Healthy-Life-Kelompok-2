@@ -22,10 +22,11 @@
   position: relative;
   box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.7);
   overflow: hidden;
-  margin-left: 518px;
+  margin-left: 230px;
   transition: transform 0.3s, box-shadow 0.3s;
-  width: 250px; /* Lebar kartu */
+  width: 400px; /* Lebar kartu */
   height: 250px; /* Tinggi kartu */
+  border-radius: 0.5rem;
 }
 
 .foodContainer:hover {

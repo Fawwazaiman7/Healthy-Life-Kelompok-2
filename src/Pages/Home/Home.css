@@ -7,7 +7,7 @@
   background-size: cover; /* Agar gambar menutupi seluruh section */
   background-position: center; /* Posisikan gambar di tengah */
   background-repeat: no-repeat;
-  height: 620px; /* Sesuaikan tinggi sesuai kebutuhan */
+  height: 900px; /* Sesuaikan tinggi sesuai kebutuhan */
   color: white;
   position: relative; /* Agar konten bisa diposisikan di atas gambar */
 }
@@ -111,12 +111,14 @@
   background-color: #7f7c7c; /* Warna latar belakang kartu */
   color: white; /* Warna teks */
   padding: 20px; /* Padding untuk kartu */
-  border-radius: 10px; /* Sudut yang lebih halus */
-  width: 200px; /* Lebar kartu */
-  height: 290px; /* Tinggi kartu */
+  border-radius: 0.5rem; /* Sudut yang lebih halus */
+  width: 300px; /* Lebar kartu */
+  height: 300px; /* Tinggi kartu */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
   cursor: pointer; /* Menunjukkan bahwa ini dapat diklik */
+  align-items: center;
+  margin-left: 35px;
 }
 
 .article-card:hover {

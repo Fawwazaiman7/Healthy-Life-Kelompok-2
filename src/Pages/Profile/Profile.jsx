@@ -6,7 +6,11 @@ import Navbar from "../../components/Navbar/Navbar";
 function Profile() {
   const [userData, setUserData] = useState(null);
   const [isEditing, setIsEditing] = useState(false);
-  const [formData, setFormData] = useState({ weight: "", age: "", height: "", calorie_target: "" });
+  const [formData, setFormData] = useState({
+    weight: "",
+    age: "",
+    height: "",
+  });
 
   useEffect(() => {
     const fetchUserData = async () => {
@@ -23,7 +27,6 @@ function Profile() {
             weight: response.data.user.berat_badan || "",
             age: response.data.user.usia || "",
             height: response.data.user.tinggi_badan || "",
-            calorie_target: response.data.user.target_kalori || "",
           });
         } else {
           console.error("Gagal memuat data pengguna:", response.data.message);
@@ -43,6 +46,32 @@ function Profile() {
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
+  };
+
+  const handleDeleteAccount = async () => {
+    if (window.confirm("Apakah Anda yakin ingin menghapus akun ini?")) {
+      try {
+        const response = await axios.delete(
+          `http://localhost:80/healthy_life_api/backend/profile.php`,
+          { data: { id: userData.id } }
+        );
+
+        if (response.data.success) {
+          alert("Akun Anda telah berhasil dihapus.");
+          localStorage.removeItem("user");
+          localStorage.setItem("isLoggedIn", "false");
+          window.location.href = "/";
+        } else {
+          alert("Gagal menghapus akun: " + response.data.message);
+        }
+      } catch (error) {
+        console.error(
+          "Gagal menghapus akun:",
+          error.response?.data || error.message
+        );
+        alert("Terjadi kesalahan saat menghapus akun.");
+      }
+    }
   };
 
   const handleSave = async () => {
@@ -80,7 +109,10 @@ function Profile() {
         alert("Gagal memperbarui profil: " + response.data.message);
       }
     } catch (error) {
-      console.error("Gagal memperbarui data pengguna:", error.response?.data || error.message);
+      console.error(
+        "Gagal memperbarui data pengguna:",
+        error.response?.data || error.message
+      );
       alert("Terjadi kesalahan saat memperbarui profil.");
     }
   };
@@ -99,9 +131,10 @@ function Profile() {
     return <p>Loading...</p>;
   }
 
-  const bmi = userData.berat_badan && userData.tinggi_badan
-    ? (userData.berat_badan / ((userData.tinggi_badan / 100) ** 2)).toFixed(2)
-    : "N/A";
+  const bmi =
+    userData.berat_badan && userData.tinggi_badan
+      ? (userData.berat_badan / (userData.tinggi_badan / 100) ** 2).toFixed(2)
+      : "N/A";
 
   return (
     <main>
@@ -109,7 +142,9 @@ function Profile() {
       <div className="profile-container">
         <div className="profile-header">
           <div className="profile-icon">
-            <span role="img" aria-label="user-icon">👤</span>
+            <span role="img" aria-label="user-icon">
+              👤
+            </span>
           </div>
           <h2 className="profile-name">{userData.nama}</h2>
         </div>
@@ -144,15 +179,10 @@ function Profile() {
                   onChange={handleInputChange}
                 />
               </div>
-              <div className="form-item">
-                <label>Target Kalori:</label>
-                <input
-                  type="number"
-                  name="calorie_target"
-                  value={formData.calorie_target}
-                  readOnly
-                />
-              </div>
+              <button className="delete-button" onClick={handleDeleteAccount}>
+                Hapus Akun Saya
+              </button>
+
               <div className="button-group">
                 <button className="save-button" onClick={handleSave}>
                   Simpan Perubahan

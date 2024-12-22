@@ -118,6 +118,28 @@
   border-color: #fefefe;
 }
 
+.delete-button {
+  background: linear-gradient(135deg, #ff4b5c, #ff0000);
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+  margin-top: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.delete-button:hover {
+  background-color: #ffcccc;
+  color: #000000;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+
 /* Tombol Simpan */
 .save-button {
   background: linear-gradient(135deg, #818281, #131313);

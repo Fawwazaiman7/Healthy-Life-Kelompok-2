@@ -1,7 +1,7 @@
 .exercise-card {
   position: relative;
-  width: 250px; /* Lebar tetap */
-  height: 250px; /* Tinggi tetap untuk memastikan berbentuk segiempat */
+  width: 400px; /* Lebar tetap */
+  height: 300px; /* Tinggi tetap untuk memastikan berbentuk segiempat */
   border-radius: 0.75rem;
   box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.7);
   overflow: hidden;

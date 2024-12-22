@@ -72,6 +72,7 @@ function LogIn() {
       );
 
       if (response.data.success) {
+        localStorage.clear(); // Hapus semua data localStorage sebelum menyimpan yang baru
         localStorage.setItem("isLoggedIn", "true");
         localStorage.setItem("role", response.data.role);
         localStorage.setItem("user", JSON.stringify(response.data.user));
@@ -163,6 +164,20 @@ function LogIn() {
         >
           {isLoading ? "Logging in..." : "Log In"}
         </button>
+        <p>
+          Don't have an account?{" "}
+          <span
+            className="link"
+            onClick={() => navigate("/sign-up")}
+            style={{
+              color: "green",
+              cursor: "pointer",
+              textDecoration: "underline",
+            }}
+          >
+            Sign Up here
+          </span>
+        </p>
       </div>
       <div className="login-image-container"></div>
       <img src="/images/login.png" alt="Login Illustration" />

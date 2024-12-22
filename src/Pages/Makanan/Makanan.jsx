@@ -14,7 +14,7 @@ const Makanan = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 4;
+  const itemsPerPage = 8;
   const location = useLocation();
 
   // Fetch awal data makanan

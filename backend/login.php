@@ -123,8 +123,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         // Check in pengguna table
         $user_query = "SELECT id_pengguna, nama, email, kata_sandi, usia, 
-                              jenis_kelamin, berat_badan, tinggi_badan, 
-                              target_kalori, kalori_tercapai, kategori_bmi_pengguna 
+                              jenis_kelamin, berat_badan, tinggi_badan  
                        FROM pengguna 
                        WHERE nama = :username";
 
@@ -148,8 +147,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $profileComplete = !empty($user['USIA']) &&
                     !empty($user['JENIS_KELAMIN']) &&
                     !empty($user['BERAT_BADAN']) &&
-                    !empty($user['TINGGI_BADAN']) &&
-                    !empty($user['TARGET_KALORI']);
+                    !empty($user['TINGGI_BADAN']);
+                    
 
                 echo json_encode([
                     'success' => true,
@@ -163,10 +162,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         'usia' => $user['USIA'],
                         'jenis_kelamin' => $user['JENIS_KELAMIN'],
                         'berat_badan' => $user['BERAT_BADAN'],
-                        'tinggi_badan' => $user['TINGGI_BADAN'],
-                        'target_kalori' => $user['TARGET_KALORI'],
-                        'kalori_tercapai' => $user['KALORI_TERCAPAI'],
-                        'kategori_bmi_pengguna' => $user['KATEGORI_BMI_PENGGUNA']
+                        'tinggi_badan' => $user['TINGGI_BADAN']
                     ]
                 ]);
                 exit;

@@ -74,16 +74,34 @@ const Navbar = () => {
           <Link to="/olahraga">Olahraga</Link>
         </li>
         <li onClick={handleTrackerClick}>
-          <span className="tracker-title">{trackerText}</span>
-          {isTrackerDropdownOpen && (
-            <ul className="tracker-dropdown">
-              <li>
-                <Link to="/exerciseandfoodtracker" onClick={() => setIsTrackerDropdownOpen(false)}>Tracker</Link>
-              </li>
-              <li>
-                <Link to="/kalkulator" onClick={() => setIsTrackerDropdownOpen(false)}>Kalkulator</Link> 
-              </li>
-            </ul>
+          {isLoggedIn ? (
+            <>
+              <span className="tracker-title">{trackerText}</span>
+              {isTrackerDropdownOpen && (
+                <ul className="tracker-dropdown">
+                  <li>
+                    <Link
+                      to="/exerciseandfoodtracker"
+                      onClick={() => setIsTrackerDropdownOpen(false)}
+                    >
+                      Tracker
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/kalkulator"
+                      onClick={() => setIsTrackerDropdownOpen(false)}
+                    >
+                      Kalkulator
+                    </Link>
+                  </li>
+                </ul>
+              )}
+            </>
+          ) : (
+            <Link to="/login" className="tracker-title">
+              Login untuk Tracker
+            </Link>
           )}
         </li>
       </ul>
@@ -99,7 +117,9 @@ const Navbar = () => {
             {isDropdownOpen && (
               <div className="profile-dropdown">
                 {isAdmin && (
-                  <button onClick={() => navigate("/admin-management")}>Admin Panel</button>
+                  <button onClick={() => navigate("/admin-management")}>
+                    Admin Panel
+                  </button>
                 )}
                 <button onClick={() => navigate("/profile")}>Profile</button>
                 <button onClick={() => navigate("/riwayat")}>Riwayat</button>
@@ -110,7 +130,7 @@ const Navbar = () => {
         ) : (
           <div className="navbar-actions">
             <Link to="/sign-up" className="navbar-button">
-              Sign in
+              Sign up
             </Link>
             <Link to="/login" className="navbar-button navbar-login">
               Log In

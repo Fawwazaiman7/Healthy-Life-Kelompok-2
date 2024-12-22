@@ -44,7 +44,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             throw new Exception('Invalid JSON input');
         }
 
-        // Check if this is an update request
         if (isset($input['update']) && $input['update'] === true) {
             // Update existing user data
             if (empty($input['email'])) {
@@ -94,7 +93,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $email = $input['email'];
             $password = $input['password'];
 
-            // Check if email exists (including deleted records)
             $check_query = "SELECT COUNT(*) as count FROM pengguna WHERE email = :email";
             $check_stmt = oci_parse($conn, $check_query);
 
@@ -118,28 +116,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 throw new Exception('Email already registered or was previously registered');
             }
 
-            // Verify admin exists
-            $check_admin_query = "SELECT COUNT(*) as count FROM admin WHERE id_admin = 1";
-            $check_admin_stmt = oci_parse($conn, $check_admin_query);
-
-            if (!$check_admin_stmt) {
-                $error = oci_error($conn);
-                logError("Failed to parse admin check query", $error);
-                throw new Exception('Database error: Failed to verify admin');
-            }
-
-            if (!oci_execute($check_admin_stmt)) {
-                $error = oci_error($check_admin_stmt);
-                logError("Failed to execute admin check query", $error);
-                throw new Exception('Database error: Failed to verify admin');
-            }
-
-            $admin_row = oci_fetch_array($check_admin_stmt, OCI_ASSOC);
-
-            if ($admin_row['COUNT'] == 0) {
-                throw new Exception('Admin reference not found. Please contact system administrator.');
-            }
-
             $hashedPassword = password_hash($password, PASSWORD_BCRYPT);
 
             $insert_query = "INSERT INTO pengguna (
@@ -150,10 +126,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 usia, 
                 jenis_kelamin, 
                 berat_badan, 
-                tinggi_badan, 
-                target_kalori,
-                kalori_tercapai,
-                kategori_bmi_pengguna,
+                tinggi_badan,
                 admin_id_admin
             ) VALUES (
                 SEQ_PENGGUNA_ID.nextval, 
@@ -164,9 +137,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 'L',
                 60,
                 170,
-                2000,
-                0,
-                'Ideal',
                 1
             )";
 
@@ -190,10 +160,29 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             oci_commit($conn);
 
-            echo json_encode([
-                'success' => true,
-                'message' => 'User registration successful'
-            ]);
+            $fetch_user_query = "SELECT id_pengguna, nama, email FROM pengguna WHERE email = :email";
+            $fetch_user_stmt = oci_parse($conn, $fetch_user_query);
+            oci_bind_by_name($fetch_user_stmt, ":email", $email);
+            oci_execute($fetch_user_stmt);
+
+            $user_data = oci_fetch_array($fetch_user_stmt, OCI_ASSOC);
+
+            if ($user_data) {
+                echo json_encode([
+                    'success' => true,
+                    'message' => 'User registration successful',
+                    'user' => [
+                        'id' => $user_data['ID_PENGGUNA'],
+                        'name' => $user_data['NAMA'],
+                        'email' => $user_data['EMAIL']
+                    ]
+                ]);
+            } else {
+                echo json_encode([
+                    'success' => true,
+                    'message' => 'User registration successful, but user data could not be retrieved'
+                ]);
+            }
         }
     } catch (Exception $e) {
         if (isset($conn)) {
@@ -208,9 +197,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         ]);
     } finally {
         if (isset($check_stmt)) oci_free_statement($check_stmt);
-        if (isset($check_admin_stmt)) oci_free_statement($check_admin_stmt);
         if (isset($insert_stmt)) oci_free_statement($insert_stmt);
-        if (isset($update_stmt)) oci_free_statement($update_stmt);
+        if (isset($fetch_user_stmt)) oci_free_statement($fetch_user_stmt);
         if (isset($conn)) oci_close($conn);
     }
 } else {

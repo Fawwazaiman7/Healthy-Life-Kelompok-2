@@ -1,103 +1,104 @@
 /* File: src/Pages/KalkulatorAKG/KalkulatorAKG.css */
 
 .page-background {
-    background-color: #000000; /* Warna latar belakang yang lembut */
-    padding: 20px;
-    min-height: 100vh; /* Memastikan halaman memenuhi tinggi viewport */
+  background-color: #000000; /* Warna latar belakang yang lembut */
+  padding: 20px;
+  min-height: 100vh; /* Memastikan halaman memenuhi tinggi viewport */
 }
 
 .kalkulator-container {
-    max-width: 600px;
-    margin: auto;
-    background: #1a1a1a;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: auto;
+  background: #1a1a1a;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin-top: 80px;
 }
 
 h2 {
-    color: #ffffff; /* Warna teks untuk judul */
-    text-align: center;
-    margin: 30px 0; /* Margin atas dan bawah untuk memberikan ruang */
-    font-size: 24px; /* Ukuran font yang lebih besar untuk menonjolkan judul */
-    font-weight: bold; /* Menebalkan judul */
+  color: #ffffff; /* Warna teks untuk judul */
+  text-align: center;
+  margin: 30px 0; /* Margin atas dan bawah untuk memberikan ruang */
+  font-size: 24px; /* Ukuran font yang lebih besar untuk menonjolkan judul */
+  font-weight: bold; /* Menebalkan judul */
 }
 
 h3 {
-    color: #ffffff; /* Warna teks untuk sub-judul */
-    margin-top: 20px;
+  color: #ffffff; /* Warna teks untuk sub-judul */
+  margin-top: 20px;
 }
 
 .input-section {
-    margin-bottom: 20px; /* Jarak antar input */
+  margin-bottom: 20px; /* Jarak antar input */
 }
 
 .input-section label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold; /* Menebalkan label */
-    color: #ffffff; /* Warna label */
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold; /* Menebalkan label */
+  color: #ffffff; /* Warna label */
 }
 
 .input-section input,
 .input-section select {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    background-color: #f9f9f9; /* Warna latar belakang input */
-    color: #000; /* Warna font hitam untuk input */
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #f9f9f9; /* Warna latar belakang input */
+  color: #000; /* Warna font hitam untuk input */
 }
 
 .input-section input:focus,
 .input-section select:focus {
-    border-color: #4CAF50; /* Warna border saat fokus */
-    outline: none; /* Menghilangkan outline default */
+  border-color: #4caf50; /* Warna border saat fokus */
+  outline: none; /* Menghilangkan outline default */
 }
 
 .calculate-button,
 .reset-button {
-    background-color: #4CAF50; /* Warna latar belakang tombol */
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 16px;
-    width: 100%; /* Tombol memenuhi lebar kontainer */
-    transition: background-color 0.3s; /* Transisi halus saat hover */
-    margin-top: 10px; /* Jarak atas tombol */
+  background-color: #4caf50; /* Warna latar belakang tombol */
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%; /* Tombol memenuhi lebar kontainer */
+  transition: background-color 0.3s; /* Transisi halus saat hover */
+  margin-top: 10px; /* Jarak atas tombol */
 }
 
 .calculate-button:hover,
 .reset-button:hover {
-    background-color: #45a049; /* Warna saat hover */
+  background-color: #45a049; /* Warna saat hover */
 }
 
 .result-section {
-    color: black;
-    text-align: center;
-    margin-top: 20px;
+  color: black;
+  text-align: center;
+  margin-top: 20px;
 }
 
 .calories-value {
-    font-weight: bold;
-    color: #4CAF50; /* Warna hijau untuk nilai kalori */
+  font-weight: bold;
+  color: #4caf50; /* Warna hijau untuk nilai kalori */
 }
 
 .gender-selection {
-    margin-bottom: 20px; /* Jarak antar gender selection */
+  margin-bottom: 20px; /* Jarak antar gender selection */
 }
 
 .gender-selection label {
-    margin-right: 10px; /* Jarak antar label */
-    color: #ffffff; /* Warna label */
+  margin-right: 10px; /* Jarak antar label */
+  color: #ffffff; /* Warna label */
 }
 
 /* Tambahkan gaya untuk output kebutuhan gizi */
 .nutrition-output {
-    color: #ffffff; /* Warna hitam untuk output */
-    font-size: 18px; /* Ukuran font untuk output */
-    margin: 5px 0; /* Jarak atas dan bawah untuk output */
+  color: #ffffff; /* Warna hitam untuk output */
+  font-size: 18px; /* Ukuran font untuk output */
+  margin: 5px 0; /* Jarak atas dan bawah untuk output */
 }

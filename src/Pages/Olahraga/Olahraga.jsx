@@ -1,4 +1,4 @@
-import  { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import "aos/dist/aos.css";
 import "./Olahraga.css";
@@ -13,9 +13,9 @@ const Olahraga = () => {
   const [exercises, setExercises] = useState([]); // Data semua exercises
   const [filteredExercises, setFilteredExercises] = useState([]); // Data setelah filter
   const [selectedExercise, setSelectedExercise] = useState(null); // Untuk menyimpan data exercise yang dipilih
-  const [currentPage, setCurrentPage] = useState(1); 
+  const [currentPage, setCurrentPage] = useState(1);
   const [error, setError] = useState(null);
-  const [loading, setLoading] = useState(false);// Untuk menyimpan errorHalaman saat ini
+  const [loading, setLoading] = useState(false); // Untuk menyimpan errorHalaman saat ini
   const itemsPerPage = 8; // Jumlah item per halaman
   const location = useLocation();
 

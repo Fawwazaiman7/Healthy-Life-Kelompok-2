@@ -4,7 +4,7 @@ ini_set('log_errors', 1);
 ini_set('error_log', 'php_errors.log');
 
 header('Access-Control-Allow-Origin: *');
-header('Access-Control-Allow-Methods: GET, PUT, OPTIONS');
+header('Access-Control-Allow-Methods: GET, PUT, DELETE, OPTIONS');
 header('Access-Control-Allow-Headers: Content-Type, Accept');
 header('Content-Type: application/json; charset=UTF-8');
 
@@ -41,10 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
             usia,
             jenis_kelamin,
             berat_badan,
-            tinggi_badan,
-            target_kalori,
-            kalori_tercapai,
-            kategori_bmi_pengguna
+            tinggi_badan
             FROM pengguna 
             WHERE email = :email";
 
@@ -75,9 +72,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
             'jenis_kelamin' => $user['JENIS_KELAMIN'],
             'berat_badan' => $user['BERAT_BADAN'],
             'tinggi_badan' => $user['TINGGI_BADAN'],
-            'target_kalori' => $user['TARGET_KALORI'],
-            'kalori_tercapai' => $user['KALORI_TERCAPAI'],
-            'kategori_bmi' => $user['KATEGORI_BMI_PENGGUNA'],
             'bmi' => $bmi
         ];
 
@@ -144,4 +138,37 @@ elseif ($_SERVER['REQUEST_METHOD'] === 'PUT') {
         if (isset($stmt)) oci_free_statement($stmt);
         if (isset($conn)) oci_close($conn);
     }
+} elseif ($_SERVER['REQUEST_METHOD'] === 'DELETE') {
+    try {
+        $data = json_decode(file_get_contents('php://input'), true);
+        $id = isset($data['id']) ? $data['id'] : null;
+
+        if (!$id) {
+            throw new Exception('ID pengguna diperlukan untuk menghapus akun.');
+        }
+
+        // Query untuk menghapus akun berdasarkan ID
+        $query = "DELETE FROM pengguna WHERE id_pengguna = :id";
+        $stmt = oci_parse($conn, $query);
+        oci_bind_by_name($stmt, ":id", $id);
+
+        if (!oci_execute($stmt)) {
+            $error = oci_error($stmt);
+            throw new Exception('Gagal menghapus akun: ' . $error['message']);
+        }
+
+        echo json_encode([
+            'success' => true,
+            'message' => 'Akun berhasil dihapus'
+        ]);
+    } catch (Exception $e) {
+        echo json_encode([
+            'success' => false,
+            'message' => $e->getMessage()
+        ]);
+    } finally {
+        if (isset($stmt)) oci_free_statement($stmt);
+        if (isset($conn)) oci_close($conn);
+    }
 }
+

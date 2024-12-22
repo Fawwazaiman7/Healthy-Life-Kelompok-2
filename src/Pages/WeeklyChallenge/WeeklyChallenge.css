@@ -33,11 +33,11 @@
 .weeklyChallenge-title {
   font-size: 3rem; /* Ukuran font untuk judul */
   font-weight: bold;
-  color: black;
+  color: white;
   line-height: 1.2; /* Mengatur jarak antar baris */
   text-align: left; /* Menyelaraskan teks ke kiri */
   white-space: pre-line; /* Memungkinkan teks pecah baris */
-  margin-left: 100px; /* Jarak dari kiri */
+  margin-left: 40px; /* Jarak dari kiri */
 }
 
 .challenge-cards {

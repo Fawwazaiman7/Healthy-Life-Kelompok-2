@@ -12,7 +12,7 @@
 }
 
 /* Header */
-h1 {
+.riwayat-container h1 {
   font-size: 2.5rem;
   color: white; /* Hitam */
   text-align: center;
@@ -22,12 +22,12 @@ h1 {
 }
 
 /* Filter Bulan */
-.filter-bulan {
+.filter-bulan-tahun {
   text-align: center;
   margin-bottom: 2rem;
 }
 
-.filter-bulan select {
+.filter-bulan-tahun select {
   padding: 0.5rem;
   font-size: 1rem;
   border: 1px solid #4CAF50; /* Hijau */
@@ -37,7 +37,7 @@ h1 {
   transition: all 0.3s ease;
 }
 
-.filter-bulan select:hover {
+.filter-bulan-tahun select:hover {
   border-color: #4CAF50; /* Hijau tetap */
   background-color: black; /* Putih kehijauan */
   color: white;
@@ -59,33 +59,33 @@ h1 {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
-h2 {
+.riwayat-card h2 {
   font-size: 2rem;
   color: white; /* Hitam */
   margin-bottom: 1rem;
   font-weight: bold;
 }
 
-h3 {
+.riwayat-card h3 {
   font-size: 1.4rem;
   color: #4CAF50; /* Hijau sebagai aksen */
   margin-bottom: 1rem;
 }
 
-h4 {
+.riwayat-card h4 {
   font-size: 1.2rem;
   color: white; /* Hitam */
   margin-top: 1rem;
 }
 
 /* Menambahkan efek hover pada setiap list item */
-li {
+.riwayat-card li {
   font-size: 1rem;
   color: white; /* Abu-abu gelap */
   padding: 0.5rem 0;
 }
 
-li:hover {
+.riwayat-card li:hover {
   background-color: #e8f5e9; /* Putih kehijauan */
   border-radius: 5px;
   cursor: pointer;
@@ -113,20 +113,12 @@ li:hover {
   .riwayat-grid {
     grid-template-columns: 1fr;
   }
-
-  h1 {
-    font-size: 2rem;
-  }
 }
 
 /* Menambahkan Aksen Hijau pada Header dan Border */
-h1, h2, h3, h4 {
-  color: white; /* Hitam */
-}
 
-h3 {
-  color: #4CAF50; /* Hijau sebagai aksen pada subjudul */
-}
+
+
 
 /* Highlightkan tombol atau elemen interaktif */
 button, select {
