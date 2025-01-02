@@ -4,8 +4,13 @@
   margin: 0;
   padding: 0;
 }
-/* Olahraga.css */
 
+/* Mengatur latar belakang halaman */
+body {
+  background-color: #86A788; /* Warna latar belakang penuh */
+}
+
+/* Popup CSS */
 .popup-overlay {
   position: fixed;
   top: 0;
@@ -30,12 +35,13 @@
 }
 
 .popup-close {
+  color: aliceblue;
   position: absolute;
   top: 10px;
   right: 10px;
   background: transparent;
   border: none;
-  font-size: 1.5rem;
+  font-size: 3rem;
   cursor: pointer;
 }
 
@@ -46,25 +52,27 @@
   width: 1100px;
 }
 
-  .exercise-section {
-    padding: 2rem;
-    text-align: center;
-    background-color: #060606;  /* Latar belakang gelap untuk kontras */
-    color: rgb(0, 0, 0);
-  }
-  
-  .olahraga-title {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-    color: rgb(255, 255, 255);
-    font-weight: bold; /* Menjadikan teks tebal */
+/* Exercise Section */
+.exercise-section {
+  padding: 2rem;
+  text-align: center;
+  background-color: #CCE0AC;  /* Latar belakang untuk exercise section */
+  color: rgb(0, 0, 0);
+  position: relative; /* Pastikan ini relatif untuk menutupi latar belakang */
+  z-index: 1; /* Pastikan ini di atas latar belakang */
 }
 
-  
-  .exercise-cards {
-    margin-top: 40px;
-    display: flex;
-    gap: 4rem;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
+.olahraga-title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: rgb(0, 0, 0);
+  font-weight: bold; /* Menjadikan teks tebal */
+}
+
+.exercise-cards {
+  margin-top: 40px;
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}

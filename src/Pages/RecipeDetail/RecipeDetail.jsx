@@ -60,9 +60,6 @@ const RecipeDetail = () => {
     <main>
       <Navbar />
       <div className="recipeDetail">
-        <button className="class-icon" onClick={() => window.history.back()}>
-          X
-        </button>
         <h2>{recipe.title}</h2>
         <div className="recipeInfo">
           <p>{recipe.calories} kalori</p>

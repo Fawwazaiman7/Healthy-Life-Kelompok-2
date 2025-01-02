@@ -14,17 +14,18 @@ html, body {
 
 main {
   padding: 0;
-  background-color: #000000; 
+  background-color: #CCE0AC!important; 
 }
 
 .makanan-grid {
+  background-color: #CCE0AC;
   margin-top: 40px;
   display: grid !important;
   grid-template-columns: repeat(4, 1fr) !important; /* 4 kolom */
-  gap: 1.5rem;
+  gap: 0.5rem;
   justify-items: center;
   width: 100%;
-  max-width: 1200px; /* Lebar maksimal grid */
+  max-width: 12000px; /* Lebar maksimal grid */
   margin-left: auto;
   margin-right: auto;
 }

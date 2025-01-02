@@ -111,37 +111,47 @@ const AdminManagement = () => {
     }
   };
 
-  const handleSaveFood = async (food) => {
-    try {
-      const method = currentFood ? "put" : "post";
-      const url = "http://localhost:80/healthy_life_api/backend/adminFood.php";
-      const response = await axios({
-        method,
-        url,
-        data: {
-          ...food,
-          id: currentFood?.id, // Tambahkan ID jika sedang mengedit
-        },
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
+ const handleSaveFood = async (food) => {
+  console.log("handleSaveFood dipanggil dengan data:", food);
 
-      if (response.data.success) {
-        await fetchFoods();
-        setIsEditingFood(false);
-        setCurrentFood(null);
-      } else {
-        alert("Failed to save food: " + response.data.message);
-      }
-    } catch (error) {
-      console.error(
-        "Failed to save food:",
-        error.response?.data || error.message
-      );
-      alert("Failed to save food");
+  if (!food) {
+    console.error("Data makanan kosong. Abaikan pengiriman.");
+    return;
+  }
+
+  try {
+    const method = currentFood ? "put" : "post";
+    const url = "http://localhost:80/healthy_life_api/backend/adminFood.php";
+
+    console.log("Mengirim data ke backend:", food);
+    const response = await axios({
+      method,
+      url,
+      data: {
+        ...food,
+        id: currentFood?.id,
+      },
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+
+    console.log("Respons dari backend:", response.data);
+    if (response.data.success) {
+      await fetchFoods();
+      setIsEditingFood(false);
+      setCurrentFood(null);
+    } else {
+      alert("Failed to save food: " + response.data.message);
     }
-  };
+  } catch (error) {
+    console.error("Failed to save food:", error.response?.data || error.message);
+    alert("Failed to save food");
+  }
+};
+
+
+
 
   const handleDeleteFood = async (id) => {
     if (window.confirm("Anda yakin ingin menghapus makanan ini?")) {

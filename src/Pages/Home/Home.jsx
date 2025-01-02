@@ -89,7 +89,7 @@ export default function Home() {
     if (isLoggedIn) {
       navigate("/exerciseandfoodtracker");
     } else {
-      navigate("/login"); // Navigate to Get Started (sign-up) page if not logged in
+      navigate("/login"); // Navigate to login page if not logged in
     }
   };
 
@@ -99,7 +99,7 @@ export default function Home() {
   };
 
    const handleMulaiOlahraga = () => {
-     navigate("/olahraga"); // Navigate to the /makanan page
+     navigate("/olahraga"); // Navigate to the /olahraga page
    };
 
   return (

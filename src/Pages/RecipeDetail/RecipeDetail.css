@@ -12,23 +12,6 @@
   margin-top: 70px;
 }
 
-.close-button {
-  position: absolute; /* Posisi tombol di sudut */
-  top: 3rem; /* Jarak dari atas */
-  right: 1rem; /* Jarak dari kanan */
-  background-color: transparent; /* Latar belakang transparan */
-  border: none; /* Tanpa border */
-  color: rgb(0, 0, 0); /* Warna teks */
-  font-size: 1.5rem; /* Ukuran font */
-  cursor: pointer; /* Menunjukkan bahwa ini dapat diklik */
-  transition: color 0.3s; /* Transisi halus untuk perubahan warna */
-}
-
-.close-button:hover {
-  background-color: rgb(255, 255, 255);
-  color: black;
-}
-
 .recipeDetail h1 {
   font-size: 2.5rem;
   margin: 3rem 0; /* Jarak atas dan bawah */

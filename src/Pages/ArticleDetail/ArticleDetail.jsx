@@ -37,9 +37,6 @@ export default function ArticleDetail() {
     <main>
       <Navbar />
       <section className="article-detail">
-        <button className="close-button" onClick={() => window.history.back()}>
-          X
-        </button>
         <h1>{article.title}</h1>
         <img src={article.image} alt={article.title} />
         <div

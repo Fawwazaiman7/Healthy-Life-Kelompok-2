@@ -58,7 +58,7 @@
 .features-section {
   display: flex;
   justify-content: space-around;
-  background-color: #000000;
+  background-color: #ffffff !important;
   padding: 2rem;
   color: white;
 }
@@ -104,11 +104,11 @@
   gap: 2rem; /* Spasi antar artikel */
   align-items: flex-start; /* Rata atas untuk artikel */
   padding: 2rem;
-  background-color: #000000; /* Latar belakang untuk kontras */
+  background-color: #CCE0AC; /* Latar belakang untuk kontras */
 }
 
 .article-card {
-  background-color: #7f7c7c; /* Warna latar belakang kartu */
+  background-color: #FFFDEC; /* Warna latar belakang kartu */
   color: white; /* Warna teks */
   padding: 20px; /* Padding untuk kartu */
   border-radius: 0.5rem; /* Sudut yang lebih halus */

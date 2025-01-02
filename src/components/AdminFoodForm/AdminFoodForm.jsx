@@ -12,19 +12,22 @@ const AdminFoodForm = ({ currentFood, onSave, onCancel }) => {
   });
   const [currentIngredient, setCurrentIngredient] = useState(""); // Untuk menambah satu bahan ke array
   const [currentInstruction, setCurrentInstruction] = useState(""); // Untuk menambah satu langkah pembuatan ke array
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
 
   useEffect(() => {
     if (currentFood) {
+      console.log("Loading currentFood data:", currentFood); // Debugging data yang diterima
       setFormData({
         judul: currentFood.title || "",
         kalori: currentFood.calories || "",
         gambar: currentFood.image || "",
         resep: Array.isArray(currentFood.ingredients)
           ? currentFood.ingredients
-          : [], // Validasi
+          : [],
         cara_pembuatan: Array.isArray(currentFood.tutorial)
           ? currentFood.tutorial
-          : [], // Validasi
+          : [],
       });
     }
   }, [currentFood]);
@@ -32,6 +35,7 @@ const AdminFoodForm = ({ currentFood, onSave, onCancel }) => {
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
+    console.log(`Updated field "${name}":`, value); // Debug perubahan field
   };
 
   const handleAddIngredient = () => {
@@ -40,12 +44,14 @@ const AdminFoodForm = ({ currentFood, onSave, onCancel }) => {
         ...formData,
         resep: [...formData.resep, currentIngredient.trim()],
       });
+      console.log("Added ingredient:", currentIngredient); // Debugging ingredient
       setCurrentIngredient(""); // Reset input bahan
     }
   };
 
   const handleDeleteIngredient = (index) => {
     const updatedIngredients = formData.resep.filter((_, i) => i !== index);
+    console.log("Deleted ingredient at index:", index); // Debugging penghapusan ingredient
     setFormData({ ...formData, resep: updatedIngredients });
   };
 
@@ -55,6 +61,7 @@ const AdminFoodForm = ({ currentFood, onSave, onCancel }) => {
         ...formData,
         cara_pembuatan: [...formData.cara_pembuatan, currentInstruction.trim()],
       });
+      console.log("Added instruction:", currentInstruction); // Debugging instruction
       setCurrentInstruction(""); // Reset input langkah pembuatan
     }
   };
@@ -63,28 +70,48 @@ const AdminFoodForm = ({ currentFood, onSave, onCancel }) => {
     const updatedInstructions = formData.cara_pembuatan.filter(
       (_, i) => i !== index
     );
+    console.log("Deleted instruction at index:", index); // Debugging penghapusan instruction
     setFormData({ ...formData, cara_pembuatan: updatedInstructions });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!formData.judul || !formData.kalori) {
-      alert("Please fill in all required fields");
+
+    if (isSubmitting) {
+      console.log("Pengiriman sedang berlangsung, abaikan submit ulang.");
+      return; // Mencegah submit ulang
+    }
+
+    setIsSubmitting(true); // Mengatur state untuk menandai submit sedang berlangsung
+
+    // Validasi data
+    if (!formData.judul.trim()) {
+      alert("Judul tidak boleh kosong");
+      setIsSubmitting(false); // Reset state jika validasi gagal
+      return;
+    }
+    if (!formData.kalori || isNaN(formData.kalori)) {
+      alert("Kalori harus berupa angka dan tidak boleh kosong");
+      setIsSubmitting(false); // Reset state jika validasi gagal
       return;
     }
 
     const method = currentFood ? "put" : "post";
     const url = "http://localhost:80/healthy_life_api/backend/adminFood.php";
-    console.log("Data yang akan dikirim:", formData);
 
+    console.log("Final data sent to backend:", {
+      ...formData,
+      resep: formData.resep,
+      cara_pembuatan: formData.cara_pembuatan,
+    });
 
     axios({
       method,
       url,
       data: {
         ...formData,
-        resep: JSON.stringify(formData.resep), // Kirim sebagai JSON string
-        cara_pembuatan: JSON.stringify(formData.cara_pembuatan), // Kirim sebagai JSON string
+        resep: formData.resep,
+        cara_pembuatan: formData.cara_pembuatan,
         id: currentFood?.id,
       },
       headers: {
@@ -92,13 +119,14 @@ const AdminFoodForm = ({ currentFood, onSave, onCancel }) => {
       },
     })
       .then((response) => {
+        console.log("Response dari backend:", response.data); // Debugging respons backend
         if (response.data.success) {
           alert(
             currentFood
               ? "Food updated successfully!"
               : "Food added successfully!"
           );
-          onSave();
+          // onSave(formData); // Pastikan data dikirim ke fungsi onSave
         } else {
           alert("Failed to save food: " + response.data.message);
         }
@@ -109,6 +137,9 @@ const AdminFoodForm = ({ currentFood, onSave, onCancel }) => {
           error.response?.data || error.message
         );
         alert("Failed to save food");
+      })
+      .finally(() => {
+        setIsSubmitting(false); // Reset state setelah selesai
       });
   };
 
@@ -210,9 +241,10 @@ const AdminFoodForm = ({ currentFood, onSave, onCancel }) => {
       </div>
 
       <div className="form-actions">
-        <button type="submit" className="btn-success">
+        <button type="submit" className="btn-success" disabled={isSubmitting}>
           {currentFood ? "Save Changes" : "Add Food"}
         </button>
+
         <button type="button" className="btn-secondary" onClick={onCancel}>
           Cancel
         </button>
