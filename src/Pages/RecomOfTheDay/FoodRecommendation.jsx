@@ -10,7 +10,7 @@ export default function FoodRecommendation() {
   const fetchFoodData = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:80/healthy_life_api/backend/adminfood.php"
+        "http://localhost/healty_life/backend/adminFood.php"
       );
       const foods = response.data;
 

@@ -104,7 +104,7 @@ function ExerciseAndFoodTracker() {
     console.log("Data yang akan dikirim ke backend:", dataToSend);
 
     const response = await axios.post(
-      "http://localhost:80/healthy_life_api/backend/tracker.php",
+      "http://localhost/healty_life/backend/tracker.php",
       dataToSend
     );
 

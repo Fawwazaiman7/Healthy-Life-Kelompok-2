@@ -1,25 +1,16 @@
 <?php
-// Konfigurasi koneksi database Oracle
+// Konfigurasi koneksi database MySQL (XAMPP)
 $host = 'localhost';
-$port = '1521';
-$service_name = 'XE';
-$username = 'c##cuklis';
-$password = 'mukhlish546';
+$user = 'root';
+$password = ''; // Kosongkan jika default XAMPP
+$database = 'healthy_life'; // Sesuaikan dengan nama DB kamu
 
-// Membuat string koneksi
-$dsn = "(DESCRIPTION =
-    (ADDRESS = (PROTOCOL = TCP)(HOST = $host)(PORT = $port))
-    (CONNECT_DATA =
-        (SERVER = DEDICATED)
-        (SERVICE_NAME = $service_name)
-    )
-)";
+// Membuat koneksi
+$conn = new mysqli($host, $user, $password, $database);
 
-$conn = oci_connect($username, $password, $dsn);
-
-if (!$conn) {
-    $e = oci_error();
-    trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
+// Cek koneksi
+if ($conn->connect_error) {
+    die("Koneksi gagal: " . $conn->connect_error);
 }
 
 // Header CORS

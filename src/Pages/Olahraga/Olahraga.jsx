@@ -32,13 +32,20 @@ const Olahraga = () => {
     const fetchExercises = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:80/healthy_life_api/backend/adminexercise.php"
+          "http://localhost/healty_life/backend/adminExercise.php"
         );
         if (response.data && Array.isArray(response.data)) {
           const updatedExercises = response.data.map((exercise) => ({
-            ...exercise,
-            video: exercise.video.replace("watch?v=", "embed/").split("&")[0], // Konversi URL ke format embed
+            id: exercise.id_olahraga,
+            title: exercise.nama_olahraga,
+            calories: exercise.kalori_per_set,
+            time: exercise.estimasi_waktu,
+            image: exercise.gambar,
+            video: exercise.link_video
+              .replace("watch?v=", "embed/")
+              .split("&")[0],
           }));
+
           setExercises(updatedExercises);
           setFilteredExercises(updatedExercises);
           console.log("Fetched exercises:", updatedExercises); // Debug: Log data fetch

@@ -32,7 +32,7 @@ export default function Home() {
     const fetchArticles = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:80/healthy_life_api/backend/articles.php"
+          "http://localhost/healty_life/backend/articles.php"
         );
         if (response.data.success) {
           setArticles(response.data.data); // Simpan data artikel ke state

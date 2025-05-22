@@ -21,7 +21,7 @@ export default function WeeklyChallenge() {
   const fetchExercises = useCallback(async () => {
     try {
       const response = await fetch(
-        "http://localhost:80/healthy_life_api/backend/adminexercise.php"
+        "http://localhost/healty_life/backend/adminExercise.php"
       );
       const data = await response.json();
       if (response.ok && Array.isArray(data)) {

@@ -74,7 +74,7 @@ const AdminFoodForm = ({ currentFood, onSave, onCancel }) => {
     }
 
     const method = currentFood ? "put" : "post";
-    const url = "http://localhost:80/healthy_life_api/backend/adminFood.php";
+    const url = "http://localhost/healty_life/backend/adminFood.php";
     console.log("Data yang akan dikirim:", formData);
 
 

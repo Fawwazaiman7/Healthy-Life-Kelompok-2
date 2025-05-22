@@ -24,7 +24,7 @@ function Riwayat() {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:80/healthy_life_api/backend/tracker.php",
+          "http://localhost/healty_life/backend/tracker.php",
           { params: { id_pengguna: idPengguna } }
         );
 

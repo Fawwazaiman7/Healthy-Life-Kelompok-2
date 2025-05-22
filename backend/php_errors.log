@@ -1,0 +1,2500 @@
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:04:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[18-May-2025 12:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: CONSTRAINT `pengguna.berat_badan` failed for `healthy_life`.`pengguna` in C:\xampp\htdocs\healty_life\backend\profile.php:58
+Stack trace:
+#0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58

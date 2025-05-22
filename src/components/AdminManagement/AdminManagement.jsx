@@ -45,7 +45,7 @@ const AdminManagement = () => {
     setLoading(true);
     try {
       const response = await axios.get(
-        "http://localhost:80/healthy_life_api/backend/adminFood.php"
+        "http://localhost/healty_life/backend/adminFood.php"
       );
       setFoods(response.data);
     } catch (error) {
@@ -60,7 +60,7 @@ const AdminManagement = () => {
       setLoading(true);
       try {
         const response = await axios.get(
-          "http://localhost:80/healthy_life_api/backend/articles.php"
+          "http://localhost/healty_life/backend/articles.php"
         );
         console.log("Respons artikel dari backend:", response.data);
 
@@ -84,7 +84,7 @@ const AdminManagement = () => {
     setIsEditingFood(true);
     axios
       .get(
-        `http://localhost:80/healthy_life_api/backend/adminFood.php?id=${food.id}`
+        `http://localhost/healty_life/backend/adminFood.php?id=${food.id}`
       )
       .then((response) => {
         console.log("Data artikel dari backend:", response.data);
@@ -100,7 +100,7 @@ const AdminManagement = () => {
     setLoading(true);
     try {
       const response = await axios.get(
-        "http://localhost:80/healthy_life_api/backend/adminExercise.php"
+        "http://localhost/healty_life/backend/adminExercise.php"
       );
       setExerciseList(response.data);
     } catch (error) {
@@ -114,7 +114,7 @@ const AdminManagement = () => {
   const handleSaveFood = async (food) => {
     try {
       const method = currentFood ? "put" : "post";
-      const url = "http://localhost:80/healthy_life_api/backend/adminFood.php";
+      const url = "http://localhost/healty_life/backend/adminFood.php";
       const response = await axios({
         method,
         url,
@@ -147,7 +147,7 @@ const AdminManagement = () => {
     if (window.confirm("Anda yakin ingin menghapus makanan ini?")) {
       try {
         const response = await axios.delete(
-          "http://localhost:80/healthy_life_api/backend/adminFood.php",
+          "http://localhost/healty_life/backend/adminFood.php",
           {
             data: { id: id }, // Mengirim ID dalam body
             headers: {
@@ -175,7 +175,7 @@ const AdminManagement = () => {
 
      const method = currentExercise ? "put" : "post";
      const url =
-       "http://localhost:80/healthy_life_api/backend/adminExercise.php";
+       "http://localhost/healty_life/backend/adminExercise.php";
 
      // Pastikan ID dikirim untuk update
      const payload = {
@@ -220,7 +220,7 @@ const AdminManagement = () => {
     if (window.confirm("Anda yakin ingin menghapus olahraga ini?")) {
       try {
         const response = await axios.delete(
-          "http://localhost:80/healthy_life_api/backend/adminExercise.php",
+          "http://localhost/healty_life/backend/adminExercise.php",
           {
             data: { id },
           }
@@ -250,7 +250,7 @@ const AdminManagement = () => {
   const handleSaveArticle = async (article) => {
     try {
       const method = currentArticle ? "put" : "post";
-      const url = "http://localhost:80/healthy_life_api/backend/articles.php";
+      const url = "http://localhost/healty_life/backend/articles.php";
 
       const response = await axios({
         method,
@@ -290,7 +290,7 @@ const AdminManagement = () => {
       console.log("ID Artikel yang akan dihapus:", id_artikel); // Debug ID Artikel
       try {
         const response = await axios.delete(
-          "http://localhost:80/healthy_life_api/backend/articles.php",
+          "http://localhost/healty_life/backend/articles.php",
           {
             data: { id_artikel }, // Kirim ID artikel dalam body
             headers: {

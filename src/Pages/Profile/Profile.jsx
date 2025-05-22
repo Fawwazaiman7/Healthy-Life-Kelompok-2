@@ -17,7 +17,7 @@ function Profile() {
       try {
         const userEmail = JSON.parse(localStorage.getItem("user")).email;
         const response = await axios.get(
-          `http://localhost:80/healthy_life_api/backend/profile.php`,
+          `http://localhost/healty_life/backend/profile.php`,
           { params: { email: userEmail } }
         );
 
@@ -52,7 +52,7 @@ function Profile() {
     if (window.confirm("Apakah Anda yakin ingin menghapus akun ini?")) {
       try {
         const response = await axios.delete(
-          `http://localhost:80/healthy_life_api/backend/profile.php`,
+          `http://localhost/healty_life/backend/profile.php`,
           { data: { id: userData.id } }
         );
 
@@ -91,7 +91,7 @@ function Profile() {
       console.log("Data yang dikirim ke backend:", updatedData);
 
       const response = await axios.put(
-        `http://localhost:80/healthy_life_api/backend/profile.php`,
+        `http://localhost/healty_life/backend/profile.php`,
         updatedData,
         { headers: { "Content-Type": "application/json" } }
       );

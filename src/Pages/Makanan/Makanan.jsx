@@ -22,7 +22,7 @@ const Makanan = () => {
     const fetchFoodItems = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:80/healthy_life_api/backend/adminfood.php"
+          "http://localhost/healty_life/backend/adminFood.php"
         );
         setFoodItems(response.data); // Set data awal untuk semua item
         setFilteredFoodItems(response.data); // Default, tampilkan semua item

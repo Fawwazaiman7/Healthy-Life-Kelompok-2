@@ -56,7 +56,7 @@ function LogIn() {
 
     try {
       const response = await axios.post(
-        "http://localhost:80/healthy_life_api/backend/login.php",
+        "http://localhost/healty_life/backend/login.php",
         {
           username,
           password,

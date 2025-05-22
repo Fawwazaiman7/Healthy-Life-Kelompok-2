@@ -40,7 +40,7 @@ const AdminExerciseForm = ({
 
     const method = currentExercise ? "put" : "post";
     const url =
-      "http://localhost:80/healthy_life_api/backend/adminExercise.php";
+      "http://localhost/healty_life/backend/adminExercise.php";
 
     // Log data sebelum dikirim
     console.log("Data yang akan dikirim ke backend:", formData);

@@ -103,7 +103,7 @@ function GetStarted() {
       console.log("Sending data to backend for update:", data);
 
       const response = await axios.post(
-        "http://localhost:80/healthy_life_api/backend/signup.php",
+        "http://localhost/healty_life/backend/signup.php",
         data,
         config
       );

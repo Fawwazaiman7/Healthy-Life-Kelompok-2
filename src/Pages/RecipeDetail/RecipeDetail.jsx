@@ -14,7 +14,7 @@ const RecipeDetail = () => {
     const fetchRecipe = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:80/healthy_life_api/backend/adminfood.php?id=${id}`
+          `http://localhost/healty_life/backend/adminFood.php?id=${id}`
         );
         console.log("API Response:", response.data); // Log respons API
 
