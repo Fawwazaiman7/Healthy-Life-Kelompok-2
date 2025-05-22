@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Healthy-Life-Kelompok-2/static/css/main.04168b31.css",
-    "main.js": "/Healthy-Life-Kelompok-2/static/js/main.bad8d514.js",
+    "main.js": "/Healthy-Life-Kelompok-2/static/js/main.b9c68710.js",
     "static/media/Logo.jpg": "/Healthy-Life-Kelompok-2/static/media/Logo.6d20be2a25fdbcaf6d70.jpg",
     "index.html": "/Healthy-Life-Kelompok-2/index.html",
     "main.04168b31.css.map": "/Healthy-Life-Kelompok-2/static/css/main.04168b31.css.map",
-    "main.bad8d514.js.map": "/Healthy-Life-Kelompok-2/static/js/main.bad8d514.js.map"
+    "main.b9c68710.js.map": "/Healthy-Life-Kelompok-2/static/js/main.b9c68710.js.map"
   },
   "entrypoints": [
     "static/css/main.04168b31.css",
-    "static/js/main.bad8d514.js"
+    "static/js/main.b9c68710.js"
   ]
 }
