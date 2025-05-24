@@ -7,6 +7,7 @@ function Profile() {
   const [userData, setUserData] = useState(null);
   const [isEditing, setIsEditing] = useState(false);
   const [formData, setFormData] = useState({
+    id: "",
     weight: "",
     age: "",
     height: "",
@@ -24,6 +25,7 @@ function Profile() {
         if (response.data.success) {
           setUserData(response.data.user);
           setFormData({
+            id: response.data.user.id_pengguna, // Sesuaikan dengan backend
             weight: response.data.user.berat_badan || "",
             age: response.data.user.usia || "",
             height: response.data.user.tinggi_badan || "",
@@ -82,7 +84,7 @@ function Profile() {
       }
 
       const updatedData = {
-        id: userData.id,
+        id: formData.id, // ini id_pengguna sebenarnya
         berat_badan: formData.weight,
         usia: formData.age,
         tinggi_badan: formData.height,
@@ -147,6 +149,9 @@ function Profile() {
             </span>
           </div>
           <h2 className="profile-name">{userData.nama}</h2>
+          <a href="http://localhost:3000/Healthy-Life-Kelompok-2/GetStarted">
+            Isi Biodata Kembali?
+          </a>
         </div>
 
         <div className="profile-stats">

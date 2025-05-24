@@ -5,7 +5,8 @@ header("Access-Control-Allow-Headers: Content-Type");
 
 include_once 'connection.php';
 
-function safeJsonDecode($data) {
+function safeJsonDecode($data)
+{
     $decoded = json_decode($data, true);
     return (json_last_error() === JSON_ERROR_NONE) ? $decoded : [];
 }
@@ -51,6 +52,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         isset($data['id_pengguna']) &&
         isset($data['status_kalori'])
     ) {
+
+        // Validasi nilai positif untuk kalori dan target
+        if ($data['kalori_masuk'] < 0 || $data['kalori_keluar'] < 0 || $data['target_kalori'] < 0) {
+            echo json_encode(["success" => false, "message" => "Kalori dan target kalori harus bernilai positif"]);
+            exit;
+        }
+
         $stmt = $conn->prepare("INSERT INTO tracker (id_tracker, kalori_masuk, kalori_keluar, target_kalori, status_kalori, tanggal, id_pengguna, makanan_tracker, olahraga_tracker)
                                 VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)");
         $makananTracker = json_encode($data['makanan_tracker'] ?? []);
@@ -68,6 +76,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $olahragaTracker
         );
 
+
         if ($stmt->execute()) {
             echo json_encode(["success" => true, "message" => "Data berhasil disimpan"]);
         } else {
@@ -77,4 +86,3 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         echo json_encode(["success" => false, "message" => "Data tidak lengkap"]);
     }
 }
-?>

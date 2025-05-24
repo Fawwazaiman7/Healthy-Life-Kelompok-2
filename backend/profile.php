@@ -47,10 +47,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
 if ($_SERVER['REQUEST_METHOD'] === 'PUT') {
     $data = json_decode(file_get_contents("php://input"), true);
-    if (empty($data['id']) || empty($data['tinggi_badan']) || empty($data['berat_badan']) || empty($data['usia'])) {
-        echo json_encode(['success' => false, 'message' => 'All fields are required']);
+    error_log("PUT data: " . print_r($data, true)); // Debug data yang diterima
+
+    if (
+        !isset($data['id']) ||
+        !isset($data['tinggi_badan']) || !is_numeric($data['tinggi_badan']) || $data['tinggi_badan'] <= 0 ||
+        !isset($data['berat_badan']) || !is_numeric($data['berat_badan']) || $data['berat_badan'] <= 0 ||
+        !isset($data['usia']) || !is_numeric($data['usia']) || $data['usia'] <= 0
+    ) {
+        echo json_encode(['success' => false, 'message' => 'All fields must be positive numbers']);
         exit;
     }
+
 
     $stmt = $conn->prepare("UPDATE pengguna SET tinggi_badan = ?, berat_badan = ?, usia = ? WHERE id_pengguna = ?");
     $stmt->bind_param("ddii", $data['tinggi_badan'], $data['berat_badan'], $data['usia'], $data['id']);
@@ -83,4 +91,3 @@ if ($_SERVER['REQUEST_METHOD'] === 'DELETE') {
 
 http_response_code(405);
 echo json_encode(['success' => false, 'message' => 'Method not allowed']);
-?>

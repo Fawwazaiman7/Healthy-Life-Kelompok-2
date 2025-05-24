@@ -111,7 +111,7 @@ export default function Home() {
           <div className="swiper-wrapper">
             <div
               className="swiper-slide"
-              style={{ backgroundImage: `url('/images/Homebg.png')` }}
+              style={{ backgroundImage: `url('/images/homebg.png')` }}
             >
               <div className="hero-content">
                 <h1 className="typing-container">

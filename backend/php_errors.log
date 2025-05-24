@@ -2498,3 +2498,612 @@ Stack trace:
 #0 C:\xampp\htdocs\healty_life\backend\profile.php(58): mysqli_stmt->execute()
 #1 {main}
   thrown in C:\xampp\htdocs\healty_life\backend\profile.php on line 58
+[24-May-2025 02:20:23 Europe/Berlin] PUT data: Array
+(
+    [berat_badan] => 23
+    [usia] => 30
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 02:22:50 Europe/Berlin] PUT data: Array
+(
+    [berat_badan] => 70
+    [usia] => 30
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 02:22:57 Europe/Berlin] PUT data: Array
+(
+    [berat_badan] => 72
+    [usia] => 30
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 02:24:06 Europe/Berlin] PUT data: Array
+(
+    [berat_badan] => 72
+    [usia] => 31
+    [tinggi_badan] => -90
+)
+
+[24-May-2025 02:24:11 Europe/Berlin] PUT data: Array
+(
+    [berat_badan] => 72
+    [usia] => 31
+    [tinggi_badan] => 90
+)
+
+[24-May-2025 02:24:46 Europe/Berlin] PUT data: Array
+(
+    [berat_badan] => 68
+    [usia] => 31
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 02:24:53 Europe/Berlin] PUT data: Array
+(
+    [berat_badan] => 68
+    [usia] => 31
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 02:25:01 Europe/Berlin] PUT data: Array
+(
+    [berat_badan] => 68
+    [usia] => 31
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 02:25:21 Europe/Berlin] PUT data: Array
+(
+    [berat_badan] => 68
+    [usia] => 31
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 02:25:31 Europe/Berlin] PUT data: Array
+(
+    [berat_badan] => 68
+    [usia] => 31
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 02:25:39 Europe/Berlin] PUT data: Array
+(
+    [berat_badan] => 68
+    [usia] => 31
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 02:28:12 Europe/Berlin] PUT data: Array
+(
+    [berat_badan] => 72
+    [usia] => 30
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 02:30:10 Europe/Berlin] PUT data: Array
+(
+    [berat_badan] => 72
+    [usia] => 30
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 02:41:08 Europe/Berlin] PUT data: Array
+(
+    [berat_badan] => 70
+    [usia] => 30
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 02:42:44 Europe/Berlin] PUT data: Array
+(
+    [berat_badan] => 70
+    [usia] => 30
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 02:46:18 Europe/Berlin] PUT data: Array
+(
+    [id] => 455
+    [berat_badan] => 70
+    [usia] => 30
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 02:46:54 Europe/Berlin] PUT data: Array
+(
+    [id] => 455
+    [berat_badan] => 90
+    [usia] => 30
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 02:48:50 Europe/Berlin] PUT data: Array
+(
+    [id] => 455
+    [berat_badan] => 68
+    [usia] => 31
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 02:50:20 Europe/Berlin] PUT data: Array
+(
+    [id] => 455
+    [berat_badan] => 68
+    [usia] => 31
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 02:50:27 Europe/Berlin] PUT data: Array
+(
+    [id] => 455
+    [berat_badan] => 68
+    [usia] => 31
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 02:50:33 Europe/Berlin] PUT data: Array
+(
+    [id] => 455
+    [berat_badan] => 68
+    [usia] => 31
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 02:50:40 Europe/Berlin] PUT data: Array
+(
+    [id] => 455
+    [berat_badan] => 68
+    [usia] => 31
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 02:50:47 Europe/Berlin] PUT data: Array
+(
+    [id] => 455
+    [berat_badan] => 68
+    [usia] => 31
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 02:50:53 Europe/Berlin] PUT data: Array
+(
+    [id] => 455
+    [berat_badan] => 68
+    [usia] => 31
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 02:51:00 Europe/Berlin] PUT data: Array
+(
+    [id] => 455
+    [berat_badan] => 68
+    [usia] => 31
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 02:51:06 Europe/Berlin] PUT data: Array
+(
+    [id] => 455
+    [berat_badan] => 68
+    [usia] => 31
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 02:51:12 Europe/Berlin] PUT data: Array
+(
+    [id] => 455
+    [berat_badan] => 68
+    [usia] => 31
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 02:51:19 Europe/Berlin] PUT data: Array
+(
+    [id] => 455
+    [berat_badan] => 68
+    [usia] => 31
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 02:51:25 Europe/Berlin] PUT data: Array
+(
+    [id] => 455
+    [berat_badan] => 68
+    [usia] => 31
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 02:51:32 Europe/Berlin] PUT data: Array
+(
+    [id] => 455
+    [berat_badan] => 68
+    [usia] => 31
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 02:51:38 Europe/Berlin] PUT data: Array
+(
+    [id] => 455
+    [berat_badan] => 68
+    [usia] => 31
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 02:51:45 Europe/Berlin] PUT data: Array
+(
+    [id] => 455
+    [berat_badan] => 68
+    [usia] => 31
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 02:51:51 Europe/Berlin] PUT data: Array
+(
+    [id] => 455
+    [berat_badan] => 68
+    [usia] => 31
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 02:51:57 Europe/Berlin] PUT data: Array
+(
+    [id] => 455
+    [berat_badan] => 68
+    [usia] => 31
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 02:52:04 Europe/Berlin] PUT data: Array
+(
+    [id] => 455
+    [berat_badan] => 68
+    [usia] => 31
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 02:52:10 Europe/Berlin] PUT data: Array
+(
+    [id] => 455
+    [berat_badan] => 68
+    [usia] => 31
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 02:52:16 Europe/Berlin] PUT data: Array
+(
+    [id] => 455
+    [berat_badan] => 68
+    [usia] => 31
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 02:52:23 Europe/Berlin] PUT data: Array
+(
+    [id] => 455
+    [berat_badan] => 68
+    [usia] => 31
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 02:52:29 Europe/Berlin] PUT data: Array
+(
+    [id] => 455
+    [berat_badan] => 68
+    [usia] => 31
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 02:52:38 Europe/Berlin] PUT data: Array
+(
+    [id] => 455
+    [berat_badan] => 68
+    [usia] => 31
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 02:52:45 Europe/Berlin] PUT data: Array
+(
+    [id] => 455
+    [berat_badan] => 68
+    [usia] => 31
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 02:52:54 Europe/Berlin] PUT data: Array
+(
+    [id] => 455
+    [berat_badan] => 68
+    [usia] => 31
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 02:53:04 Europe/Berlin] PUT data: Array
+(
+    [id] => 455
+    [berat_badan] => 68
+    [usia] => 31
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 02:53:12 Europe/Berlin] PUT data: Array
+(
+    [id] => 455
+    [berat_badan] => 68
+    [usia] => 31
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 02:53:22 Europe/Berlin] PUT data: Array
+(
+    [id] => 455
+    [berat_badan] => 68
+    [usia] => 31
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 02:53:34 Europe/Berlin] PUT data: Array
+(
+    [id] => 455
+    [berat_badan] => 68
+    [usia] => 31
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 02:53:42 Europe/Berlin] PUT data: Array
+(
+    [id] => 455
+    [berat_badan] => 68
+    [usia] => 31
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 02:53:53 Europe/Berlin] PUT data: Array
+(
+    [id] => 455
+    [berat_badan] => 68
+    [usia] => 31
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 02:59:58 Europe/Berlin] PUT data: Array
+(
+    [id] => 455
+    [berat_badan] => -5
+    [usia] => 31
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 03:00:07 Europe/Berlin] PUT data: Array
+(
+    [id] => 455
+    [berat_badan] => -5
+    [usia] => 31
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 03:00:16 Europe/Berlin] PUT data: Array
+(
+    [id] => 455
+    [berat_badan] => -5
+    [usia] => 31
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 03:00:24 Europe/Berlin] PUT data: Array
+(
+    [id] => 455
+    [berat_badan] => -5
+    [usia] => 31
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 03:00:33 Europe/Berlin] PUT data: Array
+(
+    [id] => 455
+    [berat_badan] => -5
+    [usia] => 31
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 03:00:42 Europe/Berlin] PUT data: Array
+(
+    [id] => 455
+    [berat_badan] => -5
+    [usia] => 31
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 03:00:51 Europe/Berlin] PUT data: Array
+(
+    [id] => 455
+    [berat_badan] => -5
+    [usia] => 31
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 03:00:59 Europe/Berlin] PUT data: Array
+(
+    [id] => 455
+    [berat_badan] => -5
+    [usia] => 31
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 03:01:08 Europe/Berlin] PUT data: Array
+(
+    [id] => 455
+    [berat_badan] => -5
+    [usia] => 31
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 03:01:16 Europe/Berlin] PUT data: Array
+(
+    [id] => 455
+    [berat_badan] => -5
+    [usia] => 31
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 03:01:25 Europe/Berlin] PUT data: Array
+(
+    [id] => 455
+    [berat_badan] => -5
+    [usia] => 31
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 03:01:34 Europe/Berlin] PUT data: Array
+(
+    [id] => 455
+    [berat_badan] => -5
+    [usia] => 31
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 03:01:43 Europe/Berlin] PUT data: Array
+(
+    [id] => 455
+    [berat_badan] => -5
+    [usia] => 31
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 03:01:51 Europe/Berlin] PUT data: Array
+(
+    [id] => 455
+    [berat_badan] => -5
+    [usia] => 31
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 03:02:00 Europe/Berlin] PUT data: Array
+(
+    [id] => 455
+    [berat_badan] => -5
+    [usia] => 31
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 03:02:09 Europe/Berlin] PUT data: Array
+(
+    [id] => 455
+    [berat_badan] => -5
+    [usia] => 31
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 03:02:17 Europe/Berlin] PUT data: Array
+(
+    [id] => 455
+    [berat_badan] => -5
+    [usia] => 31
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 03:02:26 Europe/Berlin] PUT data: Array
+(
+    [id] => 455
+    [berat_badan] => -5
+    [usia] => 31
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 03:02:34 Europe/Berlin] PUT data: Array
+(
+    [id] => 455
+    [berat_badan] => -5
+    [usia] => 31
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 03:02:42 Europe/Berlin] PUT data: Array
+(
+    [id] => 455
+    [berat_badan] => -5
+    [usia] => 31
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 03:02:51 Europe/Berlin] PUT data: Array
+(
+    [id] => 455
+    [berat_badan] => -5
+    [usia] => 31
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 03:03:01 Europe/Berlin] PUT data: Array
+(
+    [id] => 455
+    [berat_badan] => -5
+    [usia] => 31
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 03:03:09 Europe/Berlin] PUT data: Array
+(
+    [id] => 455
+    [berat_badan] => -5
+    [usia] => 31
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 03:03:18 Europe/Berlin] PUT data: Array
+(
+    [id] => 455
+    [berat_badan] => -5
+    [usia] => 31
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 03:03:26 Europe/Berlin] PUT data: Array
+(
+    [id] => 455
+    [berat_badan] => -5
+    [usia] => 31
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 03:03:35 Europe/Berlin] PUT data: Array
+(
+    [id] => 455
+    [berat_badan] => -5
+    [usia] => 31
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 03:03:44 Europe/Berlin] PUT data: Array
+(
+    [id] => 455
+    [berat_badan] => -5
+    [usia] => 31
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 03:03:53 Europe/Berlin] PUT data: Array
+(
+    [id] => 455
+    [berat_badan] => -5
+    [usia] => 31
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 03:04:01 Europe/Berlin] PUT data: Array
+(
+    [id] => 455
+    [berat_badan] => -5
+    [usia] => 31
+    [tinggi_badan] => 170
+)
+
+[24-May-2025 03:04:09 Europe/Berlin] PUT data: Array
+(
+    [id] => 455
+    [berat_badan] => -5
+    [usia] => 31
+    [tinggi_badan] => 170
+)
+
