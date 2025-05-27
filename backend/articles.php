@@ -7,7 +7,8 @@ header("Content-Type: application/json");
 include_once 'connection.php';
 
 if ($conn->connect_error) {
-    die(json_encode(['success' => false, 'message' => 'Database connection failed']));
+    echo json_encode(['success' => false, 'message' => 'Koneksi database gagal']);
+    exit;
 }
 
 if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
@@ -15,9 +16,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     exit;
 }
 
+// =================== GET ===================
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     if (isset($_GET['id'])) {
-        $id = $_GET['id'];
+        $id = intval($_GET['id']);
         $stmt = $conn->prepare("SELECT * FROM artikel WHERE id_artikel = ?");
         $stmt->bind_param("i", $id);
         $stmt->execute();
@@ -27,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         if ($article) {
             echo json_encode(['success' => true, 'data' => $article]);
         } else {
-            echo json_encode(['success' => false, 'message' => 'Data tidak ditemukan']);
+            echo json_encode(['success' => false, 'message' => 'Artikel tidak ditemukan']);
         }
     } else {
         $result = $conn->query("SELECT * FROM artikel");
@@ -40,6 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     exit;
 }
 
+// =================== POST ===================
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $data = json_decode(file_get_contents("php://input"), true);
 
@@ -64,16 +67,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     exit;
 }
 
+// =================== PUT ===================
 if ($_SERVER['REQUEST_METHOD'] === 'PUT') {
     $data = json_decode(file_get_contents("php://input"), true);
+    $id = $data['id_artikel'] ?? null;
 
-    if (empty($data['id']) || empty($data['judul']) || empty($data['konten']) || empty($data['gambar'])) {
+    if (empty($id) || empty($data['judul']) || empty($data['konten']) || empty($data['gambar'])) {
         echo json_encode(['success' => false, 'message' => 'Data tidak lengkap']);
         exit;
     }
 
     $stmt = $conn->prepare("UPDATE artikel SET judul = ?, konten = ?, gambar = ? WHERE id_artikel = ?");
-    $stmt->bind_param("sssi", $data['judul'], $data['konten'], $data['gambar'], $data['id']);
+    $stmt->bind_param("sssi", $data['judul'], $data['konten'], $data['gambar'], $id);
 
     if ($stmt->execute()) {
         echo json_encode(['success' => true, 'message' => 'Artikel berhasil diperbarui']);
@@ -83,6 +88,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'PUT') {
     exit;
 }
 
+// =================== DELETE ===================
 if ($_SERVER['REQUEST_METHOD'] === 'DELETE') {
     $data = json_decode(file_get_contents("php://input"), true);
     $id = $data['id_artikel'] ?? null;

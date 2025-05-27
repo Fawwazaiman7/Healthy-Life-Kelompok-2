@@ -13,9 +13,9 @@ const AdminArticleForm = ({ currentArticle, onSave, onCancel }) => {
   useEffect(() => {
     if (currentArticle) {
       setFormData({
-        judul: currentArticle.title || "",
-        konten: currentArticle.content || "",
-        gambar: currentArticle.image || "",
+        judul: currentArticle.judul || "",
+        konten: currentArticle.konten || "",
+        gambar: currentArticle.gambar || "",
       });
     }
   }, [currentArticle]);
@@ -37,7 +37,7 @@ const AdminArticleForm = ({ currentArticle, onSave, onCancel }) => {
     // Gunakan fungsi onSave yang dikirim dari parent
     onSave({
       ...formdata,
-      id: currentArticle?.id, // Tambahkan ID jika sedang mengedit
+      id_artikel: currentArticle?.id_artikel,
     });
   };
 

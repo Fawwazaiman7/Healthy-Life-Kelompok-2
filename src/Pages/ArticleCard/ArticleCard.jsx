@@ -1,5 +1,7 @@
-import React from 'react';
-import './ArticleCard.css';
+// src/components/ArticleCard/ArticleCard.jsx
+import React from "react";
+import "./ArticleCard.css";
+import { Link } from "react-router-dom";
 
 export default function ArticleCard({ title, description, imageUrl, link }) {
   return (
@@ -7,26 +9,39 @@ export default function ArticleCard({ title, description, imageUrl, link }) {
       <div className="article-content">
         <h3 className="article-title">{title}</h3>
         <p className="article-description">{description}</p>
-        <a href={link} className="article-link">Baca Artikel &rarr;</a> {/* Link to the full article */}
+        <Link
+          to={link}
+          onClick={() => console.log("Navigating to:", link)}
+          className="article-link"
+        >
+          Baca Artikel &rarr;
+        </Link>
       </div>
       <img src={imageUrl} alt={title} className="article-image" />
     </div>
   );
 }
 
-// Komponen untuk menampilkan daftar artikel
 export const ArticleList = ({ articles }) => {
+  console.table(articles); // Debug semua artikel
+
   return (
-    <div className="article-container"> {/* Kontainer untuk menyusun kartu secara horizontal */}
-      {articles.map((article, index) => (
-        <ArticleCard
-          key={index}
-          title={article.title}
-          description={article.description}
-          imageUrl={article.imageUrl}
-          link={article.link}
-        />
-      ))}
+    <div className="article-container">
+      {articles
+        .filter((article) => article.id_artikel) // Filter yang id-nya valid
+        .map((article) => (
+          <ArticleCard
+            key={article.id_artikel}
+            title={article.judul}
+            description={
+              article.konten
+                ? article.konten.replace(/<[^>]+>/g, "").substring(0, 80) + "..."
+                : "Tidak ada konten"
+            }
+            imageUrl={article.gambar || "/placeholder.jpg"}
+            link={`/article/${article.id_artikel}`}
+          />
+        ))}
     </div>
   );
 };

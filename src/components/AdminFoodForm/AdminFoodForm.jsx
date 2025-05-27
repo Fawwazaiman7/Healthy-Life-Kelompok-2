@@ -13,6 +13,15 @@ const AdminFoodForm = ({ currentFood, onSave, onCancel }) => {
   const [currentIngredient, setCurrentIngredient] = useState(""); // Untuk menambah satu bahan ke array
   const [currentInstruction, setCurrentInstruction] = useState(""); // Untuk menambah satu langkah pembuatan ke array
 
+  const payload = {
+    judul: formData.judul,
+    kalori: parseFloat(formData.kalori), // ✅ parse jadi float number
+    gambar: formData.gambar,
+    resep: formData.resep,
+    cara_pembuatan: formData.cara_pembuatan,
+    id: currentFood?.id,
+  };
+
   useEffect(() => {
     if (currentFood) {
       setFormData({
@@ -73,43 +82,16 @@ const AdminFoodForm = ({ currentFood, onSave, onCancel }) => {
       return;
     }
 
-    const method = currentFood ? "put" : "post";
-    const url = "http://localhost/healty_life/backend/adminFood.php";
-    console.log("Data yang akan dikirim:", formData);
+    const payload = {
+      judul: formData.judul,
+      kalori: parseFloat(formData.kalori),
+      gambar: formData.gambar,
+      resep: formData.resep,
+      cara_pembuatan: formData.cara_pembuatan,
+      id: currentFood?.id,
+    };
 
-
-    axios({
-      method,
-      url,
-      data: {
-        ...formData,
-        resep: JSON.stringify(formData.resep), // Kirim sebagai JSON string
-        cara_pembuatan: JSON.stringify(formData.cara_pembuatan), // Kirim sebagai JSON string
-        id: currentFood?.id,
-      },
-      headers: {
-        "Content-Type": "application/json",
-      },
-    })
-      .then((response) => {
-        if (response.data.success) {
-          alert(
-            currentFood
-              ? "Food updated successfully!"
-              : "Food added successfully!"
-          );
-          onSave();
-        } else {
-          alert("Failed to save food: " + response.data.message);
-        }
-      })
-      .catch((error) => {
-        console.error(
-          "Error saving food:",
-          error.response?.data || error.message
-        );
-        alert("Failed to save food");
-      });
+    onSave(payload); // 🔥 Kirim ke parent saja! TANPA AXIOS DI SINI!
   };
 
   return (

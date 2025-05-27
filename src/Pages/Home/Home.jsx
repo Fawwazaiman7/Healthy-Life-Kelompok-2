@@ -75,7 +75,6 @@ export default function Home() {
     });
   }, []);
 
-
   // Filter articles based on current page
   const indexOfLastArticle = currentPage * articlesPerPage;
   const indexOfFirstArticle = indexOfLastArticle - articlesPerPage;
@@ -98,9 +97,9 @@ export default function Home() {
     navigate("/makanan"); // Navigate to the /makanan page
   };
 
-   const handleMulaiOlahraga = () => {
-     navigate("/olahraga"); // Navigate to the /makanan page
-   };
+  const handleMulaiOlahraga = () => {
+    navigate("/olahraga"); // Navigate to the /makanan page
+  };
 
   return (
     <main>
@@ -188,15 +187,22 @@ export default function Home() {
         {currentArticles.length > 0 ? (
           currentArticles.map((article) => (
             <ArticleCard
-              key={article.id}
-              title={article.title}
-              imageUrl={article.image}
-              link={`/article/${article.id}`}
+              key={article.id_artikel}
+              title={article.judul}
+              description={
+                article.konten
+                  ? article.konten.replace(/<[^>]*>?/gm, "").substring(0, 80) +
+                    "..."
+                  : "Konten belum tersedia"
+              }
+              imageUrl={article.gambar}
+              link={`/article/${article.id_artikel}`}
             />
           ))
         ) : (
           <p>Tidak ada artikel yang tersedia.</p>
         )}
+
         {/* Pagination */}
       </section>
       <Footer />

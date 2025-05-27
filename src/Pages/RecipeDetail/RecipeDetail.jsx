@@ -16,17 +16,38 @@ const RecipeDetail = () => {
         const response = await axios.get(
           `http://localhost/healty_life/backend/adminFood.php?id=${id}`
         );
-        console.log("API Response:", response.data); // Log respons API
 
-        if (response.data && response.data.id) {
-          // Parsing jika data berbentuk string JSON
-          const parsedIngredients = JSON.parse(
-            response.data.ingredients || "[]"
-          );
-          const parsedTutorial = JSON.parse(response.data.tutorial || "[]");
+        console.log("API Response:", response.data);
+
+        if (response.data && response.data.length > 0) {
+          const item = response.data[0];
+
+          // Coba parsing ingredients
+          let parsedIngredients = [];
+          if (typeof item.ingredients === "string") {
+            try {
+              parsedIngredients = JSON.parse(item.ingredients);
+            } catch {
+              parsedIngredients = [item.ingredients]; // fallback
+            }
+          } else if (Array.isArray(item.ingredients)) {
+            parsedIngredients = item.ingredients;
+          }
+
+          // Coba parsing tutorial
+          let parsedTutorial = [];
+          if (typeof item.tutorial === "string") {
+            try {
+              parsedTutorial = JSON.parse(item.tutorial);
+            } catch {
+              parsedTutorial = [item.tutorial];
+            }
+          } else if (Array.isArray(item.tutorial)) {
+            parsedTutorial = item.tutorial;
+          }
 
           setRecipe({
-            ...response.data,
+            ...item,
             ingredients: parsedIngredients,
             tutorial: parsedTutorial,
           });
@@ -34,7 +55,7 @@ const RecipeDetail = () => {
           setError("Resep tidak ditemukan");
         }
       } catch (err) {
-        console.error("Error fetching recipe:", err); // Log error untuk debugging
+        console.error("Error fetching recipe:", err);
         setError("Gagal memuat data resep");
       } finally {
         setLoading(false);
@@ -44,17 +65,9 @@ const RecipeDetail = () => {
     fetchRecipe();
   }, [id]);
 
-  if (loading) {
-    return <p>Memuat data...</p>;
-  }
-
-  if (error) {
-    return <p>{error}</p>;
-  }
-
-  if (!recipe) {
-    return <p>Resep tidak ditemukan.</p>;
-  }
+  if (loading) return <p>Memuat data...</p>;
+  if (error) return <p>{error}</p>;
+  if (!recipe) return <p>Resep tidak ditemukan.</p>;
 
   return (
     <main>
@@ -73,15 +86,15 @@ const RecipeDetail = () => {
         <div className="recipeContent">
           <h3>Resep</h3>
           <ul>
-            {Array.isArray(recipe.ingredients) &&
-              recipe.ingredients.map((ingredient, index) => (
-                <li key={index}>{ingredient}</li>
-              ))}
+            {recipe.ingredients.map((ingredient, index) => (
+              <li key={index}>{ingredient}</li>
+            ))}
           </ul>
           <h3>Cara Pembuatan</h3>
           <ol>
-            {Array.isArray(recipe.tutorial) &&
-              recipe.tutorial.map((step, index) => <li key={index}>{step}</li>)}
+            {recipe.tutorial.map((step, index) => (
+              <li key={index}>{step}</li>
+            ))}
           </ol>
         </div>
       </div>

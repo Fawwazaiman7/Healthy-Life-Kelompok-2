@@ -2,38 +2,47 @@
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS");
 header("Access-Control-Allow-Headers: Content-Type, Authorization");
+header("Content-Type: application/json");
+
+include_once 'connection.php';
+
+if ($conn->connect_error) {
+    echo json_encode(['success' => false, 'message' => 'Koneksi database gagal']);
+    exit;
+}
 
 if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     http_response_code(204);
     exit;
 }
 
-include_once 'connection.php';
-
-if ($conn->connect_error) {
-    die(json_encode(['success' => false, 'message' => 'Koneksi database gagal']));
-}
-
+// =================== GET ===================
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     if (isset($_GET['id'])) {
-        $id = $_GET['id'];
+        $id = intval($_GET['id']);
         $stmt = $conn->prepare("SELECT * FROM data_olahraga WHERE id_olahraga = ?");
         $stmt->bind_param("i", $id);
         $stmt->execute();
         $result = $stmt->get_result();
         $exercise = $result->fetch_assoc();
-        echo json_encode($exercise ? $exercise : ['success' => false, 'message' => 'Data tidak ditemukan']);
+
+        if ($exercise) {
+            echo json_encode(['success' => true, 'data' => $exercise]);
+        } else {
+            echo json_encode(['success' => false, 'message' => 'Data tidak ditemukan']);
+        }
     } else {
         $result = $conn->query("SELECT * FROM data_olahraga");
         $data = [];
         while ($row = $result->fetch_assoc()) {
             $data[] = $row;
         }
-        echo json_encode($data);
+        echo json_encode(['success' => true, 'data' => $data]);
     }
     exit;
 }
 
+// =================== POST ===================
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $data = json_decode(file_get_contents("php://input"), true);
     if (empty($data['judul']) || empty($data['kalori_per_set']) || empty($data['estimasi_waktu'])) {
@@ -53,9 +62,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         exit;
     }
 
-    $stmt = $conn->prepare("INSERT INTO data_olahraga (nama_olahraga, kalori_per_set, estimasi_waktu, gambar, link_video, admin_id_admin)
-        VALUES (?, ?, ?, ?, ?, 1)");
+    $stmt = $conn->prepare("INSERT INTO data_olahraga (nama_olahraga, kalori_per_set, estimasi_waktu, gambar, link_video, admin_id_admin) VALUES (?, ?, ?, ?, ?, 1)");
     $stmt->bind_param("sdsss", $data['judul'], $data['kalori_per_set'], $data['estimasi_waktu'], $data['gambar'], $data['link_video']);
+
     if ($stmt->execute()) {
         echo json_encode(['success' => true, 'message' => 'Data berhasil ditambahkan']);
     } else {
@@ -64,15 +73,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     exit;
 }
 
+// =================== PUT ===================
 if ($_SERVER['REQUEST_METHOD'] === 'PUT') {
     $data = json_decode(file_get_contents("php://input"), true);
     if (empty($data['id']) || empty($data['judul']) || empty($data['kalori_per_set']) || empty($data['estimasi_waktu'])) {
         echo json_encode(['success' => false, 'message' => 'Data tidak lengkap']);
         exit;
     }
-    $stmt = $conn->prepare("UPDATE data_olahraga SET nama_olahraga = ?, kalori_per_set = ?, estimasi_waktu = ?, gambar = ?, link_video = ?
-        WHERE id_olahraga = ?");
+
+    $stmt = $conn->prepare("UPDATE data_olahraga SET nama_olahraga = ?, kalori_per_set = ?, estimasi_waktu = ?, gambar = ?, link_video = ? WHERE id_olahraga = ?");
     $stmt->bind_param("sdsssi", $data['judul'], $data['kalori_per_set'], $data['estimasi_waktu'], $data['gambar'], $data['link_video'], $data['id']);
+
     if ($stmt->execute()) {
         echo json_encode(['success' => true, 'message' => 'Data berhasil diperbarui']);
     } else {
@@ -81,14 +92,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'PUT') {
     exit;
 }
 
+// =================== DELETE ===================
 if ($_SERVER['REQUEST_METHOD'] === 'DELETE') {
     $data = json_decode(file_get_contents("php://input"), true);
-    if (empty($data['id'])) {
+    $id = $data['id'] ?? null;
+
+    if (!$id) {
         echo json_encode(['success' => false, 'message' => 'ID tidak ditemukan']);
         exit;
     }
+
     $stmt = $conn->prepare("DELETE FROM data_olahraga WHERE id_olahraga = ?");
-    $stmt->bind_param("i", $data['id']);
+    $stmt->bind_param("i", $id);
+
     if ($stmt->execute()) {
         echo json_encode(['success' => true, 'message' => 'Data berhasil dihapus']);
     } else {

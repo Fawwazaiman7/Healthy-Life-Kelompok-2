@@ -1,37 +1,43 @@
-// src/Pages/ArticleDetail.jsx
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import axios from 'axios'; // Import axios untuk mengambil data artikel dari backend
+import axios from 'axios';
 import Navbar from '../../components/Navbar/Navbar';
 import './ArticleDetail.css';
 
 export default function ArticleDetail() {
-  const { id } = useParams(); // Mendapatkan ID artikel dari URL
-  const [article, setArticle] = useState(null); // State untuk artikel
-  const [loading, setLoading] = useState(true); // State untuk loading
+  const { id } = useParams();
+  const [article, setArticle] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Fungsi untuk mengambil data artikel berdasarkan ID
+    if (!id || id === "undefined") {
+      console.warn("ID artikel tidak valid:", id);
+      setLoading(false);
+      return;
+    }
+
     const fetchArticle = async () => {
       try {
-        const response = await axios.get(`http://localhost:80/healthy_life_api/backend/articles.php?id=${id}`);
-        if (response.data.success) {
-          setArticle(response.data.data); // Set data artikel ke state
+        const response = await axios.get(`http://localhost/healty_life/backend/articles.php?id=${id}`);
+        console.log("Response data:", response.data);
+
+        if (response.data.success && response.data.data) {
+          setArticle(response.data.data);
         } else {
-          console.error('Artikel tidak ditemukan');
+          console.warn("Data tidak valid atau artikel tidak ditemukan.");
         }
       } catch (error) {
-        console.error('Terjadi kesalahan saat mengambil artikel:', error);
+        console.error("Terjadi kesalahan saat mengambil artikel:", error);
       } finally {
-        setLoading(false); // Set loading ke false setelah data diambil
+        setLoading(false);
       }
     };
 
     fetchArticle();
-  }, [id]); // Efek ini dijalankan setiap kali ID artikel berubah
+  }, [id]);
 
-  if (loading) return <p>Loading...</p>; // Menampilkan loading jika data belum diambil
-  if (!article) return <p>Article not found</p>; // Menampilkan pesan jika artikel tidak ditemukan
+  if (loading) return <p>Loading...</p>;
+  if (!article) return <p>Article not found</p>;
 
   return (
     <main>
@@ -40,11 +46,13 @@ export default function ArticleDetail() {
         <button className="close-button" onClick={() => window.history.back()}>
           X
         </button>
-        <h1>{article.title}</h1>
-        <img src={article.image} alt={article.title} />
+        <h1>{article.judul}</h1>
+        <img src={article.gambar} alt={article.judul} />
         <div
           className="article-content"
-          dangerouslySetInnerHTML={{ __html: article.content }} // Menampilkan konten dengan HTML
+          dangerouslySetInnerHTML={{
+            __html: article.konten || "<p>Konten belum tersedia.</p>"
+          }}
         />
       </section>
     </main>

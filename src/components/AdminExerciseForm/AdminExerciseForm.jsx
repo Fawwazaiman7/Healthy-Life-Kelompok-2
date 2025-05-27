@@ -18,14 +18,12 @@ const AdminExerciseForm = ({
 
   useEffect(() => {
     if (currentExercise) {
-      console.log("Current exercise ID:", currentExercise.id); // Tambahkan log ini
       setFormData({
-        judul: currentExercise.title || "",
-        estimasi_waktu: currentExercise.time || "",
-        kalori_per_set: currentExercise.calories || "",
-        gambar: currentExercise.image || "",
-        link_video: currentExercise.video || "",
-        id: currentExercise?.id, // Pastikan ID dikirim jika ada
+        judul: currentExercise.nama_olahraga || "",
+        estimasi_waktu: currentExercise.estimasi_waktu || "",
+        kalori_per_set: currentExercise.kalori_per_set || "",
+        gambar: currentExercise.gambar || "",
+        link_video: currentExercise.link_video || "",
       });
     }
   }, [currentExercise]);
@@ -39,8 +37,7 @@ const AdminExerciseForm = ({
     e.preventDefault();
 
     const method = currentExercise ? "put" : "post";
-    const url =
-      "http://localhost/healty_life/backend/adminExercise.php";
+    const url = "http://localhost/healty_life/backend/adminExercise.php";
 
     // Log data sebelum dikirim
     console.log("Data yang akan dikirim ke backend:", formData);
@@ -55,7 +52,7 @@ const AdminExerciseForm = ({
       url,
       data: {
         ...formData,
-        id: currentExercise?.id,
+        id: currentExercise?.id_olahraga, // <-- WAJIB agar bisa edit
       },
       headers: {
         "Content-Type": "application/json",
@@ -165,7 +162,6 @@ const AdminExerciseForm = ({
           maxLength={255}
         />
       </div>
-
 
       <div className="form-actions">
         <button type="submit" className="btn btn-success">

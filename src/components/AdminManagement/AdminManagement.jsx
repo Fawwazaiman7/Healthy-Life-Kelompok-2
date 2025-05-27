@@ -40,14 +40,20 @@ const AdminManagement = () => {
 
     init();
   }, [navigate]);
-  
+
   const fetchFoods = async () => {
     setLoading(true);
     try {
       const response = await axios.get(
         "http://localhost/healty_life/backend/adminFood.php"
       );
-      setFoods(response.data);
+      console.log("📦 [DEBUG] Data makanan dari backend:", response.data);
+      const data = response.data.data || [];
+      console.log(
+        "✅ [DEBUG] Tipe data:",
+        Array.isArray(data) ? "array" : typeof data
+      );
+      setFoods(data);
     } catch (error) {
       console.error("Gagal memuat makanan:", error);
       throw error;
@@ -56,36 +62,33 @@ const AdminManagement = () => {
     }
   };
 
-    const fetchArticles = async () => {
-      setLoading(true);
-      try {
-        const response = await axios.get(
-          "http://localhost/healty_life/backend/articles.php"
-        );
-        console.log("Respons artikel dari backend:", response.data);
-
-        if (response.data.success) {
-          setArticleList(response.data.data || []); // Tetapkan array kosong jika data kosong
-          console.log("Data artikel yang diterima:", response.data.data);
-        } else {
-          throw new Error(response.data.message || "Gagal memuat artikel");
-        }
-      } catch (error) {
-        console.error("Gagal memuat artikel:", error.message);
-        setError("Data artikel gagal dimuat");
-        setArticleList([]); // Pastikan state direset
-      } finally {
-        setLoading(false);
-      }
-    };
-
+  const fetchArticles = async () => {
+    setLoading(true);
+    try {
+      const response = await axios.get(
+        "http://localhost/healty_life/backend/articles.php"
+      );
+      console.log("🔥 [DEBUG] Response artikel:", response.data);
+      const data = response.data.data || [];
+      console.log("✅ [DEBUG] Data artikel:", data);
+      console.log(
+        "🧪 [DEBUG] Tipe data artikel:",
+        Array.isArray(data) ? "array" : typeof data
+      );
+      setArticleList(data);
+    } catch (error) {
+      console.error("❌ Gagal memuat artikel:", error.message);
+      setArticleList([]);
+      setError("Data artikel gagal dimuat");
+    } finally {
+      setLoading(false);
+    }
+  };
 
   const handleEditFood = (food) => {
     setIsEditingFood(true);
     axios
-      .get(
-        `http://localhost/healty_life/backend/adminFood.php?id=${food.id}`
-      )
+      .get(`http://localhost/healty_life/backend/adminFood.php?id=${food.id}`)
       .then((response) => {
         console.log("Data artikel dari backend:", response.data);
         setCurrentFood(response.data); // Update dengan data lengkap dari backend
@@ -102,9 +105,17 @@ const AdminManagement = () => {
       const response = await axios.get(
         "http://localhost/healty_life/backend/adminExercise.php"
       );
-      setExerciseList(response.data);
+      console.log("🔥 [DEBUG] Response olahraga:", response.data);
+      const data = response.data.data || [];
+      console.log("✅ [DEBUG] Data olahraga:", data);
+      console.log(
+        "🧪 [DEBUG] Tipe data olahraga:",
+        Array.isArray(data) ? "array" : typeof data
+      );
+      setExerciseList(data);
     } catch (error) {
-      console.error("Gagal memuat olahraga:", error);
+      console.error("❌ Gagal memuat olahraga:", error);
+      setExerciseList([]); // fallback kosong
       throw error;
     } finally {
       setLoading(false);
@@ -113,33 +124,42 @@ const AdminManagement = () => {
 
   const handleSaveFood = async (food) => {
     try {
-      const method = currentFood ? "put" : "post";
+      const isEditing = !!food?.id;
+      const method = isEditing ? "put" : "post";
       const url = "http://localhost/healty_life/backend/adminFood.php";
+
+      const payload = {
+        ...food,
+        kalori: parseFloat(food.kalori), // penting: pastikan number
+      };
+
       const response = await axios({
         method,
         url,
-        data: {
-          ...food,
-          id: currentFood?.id, // Tambahkan ID jika sedang mengedit
-        },
+        data: payload,
         headers: {
           "Content-Type": "application/json",
         },
       });
 
       if (response.data.success) {
-        await fetchFoods();
+        alert(
+          isEditing
+            ? "✅ Makanan berhasil diperbarui!"
+            : "🎉 Makanan baru berhasil ditambahkan!"
+        );
+        await fetchFoods(); // refresh
         setIsEditingFood(false);
         setCurrentFood(null);
       } else {
-        alert("Failed to save food: " + response.data.message);
+        alert("⚠️ Gagal menyimpan makanan: " + response.data.message);
       }
     } catch (error) {
       console.error(
-        "Failed to save food:",
+        "❌ Error saat menyimpan makanan:",
         error.response?.data || error.message
       );
-      alert("Failed to save food");
+      alert("❌ Terjadi kesalahan saat menyimpan makanan.");
     }
   };
 
@@ -169,52 +189,51 @@ const AdminManagement = () => {
     }
   };
 
- const handleSaveExercise = async (exercise) => {
-   try {
-     if (!exercise) return;
+  const handleSaveExercise = async (exercise) => {
+    try {
+      if (!exercise) return;
 
-     const method = currentExercise ? "put" : "post";
-     const url =
-       "http://localhost/healty_life/backend/adminExercise.php";
+      const method = currentExercise ? "put" : "post";
+      const url = "http://localhost/healty_life/backend/adminExercise.php";
 
-     // Pastikan ID dikirim untuk update
-     const payload = {
-       ...exercise,
-       id: currentExercise?.id, // Pastikan ID ada jika sudah ada
-     };
+      // Pastikan ID dikirim untuk update
+      const payload = {
+        ...exercise,
+        id: currentExercise?.id, // Pastikan ID ada jika sudah ada
+      };
 
-     console.log("Payload yang dikirim ke backend:", payload);
+      console.log("Payload yang dikirim ke backend:", payload);
 
-     const response = await axios({
-       method,
-       url,
-       data: payload,
-       headers: { "Content-Type": "application/json" },
-     });
+      const response = await axios({
+        method,
+        url,
+        data: payload,
+        headers: { "Content-Type": "application/json" },
+      });
 
-     if (response.data.success) {
-       alert(
-         currentExercise
-           ? "Exercise updated successfully!"
-           : "Exercise added successfully!"
-       );
-       await fetchExercises(); // Refresh data olahraga di frontend
-       setIsEditingExercise(false);
-       setCurrentExercise(null);
-     } else {
-       alert("Failed to save exercise: " + response.data.message);
-     }
-   } catch (error) {
-     console.error(
-       "Gagal menyimpan olahraga:",
-       error.response?.data || error.message
-     );
-     alert(
-       "Gagal menyimpan olahraga: " +
-         (error.response?.data?.message || error.message)
-     );
-   }
- };
+      if (response.data.success) {
+        alert(
+          currentExercise
+            ? "Exercise updated successfully!"
+            : "Exercise added successfully!"
+        );
+        await fetchExercises(); // Refresh data olahraga di frontend
+        setIsEditingExercise(false);
+        setCurrentExercise(null);
+      } else {
+        alert("Failed to save exercise: " + response.data.message);
+      }
+    } catch (error) {
+      console.error(
+        "Gagal menyimpan olahraga:",
+        error.response?.data || error.message
+      );
+      alert(
+        "Gagal menyimpan olahraga: " +
+          (error.response?.data?.message || error.message)
+      );
+    }
+  };
 
   const handleDeleteExercise = async (id) => {
     if (window.confirm("Anda yakin ingin menghapus olahraga ini?")) {
@@ -320,8 +339,6 @@ const AdminManagement = () => {
     }
   };
 
-
-
   return (
     <>
       <Navbar />
@@ -414,9 +431,11 @@ const AdminManagement = () => {
               )}
               <ul className="list-group">
                 {articleList.map((article) => (
-                  <li key={article.id} className="list-group-item">
-                    <div>
-                      <h5>{article.title}</h5>
+                  <li key={article.id_artikel} className="list-group-item">
+                    <div className="item-details">
+                      <h5>{article.judul}</h5>
+                      <p>Konten: {article.konten.substring(0, 50)}...</p>{" "}
+                      {/* optional preview */}
                     </div>
                     <div className="action-buttons">
                       <button
@@ -430,7 +449,7 @@ const AdminManagement = () => {
                       </button>
                       <button
                         className="btn-danger"
-                        onClick={() => handleDeleteArticle(article.id)}
+                        onClick={() => handleDeleteArticle(article.id_artikel)}
                       >
                         Hapus
                       </button>
@@ -467,10 +486,10 @@ const AdminManagement = () => {
 
             <ul className="list-group">
               {exerciseList.map((exercise) => (
-                <li key={exercise.id} className="list-group-item">
+                <li key={exercise.id_olahraga} className="list-group-item">
                   <div className="item-details">
-                    <h5>{exercise.title}</h5>
-                    <p>Kalori: {exercise.calories}</p>
+                    <h5>{exercise.nama_olahraga}</h5>
+                    <p>Kalori: {exercise.kalori_per_set}</p>
                   </div>
                   <div className="action-buttons">
                     <button
@@ -484,7 +503,7 @@ const AdminManagement = () => {
                     </button>
                     <button
                       className="btn-danger"
-                      onClick={() => handleDeleteExercise(exercise.id)}
+                      onClick={() => handleDeleteExercise(exercise.id_olahraga)}
                     >
                       Hapus
                     </button>
