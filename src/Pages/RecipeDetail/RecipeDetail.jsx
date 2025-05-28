@@ -19,22 +19,23 @@ const RecipeDetail = () => {
 
         console.log("API Response:", response.data);
 
-        if (response.data && response.data.length > 0) {
-          const item = response.data[0];
+        // === FIX START ===
+        if (response.data && typeof response.data === "object") {
+          const item = response.data;
 
-          // Coba parsing ingredients
+          // Parsing ingredients
           let parsedIngredients = [];
           if (typeof item.ingredients === "string") {
             try {
               parsedIngredients = JSON.parse(item.ingredients);
             } catch {
-              parsedIngredients = [item.ingredients]; // fallback
+              parsedIngredients = [item.ingredients];
             }
           } else if (Array.isArray(item.ingredients)) {
             parsedIngredients = item.ingredients;
           }
 
-          // Coba parsing tutorial
+          // Parsing tutorial
           let parsedTutorial = [];
           if (typeof item.tutorial === "string") {
             try {
@@ -52,8 +53,11 @@ const RecipeDetail = () => {
             tutorial: parsedTutorial,
           });
         } else {
+          console.warn("Data tidak ditemukan atau format tidak sesuai:", response.data);
           setError("Resep tidak ditemukan");
         }
+        // === FIX END ===
+
       } catch (err) {
         console.error("Error fetching recipe:", err);
         setError("Gagal memuat data resep");
@@ -67,7 +71,6 @@ const RecipeDetail = () => {
 
   if (loading) return <p>Memuat data...</p>;
   if (error) return <p>{error}</p>;
-  if (!recipe) return <p>Resep tidak ditemukan.</p>;
 
   return (
     <main>
@@ -86,13 +89,13 @@ const RecipeDetail = () => {
         <div className="recipeContent">
           <h3>Resep</h3>
           <ul>
-            {recipe.ingredients.map((ingredient, index) => (
+            {(recipe.ingredients || []).map((ingredient, index) => (
               <li key={index}>{ingredient}</li>
             ))}
           </ul>
           <h3>Cara Pembuatan</h3>
           <ol>
-            {recipe.tutorial.map((step, index) => (
+            {(recipe.tutorial || []).map((step, index) => (
               <li key={index}>{step}</li>
             ))}
           </ol>

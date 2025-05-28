@@ -3107,3 +3107,27 @@ Stack trace:
     [tinggi_badan] => 170
 )
 
+[27-May-2025 12:15:24 Europe/Berlin] PUT data: Array
+(
+    [id] => 488
+    [berat_badan] => 155
+    [usia] => 15
+    [tinggi_badan] => 160
+)
+
+[27-May-2025 14:51:55 Europe/Berlin] PUT data: Array
+(
+    [id] => 491
+    [berat_badan] => -5
+    [usia] => 31
+    [tinggi_badan] => 170
+)
+
+[27-May-2025 14:53:14 Europe/Berlin] PUT data: Array
+(
+    [id] => 491
+    [berat_badan] => 68
+    [usia] => 31
+    [tinggi_badan] => 170
+)
+

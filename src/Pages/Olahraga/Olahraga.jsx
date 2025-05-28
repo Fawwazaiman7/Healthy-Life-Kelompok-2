@@ -5,37 +5,35 @@ import "./Olahraga.css";
 import WeeklyChallenge from "../WeeklyChallenge/WeeklyChallenge";
 import ExerciseCard from "../ExerciseCard/ExerciseCard";
 import Pagination from "../../components/Pagination/Pagination";
-import Footer from "../../components/Footer/Footer"; // Impor Footer
+import Footer from "../../components/Footer/Footer";
 import axios from "axios";
 import { useLocation } from "react-router-dom";
 
 const Olahraga = () => {
-  const [exercises, setExercises] = useState([]); // Data semua exercises
-  const [filteredExercises, setFilteredExercises] = useState([]); // Data setelah filter
-  const [selectedExercise, setSelectedExercise] = useState(null); // Untuk menyimpan data exercise yang dipilih
+  const [exercises, setExercises] = useState([]);
+  const [filteredExercises, setFilteredExercises] = useState([]);
+  const [selectedExercise, setSelectedExercise] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
   const [error, setError] = useState(null);
-  const [loading, setLoading] = useState(false); // Untuk menyimpan errorHalaman saat ini
-  const itemsPerPage = 8; // Jumlah item per halaman
+  const [loading, setLoading] = useState(true);
+  const itemsPerPage = 8;
   const location = useLocation();
 
-  // Menghitung indeks awal dan akhir item pada halaman saat ini
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  const currentItems = filteredExercises.slice(
-    indexOfFirstItem,
-    indexOfLastItem
-  );
+  const currentItems = filteredExercises.slice(indexOfFirstItem, indexOfLastItem);
 
-  // Fetch data from database
   useEffect(() => {
     const fetchExercises = async () => {
       try {
-        const response = await axios.get(
-          "http://localhost/healty_life/backend/adminExercise.php"
-        );
-        if (response.data && Array.isArray(response.data)) {
-          const updatedExercises = response.data.map((exercise) => ({
+        setLoading(true);
+        const response = await axios.get("http://localhost/healty_life/backend/adminExercise.php");
+
+        console.log("🔥 [DEBUG] Response from API:", response.data);
+
+        // ✅ Pastikan kita akses response.data.data
+        if (response.data && Array.isArray(response.data.data)) {
+          const updatedExercises = response.data.data.map((exercise) => ({
             id: exercise.id_olahraga,
             title: exercise.nama_olahraga,
             calories: exercise.kalori_per_set,
@@ -48,21 +46,22 @@ const Olahraga = () => {
 
           setExercises(updatedExercises);
           setFilteredExercises(updatedExercises);
-          console.log("Fetched exercises:", updatedExercises); // Debug: Log data fetch
+          console.log("✅ [DEBUG] Exercises parsed:", updatedExercises);
         } else {
-          console.error("Gagal memuat data olahraga:", response.data.message);
+          console.warn("⚠️ [DEBUG] Data bukan array atau kosong:", response.data);
+          setError("Data olahraga kosong atau format tidak sesuai.");
         }
       } catch (error) {
-        console.error("Terjadi kesalahan saat memuat data olahraga:", error);
-        setError("Failed to fetch exercise items. Please try again later.");
-        setLoading(false); // Set loading selesai
+        console.error("❌ Gagal memuat data olahraga:", error?.response || error?.message || error);
+        setError("Terjadi kesalahan saat mengambil data olahraga.");
+      } finally {
+        setLoading(false);
       }
     };
 
     fetchExercises();
   }, []);
 
-  // Update filteredExercises berdasarkan query parameter
   useEffect(() => {
     const query = new URLSearchParams(location.search).get("query");
     if (query) {
@@ -70,36 +69,28 @@ const Olahraga = () => {
         exercise.title.toLowerCase().includes(query.toLowerCase())
       );
       setFilteredExercises(filtered);
-      setCurrentPage(1); // Reset ke halaman pertama
-      console.log("Filtered items for query:", query, filtered); // Debug: Log hasil filter
+      setCurrentPage(1);
+      console.log("🔍 [DEBUG] Filtered exercises for query:", query, filtered);
     } else {
       setFilteredExercises(exercises);
     }
   }, [location.search, exercises]);
 
-  // Log data pagination
   useEffect(() => {
-    console.log("Current items on this page:", currentItems); // Debug: Log current items
+    console.log("📄 [DEBUG] Current items on this page:", currentItems);
   }, [currentItems]);
 
-  // Function to close the pop-up
-  const closePopup = () => {
-    setSelectedExercise(null); // Menutup pop-up
-  };
+  const closePopup = () => setSelectedExercise(null);
+  const handlePageChange = (pageNumber) => setCurrentPage(pageNumber);
 
-  // Function to handle page change
-  const handlePageChange = (pageNumber) => {
-    setCurrentPage(pageNumber);
-  };
-
-  if (exercises.length === 0) return <p>Loading exercises...</p>;
+  if (loading) return <p>Loading exercises...</p>;
+  if (error) return <p>{error}</p>;
 
   return (
     <main>
       <Navbar />
       <WeeklyChallenge />
 
-      {/* Section for Exercise Cards */}
       <section className="exercise-section">
         <h2 className="olahraga-title">Exercise Recommendation</h2>
         <div className="exercise-cards">
@@ -114,14 +105,13 @@ const Olahraga = () => {
                 calories={exercise.calories}
                 image={exercise.image}
                 video={exercise.video}
-                onClick={() => setSelectedExercise(exercise)} // Mengatur state untuk pop-up
+                onClick={() => setSelectedExercise(exercise)}
               />
             ))
           )}
         </div>
       </section>
 
-      {/* Pagination */}
       <Pagination
         currentPage={currentPage}
         totalItems={filteredExercises.length}
@@ -129,7 +119,6 @@ const Olahraga = () => {
         onPageChange={handlePageChange}
       />
 
-      {/* Pop-up untuk menampilkan video */}
       {selectedExercise && (
         <div className="popup-overlay" onClick={closePopup}>
           <div className="popup-content" onClick={(e) => e.stopPropagation()}>

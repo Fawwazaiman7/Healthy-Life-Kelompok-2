@@ -24,9 +24,13 @@ const Makanan = () => {
         const response = await axios.get(
           "http://localhost/healty_life/backend/adminFood.php"
         );
-        setFoodItems(response.data); // Set data awal untuk semua item
-        setFilteredFoodItems(response.data); // Default, tampilkan semua item
-        console.log("All food items:", response.data); // Debug: Log data setelah fetch
+        const items = Array.isArray(response.data) 
+         ? response.data 
+         : response.data?.data || [];
+        setFoodItems(items);
+        setFilteredFoodItems(items);
+        console.log("✅ Apakah array:", Array.isArray(items));
+        console.log("🧪 Data makanan yang akan digunakan:", items);
         setLoading(false);
       } catch (err) {
         console.error("Error fetching food items:", err);

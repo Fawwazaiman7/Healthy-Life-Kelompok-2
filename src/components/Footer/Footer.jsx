@@ -21,7 +21,7 @@ const Footer = () => {
                     <p>Media sosial:</p>
                     <div className="social-icons">
                         <a href="https://facebook.com">
-                            <img src="/images/fb.png" alt="Facebook" />
+                            <img src="public/images/fb.png" alt="Facebook" />
                         </a>
                         <a href="https://instagram.com">
                             <img src="/images/ig.png" alt="Instagram" />

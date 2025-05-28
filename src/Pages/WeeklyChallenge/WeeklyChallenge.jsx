@@ -24,80 +24,74 @@ export default function WeeklyChallenge() {
         "http://localhost/healty_life/backend/adminExercise.php"
       );
       const data = await response.json();
-      if (response.ok && Array.isArray(data)) {
-        const updatedChallenges = data.map((exercise) => ({
-          ...exercise,
-          video: exercise.video.replace("watch?v=", "embed/").split("&")[0],
+
+      console.log("🔥 [DEBUG] Response from WeeklyChallenge API:", data);
+
+      // ✅ Modifikasi untuk akses data.data
+      if (response.ok && Array.isArray(data.data)) {
+        const updatedChallenges = data.data.map((exercise) => ({
+          title: exercise.nama_olahraga,
+          time: exercise.estimasi_waktu,
+          calories: exercise.kalori_per_set,
+          image: exercise.gambar,
+          video: exercise.link_video
+            .replace("watch?v=", "embed/")
+            .split("&")[0],
         }));
 
         const randomChallenges = getRandomChallenges(updatedChallenges);
         setChallenges(randomChallenges);
 
-        // Simpan tantangan dan tanggal dalam format ISO di localStorage
-        const currentDate = new Date().toISOString().split("T")[0]; // Format: YYYY-MM-DD
+        const currentDate = new Date().toISOString().split("T")[0];
         localStorage.setItem(
           "weeklyChallenges",
           JSON.stringify(randomChallenges)
         );
         localStorage.setItem("lastGeneratedDate", currentDate);
-        console.log(`Data tantangan baru disimpan ke localStorage:`);
-        console.log(`Tanggal sekarang: ${currentDate}`);
-        console.log("Tantangan baru:", randomChallenges);
+
+        console.log(`✅ Weekly challenges updated for date: ${currentDate}`);
       } else {
-        console.error("Failed to fetch exercises:", data);
+        console.error("❌ Failed to fetch exercises:", data);
       }
     } catch (error) {
-      console.error("Error fetching exercises:", error);
+      console.error("❌ Error fetching exercises:", error);
     }
   }, []);
 
   useEffect(() => {
     const lastGeneratedDate = localStorage.getItem("lastGeneratedDate");
     const savedChallenges = localStorage.getItem("weeklyChallenges");
-    const currentDate = new Date().toISOString().split("T")[0]; // Format: YYYY-MM-DD
+    const currentDate = new Date().toISOString().split("T")[0];
 
-    console.log(`Tanggal sekarang: ${currentDate}`);
+    console.log(`📅 Tanggal sekarang: ${currentDate}`);
     console.log(
-      `Tanggal terakhir disimpan di localStorage: ${lastGeneratedDate}`
+      `📅 Tanggal terakhir disimpan di localStorage: ${lastGeneratedDate}`
     );
 
     if (lastGeneratedDate && savedChallenges) {
       const lastDate = new Date(lastGeneratedDate);
       const now = new Date(currentDate);
-
-      // Hitung perbedaan hari
       let daysDiff = Math.floor((now - lastDate) / (1000 * 60 * 60 * 24));
-      console.log(`Perbedaan hari sejak tantangan terakhir: ${daysDiff} hari`);
 
-      // Jika daysDiff negatif, reset data di localStorage ke tanggal sekarang
       if (daysDiff < 0) {
         localStorage.setItem("lastGeneratedDate", currentDate);
-        daysDiff = 0; // Reset selisih hari ke 0
-        console.log(
-          "Tanggal sistem komputer diubah ke masa lalu. Mereset data di localStorage ke tanggal sekarang."
-        );
+        daysDiff = 0;
+        console.log("⚠️ Sistem waktu mundur. Reset tanggal lokal.");
       }
 
       if (daysDiff < 7) {
-        console.log("Menggunakan tantangan yang ada dari localStorage.");
+        console.log("♻️ Menggunakan tantangan yang ada dari localStorage.");
         setChallenges(JSON.parse(savedChallenges));
         return;
       }
     }
 
-    console.log(
-      "Mengambil tantangan baru karena lebih dari 7 hari atau tidak ada data."
-    );
+    console.log("🔁 Mengambil tantangan baru...");
     fetchExercises();
   }, [fetchExercises]);
 
-  const handleCardClick = (challenge) => {
-    setSelectedVideo(challenge);
-  };
-
-  const closePopup = () => {
-    setSelectedVideo(null);
-  };
+  const handleCardClick = (challenge) => setSelectedVideo(challenge);
+  const closePopup = () => setSelectedVideo(null);
 
   return (
     <div className="container">

@@ -1,38 +1,50 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './FeatureCards.css';
 
 const FeatureCards = () => {
-    const features = [
-        { title: "Tracker", description: "Pantau dan kelola asupan gizi harian Anda dengan mudah.", link: "/exerciseandfoodtracker" },
-        { title: "Rekomendasi Olahraga", description: "Olahraga yang tepat untuk anda", link: "/olahraga" },
-        { title: "Resep Makanan Diet", description: "Gizi seimbang untuk diet sehat", link: "/makanan" },
-    ];
+  const navigate = useNavigate();
 
-    const [activeIndex, setActiveIndex] = useState(null);
+  // **JANGAN pakai basename di link, cukup path saja**
+  const features = [
+    { title: "Tracker", description: "Pantau dan kelola asupan gizi harian Anda dengan mudah.", link: "/exerciseandfoodtracker" },
+    { title: "Rekomendasi Olahraga", description: "Olahraga yang tepat untuk anda", link: "/olahraga" },
+    { title: "Resep Makanan Diet", description: "Gizi seimbang untuk diet sehat", link: "/makanan" },
+  ];
 
-    const handleCardClick = (index) => {
-        setActiveIndex(index);
-        // Redirect to the link after a short delay
-        setTimeout(() => {
-            window.location.href = features[index].link;
-        }, 300); // Delay to allow the bubble effect to show
-    };
+  const [activeIndex, setActiveIndex] = useState(null);
 
-    return (
-        <div className="feature-cards">
-            {features.map((feature, index) => (
-                <div 
-                    key={index} 
-                    className={`feature-card ${activeIndex === index ? 'bubble' : ''}`} 
-                    onClick={() => handleCardClick(index)} // Handle click event
-                >
-                    <h2>{feature.title}</h2>
-                    <p>{feature.description}</p>
-                    <a href={feature.link}>See More</a>
-                </div>
-            ))}
+  const handleCardClick = (index) => {
+    setActiveIndex(index);
+    setTimeout(() => {
+      navigate(features[index].link); // hanya path relatif
+    }, 300);
+  };
+
+  return (
+    <div className="feature-cards">
+      {features.map((feature, index) => (
+        <div
+          key={index}
+          className={`feature-card ${activeIndex === index ? 'bubble' : ''}`}
+          onClick={() => handleCardClick(index)}
+          style={{ cursor: 'pointer' }}
+        >
+          <h2>{feature.title}</h2>
+          <p>{feature.description}</p>
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              navigate(feature.link);
+            }}
+            type="button"
+          >
+            See More
+          </button>
         </div>
-    );
+      ))}
+    </div>
+  );
 };
 
 export default FeatureCards;
