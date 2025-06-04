@@ -8,6 +8,7 @@ beforeEach(() => {
 
 describe('Navbar', () => {
   test('renders login and sign-up links when not logged in', () => {
+    expect(localStorage.getItem('isLoggedIn')).toBeNull();
     render(
       <MemoryRouter>
         <Navbar />
