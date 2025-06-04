@@ -71,6 +71,20 @@ Healthy Life menggunakan arsitektur *3-Tier Client-Server*:
    - Node.js untuk menjalankan frontend Next.js
 
 ### 2. *Clone Repository*
+```bash
+git clone https://github.com/username/healthy-life.git
+cd healthy-life
+```
+
+### 3. *Import Database*
+   - Buat database `healthy_life` di MySQL.
+   - Import file `healthy_life (3).sql` ke dalam database tersebut.
+   - Sesuaikan kredensial di `backend/connection.php` jika diperlukan.
+
+### 4. *Jalankan Aplikasi*
+   - Jalankan server PHP di direktori `backend` (contoh: XAMPP).
+   - Pada root proyek, install dependensi dan jalankan frontend:
    ```bash
-   git clone https://github.com/username/healthy-life.git
-   cd healthy-life
+   npm install
+   npm start
+   ```
