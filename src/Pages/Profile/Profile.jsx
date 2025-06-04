@@ -149,9 +149,7 @@ function Profile() {
             </span>
           </div>
           <h2 className="profile-name">{userData.nama}</h2>
-          <a href="http://localhost:3000/Healthy-Life-Kelompok-2/GetStarted">
-            Isi Biodata Kembali?
-          </a>
+          <a href="/getstarted">Isi Biodata Kembali?</a>
         </div>
 
         <div className="profile-stats">
