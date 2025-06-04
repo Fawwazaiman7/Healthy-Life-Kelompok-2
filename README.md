@@ -49,7 +49,7 @@ Healthy Life menggunakan arsitektur *3-Tier Client-Server*:
    - Form untuk artikel menggunakan TinyMCE editor.
 
 3. *Database Server Layer*:
-   - Menggunakan *Oracle SQL* untuk menyimpan data pengguna, artikel, riwayat olahraga, dan target kalori.
+   - Menggunakan *MySQL* untuk menyimpan data pengguna, artikel, riwayat olahraga, dan target kalori.
 
 ---
 
@@ -57,7 +57,7 @@ Healthy Life menggunakan arsitektur *3-Tier Client-Server*:
 
 - *Frontend*: React.js + Next.js
 - *Backend*: PHP Native
-- *Database*: Oracle SQL
+- *Database*: MySQL
 - *Hosting*: Windows Server
 - *Notifikasi*: Firebase Cloud Messaging
 
@@ -67,7 +67,7 @@ Healthy Life menggunakan arsitektur *3-Tier Client-Server*:
 
 ### 1. *Prasyarat*
    - Install PHP (versi minimal 7.4)
-   - Oracle Database yang sudah dikonfigurasi
+   - MySQL Server yang sudah dikonfigurasi
    - Node.js untuk menjalankan frontend Next.js
 
 ### 2. *Clone Repository*
