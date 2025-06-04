@@ -55,7 +55,7 @@ function Profile() {
       try {
         const response = await axios.delete(
           `http://localhost/healty_life/backend/profile.php`,
-          { data: { id: userData.id } }
+          { data: { id: userData.id_pengguna || formData.id } }
         );
 
         if (response.data.success) {
