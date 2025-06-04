@@ -1,4 +1,4 @@
-// File: src/Pages/KalkulatorAKG/KalkulatorAKG.jsx
+// File: src/Pages/Kalkulator/KalkulatorAKG.jsx
 import React, { useState } from 'react';
 import './KalkulatorAKG.css'; // Pastikan Anda membuat file ini
 import Navbar from '../../components/Navbar/Navbar'; // Pastikan jalur ini benar
