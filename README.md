@@ -67,7 +67,7 @@ Healthy Life menggunakan arsitektur *3-Tier Client-Server*:
 
 ### 1. *Prasyarat*
    - Install PHP (versi minimal 7.4)
-   - MySQL Server yang sudah dikonfigurasi
+   - MySQL Database (contoh: XAMPP) yang sudah dikonfigurasi
    - Node.js untuk menjalankan frontend Next.js
 
 ### 2. *Clone Repository*
