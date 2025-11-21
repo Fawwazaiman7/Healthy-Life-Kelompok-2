@@ -64,7 +64,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $makananTracker = json_encode($data['makanan_tracker'] ?? []);
         $olahragaTracker = json_encode($data['olahraga_tracker'] ?? []);
         $stmt->bind_param(
-            "siiississ",
             $data['id_tracker'],
             $data['kalori_masuk'],
             $data['kalori_keluar'],
@@ -75,7 +74,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $makananTracker,
             $olahragaTracker
         );
-
 
         if ($stmt->execute()) {
             echo json_encode(["success" => true, "message" => "Data berhasil disimpan"]);
